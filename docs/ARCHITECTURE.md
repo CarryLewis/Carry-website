@@ -80,6 +80,8 @@ Adapters: LocalJSON | Notion | CMS | (future: RSS, Agent writes)
 - Precision and restraint live in spacing, type scale, and ink hierarchy—not gradients or effects.
 - Tokens make “lab / journal / observatory” feel consistent across seven sections.
 
+**Visual identity:** See [`DESIGN_SYSTEM.md`](./DESIGN_SYSTEM.md) — **dark mode first** (deep space laboratory), Laboratory Editorial language, complete tokens, components, motion, and page templates. That document supersedes the earlier light-paper color sketch in §5 of this file.
+
 #### Decision F — Progressive enhancement for future systems
 
 | Future capability | Hook in architecture |
@@ -287,16 +289,18 @@ Section organisms
 
 ### 5.1 Visual direction
 
-**Name:** Laboratory Editorial  
+**Name:** Laboratory Editorial (dark-first)  
 
-**References (spirit, not copies):** print scientific journals, instrument UIs, quiet research institute sites, high-end technical documentation.
+**Canonical spec:** [`DESIGN_SYSTEM.md`](./DESIGN_SYSTEM.md)
 
-**Avoid:** purple SaaS gradients, cream+terracotta “AI portfolio” defaults, broadsheet denseness, glow/neon AI aesthetics, pill clusters, dashboard chrome on the homepage.
+**References (spirit, not copies):** print scientific journals, instrument UIs, quiet research institute sites, high-end technical documentation, observatory night.
+
+**Avoid:** purple SaaS gradients, cream+terracotta “AI portfolio” defaults, broadsheet denseness, glow/neon AI aesthetics, cyberpunk palettes, pill clusters, dashboard chrome on the homepage.
 
 **Atmosphere:**
-- Paper / ink hierarchy on a cool off-white field with a deep ink secondary surface for Archive/About contrast moments.
-- Subtle grid or ruled texture (very low contrast) — instrument paper, not decoration.
-- Motion: 2–3 intentional motions only (e.g. page enter fade on section title, relation panel reveal, timeline scrub) — presence, not spectacle.
+- Deep void / surface hierarchy (`#07090C` → `#0D1117` → raised panels) with a single oxidized-teal accent.
+- Subtle grid or ruled texture (very low contrast) — instrument panel, not decoration.
+- Motion: 2–3 intentional motions only (note appear, node connect, timeline unfold) — presence, not spectacle.
 
 ### 5.2 Typography
 
