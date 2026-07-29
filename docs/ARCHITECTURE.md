@@ -315,20 +315,17 @@ Do **not** use Inter / Roboto / Arial / system-ui as the primary brand voice.
 
 ### 5.3 Color tokens (conceptual)
 
+Canonical HEX values and usage rules live in [`DESIGN_SYSTEM.md`](./DESIGN_SYSTEM.md) §1 and §7.
+
 ```
---color-paper:        /* cool off-white base */
---color-paper-muted:  /* secondary panels / zebra rules */
---color-ink:          /* primary text */
---color-ink-muted:    /* secondary text */
---color-ink-faint:    /* rules, grid */
---color-accent:       /* single restrained accent — e.g. deep teal or oxidized green */
---color-accent-soft:  /* tint for focus/selection */
---color-signal:       /* distinct but calm — for live signals */
---color-warning:      /* rare system states */
---color-surface-deep: /* near-black for contrast sections */
+--color-void / --color-surface / --color-surface-raised / --color-surface-sunken
+--color-ink / --color-ink-secondary / --color-ink-tertiary / --color-ink-faint
+--color-accent (+ soft / muted)     /* single oxidized teal family */
+--color-status-*                    /* active, prototype, experiment, archived, … */
+--color-rule / --color-focus-ring
 ```
 
-Accent is **one** hue family used for focus, links, and “active exploration” — never rainbow category coloring.
+Accent is **one** hue family used for focus, links, and “active exploration” — never rainbow category coloring. Dark-first; no marketing gradients.
 
 ### 5.4 Spacing & layout tokens
 
