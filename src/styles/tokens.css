@@ -1,0 +1,110 @@
+/**
+ * Laboratory Editorial — design tokens
+ * Source of truth: docs/DESIGN_SYSTEM.md
+ */
+
+:root {
+  /* Color — surfaces */
+  --color-void: #07090c;
+  --color-surface: #0d1117;
+  --color-surface-raised: #151b24;
+  --color-surface-sunken: #05070a;
+  --color-panel: #1a222e;
+  --color-panel-muted: #121821;
+  --color-overlay: #07090ccc;
+  --color-grid: #1c2430;
+
+  /* Color — ink */
+  --color-ink: #e8eef6;
+  --color-ink-secondary: #a7b3c5;
+  --color-ink-tertiary: #6b7a90;
+  --color-ink-faint: #3d4a5c;
+  --color-ink-inverse: #0d1117;
+
+  /* Color — accent */
+  --color-accent: #3d8f8c;
+  --color-accent-soft: #3d8f8c33;
+  --color-accent-muted: #2a6563;
+  --color-accent-glow: #3d8f8c1a;
+
+  /* Color — status */
+  --color-status-active: #3d8f8c;
+  --color-status-prototype: #8b7e5a;
+  --color-status-experiment: #5a7a9a;
+  --color-status-dormant: #6b7a90;
+  --color-status-archived: #4a5565;
+  --color-status-signal: #4f9a8f;
+  --color-status-warning: #a67c52;
+  --color-status-critical: #9a5b5b;
+
+  /* Color — chrome */
+  --color-rule: #243041;
+  --color-rule-strong: #354457;
+  --color-focus-ring: #3d8f8c;
+
+  /* Typography families (next/font sets --font-* variables) */
+  --font-serif: var(--font-source-serif), "Source Serif 4", Georgia, serif;
+  --font-sans: var(--font-ibm-plex-sans), "IBM Plex Sans", "Helvetica Neue",
+    Arial, sans-serif;
+  --font-mono: var(--font-ibm-plex-mono), "IBM Plex Mono", Menlo, Consolas,
+    monospace;
+
+  /* Type sizes (desktop defaults) */
+  --type-hero-size: 48px;
+  --type-page-size: 36px;
+  --type-section-size: 20px;
+  --type-body-size: 18px;
+  --type-body-ui-size: 16px;
+  --type-meta-size: 13px;
+  --type-label-size: 11px;
+  --type-code-size: 14px;
+
+  /* Layout */
+  --shell-max: 1440px;
+  --measure-prose: 720px;
+  --measure-wide: 1120px;
+  --rail-left: 200px;
+  --rail-right: 280px;
+  --grid-gutter: 24px;
+  --grid-margin: 64px;
+  --header-height: 56px;
+  --radius-xs: 2px;
+  --radius-none: 0;
+
+  /* Space */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+  --space-9: 96px;
+  --space-10: 128px;
+
+  /* Motion */
+  --ease-lab: cubic-bezier(0.22, 0.61, 0.36, 1);
+  --duration-fast: 120ms;
+  --duration-medium: 240ms;
+  --duration-slow: 400ms;
+}
+
+@media (max-width: 1279px) {
+  :root {
+    --type-hero-size: 40px;
+    --type-page-size: 32px;
+    --type-body-size: 17px;
+    --grid-margin: 32px;
+  }
+}
+
+@media (max-width: 767px) {
+  :root {
+    --type-hero-size: 32px;
+    --type-page-size: 28px;
+    --type-body-size: 17px;
+    --grid-margin: 20px;
+    --grid-gutter: 16px;
+  }
+}
