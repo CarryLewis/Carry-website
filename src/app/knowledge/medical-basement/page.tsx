@@ -1,9 +1,18 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 
-/** Public Notion site for medical-basement (Share to web). */
+/**
+ * Public Notion Site for medical-basement (Share → Publish).
+ * Use the /ebd/ path in iframes — the plain public URL sets
+ * frame-ancestors/X-Frame-Options so browsers refuse to embed it.
+ * Get the official snippet via Share → Publish → Embed this page.
+ */
 export const MEDICAL_BASEMENT_NOTION_URL =
   "https://serious-fireplace-18e.notion.site/medical-basement-574ee033c41d83bd828f8118c9820b27";
+
+/** From Notion: Share → Publish → Embed this page → Copy code */
+export const MEDICAL_BASEMENT_EMBED_URL =
+  "https://serious-fireplace-18e.notion.site/ebd/574ee033c41d83bd828f8118c9820b27";
 
 export const metadata: Metadata = {
   title: "medical basement",
@@ -25,7 +34,7 @@ export default function MedicalBasementPage() {
           {" / medical basement"}
         </p>
         <a
-          href={`${MEDICAL_BASEMENT_NOTION_URL}?pvs=73`}
+          href={MEDICAL_BASEMENT_NOTION_URL}
           target="_blank"
           rel="noreferrer"
           className="font-sans text-meta text-accent hover:text-accent-muted focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
@@ -36,7 +45,7 @@ export default function MedicalBasementPage() {
 
       <iframe
         title="medical basement"
-        src={MEDICAL_BASEMENT_NOTION_URL}
+        src={MEDICAL_BASEMENT_EMBED_URL}
         className="w-full flex-1 border-0 bg-surface"
         style={{ minHeight: "calc(100vh - 7rem)" }}
         loading="lazy"

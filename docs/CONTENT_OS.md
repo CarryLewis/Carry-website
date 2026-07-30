@@ -105,12 +105,22 @@ Adapters live under `src/data/adapters/` (local mock is default).
 
 ## medical basement (Notion mirror)
 
-Not stored in `/content`. One Knowledge entry embeds the public Notion site:
+Not stored in `/content`. One Knowledge entry embeds the published Notion Site:
 
-- `/knowledge/medical-basement`
-- https://serious-fireplace-18e.notion.site/medical-basement-574ee033c41d83bd828f8118c9820b27
+- Site route: `/knowledge/medical-basement`
+- Public page: https://serious-fireplace-18e.notion.site/medical-basement-574ee033c41d83bd828f8118c9820b27
+- Embed URL (iframe `src`): `…/ebd/574ee033c41d83bd828f8118c9820b27` (from Notion Embed this page)
 
-Edit in Notion (Share to web); the site only mirrors that page.
+**Why `/ebd/`:** the plain public URL sends `X-Frame-Options: SAMEORIGIN` / a restrictive `frame-ancestors` CSP, so browsers show a blank iframe on your domain. Notion’s Embed this page link (`/ebd/…`) allows framing on any `https:` / `http:` origin.
+
+### Keep the preview in sync
+
+1. In Notion, open **medical basement** → **Share** → **Publish** (must stay published).
+2. Edit content in Notion as usual — the Site updates automatically; no redeploy needed for content.
+3. If the iframe goes blank again: **Share** → **Publish** → **Embed this page** → **Copy code**, then update `MEDICAL_BASEMENT_EMBED_URL` in `src/app/knowledge/medical-basement/page.tsx` if the URL changed.
+4. Optional (true hostname under your domain for the Notion Site itself, not the Next app): paid Notion plan → Settings → Sites → custom domain (CNAME to `external.notion.site`). That hosts Notion on e.g. `notes.yourdomain.com`; it does not replace this Next.js `/knowledge/medical-basement` route.
+
+API sync into `/content` is still future work (see Architecture Phase 2).
 
 ---
 
