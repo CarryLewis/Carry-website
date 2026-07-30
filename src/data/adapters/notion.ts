@@ -1,9 +1,8 @@
 /**
  * Runtime Notion adapter stub.
  *
- * Production path today: build-time `npm run sync:notion` writes /content JSON,
- * then LocalJsonRepository serves it. A live NotionAdapter can implement
- * ContentRepository later if the site leaves static export.
+ * Medical basement is mirrored via public Notion site embed (not this adapter).
+ * Content OS entities still use LocalJsonRepository + /content JSON.
  */
 import type { ContentRepository } from "@/data/repository";
 
@@ -14,7 +13,7 @@ export class NotionRepository implements ContentRepository {
 
   private unavailable(method: string): never {
     throw new Error(
-      `NotionRepository.${method} is not implemented for static export. Run \`npm run sync:notion\` and use LocalJsonRepository.`,
+      `NotionRepository.${method} is not implemented for static export. Use LocalJsonRepository for Content OS data.`,
     );
   }
 
@@ -45,7 +44,9 @@ export class NotionRepository implements ContentRepository {
   async listSignals(_options?: { limit?: number }) {
     return this.unavailable("listSignals");
   }
-  async listProjects(_options?: { status?: import("@/domain/entities").Project["status"] }) {
+  async listProjects(_options?: {
+    status?: import("@/domain/entities").Project["status"];
+  }) {
     return this.unavailable("listProjects");
   }
   async getProject(_slug: string) {
@@ -56,14 +57,5 @@ export class NotionRepository implements ContentRepository {
   }
   async getNeighborhood(_centerId: string) {
     return this.unavailable("getNeighborhood");
-  }
-  async listMedicalCollections() {
-    return this.unavailable("listMedicalCollections");
-  }
-  async listMedicalRecords(_collectionId?: string) {
-    return this.unavailable("listMedicalRecords");
-  }
-  async getMedicalRecord(_collectionId: string, _slug: string) {
-    return this.unavailable("getMedicalRecord");
   }
 }

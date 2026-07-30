@@ -1,9 +1,8 @@
-# Notion inbox
+# Notion inbox (unused)
 
-Unmapped Notion databases land here during `npm run sync:notion`.
+Site display for medical basement is a Share-to-web embed:
 
-- Entity payloads: `*.json` (one row per file)
-- Reports (ignored by content manifest): `_discovery.json`, `_sync-report.json`
+`/knowledge/medical-basement` →
+https://serious-fireplace-18e.notion.site/medical-basement-574ee033c41d83bd828f8118c9820b27
 
-To promote a database into a Content OS module, add its ID to
-`scripts/notion/mapping.config.ts` → `databaseOverrides`, then re-sync.
+Do not store mirrored page rows here for the website UI.

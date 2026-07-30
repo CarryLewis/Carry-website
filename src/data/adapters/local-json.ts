@@ -13,12 +13,6 @@ import {
   listSignals as contentListSignals,
 } from "@/content/database";
 import {
-  getMedicalRecord,
-  listMedicalCollections,
-  listMedicalRecords,
-  type MedicalCollectionId,
-} from "@/content/medical";
-import {
   observatoryCopy,
   profile,
   siteChrome,
@@ -160,17 +154,5 @@ export class LocalJsonRepository implements ContentRepository {
         type: r.type,
       })),
     };
-  }
-
-  async listMedicalCollections() {
-    return listMedicalCollections();
-  }
-
-  async listMedicalRecords(collectionId?: MedicalCollectionId) {
-    return listMedicalRecords(collectionId);
-  }
-
-  async getMedicalRecord(collectionId: MedicalCollectionId, slug: string) {
-    return getMedicalRecord(collectionId, slug);
   }
 }

@@ -17,7 +17,6 @@ import { validateRelations } from "@/content/relations";
 import {
   generatedConcepts,
   generatedFocus,
-  generatedInbox,
   generatedProjects,
   generatedQuestions,
   generatedRelationsCollection,
@@ -34,7 +33,6 @@ export const contentDatabase: ContentDatabase = {
   signals: generatedSignals,
   timeline: generatedTimeline,
   relations: generatedRelationsCollection.edges,
-  inbox: generatedInbox,
 };
 
 const relationErrors = validateRelations(contentDatabase);
@@ -91,8 +89,4 @@ export function listTimeline() {
 
 export function listRelations() {
   return contentDatabase.relations;
-}
-
-export function listInbox() {
-  return contentDatabase.inbox;
 }

@@ -192,26 +192,7 @@ export type ContentCollectionName =
   | "concepts"
   | "signals"
   | "timeline"
-  | "relations"
-  | "notion-inbox";
-
-/** Synced Notion inbox row (medical basement vault). */
-export interface MedicalInboxSource {
-  notionPageId: string;
-  notionDatabaseId: string;
-  notionDatabaseTitle: string;
-  notionUrl: string | null;
-}
-
-export interface MedicalInboxRecord {
-  id: EntityId;
-  slug: string;
-  title: string;
-  source: MedicalInboxSource;
-  properties: Record<string, unknown>;
-  createdAt: ISODate;
-  updatedAt: ISODate;
-}
+  | "relations";
 
 /** Full in-memory content database snapshot */
 export interface ContentDatabase {
@@ -222,7 +203,6 @@ export interface ContentDatabase {
   signals: SignalRecord[];
   timeline: TimelineEventRecord[];
   relations: RelationRecord[];
-  inbox: MedicalInboxRecord[];
 }
 
 export type ContentEntity =
@@ -231,5 +211,4 @@ export type ContentEntity =
   | ProjectRecord
   | ConceptRecord
   | SignalRecord
-  | TimelineEventRecord
-  | MedicalInboxRecord;
+  | TimelineEventRecord;

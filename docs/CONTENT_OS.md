@@ -42,9 +42,8 @@ UI consumes this layer through `LocalJsonRepository` (`src/data/adapters/local-j
 | Information Radar | `content/signals/` | `schemas/signal.schema.json` | `SignalRecord` |
 | Timeline | `content/timeline/` | `schemas/timeline.schema.json` | `TimelineEventRecord` |
 | Relations | `content/relations/edges.json` | `schemas/relation.schema.json` | `RelationRecord` |
-| Notion inbox (unmapped) | `content/notion-inbox/` | free-form sync payload | — |
 
-After adding or syncing JSON files, regenerate imports:
+After adding JSON files, regenerate imports:
 
 ```bash
 npm run content:manifest
@@ -52,20 +51,16 @@ npm run content:manifest
 
 ---
 
-## Notion → Content OS (read-only)
+## medical basement (Notion mirror)
 
-Build-time sync from the medical-basement Notion page into `/content`:
+The medical-basement workspace is **not** imported into Content OS JSON.
 
-```bash
-# requires NOTION_TOKEN (Read content integration shared on the page)
-npm run discover:notion   # list child databases + inferred modules
-npm run sync:notion       # write JSON + regenerate manifest
-```
+- Entry: **Knowledge → medical basement** (`/knowledge/medical-basement`)
+- Display: iframe of the public Notion site  
+  `https://serious-fireplace-18e.notion.site/medical-basement-574ee033c41d83bd828f8118c9820b27`
+- Edit content in Notion; the site entry only mirrors that page.
 
-Mapping rules live in `scripts/notion/mapping.config.ts` (title heuristics + `databaseOverrides`).  
-The integration never writes back to Notion.
-
-Medical basement databases currently land in `content/notion-inbox/` and are shown on the site under **Knowledge → medical basement** (`/knowledge/medical-basement`) until promoted into stricter Content OS modules.
+Optional offline sync scripts under `scripts/notion/` are unused for this vault UI.
 
 ---
 
@@ -123,7 +118,8 @@ Modules and `ContentRepository` must remain compatible with:
 - Knowledge graph visualization  
 - Automated information pipelines (RSS → Signal)
 
-Adapters live under `src/data/adapters/` (`local-json` is default; Notion enters via build-time sync).
+Adapters live under `src/data/adapters/` (`local-json` is default).  
+medical basement is a Notion Share-to-web embed, not an adapter write path.
 
 ---
 

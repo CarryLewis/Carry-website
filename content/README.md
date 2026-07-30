@@ -1,6 +1,6 @@
 # Content Database Layer
 
-Single source of truth for the Digital Laboratory knowledge system.
+Single source of truth for Digital Laboratory Content OS entities.
 
 ```
 content/
@@ -11,9 +11,10 @@ content/
 ├── concepts/         # Knowledge nodes
 ├── signals/          # Information radar
 ├── timeline/         # Intellectual development events
-├── relations/        # Global relationship edges
-└── notion-inbox/     # Unmapped Notion DB rows (sync)
+└── relations/        # Global relationship edges
 ```
+
+medical basement is **not** stored here — it is mirrored from the public Notion site at `/knowledge/medical-basement`.
 
 ## Rules
 
@@ -22,7 +23,7 @@ content/
 3. IDs are stable kebab-case strings (`proj-ecg-simulator`, `q-ecg-conduction`, …).
 4. TypeScript mirrors live in `src/content/types.ts`.
 5. Runtime loader / query API: `src/content/database.ts` + `src/content/relations.ts`.
-6. After adding files, run `npm run content:manifest` (also runs on `prebuild` / `sync:notion`).
+6. After adding files, run `npm run content:manifest` (also runs on `prebuild`).
 
 ## Relationship system
 
@@ -37,10 +38,5 @@ content/
 | ECG Simulator | active | ECG conduction question, action potential / SA / AV / ECG concepts |
 | Clinical Reasoning AI | prototype | Clinical reasoning question, AI + medicine concepts |
 | Personal Knowledge OS | active | Human Systems concept, knowledge-graph signals |
-
-## Notion sync
-
-Read-only build-time sync: `npm run discover:notion` / `npm run sync:notion`  
-See root README and `docs/CONTENT_OS.md`.
 
 `ContentRepository` defaults to LocalJSON over this layer.

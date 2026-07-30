@@ -1,6 +1,6 @@
 /**
  * Scan /content/{module}/*.json and generate src/content/generated-manifest.ts
- * so Next.js can statically import every record (including Notion-synced files).
+ * so Next.js can statically import every record.
  */
 import { readdir, writeFile, mkdir } from "node:fs/promises";
 import { join, resolve } from "node:path";
@@ -17,8 +17,6 @@ const MODULES = [
   "signals",
   "timeline",
 ] as const;
-
-const INBOX_MODULE = "notion-inbox" as const;
 
 async function listJsonFiles(dir: string): Promise<string[]> {
   try {
@@ -51,16 +49,6 @@ export async function generateContentManifest(): Promise<void> {
       );
       collections[module].push(name);
     }
-  }
-
-  const inboxSlugs = await listJsonFiles(join(CONTENT, INBOX_MODULE));
-  const inboxNames: string[] = [];
-  for (const slug of inboxSlugs) {
-    const name = importName("inbox", slug);
-    imports.push(
-      `import ${name} from "../../content/${INBOX_MODULE}/${slug}.json";`,
-    );
-    inboxNames.push(name);
   }
 
   const body = `/**
@@ -105,16 +93,12 @@ ${collections.timeline.map((n) => `  stripSchema(${n}),`).join("\n")}
 
 export const generatedRelationsCollection =
   relationsCollection as import("@/content/types").RelationsCollection;
-
-export const generatedInbox = [
-${inboxNames.map((n) => `  ${n} as import("@/content/types").MedicalInboxRecord,`).join("\n")}
-] as import("@/content/types").MedicalInboxRecord[];
 `;
 
   await mkdir(join(ROOT, "src/content"), { recursive: true });
   await writeFile(OUT, body, "utf8");
   console.log(
-    `[content:manifest] wrote ${OUT} (${MODULES.map((m) => `${m}:${collections[m].length}`).join(", ")}, inbox:${inboxNames.length})`,
+    `[content:manifest] wrote ${OUT} (${MODULES.map((m) => `${m}:${collections[m].length}`).join(", ")})`,
   );
 }
 
