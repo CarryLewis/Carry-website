@@ -1,24 +1,30 @@
-# Carry-website
+# Carry Lewis — Digital Laboratory
 
-[carrylewis.com](https://carrylewis.com) 的源代码仓库。推送到 `main` 分支后网站会自动部署。
+Personal digital laboratory at [carrylewis.com](https://carrylewis.com):
 
-## 项目结构
+**Digital Laboratory + Scientific Journal + Personal Knowledge Observatory**
 
-```
-├── index.html          # 网站首页
-├── CNAME               # 自定义域名配置
-├── .github/workflows/  # 自动部署配置
-└── README.md
-```
+## Stack
 
-## 本地开发
+- Next.js (App Router) + TypeScript + Tailwind CSS
+- Dark-first Laboratory Editorial design system (`docs/DESIGN_SYSTEM.md`)
+- Content via local mock repository (Notion/CMS adapters later)
 
-直接用浏览器打开 `index.html` 即可预览，或使用任意静态服务器：
+## Develop
 
 ```bash
-npx serve .
+npm install
+npm run dev
 ```
 
-## 部署
+## Build
 
-推送到 `main` 分支即自动部署，无需手动操作。
+```bash
+npm run build
+```
+
+Static export output: `out/` (GitHub Pages).
+
+## Structure
+
+See `docs/ARCHITECTURE.md` and `docs/DESIGN_SYSTEM.md`.

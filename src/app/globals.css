@@ -1,0 +1,89 @@
+@import "../styles/tokens.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    color-scheme: dark;
+  }
+
+  body {
+    @apply bg-void font-sans text-ink antialiased;
+    background-image: radial-gradient(
+      ellipse 80% 50% at 50% -20%,
+      var(--color-accent-glow),
+      transparent 60%
+    );
+    background-attachment: fixed;
+  }
+
+  ::selection {
+    background: var(--color-accent-soft);
+    color: var(--color-ink);
+  }
+}
+
+@layer utilities {
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+  }
+
+  .focus\:not-sr-only:focus {
+    position: static;
+    width: auto;
+    height: auto;
+    padding: inherit;
+    margin: inherit;
+    overflow: visible;
+    clip: auto;
+    white-space: normal;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .constellation-edge {
+    animation: edge-draw var(--duration-slow) var(--ease-lab) forwards;
+  }
+
+  .constellation-node {
+    opacity: 0;
+    animation: note-appear var(--duration-medium) var(--ease-lab) forwards;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .constellation-edge {
+    stroke-dashoffset: 0;
+  }
+
+  .constellation-node {
+    opacity: 1;
+  }
+}
+
+@keyframes edge-draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes note-appear {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
