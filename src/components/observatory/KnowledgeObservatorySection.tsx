@@ -25,7 +25,7 @@ export function KnowledgeObservatorySection({
             description={copy.description}
           />
           <Link
-            href="/knowledge"
+            href="/knowledge/"
             className="shrink-0 font-sans text-meta text-ink-secondary hover:text-accent focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
           >
             {copy.ctaLabel}
@@ -36,6 +36,15 @@ export function KnowledgeObservatorySection({
           <KnowledgeGraphPreview graph={graph} />
           <p className="mt-lab-3 font-mono text-code text-ink-faint">
             {copy.figureCaption}
+          </p>
+          <p className="mt-lab-5 font-sans text-meta text-ink-secondary">
+            Medical study vault:{" "}
+            <Link
+              href="/knowledge/medical-basement/"
+              className="text-accent hover:text-accent-muted focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+            >
+              medical basement
+            </Link>
           </p>
         </div>
       </div>

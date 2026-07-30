@@ -103,6 +103,17 @@ Adapters live under `src/data/adapters/` (local mock is default).
 
 ---
 
+## medical basement (Notion mirror)
+
+Not stored in `/content`. One Knowledge entry embeds the public Notion site:
+
+- `/knowledge/medical-basement`
+- https://serious-fireplace-18e.notion.site/medical-basement-574ee033c41d83bd828f8118c9820b27
+
+Edit in Notion (Share to web); the site only mirrors that page.
+
+---
+
 ## Agent operating stance
 
 Think in **connected information structures**, not pages.  
