@@ -1,7 +1,7 @@
 # Digital Laboratory — Architecture Proposal
 
-> Status: Phase 0 — Architecture only. No implementation code in this phase.  
-> Product identity: Digital Laboratory + Scientific Journal + Personal Knowledge Graph + Product Showcase
+> Product identity: Digital Laboratory + Scientific Journal + Personal Knowledge Graph + Product Showcase  
+> Content OS: See [`CONTENT_OS.md`](./CONTENT_OS.md) — structured modules drive all UI.
 
 ---
 

@@ -1,11 +1,13 @@
 import { SiteFooter } from "@/components/layout/SiteFooter";
 import { SiteHeader } from "@/components/layout/SiteHeader";
+import type { SiteChrome } from "@/domain/entities";
 
 type AppShellProps = {
   children: React.ReactNode;
+  chrome: SiteChrome;
 };
 
-export function AppShell({ children }: AppShellProps) {
+export function AppShell({ children, chrome }: AppShellProps) {
   return (
     <div className="flex min-h-screen flex-col bg-void text-ink">
       <a
@@ -14,11 +16,11 @@ export function AppShell({ children }: AppShellProps) {
       >
         Skip to content
       </a>
-      <SiteHeader />
+      <SiteHeader brandName={chrome.brandName} nav={chrome.nav} />
       <main id="main" className="flex-1">
         {children}
       </main>
-      <SiteFooter />
+      <SiteFooter chrome={chrome} />
     </div>
   );
 }

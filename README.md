@@ -27,4 +27,8 @@ Static export output: `out/` (GitHub Pages).
 
 ## Structure
 
-See `docs/ARCHITECTURE.md` and `docs/DESIGN_SYSTEM.md`.
+- `docs/CONTENT_OS.md` — content modules, sync rules, update workflow
+- `docs/ARCHITECTURE.md` — technical architecture
+- `docs/DESIGN_SYSTEM.md` — visual identity
+
+Meaningful content lives in `src/data/*`. UI components only render data.

@@ -1,13 +1,12 @@
 import type { Signal } from "@/domain/entities";
 
 /**
- * Latest observations for the Signals radar preview.
+ * Information Radar — external information signals.
  * Compatible with future RSS / AI ingest adapters.
  */
 export const signals: Signal[] = [
   {
     id: "sig-001",
-    kind: "signal",
     slug: "cardiac-digital-twins",
     title: "Cardiac digital twins move closer to bedside decision support",
     summary:
@@ -15,14 +14,18 @@ export const signals: Signal[] = [
     category: "medical-intelligence",
     importance: "high",
     source: "Literature radar",
-    observedAt: "2026-07-24",
+    date: "2026-07-24",
+    relatedTopicIds: [
+      "concept-ecg-generation",
+      "concept-medicine",
+      "proj-cardiac-simulation",
+      "q-ecg-conduction",
+    ],
     createdAt: "2026-07-24",
     updatedAt: "2026-07-24",
-    status: "active",
   },
   {
     id: "sig-002",
-    kind: "signal",
     slug: "agentic-clinical-tutors",
     title: "Agentic tutors begin evaluating multi-step diagnostic traces",
     summary:
@@ -30,14 +33,18 @@ export const signals: Signal[] = [
     category: "ai-intelligence",
     importance: "high",
     source: "AI development watch",
-    observedAt: "2026-07-21",
+    date: "2026-07-21",
+    relatedTopicIds: [
+      "concept-ai",
+      "concept-medicine",
+      "proj-clinical-reasoning-ai",
+      "q-clinical-reasoning",
+    ],
     createdAt: "2026-07-21",
     updatedAt: "2026-07-21",
-    status: "active",
   },
   {
     id: "sig-003",
-    kind: "signal",
     slug: "local-knowledge-graphs",
     title: "Personal knowledge graphs re-emerge as research infrastructure",
     summary:
@@ -45,9 +52,13 @@ export const signals: Signal[] = [
     category: "technology",
     importance: "medium",
     source: "Technology trends",
-    observedAt: "2026-07-18",
+    date: "2026-07-18",
+    relatedTopicIds: [
+      "concept-technology",
+      "concept-human-systems",
+      "proj-knowledge-os",
+    ],
     createdAt: "2026-07-18",
     updatedAt: "2026-07-18",
-    status: "active",
   },
 ];

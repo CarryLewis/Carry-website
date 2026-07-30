@@ -2,26 +2,14 @@ import {
   StubPage,
   stubMetadata,
 } from "@/components/content/StubPage";
+import { getQuestionsForStaticParams } from "@/data";
 
 type Props = {
   params: Promise<{ category: string; slug: string }>;
 };
 
 export async function generateStaticParams() {
-  return [
-    {
-      category: "computational-medicine",
-      slug: "ecg-conduction",
-    },
-    {
-      category: "future-medicine",
-      slug: "clinical-reasoning-ai",
-    },
-    {
-      category: "biomedical-systems",
-      slug: "mechanism-to-model",
-    },
-  ];
+  return getQuestionsForStaticParams();
 }
 
 export const metadata = stubMetadata(

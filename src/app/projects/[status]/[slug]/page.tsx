@@ -2,17 +2,14 @@ import {
   StubPage,
   stubMetadata,
 } from "@/components/content/StubPage";
+import { contentRepository, getProjectsForStaticParams } from "@/data";
 
 type Props = {
   params: Promise<{ status: string; slug: string }>;
 };
 
 export async function generateStaticParams() {
-  return [
-    { status: "active", slug: "cardiac-simulation-engine" },
-    { status: "prototype", slug: "clinical-reasoning-ai" },
-    { status: "active", slug: "personal-knowledge-os" },
-  ];
+  return getProjectsForStaticParams();
 }
 
 export const metadata = stubMetadata(
@@ -21,12 +18,17 @@ export const metadata = stubMetadata(
 );
 
 export default async function ProjectPage({ params }: Props) {
-  const { status, slug } = await params;
+  const { slug } = await params;
+  const project = await contentRepository.getProject(slug);
+
   return (
     <StubPage
-      label={`Projects / ${status}`}
-      title={slug.replace(/-/g, " ")}
-      description="Full project template (Problem → Architecture → Implementation → Demo → Reflection) will be implemented next."
+      label={`Projects / ${project?.status ?? "unknown"}`}
+      title={project?.title ?? slug.replace(/-/g, " ")}
+      description={
+        project?.problem ??
+        "Full project template (Problem → Architecture → Implementation → Demo → Reflection) will be implemented next."
+      }
     />
   );
 }

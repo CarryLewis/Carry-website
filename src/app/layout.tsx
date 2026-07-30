@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { IBM_Plex_Mono, IBM_Plex_Sans, Source_Serif_4 } from "next/font/google";
 import { AppShell } from "@/components/layout/AppShell";
+import { contentRepository } from "@/data";
 import "./globals.css";
 
 const sourceSerif = Source_Serif_4({
@@ -23,27 +24,31 @@ const ibmPlexMono = IBM_Plex_Mono({
   display: "swap",
 });
 
-export const metadata: Metadata = {
-  title: {
-    default: "Carry Lewis — Digital Laboratory",
-    template: "%s · Carry Lewis",
-  },
-  description:
-    "Personal digital laboratory: scientific research, computational medicine, knowledge systems, and intellectual exploration.",
-};
+export async function generateMetadata(): Promise<Metadata> {
+  const chrome = await contentRepository.getSiteChrome();
+  return {
+    title: {
+      default: `${chrome.brandName} — ${chrome.productName}`,
+      template: `%s · ${chrome.brandName}`,
+    },
+    description: chrome.metaDescription,
+  };
+}
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const chrome = await contentRepository.getSiteChrome();
+
   return (
     <html
       lang="en"
       className={`${sourceSerif.variable} ${ibmPlexSans.variable} ${ibmPlexMono.variable}`}
     >
       <body>
-        <AppShell>{children}</AppShell>
+        <AppShell chrome={chrome}>{children}</AppShell>
       </body>
     </html>
   );

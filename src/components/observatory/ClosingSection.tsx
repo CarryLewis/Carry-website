@@ -1,23 +1,21 @@
 import Link from "next/link";
-import type { SystemLink } from "@/domain/entities";
+import type { SectionCopy, SystemLink } from "@/domain/entities";
 
 type ClosingSectionProps = {
   links: SystemLink[];
+  copy: SectionCopy;
 };
 
-export function ClosingSection({ links }: ClosingSectionProps) {
+export function ClosingSection({ links, copy }: ClosingSectionProps) {
   return (
     <section className="bg-surface">
       <div className="mx-auto max-w-shell px-margin py-lab-9">
         <p className="font-sans text-label uppercase text-ink-tertiary">
-          Continue
+          {copy.label}
         </p>
-        <h2 className="mt-lab-3 font-serif text-page text-ink">
-          Explore the system
-        </h2>
+        <h2 className="mt-lab-3 font-serif text-page text-ink">{copy.title}</h2>
         <p className="mt-lab-4 max-w-prose font-sans text-body-ui text-ink-secondary">
-          Enter any subsystem of the laboratory. Each surface shares the same
-          entity graph and design language.
+          {copy.description}
         </p>
 
         <ul className="mt-lab-7 grid gap-0 border-t border-rule sm:grid-cols-2">

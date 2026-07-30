@@ -1,18 +1,22 @@
 import { HeroConstellation } from "@/components/observatory/HeroConstellation";
 import { ButtonLink } from "@/components/ui/ButtonLink";
-import type { PersonProfile } from "@/domain/entities";
+import type { ObservatoryCopy, PersonProfile } from "@/domain/entities";
 
 type HeroSectionProps = {
   profile: PersonProfile;
+  copy: Pick<
+    ObservatoryCopy,
+    "heroEyebrow" | "heroPrimaryCta" | "heroSecondaryCta" | "heroFigureCaption"
+  >;
 };
 
-export function HeroSection({ profile }: HeroSectionProps) {
+export function HeroSection({ profile, copy }: HeroSectionProps) {
   return (
     <section className="border-b border-rule bg-void">
       <div className="mx-auto grid max-w-shell gap-lab-8 px-margin py-lab-9 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,0.9fr)] lg:items-center lg:gap-lab-10 lg:py-lab-10">
         <div className="min-w-0">
           <p className="font-sans text-label uppercase text-ink-tertiary">
-            Observatory
+            {copy.heroEyebrow}
           </p>
           <h1 className="mt-lab-4 font-serif text-hero uppercase text-ink">
             {profile.name}
@@ -39,11 +43,11 @@ export function HeroSection({ profile }: HeroSectionProps) {
           </ul>
 
           <div className="mt-lab-7 flex flex-wrap gap-lab-3">
-            <ButtonLink href="/research" variant="primary">
-              Explore Research
+            <ButtonLink href={copy.heroPrimaryCta.href} variant="primary">
+              {copy.heroPrimaryCta.label}
             </ButtonLink>
-            <ButtonLink href="/projects" variant="secondary">
-              View Projects
+            <ButtonLink href={copy.heroSecondaryCta.href} variant="secondary">
+              {copy.heroSecondaryCta.label}
             </ButtonLink>
           </div>
         </div>
@@ -51,7 +55,7 @@ export function HeroSection({ profile }: HeroSectionProps) {
         <div className="min-w-0">
           <HeroConstellation />
           <p className="mt-lab-3 font-mono text-code text-ink-faint">
-            fig.01 — information constellation
+            {copy.heroFigureCaption}
           </p>
         </div>
       </div>
