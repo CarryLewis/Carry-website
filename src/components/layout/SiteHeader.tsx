@@ -4,18 +4,14 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { cn } from "@/lib/cn";
+import type { NavItem } from "@/domain/entities";
 
-const NAV = [
-  { href: "/", label: "Observatory" },
-  { href: "/research", label: "Research" },
-  { href: "/projects", label: "Projects" },
-  { href: "/knowledge", label: "Knowledge" },
-  { href: "/signals", label: "Signals" },
-  { href: "/archive", label: "Archive" },
-  { href: "/about", label: "About" },
-] as const;
+type SiteHeaderProps = {
+  brandName: string;
+  nav: NavItem[];
+};
 
-export function SiteHeader() {
+export function SiteHeader({ brandName, nav }: SiteHeaderProps) {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
 
@@ -26,11 +22,11 @@ export function SiteHeader() {
           href="/"
           className="font-serif text-[18px] font-semibold tracking-[-0.015em] text-ink focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
         >
-          Carry Lewis
+          {brandName}
         </Link>
 
         <nav className="hidden items-center gap-lab-5 lg:flex" aria-label="Primary">
-          {NAV.map((item) => {
+          {nav.map((item) => {
             const active =
               item.href === "/"
                 ? pathname === "/"
@@ -74,7 +70,7 @@ export function SiteHeader() {
           aria-label="Mobile"
         >
           <ul className="mx-auto max-w-shell px-margin py-lab-3">
-            {NAV.map((item) => {
+            {nav.map((item) => {
               const active =
                 item.href === "/"
                   ? pathname === "/"

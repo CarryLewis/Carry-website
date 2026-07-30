@@ -1,0 +1,14 @@
+{
+  "$schema": "../schemas/timeline.schema.json",
+  "id": "tl-clinical-reasoning-start",
+  "slug": "clinical-reasoning-ai-started",
+  "title": "Clinical Reasoning AI prototype begun",
+  "summary": "Began exploring agent architectures for diagnostic teaching traces.",
+  "kind": "project-start",
+  "occurredAt": "2025-11-12",
+  "relatedEntityIds": [
+    "proj-clinical-reasoning-ai",
+    "focus-clinical-reasoning-ai",
+    "q-clinical-reasoning"
+  ]
+}

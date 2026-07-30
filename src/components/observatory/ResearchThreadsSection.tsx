@@ -1,23 +1,25 @@
 import Link from "next/link";
 import { SectionHeader } from "@/components/content/SectionHeader";
 import { ResearchThreadCard } from "@/components/observatory/ResearchThreadCard";
-import type { ResearchThread } from "@/domain/entities";
+import type { ActiveQuestion, SectionCopy } from "@/domain/entities";
 
 type ResearchThreadsSectionProps = {
-  threads: ResearchThread[];
+  questions: ActiveQuestion[];
+  copy: SectionCopy;
 };
 
 export function ResearchThreadsSection({
-  threads,
+  questions,
+  copy,
 }: ResearchThreadsSectionProps) {
   return (
     <section className="border-b border-rule bg-void">
       <div className="mx-auto max-w-shell px-margin py-lab-9">
         <div className="flex flex-col gap-lab-4 sm:flex-row sm:items-end sm:justify-between">
           <SectionHeader
-            label="Research Threads"
-            title="Active questions"
-            description="Exploration begins with questions — not polished outcomes."
+            label={copy.label}
+            title={copy.title}
+            description={copy.description}
           />
           <Link
             href="/research"
@@ -28,8 +30,8 @@ export function ResearchThreadsSection({
         </div>
 
         <div className="mt-lab-7 border-t border-rule">
-          {threads.map((thread) => (
-            <ResearchThreadCard key={thread.id} thread={thread} />
+          {questions.map((question) => (
+            <ResearchThreadCard key={question.id} question={question} />
           ))}
         </div>
       </div>

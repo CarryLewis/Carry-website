@@ -7,8 +7,9 @@ export default async function HomePage() {
   return (
     <ObservatoryPage
       profile={data.profile}
-      explorations={data.explorations}
-      researchThreads={data.researchThreads}
+      copy={data.copy}
+      intellectualFocus={data.intellectualFocus}
+      activeQuestions={data.activeQuestions}
       knowledgeGraph={data.knowledgeGraph}
       signals={data.signals}
       systemLinks={data.systemLinks}

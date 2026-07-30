@@ -1,0 +1,20 @@
+{
+  "$schema": "../schemas/focus.schema.json",
+  "id": "focus-clinical-reasoning-ai",
+  "slug": "clinical-reasoning-ai",
+  "title": "Clinical Reasoning AI",
+  "description": "Investigating how agent architectures can approximate diagnostic reasoning for medical learning.",
+  "domain": "Medical Education + AI Agents",
+  "status": "prototype",
+  "priority": "p0",
+  "relatedProjectIds": ["proj-clinical-reasoning-ai"],
+  "relatedQuestionIds": ["q-clinical-reasoning"],
+  "relatedConceptIds": [
+    "concept-ai",
+    "concept-medicine",
+    "concept-human-systems"
+  ],
+  "fields": ["Clinical Reasoning", "Agents", "Education"],
+  "createdAt": "2025-11-12",
+  "updatedAt": "2026-07-18"
+}

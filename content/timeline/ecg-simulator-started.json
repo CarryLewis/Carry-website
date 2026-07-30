@@ -1,0 +1,15 @@
+{
+  "$schema": "../schemas/timeline.schema.json",
+  "id": "tl-ecg-simulator-start",
+  "slug": "ecg-simulator-started",
+  "title": "ECG Simulator project started",
+  "summary": "Started building a cardiac electrophysiology simulation pipeline toward ECG synthesis.",
+  "kind": "project-start",
+  "occurredAt": "2025-09-01",
+  "relatedEntityIds": [
+    "proj-ecg-simulator",
+    "focus-ecg-simulator",
+    "q-ecg-conduction",
+    "concept-ecg-generation"
+  ]
+}

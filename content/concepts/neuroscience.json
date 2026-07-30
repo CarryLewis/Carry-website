@@ -1,0 +1,11 @@
+{
+  "$schema": "../schemas/concept.schema.json",
+  "id": "concept-neuroscience",
+  "slug": "neuroscience",
+  "name": "Neuroscience",
+  "category": "neuroscience",
+  "summary": "Neural mechanisms of information processing and behavior.",
+  "references": [],
+  "connectedNodeIds": ["concept-human-systems", "concept-biology"],
+  "layout": { "x": 0.18, "y": 0.72, "weight": 0.7 }
+}

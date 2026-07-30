@@ -7,8 +7,7 @@ type KnowledgeGraphPreviewProps = {
 };
 
 /**
- * Static neighborhood preview with calm edge-draw motion.
- * Architecture-ready for future interactive / graph-DB backed viz.
+ * Renders a derived neighborhood view from Content OS concepts + relations.
  */
 export function KnowledgeGraphPreview({ graph }: KnowledgeGraphPreviewProps) {
   const width = 640;
@@ -29,7 +28,7 @@ export function KnowledgeGraphPreview({ graph }: KnowledgeGraphPreviewProps) {
         viewBox={`0 0 ${width} ${height}`}
         className="h-auto w-full"
         role="img"
-        aria-label="Knowledge graph preview centered on Human Systems"
+        aria-label="Knowledge graph preview"
       >
         <defs>
           <pattern

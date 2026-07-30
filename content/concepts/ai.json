@@ -1,0 +1,15 @@
+{
+  "$schema": "../schemas/concept.schema.json",
+  "id": "concept-ai",
+  "slug": "ai",
+  "name": "AI",
+  "category": "ai",
+  "summary": "Computational intelligence systems, agents, and representations of reasoning.",
+  "references": [],
+  "connectedNodeIds": [
+    "concept-human-systems",
+    "concept-philosophy",
+    "concept-technology"
+  ],
+  "layout": { "x": 0.78, "y": 0.28, "weight": 0.85 }
+}

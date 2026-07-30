@@ -1,0 +1,20 @@
+{
+  "$schema": "../schemas/focus.schema.json",
+  "id": "focus-ecg-simulator",
+  "slug": "ecg-simulator",
+  "title": "ECG Simulator",
+  "description": "Modeling cardiac electrophysiology to connect cellular mechanisms with clinical ECG signals.",
+  "domain": "Computational Medicine",
+  "status": "active",
+  "priority": "p0",
+  "relatedProjectIds": ["proj-ecg-simulator"],
+  "relatedQuestionIds": ["q-ecg-conduction", "q-bio-to-compute"],
+  "relatedConceptIds": [
+    "concept-ecg-generation",
+    "concept-action-potential",
+    "concept-medicine"
+  ],
+  "fields": ["Electrophysiology", "Simulation", "ECG"],
+  "createdAt": "2025-09-01",
+  "updatedAt": "2026-07-20"
+}

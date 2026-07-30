@@ -1,0 +1,17 @@
+{
+  "$schema": "../schemas/concept.schema.json",
+  "id": "concept-human-systems",
+  "slug": "human-systems",
+  "name": "Human Systems",
+  "category": "human-systems",
+  "summary": "Integrated view of physiological, cognitive, and social systems that constitute human complexity.",
+  "references": [],
+  "connectedNodeIds": [
+    "concept-medicine",
+    "concept-ai",
+    "concept-neuroscience",
+    "concept-biology",
+    "concept-philosophy"
+  ],
+  "layout": { "x": 0.5, "y": 0.5, "weight": 1 }
+}

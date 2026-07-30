@@ -1,0 +1,14 @@
+{
+  "$schema": "../schemas/concept.schema.json",
+  "id": "concept-av-node",
+  "slug": "av-node",
+  "name": "AV node",
+  "category": "medicine",
+  "summary": "Conduction node delaying impulse transmission from atria to ventricles.",
+  "references": [],
+  "connectedNodeIds": [
+    "concept-sa-node",
+    "concept-ecg-generation",
+    "concept-action-potential"
+  ]
+}

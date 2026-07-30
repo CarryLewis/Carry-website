@@ -1,0 +1,17 @@
+{
+  "$schema": "../schemas/question.schema.json",
+  "id": "q-bio-to-compute",
+  "slug": "mechanism-to-model",
+  "question": "How can biological mechanisms become computational models?",
+  "category": "biomedical-systems",
+  "relatedConceptIds": [
+    "concept-biology",
+    "concept-medicine",
+    "concept-ai",
+    "concept-human-systems"
+  ],
+  "relatedProjectIds": ["proj-ecg-simulator", "proj-knowledge-os"],
+  "createdAt": "2025-08-01",
+  "status": "active",
+  "href": "/research/biomedical-systems/mechanism-to-model/"
+}

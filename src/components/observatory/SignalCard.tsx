@@ -35,14 +35,15 @@ export function SignalCard({ signal }: SignalCardProps) {
           {categoryLabel[signal.category]}
         </p>
         <time
-          dateTime={signal.observedAt}
+          dateTime={signal.date}
           className="font-mono text-code text-ink-faint"
         >
-          {signal.observedAt}
+          {signal.date}
         </time>
         <span className="font-sans text-label uppercase text-ink-tertiary">
           {signal.importance} importance
         </span>
+        <span className="font-sans text-meta text-ink-faint">{signal.source}</span>
       </div>
       <h3 className="mt-lab-3 pl-lab-3 font-sans text-body-ui font-medium text-ink">
         <Link

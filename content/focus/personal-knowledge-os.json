@@ -1,0 +1,20 @@
+{
+  "$schema": "../schemas/focus.schema.json",
+  "id": "focus-knowledge-os",
+  "slug": "personal-knowledge-os",
+  "title": "Personal Knowledge OS",
+  "description": "A personal operating system for accumulating, relating, and retrieving intellectual work over time.",
+  "domain": "Information Systems",
+  "status": "active",
+  "priority": "p1",
+  "relatedProjectIds": ["proj-knowledge-os"],
+  "relatedQuestionIds": ["q-bio-to-compute"],
+  "relatedConceptIds": [
+    "concept-human-systems",
+    "concept-technology",
+    "concept-philosophy"
+  ],
+  "fields": ["Knowledge Graphs", "Systems Design", "Research Ops"],
+  "createdAt": "2025-06-01",
+  "updatedAt": "2026-07-22"
+}

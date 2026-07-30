@@ -5,50 +5,52 @@ import { KnowledgeObservatorySection } from "@/components/observatory/KnowledgeO
 import { LatestSignalsSection } from "@/components/observatory/LatestSignalsSection";
 import { ResearchThreadsSection } from "@/components/observatory/ResearchThreadsSection";
 import type {
-  Exploration,
+  ActiveQuestion,
+  IntellectualFocus,
   KnowledgeGraphPreview,
+  ObservatoryCopy,
   PersonProfile,
-  ResearchThread,
   Signal,
   SystemLink,
 } from "@/domain/entities";
 
 export type ObservatoryPageProps = {
   profile: PersonProfile;
-  explorations: Exploration[];
-  researchThreads: ResearchThread[];
+  copy: ObservatoryCopy;
+  intellectualFocus: IntellectualFocus[];
+  activeQuestions: ActiveQuestion[];
   knowledgeGraph: KnowledgeGraphPreview;
   signals: Signal[];
   systemLinks: SystemLink[];
 };
 
 /**
- * Observatory — entrance to the intellectual ecosystem.
- *
- * Layout (vertical editorial bands):
- * 1. Hero — identity + constellation
- * 2. Current Exploration — focus cards
- * 3. Research Threads — question list
- * 4. Knowledge Observatory — graph preview
- * 5. Latest Signals — radar feed
- * 6. Closing — system map links
+ * Observatory — pure composition over Content OS modules.
+ * No entity content is authored here.
  */
 export function ObservatoryPage({
   profile,
-  explorations,
-  researchThreads,
+  copy,
+  intellectualFocus,
+  activeQuestions,
   knowledgeGraph,
   signals,
   systemLinks,
 }: ObservatoryPageProps) {
   return (
     <>
-      <HeroSection profile={profile} />
-      <ExplorationSection explorations={explorations} />
-      <ResearchThreadsSection threads={researchThreads} />
-      <KnowledgeObservatorySection graph={knowledgeGraph} />
-      <LatestSignalsSection signals={signals} />
-      <ClosingSection links={systemLinks} />
+      <HeroSection profile={profile} copy={copy} />
+      <ExplorationSection items={intellectualFocus} copy={copy.exploration} />
+      <ResearchThreadsSection
+        questions={activeQuestions}
+        copy={copy.questions}
+      />
+      <KnowledgeObservatorySection
+        graph={knowledgeGraph}
+        copy={copy.knowledge}
+      />
+      <LatestSignalsSection signals={signals} copy={copy.signals} />
+      <ClosingSection links={systemLinks} copy={copy.closing} />
     </>
   );
 }

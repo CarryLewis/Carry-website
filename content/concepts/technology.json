@@ -1,0 +1,11 @@
+{
+  "$schema": "../schemas/concept.schema.json",
+  "id": "concept-technology",
+  "slug": "technology",
+  "name": "Technology",
+  "category": "technology",
+  "summary": "Tools and infrastructures that amplify research and knowledge work.",
+  "references": [],
+  "connectedNodeIds": ["concept-ai", "concept-human-systems"],
+  "layout": { "x": 0.88, "y": 0.48, "weight": 0.6 }
+}

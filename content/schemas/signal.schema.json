@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://carrylewis.com/schemas/signal.json",
+  "title": "Signal",
+  "description": "External information radar observations.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "slug",
+    "title",
+    "summary",
+    "category",
+    "source",
+    "importance",
+    "date",
+    "relatedTopicIds",
+    "createdAt",
+    "updatedAt"
+  ],
+  "properties": {
+    "id": { "$ref": "common.schema.json#/$defs/entityId" },
+    "slug": { "$ref": "common.schema.json#/$defs/entityId" },
+    "title": { "type": "string", "minLength": 1 },
+    "summary": { "type": "string", "minLength": 1 },
+    "category": { "$ref": "common.schema.json#/$defs/signalCategory" },
+    "source": { "type": "string", "minLength": 1 },
+    "sourceUrl": { "type": "string", "format": "uri" },
+    "importance": { "$ref": "common.schema.json#/$defs/signalImportance" },
+    "date": { "$ref": "common.schema.json#/$defs/isoDate" },
+    "relatedTopicIds": {
+      "type": "array",
+      "items": { "$ref": "common.schema.json#/$defs/entityId" }
+    },
+    "createdAt": { "$ref": "common.schema.json#/$defs/isoDate" },
+    "updatedAt": { "$ref": "common.schema.json#/$defs/isoDate" }
+  }
+}

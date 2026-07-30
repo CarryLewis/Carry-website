@@ -1,0 +1,15 @@
+{
+  "$schema": "../schemas/concept.schema.json",
+  "id": "concept-biology",
+  "slug": "biology",
+  "name": "Biology",
+  "category": "biology",
+  "summary": "Living mechanisms across molecular, cellular, and organism scales.",
+  "references": [],
+  "connectedNodeIds": [
+    "concept-human-systems",
+    "concept-medicine",
+    "concept-action-potential"
+  ],
+  "layout": { "x": 0.5, "y": 0.84, "weight": 0.75 }
+}

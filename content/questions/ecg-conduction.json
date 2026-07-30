@@ -1,0 +1,19 @@
+{
+  "$schema": "../schemas/question.schema.json",
+  "id": "q-ecg-conduction",
+  "slug": "ecg-conduction",
+  "question": "How does electrical conduction create ECG signals?",
+  "category": "computational-medicine",
+  "relatedConceptIds": [
+    "concept-action-potential",
+    "concept-sa-node",
+    "concept-av-node",
+    "concept-ecg-generation",
+    "concept-medicine",
+    "concept-biology"
+  ],
+  "relatedProjectIds": ["proj-ecg-simulator"],
+  "createdAt": "2025-09-15",
+  "status": "active",
+  "href": "/research/computational-medicine/ecg-conduction/"
+}
