@@ -32,12 +32,14 @@ export const siteChrome: SiteChrome = {
     { href: "/research", label: "Research" },
     { href: "/projects", label: "Projects" },
     { href: "/knowledge", label: "Knowledge" },
+    { href: "/medical", label: "Medical" },
     { href: "/signals", label: "Signals" },
     { href: "/archive", label: "Archive" },
     { href: "/about", label: "About" },
   ],
   footerLinks: [
     { href: "/about", label: "About" },
+    { href: "/medical", label: "Medical" },
     { href: "/signals", label: "Signals" },
   ],
   versionLabel: "v0.1 · Observatory",
@@ -58,6 +60,11 @@ export const systemLinks: SystemLink[] = [
     label: "Knowledge",
     href: "/knowledge",
     description: "Personal knowledge graph",
+  },
+  {
+    label: "Medical",
+    href: "/medical",
+    description: "Medical basement vault from Notion",
   },
   {
     label: "Archive",

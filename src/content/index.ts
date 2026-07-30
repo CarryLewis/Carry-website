@@ -1,8 +1,3 @@
-/**
- * Content Database Layer public API.
- * UI should eventually consume only this module (via ContentRepository).
- */
-
 export type * from "@/content/types";
 export {
   contentDatabase,
@@ -17,6 +12,7 @@ export {
   listSignals,
   listTimeline,
   listRelations,
+  listInbox,
 } from "@/content/database";
 export {
   getRelationsFor,
@@ -26,3 +22,18 @@ export {
   findPath,
   validateRelations,
 } from "@/content/relations";
+export {
+  MEDICAL_COLLECTIONS,
+  listMedicalCollections,
+  listMedicalRecords,
+  getMedicalRecord,
+  listDisplayFields,
+  getMedicalStaticParams,
+  getMedicalCollectionStaticParams,
+} from "@/content/medical";
+export type {
+  MedicalCollectionId,
+  MedicalCollectionMeta,
+  MedicalRecordView,
+  MedicalPropertyField,
+} from "@/content/medical";

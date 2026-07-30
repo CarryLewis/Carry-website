@@ -37,4 +37,15 @@ export interface ContentRepository {
     centerId: EntityId,
     options?: { depth?: number },
   ): Promise<KnowledgeGraphPreview>;
+
+  listMedicalCollections(): Promise<
+    Array<import("@/content/medical").MedicalCollectionMeta & { count: number }>
+  >;
+  listMedicalRecords(
+    collectionId?: import("@/content/medical").MedicalCollectionId,
+  ): Promise<import("@/content/medical").MedicalRecordView[]>;
+  getMedicalRecord(
+    collectionId: import("@/content/medical").MedicalCollectionId,
+    slug: string,
+  ): Promise<import("@/content/medical").MedicalRecordView | null>;
 }

@@ -57,4 +57,13 @@ export class NotionRepository implements ContentRepository {
   async getNeighborhood(_centerId: string) {
     return this.unavailable("getNeighborhood");
   }
+  async listMedicalCollections() {
+    return this.unavailable("listMedicalCollections");
+  }
+  async listMedicalRecords(_collectionId?: string) {
+    return this.unavailable("listMedicalRecords");
+  }
+  async getMedicalRecord(_collectionId: string, _slug: string) {
+    return this.unavailable("getMedicalRecord");
+  }
 }
