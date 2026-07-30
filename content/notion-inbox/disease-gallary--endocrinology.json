@@ -1,0 +1,16 @@
+{
+  "id": "inbox-disease-gallary-endocrinology",
+  "slug": "endocrinology",
+  "title": "endocrinology",
+  "source": {
+    "notionPageId": "e18ee033-c41d-8353-b223-01e62e355592",
+    "notionDatabaseId": "aa0ee033-c41d-82c5-875d-01c5362cf918",
+    "notionDatabaseTitle": "disease gallary",
+    "notionUrl": "https://app.notion.com/p/endocrinology-e18ee033c41d8353b22301e62e355592"
+  },
+  "properties": {
+    "Name": "endocrinology"
+  },
+  "createdAt": "2026-04-15",
+  "updatedAt": "2026-04-15"
+}

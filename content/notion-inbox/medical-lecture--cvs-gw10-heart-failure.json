@@ -1,0 +1,32 @@
+{
+  "id": "inbox-medical-lecture-cvs-gw10-heart-failure",
+  "slug": "cvs-gw10-heart-failure",
+  "title": "CVS-GW10:heart failure",
+  "source": {
+    "notionPageId": "365ee033-c41d-8055-ba40-d56b1e69ce12",
+    "notionDatabaseId": "75fee033-c41d-8242-ac46-014d564f81d8",
+    "notionDatabaseTitle": "medical lecture",
+    "notionUrl": "https://app.notion.com/p/CVS-GW10-heart-failure-365ee033c41d8055ba40d56b1e69ce12"
+  },
+  "properties": {
+    "program": "CVS",
+    "lecture time": "2026-05-19",
+    "weak ratio": null,
+    "coverage score": null,
+    "Related medical lecture": [
+      "365ee033-c41d-80aa-a078-ef90c7eb113d"
+    ],
+    "disease database": [
+      "014713bc-b765-496f-bee7-a6da3176f354",
+      "6bd54e41-f8ee-43a5-8232-6e8adc7289f5"
+    ],
+    "Files & media": {
+      "type": "files"
+    },
+    "identity": "GW",
+    "applications": [],
+    "Name": "CVS-GW10:heart failure"
+  },
+  "createdAt": "2026-05-19",
+  "updatedAt": "2026-06-03"
+}

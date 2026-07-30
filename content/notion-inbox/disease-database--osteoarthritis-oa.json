@@ -1,0 +1,39 @@
+{
+  "id": "inbox-disease-database-osteoarthritis-oa",
+  "slug": "osteoarthritis-oa",
+  "title": "Osteoarthritis（骨关节炎, OA）",
+  "source": {
+    "notionPageId": "285e32d0-2197-437a-8b69-20e78caee753",
+    "notionDatabaseId": "4c1ee033-c41d-83bd-bfab-0116847a8a69",
+    "notionDatabaseTitle": "disease database",
+    "notionUrl": "https://app.notion.com/p/Osteoarthritis-OA-285e32d02197437a8b6920e78caee753"
+  },
+  "properties": {
+    "💊 Drug database": [],
+    "Related disease": [
+      "b8fcb9ef-2ed0-4b4c-8f7d-a2a7f3be9b25",
+      "20af5b92-2850-43f9-b958-9073378f57ae"
+    ],
+    "Prevalence": "high",
+    "category": [
+      "Acquired disease"
+    ],
+    "USMULE Q": [],
+    "related system": [
+      "Musculoskeletal"
+    ],
+    "\nCase Database": [],
+    "disease overview": "A degenerative joint disease characterized by progressive articular cartilage loss with secondary changes in subchondral bone and periarticular tissues, leading to pain and functional limitation.\n\n核心要点：软骨退变/磨损 → 关节间隙变窄；软骨下骨硬化、骨赘形成、软骨下囊肿等改变。",
+    "Files & media": {
+      "type": "files"
+    },
+    "mechanism": "Cartilage fibrillation/fragmentation → cartilage erosion → joint space narrowing; altered load transfer leads to subchondral sclerosis and osteophyte formation; may also develop subchondral cysts. Risk is increased by aging, obesity, malalignment, prior injury, genetics.",
+    "medical lecture": [
+      "d7aee033-c41d-82e1-a82d-8143b5b9f5df",
+      "8e4ee033-c41d-831e-8199-81386368b945"
+    ],
+    "disorder": "Osteoarthritis（骨关节炎, OA）"
+  },
+  "createdAt": "2026-06-02",
+  "updatedAt": "2026-06-02"
+}

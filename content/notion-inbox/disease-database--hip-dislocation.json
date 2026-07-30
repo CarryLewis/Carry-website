@@ -1,0 +1,37 @@
+{
+  "id": "inbox-disease-database-hip-dislocation",
+  "slug": "hip-dislocation",
+  "title": "Hip dislocation（髋关节脱位）",
+  "source": {
+    "notionPageId": "20af5b92-2850-43f9-b958-9073378f57ae",
+    "notionDatabaseId": "4c1ee033-c41d-83bd-bfab-0116847a8a69",
+    "notionDatabaseTitle": "disease database",
+    "notionUrl": "https://app.notion.com/p/Hip-dislocation-20af5b92285043f9b9589073378f57ae"
+  },
+  "properties": {
+    "💊 Drug database": [],
+    "Related disease": [
+      "285e32d0-2197-437a-8b69-20e78caee753"
+    ],
+    "Prevalence": "medium",
+    "category": [
+      "injury"
+    ],
+    "USMULE Q": [],
+    "related system": [
+      "Musculoskeletal"
+    ],
+    "\nCase Database": [],
+    "disease overview": "Traumatic loss of normal congruency between femoral head and acetabulum. Most commonly posterior dislocation; presents with characteristic limb position and severe pain with loss of function.\n\n分类：posterior（最常见）、anterior、central（常伴髋臼骨折/中心移位）。",
+    "Files & media": {
+      "type": "files"
+    },
+    "mechanism": "Usually high-energy trauma. Posterior dislocation typically occurs with axial load through a flexed hip (e.g., dashboard injury), resulting in femoral head displacement posteriorly; anterior dislocation occurs with forced abduction/external rotation; central dislocation involves acetabular fracture with medial displacement.",
+    "medical lecture": [
+      "d7aee033-c41d-82e1-a82d-8143b5b9f5df"
+    ],
+    "disorder": "Hip dislocation（髋关节脱位）"
+  },
+  "createdAt": "2026-06-02",
+  "updatedAt": "2026-06-02"
+}

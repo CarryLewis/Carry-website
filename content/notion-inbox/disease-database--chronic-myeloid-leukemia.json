@@ -1,0 +1,33 @@
+{
+  "id": "inbox-disease-database-chronic-myeloid-leukemia",
+  "slug": "chronic-myeloid-leukemia",
+  "title": "慢性髓系白血病 Chronic Myeloid Leukemia",
+  "source": {
+    "notionPageId": "aaeee033-c41d-83a6-bedb-01b7c6baf6f6",
+    "notionDatabaseId": "4c1ee033-c41d-83bd-bfab-0116847a8a69",
+    "notionDatabaseTitle": "disease database",
+    "notionUrl": "https://app.notion.com/p/Chronic-Myeloid-Leukemia-aaeee033c41d83a6bedb01b7c6baf6f6"
+  },
+  "properties": {
+    "💊 Drug database": [],
+    "Related disease": [],
+    "Prevalence": "medium",
+    "category": [
+      "tumor"
+    ],
+    "USMULE Q": [],
+    "related system": [
+      "Hematology"
+    ],
+    "\nCase Database": [],
+    "disease overview": "",
+    "Files & media": {
+      "type": "files"
+    },
+    "mechanism": "",
+    "medical lecture": [],
+    "disorder": "慢性髓系白血病 Chronic Myeloid Leukemia"
+  },
+  "createdAt": "2026-04-15",
+  "updatedAt": "2026-06-04"
+}

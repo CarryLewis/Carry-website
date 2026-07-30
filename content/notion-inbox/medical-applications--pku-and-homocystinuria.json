@@ -1,0 +1,33 @@
+{
+  "id": "inbox-medical-applications-pku-and-homocystinuria",
+  "slug": "pku-and-homocystinuria",
+  "title": "PKU and Homocystinuria",
+  "source": {
+    "notionPageId": "732ee033-c41d-83bd-86bf-01b2b95ddb65",
+    "notionDatabaseId": "b67ee033-c41d-82c8-9173-0188157db110",
+    "notionDatabaseTitle": "medical applications",
+    "notionUrl": "https://app.notion.com/p/PKU-and-Homocystinuria-732ee033c41d83bd86bf01b2b95ddb65"
+  },
+  "properties": {
+    "medical lecture": [
+      "880ee033-c41d-830c-bb08-81701bd598c5"
+    ],
+    "overview": "",
+    "Status": null,
+    "program": [
+      "MEH"
+    ],
+    "Created time": {
+      "type": "created_time"
+    },
+    "Last edited time": {
+      "type": "last_edited_time"
+    },
+    "usage": [
+      "class content"
+    ],
+    "Name": "PKU and Homocystinuria"
+  },
+  "createdAt": "2026-04-15",
+  "updatedAt": "2026-07-13"
+}

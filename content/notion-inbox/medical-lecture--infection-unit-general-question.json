@@ -1,0 +1,27 @@
+{
+  "id": "inbox-medical-lecture-infection-unit-general-question",
+  "slug": "infection-unit-general-question",
+  "title": "infection unit general question",
+  "source": {
+    "notionPageId": "102ee033-c41d-83e8-8057-813887c09d10",
+    "notionDatabaseId": "75fee033-c41d-8242-ac46-014d564f81d8",
+    "notionDatabaseTitle": "medical lecture",
+    "notionUrl": "https://app.notion.com/p/infection-unit-general-question-102ee033c41d83e88057813887c09d10"
+  },
+  "properties": {
+    "program": "infection",
+    "lecture time": "2026-03-26",
+    "weak ratio": null,
+    "coverage score": null,
+    "Related medical lecture": [],
+    "disease database": [],
+    "Files & media": {
+      "type": "files"
+    },
+    "identity": "quiz",
+    "applications": [],
+    "Name": "infection unit general question"
+  },
+  "createdAt": "2026-04-15",
+  "updatedAt": "2026-04-15"
+}

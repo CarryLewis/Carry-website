@@ -1,0 +1,41 @@
+{
+  "id": "inbox-medical-lecture-disorder-of-knee",
+  "slug": "disorder-of-knee",
+  "title": "disorder of knee",
+  "source": {
+    "notionPageId": "8e4ee033-c41d-831e-8199-81386368b945",
+    "notionDatabaseId": "75fee033-c41d-8242-ac46-014d564f81d8",
+    "notionDatabaseTitle": "medical lecture",
+    "notionUrl": "https://app.notion.com/p/disorder-of-knee-8e4ee033c41d831e819981386368b945"
+  },
+  "properties": {
+    "program": "MSK",
+    "lecture time": "2026-04-01",
+    "weak ratio": null,
+    "coverage score": null,
+    "Related medical lecture": [
+      "b68ee033-c41d-8353-9d32-81f321cc8daf"
+    ],
+    "disease database": [
+      "285e32d0-2197-437a-8b69-20e78caee753",
+      "ec851797-4c09-4039-b216-3b8beca9b816",
+      "f497a579-a70b-43e5-904f-481890909423",
+      "22f04b2d-902c-481f-b0b1-eb931c9cdb74",
+      "8004803a-8b4d-4dc0-a3b3-153630072861",
+      "bcd2d928-422a-4344-9743-407511d7541d",
+      "ed8106b7-2ad1-4c32-b613-5bde1d4d0a76",
+      "853d2b75-4528-41bd-b235-6dd853fc4377",
+      "13ff36c6-8ca1-43f9-bde9-8fca61614e5b"
+    ],
+    "Files & media": {
+      "type": "files"
+    },
+    "identity": "lecture",
+    "applications": [
+      "b7dee033-c41d-83e4-b586-815ea392104d"
+    ],
+    "Name": "disorder of knee"
+  },
+  "createdAt": "2026-04-15",
+  "updatedAt": "2026-06-09"
+}

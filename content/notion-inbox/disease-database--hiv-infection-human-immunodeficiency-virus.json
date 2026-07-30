@@ -1,0 +1,36 @@
+{
+  "id": "inbox-disease-database-hiv-infection-human-immunodeficiency-virus",
+  "slug": "hiv-infection-human-immunodeficiency-virus",
+  "title": "HIV infection (Human Immunodeficiency Virus)",
+  "source": {
+    "notionPageId": "44ee54b1-20d2-47c5-b228-f74540f064f9",
+    "notionDatabaseId": "4c1ee033-c41d-83bd-bfab-0116847a8a69",
+    "notionDatabaseTitle": "disease database",
+    "notionUrl": "https://app.notion.com/p/HIV-infection-Human-Immunodeficiency-Virus-44ee54b120d247c5b228f74540f064f9"
+  },
+  "properties": {
+    "💊 Drug database": [],
+    "Related disease": [],
+    "Prevalence": "high",
+    "category": [
+      "Acquired disease"
+    ],
+    "USMULE Q": [],
+    "related system": [
+      "Infectious Diseases",
+      "Hematology"
+    ],
+    "\nCase Database": [],
+    "disease overview": "Chronic retroviral infection causing progressive CD4+ T-cell depletion; untreated progression can lead to AIDS with opportunistic infections and malignancies.",
+    "Files & media": {
+      "type": "files"
+    },
+    "mechanism": "Enveloped ssRNA retrovirus. gp120 binds CD4 (and co-receptors), entry/fusion → reverse transcription (RT) → integration into host genome → replication. Immune activation and viral cytopathic effects drive CD4 decline. ARV combination therapy suppresses viral load; U=U when undetectable.",
+    "medical lecture": [
+      "6feee033-c41d-8260-b66b-0121db43502e"
+    ],
+    "disorder": "HIV infection (Human Immunodeficiency Virus)"
+  },
+  "createdAt": "2026-05-27",
+  "updatedAt": "2026-05-27"
+}

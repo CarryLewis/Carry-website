@@ -1,0 +1,30 @@
+{
+  "id": "inbox-medical-lecture-bone-bone-tissue",
+  "slug": "bone-bone-tissue",
+  "title": "bone&bone tissue",
+  "source": {
+    "notionPageId": "d80ee033-c41d-83fe-992f-0157aad2a247",
+    "notionDatabaseId": "75fee033-c41d-8242-ac46-014d564f81d8",
+    "notionDatabaseTitle": "medical lecture",
+    "notionUrl": "https://app.notion.com/p/bone-bone-tissue-d80ee033c41d83fe992f0157aad2a247"
+  },
+  "properties": {
+    "program": "body logistic",
+    "lecture time": "2025-11-05",
+    "weak ratio": null,
+    "coverage score": null,
+    "Related medical lecture": [],
+    "disease database": [],
+    "Files & media": {
+      "type": "files"
+    },
+    "identity": "lecture",
+    "applications": [
+      "534ee033-c41d-8254-bdd4-81e74e790b2c",
+      "54cee033-c41d-82ec-8a1f-81b3dca937f9"
+    ],
+    "Name": "bone&bone tissue"
+  },
+  "createdAt": "2026-04-15",
+  "updatedAt": "2026-06-12"
+}

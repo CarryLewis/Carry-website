@@ -1,0 +1,36 @@
+{
+  "id": "inbox-disease-database-norovirus-gastroenteritis",
+  "slug": "norovirus-gastroenteritis",
+  "title": "Norovirus gastroenteritis (诺如病毒感染)",
+  "source": {
+    "notionPageId": "68579f57-dfe8-4b6f-bbeb-360e2a2a0bff",
+    "notionDatabaseId": "4c1ee033-c41d-83bd-bfab-0116847a8a69",
+    "notionDatabaseTitle": "disease database",
+    "notionUrl": "https://app.notion.com/p/Norovirus-gastroenteritis-68579f57dfe84b6fbbeb360e2a2a0bff"
+  },
+  "properties": {
+    "💊 Drug database": [],
+    "Related disease": [],
+    "Prevalence": "high",
+    "category": [
+      "Acquired disease"
+    ],
+    "USMULE Q": [],
+    "related system": [
+      "Gastrointestinal",
+      "Infectious Diseases"
+    ],
+    "\nCase Database": [],
+    "disease overview": "急性胃肠炎常见病因之一，医院/养老院等封闭环境易暴发。典型为突发呕吐与腹泻，多数自限；老年与脆弱人群可出现严重脱水、电解质紊乱、AKI。",
+    "Files & media": {
+      "type": "files"
+    },
+    "mechanism": "无包膜ssRNA病毒，感染剂量极低（高度传染）；主要经粪口传播，也可经呕吐产生的气溶胶/飞沫及污染表面（fomites）传播；环境耐受性强，易造成院内暴发。",
+    "medical lecture": [
+      "193ee033-c41d-834d-b521-0174da5bd141"
+    ],
+    "disorder": "Norovirus gastroenteritis (诺如病毒感染)"
+  },
+  "createdAt": "2026-05-27",
+  "updatedAt": "2026-05-27"
+}

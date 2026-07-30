@@ -1,0 +1,27 @@
+{
+  "id": "inbox-medical-lecture-pericardium-and-coronary-circulation",
+  "slug": "pericardium-and-coronary-circulation",
+  "title": "Pericardium and coronary circulation心包与冠状动脉循环",
+  "source": {
+    "notionPageId": "358ee033-c41d-80be-9b23-faa6d715a974",
+    "notionDatabaseId": "75fee033-c41d-8242-ac46-014d564f81d8",
+    "notionDatabaseTitle": "medical lecture",
+    "notionUrl": "https://app.notion.com/p/Pericardium-and-coronary-circulation-358ee033c41d80be9b23faa6d715a974"
+  },
+  "properties": {
+    "program": "CVS",
+    "lecture time": "2026-05-06",
+    "weak ratio": null,
+    "coverage score": null,
+    "Related medical lecture": [],
+    "disease database": [],
+    "Files & media": {
+      "type": "files"
+    },
+    "identity": "experiment",
+    "applications": [],
+    "Name": "Pericardium and coronary circulation心包与冠状动脉循环"
+  },
+  "createdAt": "2026-05-06",
+  "updatedAt": "2026-05-25"
+}

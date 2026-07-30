@@ -1,0 +1,33 @@
+{
+  "id": "inbox-medical-lecture-infection-gw-4-case-studies-linked-to-sepsis-meningitis-case-studies-abdominal-sepsis-case-study",
+  "slug": "infection-gw-4-case-studies-linked-to-sepsis-meningitis-case-studies-abdominal-sepsis-case-study",
+  "title": "infection GW-4: Case studies linked to sepsis: MENINGITIS case studies; ABDOMINAL sepsis case study",
+  "source": {
+    "notionPageId": "18aee033-c41d-83c4-8b9f-81d5bbe20f5d",
+    "notionDatabaseId": "75fee033-c41d-8242-ac46-014d564f81d8",
+    "notionDatabaseTitle": "medical lecture",
+    "notionUrl": "https://app.notion.com/p/infection-GW-4-Case-studies-linked-to-sepsis-MENINGITIS-case-studies-ABDOMINAL-sepsis-case-study-18aee033c41d83c48b9f81d5bbe20f5d"
+  },
+  "properties": {
+    "program": "infection",
+    "lecture time": "2026-03-18",
+    "weak ratio": null,
+    "coverage score": null,
+    "Related medical lecture": [
+      "46bee033-c41d-835c-a0d7-01106cf87449"
+    ],
+    "disease database": [],
+    "Files & media": {
+      "type": "files"
+    },
+    "identity": "GW",
+    "applications": [
+      "609ee033-c41d-8223-b066-01d23c58b57e",
+      "633ee033-c41d-826a-9c5f-017d17e4a400",
+      "c05ee033-c41d-831f-8b29-01a63efca99f"
+    ],
+    "Name": "infection GW-4: Case studies linked to sepsis: MENINGITIS case studies; ABDOMINAL sepsis case study"
+  },
+  "createdAt": "2026-04-15",
+  "updatedAt": "2026-05-26"
+}

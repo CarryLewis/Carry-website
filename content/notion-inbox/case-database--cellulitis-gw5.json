@@ -1,0 +1,32 @@
+{
+  "id": "inbox-case-database-cellulitis-gw5",
+  "slug": "cellulitis-gw5",
+  "title": "Cellulitis（蜂窝织炎）— GW5",
+  "source": {
+    "notionPageId": "dfd68c6b-a861-4a1c-88be-fe269371ba7f",
+    "notionDatabaseId": "7f2ee033-c41d-8294-b8c9-01b833fd7013",
+    "notionDatabaseTitle": "Case Database",
+    "notionUrl": "https://app.notion.com/p/Cellulitis-GW5-dfd68c6ba8614a1c88befe269371ba7f"
+  },
+  "properties": {
+    "disease database": [],
+    "Source link": "https://www.notion.so/ccfee033c41d8335bea001269d4df425",
+    "Day add": {
+      "type": "created_time"
+    },
+    "Source Tag": "lecture",
+    "cases overview": "下肢红肿热痛伴发热；考虑皮肤破口入侵。常见病原：S. aureus + GAS。支持治疗退热止痛；抗菌覆盖需兼顾 staph + strep（笔记强调 penicillin 单用不足）。",
+    "feedback": "",
+    "case requirement": [
+      "treatment",
+      "diagnosis"
+    ],
+    "related system": [
+      "Infection/ID",
+      "Dermatology"
+    ],
+    "case title": "Cellulitis（蜂窝织炎）— GW5"
+  },
+  "createdAt": "2026-05-26",
+  "updatedAt": "2026-06-13"
+}

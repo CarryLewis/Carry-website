@@ -1,0 +1,27 @@
+{
+  "id": "inbox-medical-lecture-group-work-the-clavicle-and-shoulder",
+  "slug": "group-work-the-clavicle-and-shoulder",
+  "title": "Group work: The clavicle and shoulder",
+  "source": {
+    "notionPageId": "664ee033-c41d-8308-a6b3-8192db59a12b",
+    "notionDatabaseId": "75fee033-c41d-8242-ac46-014d564f81d8",
+    "notionDatabaseTitle": "medical lecture",
+    "notionUrl": "https://app.notion.com/p/Group-work-The-clavicle-and-shoulder-664ee033c41d8308a6b38192db59a12b"
+  },
+  "properties": {
+    "program": "MSK",
+    "lecture time": "2026-04-09",
+    "weak ratio": null,
+    "coverage score": null,
+    "Related medical lecture": [],
+    "disease database": [],
+    "Files & media": {
+      "type": "files"
+    },
+    "identity": "GW",
+    "applications": [],
+    "Name": "Group work: The clavicle and shoulder"
+  },
+  "createdAt": "2026-04-15",
+  "updatedAt": "2026-04-15"
+}

@@ -1,0 +1,35 @@
+{
+  "id": "inbox-disease-database-hodgkin-lymphoma",
+  "slug": "hodgkin-lymphoma",
+  "title": "Hodgkin Lymphoma",
+  "source": {
+    "notionPageId": "c4bee033-c41d-8330-9096-8189a35d428d",
+    "notionDatabaseId": "4c1ee033-c41d-83bd-bfab-0116847a8a69",
+    "notionDatabaseTitle": "disease database",
+    "notionUrl": "https://app.notion.com/p/Hodgkin-Lymphoma-c4bee033c41d833090968189a35d428d"
+  },
+  "properties": {
+    "💊 Drug database": [],
+    "Related disease": [
+      "9cbee033-c41d-83fb-8d9a-811a457928ff"
+    ],
+    "Prevalence": null,
+    "category": [
+      "tumor"
+    ],
+    "USMULE Q": [],
+    "related system": [
+      "Hematology"
+    ],
+    "\nCase Database": [],
+    "disease overview": "1832年，托马斯霍奇金报告了一种淋巴结肿大合并脾大的疾病，1865年以他的名字命名为霍奇金淋巴瘤",
+    "Files & media": {
+      "type": "files"
+    },
+    "mechanism": "",
+    "medical lecture": [],
+    "disorder": "Hodgkin Lymphoma"
+  },
+  "createdAt": "2026-04-15",
+  "updatedAt": "2026-04-15"
+}

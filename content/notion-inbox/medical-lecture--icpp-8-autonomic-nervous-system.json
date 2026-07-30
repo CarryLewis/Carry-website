@@ -1,0 +1,32 @@
+{
+  "id": "inbox-medical-lecture-icpp-8-autonomic-nervous-system",
+  "slug": "icpp-8-autonomic-nervous-system",
+  "title": "ICPP-8:autonomic nervous system",
+  "source": {
+    "notionPageId": "34fee033-c41d-807e-a689-c03dd1b4c39f",
+    "notionDatabaseId": "75fee033-c41d-8242-ac46-014d564f81d8",
+    "notionDatabaseTitle": "medical lecture",
+    "notionUrl": "https://app.notion.com/p/ICPP-8-autonomic-nervous-system-34fee033c41d807ea689c03dd1b4c39f"
+  },
+  "properties": {
+    "program": "ICPP",
+    "lecture time": "2026-04-27",
+    "weak ratio": null,
+    "coverage score": null,
+    "Related medical lecture": [
+      "350ee033-c41d-80cc-a914-ed3042315368",
+      "358ee033-c41d-801e-89db-f534ef79468b"
+    ],
+    "disease database": [],
+    "Files & media": {
+      "type": "files"
+    },
+    "identity": "lecture",
+    "applications": [
+      "34aee033-c41d-808b-a955-e54abb76a1f8"
+    ],
+    "Name": "ICPP-8:autonomic nervous system"
+  },
+  "createdAt": "2026-04-27",
+  "updatedAt": "2026-05-26"
+}

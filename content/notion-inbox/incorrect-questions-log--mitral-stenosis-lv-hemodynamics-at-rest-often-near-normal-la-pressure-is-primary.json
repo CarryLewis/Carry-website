@@ -1,0 +1,41 @@
+{
+  "id": "inbox-incorrect-questions-log-mitral-stenosis-lv-hemodynamics-at-rest-often-near-normal-la-pressure-is-primary",
+  "slug": "mitral-stenosis-lv-hemodynamics-at-rest-often-near-normal-la-pressure-is-primary",
+  "title": "Mitral stenosis: LV hemodynamics at rest often near normal (LA pressure ↑ is primary)",
+  "source": {
+    "notionPageId": "79370dee-4dbf-46cf-b31d-db91b6fdb216",
+    "notionDatabaseId": "3a6ee033-c41d-8038-a6c8-fe1a3435de49",
+    "notionDatabaseTitle": "Incorrect Questions Log",
+    "notionUrl": "https://app.notion.com/p/Mitral-stenosis-LV-hemodynamics-at-rest-often-near-normal-LA-pressure-is-primary-79370dee4dbf46cfb31ddb91b6fdb216"
+  },
+  "properties": {
+    "Review status": "Unprocessed",
+    "Discipline (UWorld)": "Physiology",
+    "Difficulty": 1,
+    "System": [
+      "Cardio"
+    ],
+    "Correct answer": "At rest (early MS): LV diastolic pressure ↔; afterload ↔; contractility ↔",
+    "Created time": {
+      "type": "created_time"
+    },
+    "medical applications": [],
+    "Stem (brief)": "Immigrant with loud S1 + mid-to-late diastolic murmur at apex: MS. Ask LV diastolic pressure/afterload/contractility at rest.",
+    "Source": "UWorld",
+    "Next review": null,
+    "Related USMLE Step 1 Incorrect Questions Log": [],
+    "Reviewed (this pass)": false,
+    "Takeaway (1 sentence)": "",
+    "Error type": [
+      "Diagnosis error",
+      "Reasoning / inference error",
+      "Knowledge / concept error"
+    ],
+    "Explanation / Notes": "",
+    "Question ID": "",
+    "related disease": [],
+    "One-liner (Key concept)": "Mitral stenosis: LV hemodynamics at rest often near normal (LA pressure ↑ is primary)"
+  },
+  "createdAt": "2026-07-27",
+  "updatedAt": "2026-07-27"
+}

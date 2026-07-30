@@ -1,0 +1,31 @@
+{
+  "id": "inbox-medical-applications-co-graphs-pressure-volume-p-v-loop",
+  "slug": "co-graphs-pressure-volume-p-v-loop",
+  "title": "CO graphs — Pressure–Volume (P–V) loop",
+  "source": {
+    "notionPageId": "56c4e66f-f2ed-4638-906c-12fc9ef4fab9",
+    "notionDatabaseId": "b67ee033-c41d-82c8-9173-0188157db110",
+    "notionDatabaseTitle": "medical applications",
+    "notionUrl": "https://app.notion.com/p/CO-graphs-Pressure-Volume-P-V-loop-56c4e66ff2ed4638906c12fc9ef4fab9"
+  },
+  "properties": {
+    "medical lecture": [],
+    "overview": "EDV/ESV/SV/EF + ESPVR/EDPVR; exercise mapping",
+    "Status": null,
+    "program": [
+      "CVS"
+    ],
+    "Created time": {
+      "type": "created_time"
+    },
+    "Last edited time": {
+      "type": "last_edited_time"
+    },
+    "usage": [
+      "reference"
+    ],
+    "Name": "CO graphs — Pressure–Volume (P–V) loop"
+  },
+  "createdAt": "2026-07-13",
+  "updatedAt": "2026-07-23"
+}

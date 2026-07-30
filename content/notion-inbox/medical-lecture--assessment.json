@@ -1,0 +1,27 @@
+{
+  "id": "inbox-medical-lecture-assessment",
+  "slug": "assessment",
+  "title": "下肢解剖assessment",
+  "source": {
+    "notionPageId": "f6cee033-c41d-832d-adf1-81c7902c7f75",
+    "notionDatabaseId": "75fee033-c41d-8242-ac46-014d564f81d8",
+    "notionDatabaseTitle": "medical lecture",
+    "notionUrl": "https://app.notion.com/p/assessment-f6cee033c41d832dadf181c7902c7f75"
+  },
+  "properties": {
+    "program": "MSK",
+    "lecture time": "2026-04-02",
+    "weak ratio": null,
+    "coverage score": null,
+    "Related medical lecture": [],
+    "disease database": [],
+    "Files & media": {
+      "type": "files"
+    },
+    "identity": "quiz",
+    "applications": [],
+    "Name": "下肢解剖assessment"
+  },
+  "createdAt": "2026-04-15",
+  "updatedAt": "2026-04-15"
+}

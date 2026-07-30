@@ -1,0 +1,32 @@
+{
+  "id": "inbox-medical-lecture-lower-limb-and-lumbar-spine-consolidation",
+  "slug": "lower-limb-and-lumbar-spine-consolidation",
+  "title": "Lower Limb and Lumbar Spine Consolidation",
+  "source": {
+    "notionPageId": "83aee033-c41d-8287-8273-81707cd7601a",
+    "notionDatabaseId": "75fee033-c41d-8242-ac46-014d564f81d8",
+    "notionDatabaseTitle": "medical lecture",
+    "notionUrl": "https://app.notion.com/p/Lower-Limb-and-Lumbar-Spine-Consolidation-83aee033c41d8287827381707cd7601a"
+  },
+  "properties": {
+    "program": "MSK",
+    "lecture time": "2026-04-07",
+    "weak ratio": null,
+    "coverage score": null,
+    "Related medical lecture": [
+      "e91ee033-c41d-83ca-becc-81a2659c5133",
+      "b68ee033-c41d-8353-9d32-81f321cc8daf",
+      "733ee033-c41d-82b4-baca-817517ae88b6",
+      "dcdee033-c41d-8245-b926-0192f439c437"
+    ],
+    "disease database": [],
+    "Files & media": {
+      "type": "files"
+    },
+    "identity": "GW",
+    "applications": [],
+    "Name": "Lower Limb and Lumbar Spine Consolidation"
+  },
+  "createdAt": "2026-04-15",
+  "updatedAt": "2026-04-15"
+}

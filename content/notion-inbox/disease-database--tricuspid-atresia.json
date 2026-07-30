@@ -1,0 +1,34 @@
+{
+  "id": "inbox-disease-database-tricuspid-atresia",
+  "slug": "tricuspid-atresia",
+  "title": "Tricuspid Atresia｜三尖瓣闭锁",
+  "source": {
+    "notionPageId": "ba970e47-e673-4f2b-8ade-ad21f70e55cc",
+    "notionDatabaseId": "4c1ee033-c41d-83bd-bfab-0116847a8a69",
+    "notionDatabaseTitle": "disease database",
+    "notionUrl": "https://app.notion.com/p/Tricuspid-Atresia-ba970e47e6734f2b8adead21f70e55cc"
+  },
+  "properties": {
+    "💊 Drug database": [],
+    "Related disease": [],
+    "Prevalence": null,
+    "category": [
+      "Inherited disease"
+    ],
+    "USMULE Q": [],
+    "related system": [
+      "Cardiovascular",
+      "Pediatrics"
+    ],
+    "\nCase Database": [],
+    "disease overview": "青紫型先心病：三尖瓣缺如/闭锁导致右房→右室通道缺失；血液需经ASD从右房流向左房；通常还需要VSD或PDA让血到达肺循环。",
+    "Files & media": {
+      "type": "files"
+    },
+    "mechanism": "三尖瓣闭锁→右室发育小/右心流出受限→静脉血无法进入右室；依赖房间隔缺损实现右房→左房分流；为获得肺血流，需VSD（左室→右室/肺）或PDA（主动脉→肺动脉）；总体导致混合血与青紫。",
+    "medical lecture": [],
+    "disorder": "Tricuspid Atresia｜三尖瓣闭锁"
+  },
+  "createdAt": "2026-05-11",
+  "updatedAt": "2026-05-11"
+}

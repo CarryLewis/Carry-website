@@ -1,0 +1,43 @@
+{
+  "id": "inbox-drug-database-nsaids-non-steroidal-anti-inflammatory-drugs",
+  "slug": "nsaids-non-steroidal-anti-inflammatory-drugs",
+  "title": "NSAIDs（Non-steroidal anti-inflammatory drugs）",
+  "source": {
+    "notionPageId": "12330d77-74d2-44ed-a13b-8076d576062d",
+    "notionDatabaseId": "631ffa28-fc5d-4fbc-8205-2fbd3cfb81e4",
+    "notionDatabaseTitle": "Drug database",
+    "notionUrl": "https://app.notion.com/p/NSAIDs-Non-steroidal-anti-inflammatory-drugs-12330d7774d244eda13b8076d576062d"
+  },
+  "properties": {
+    "Related lectures": [],
+    "Mechanism (MOA)": "抑制 COX-1/COX-2 → ↓ 前列腺素（PGE2 等）合成 → ↓ 炎症反应与痛觉敏化、↓ 发热（下丘脑）。COX-1 抑制与胃黏膜保护↓/血小板功能相关副作用相关。",
+    "disease database": [],
+    "Tags": [
+      "High-yield",
+      "Side-effect heavy"
+    ],
+    "Type": "Inhibitor",
+    "System": [
+      "MSK",
+      "GI / Hepatobiliary",
+      "Renal / Fluid & Electrolytes",
+      "Cardiovascular"
+    ],
+    "Contraindications": "消化道活动性出血/消化性溃疡；严重肾功能不全或脱水状态；对 NSAIDs/阿司匹林过敏或诱发哮喘者；合并抗凝/高出血风险需慎用；孕晚期一般避免。",
+    "Target / receptor": "COX-1 / COX-2（环氧化酶）",
+    "Indications": "镇痛、抗炎、退热；常用于肌肉骨骼疼痛、扭伤/拉伤、骨关节炎疼痛、痛经等。",
+    "Related cases": [],
+    "Last edited": {
+      "type": "last_edited_time"
+    },
+    "Dosing notes": "原则：最低有效剂量、最短疗程；有胃病风险可考虑胃黏膜保护策略（按临床方案）。",
+    "Class": "Analgesic",
+    "Created": {
+      "type": "created_time"
+    },
+    "Adverse effects": "胃肠道刺激/溃疡/出血；肾灌注下降→肾功能恶化/水钠潴留；血压升高与部分药物心血管风险↑；少数可诱发哮喘/过敏反应。",
+    "Drug": "NSAIDs（Non-steroidal anti-inflammatory drugs）"
+  },
+  "createdAt": "2026-06-03",
+  "updatedAt": "2026-06-03"
+}

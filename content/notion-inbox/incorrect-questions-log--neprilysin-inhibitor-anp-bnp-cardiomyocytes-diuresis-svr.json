@@ -1,0 +1,40 @@
+{
+  "id": "inbox-incorrect-questions-log-neprilysin-inhibitor-anp-bnp-cardiomyocytes-diuresis-svr",
+  "slug": "neprilysin-inhibitor-anp-bnp-cardiomyocytes-diuresis-svr",
+  "title": "Neprilysin inhibitor → ↑ANP/BNP (cardiomyocytes) → diuresis + ↓SVR",
+  "source": {
+    "notionPageId": "3e5e312e-2485-4914-b49c-491681790239",
+    "notionDatabaseId": "3a6ee033-c41d-8038-a6c8-fe1a3435de49",
+    "notionDatabaseTitle": "Incorrect Questions Log",
+    "notionUrl": "https://app.notion.com/p/Neprilysin-inhibitor-ANP-BNP-cardiomyocytes-diuresis-SVR-3e5e312e24854914b49c491681790239"
+  },
+  "properties": {
+    "Review status": "Unprocessed",
+    "Discipline (UWorld)": "Pharmacology",
+    "Difficulty": 2,
+    "System": [
+      "Cardio"
+    ],
+    "Correct answer": "Cardiomyocytes",
+    "Created time": {
+      "type": "created_time"
+    },
+    "medical applications": [],
+    "Stem (brief)": "HFrEF treated with neprilysin inhibition to prolong endogenous natriuretic peptides: which cell type secretes these peptides?",
+    "Source": "UWorld",
+    "Next review": null,
+    "Related USMLE Step 1 Incorrect Questions Log": [],
+    "Reviewed (this pass)": false,
+    "Takeaway (1 sentence)": "",
+    "Error type": [
+      "Knowledge / concept error",
+      "Reasoning / inference error"
+    ],
+    "Explanation / Notes": "",
+    "Question ID": "",
+    "related disease": [],
+    "One-liner (Key concept)": "Neprilysin inhibitor → ↑ANP/BNP (cardiomyocytes) → diuresis + ↓SVR"
+  },
+  "createdAt": "2026-07-27",
+  "updatedAt": "2026-07-27"
+}

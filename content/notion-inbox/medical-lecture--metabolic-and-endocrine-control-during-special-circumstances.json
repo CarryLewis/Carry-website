@@ -1,0 +1,29 @@
+{
+  "id": "inbox-medical-lecture-metabolic-and-endocrine-control-during-special-circumstances",
+  "slug": "metabolic-and-endocrine-control-during-special-circumstances",
+  "title": "Metabolic and endocrine control during special circumstances",
+  "source": {
+    "notionPageId": "da6ee033-c41d-8286-bedd-018cda692713",
+    "notionDatabaseId": "75fee033-c41d-8242-ac46-014d564f81d8",
+    "notionDatabaseTitle": "medical lecture",
+    "notionUrl": "https://app.notion.com/p/Metabolic-and-endocrine-control-during-special-circumstances-da6ee033c41d8286bedd018cda692713"
+  },
+  "properties": {
+    "program": "MEH",
+    "lecture time": "2025-12-11",
+    "weak ratio": null,
+    "coverage score": null,
+    "Related medical lecture": [],
+    "disease database": [],
+    "Files & media": {
+      "type": "files"
+    },
+    "identity": "lecture",
+    "applications": [
+      "367ee033-c41d-8215-b471-014923e1dee5"
+    ],
+    "Name": "Metabolic and endocrine control during special circumstances"
+  },
+  "createdAt": "2026-04-15",
+  "updatedAt": "2026-06-12"
+}

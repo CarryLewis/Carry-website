@@ -1,0 +1,27 @@
+{
+  "id": "inbox-medical-lecture-pass-review",
+  "slug": "pass-review",
+  "title": "Pass:review",
+  "source": {
+    "notionPageId": "30eee033-c41d-8301-93dc-01a67f5c44f6",
+    "notionDatabaseId": "75fee033-c41d-8242-ac46-014d564f81d8",
+    "notionDatabaseTitle": "medical lecture",
+    "notionUrl": "https://app.notion.com/p/Pass-review-30eee033c41d830193dc01a67f5c44f6"
+  },
+  "properties": {
+    "program": "Pass",
+    "lecture time": "2025-09-22",
+    "weak ratio": null,
+    "coverage score": null,
+    "Related medical lecture": [],
+    "disease database": [],
+    "Files & media": {
+      "type": "files"
+    },
+    "identity": null,
+    "applications": [],
+    "Name": "Pass:review"
+  },
+  "createdAt": "2026-04-15",
+  "updatedAt": "2026-04-15"
+}

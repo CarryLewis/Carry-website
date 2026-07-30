@@ -1,0 +1,29 @@
+{
+  "id": "inbox-medical-lecture-cvs-gw9",
+  "slug": "cvs-gw9",
+  "title": "CVS-GW9",
+  "source": {
+    "notionPageId": "364ee033-c41d-8030-b0cc-c2b9914de474",
+    "notionDatabaseId": "75fee033-c41d-8242-ac46-014d564f81d8",
+    "notionDatabaseTitle": "medical lecture",
+    "notionUrl": "https://app.notion.com/p/CVS-GW9-364ee033c41d8030b0ccc2b9914de474"
+  },
+  "properties": {
+    "program": "CVS",
+    "lecture time": "2026-05-18",
+    "weak ratio": null,
+    "coverage score": null,
+    "Related medical lecture": [
+      "364ee033-c41d-809b-bf6f-deab50afb85c"
+    ],
+    "disease database": [],
+    "Files & media": {
+      "type": "files"
+    },
+    "identity": "GW",
+    "applications": [],
+    "Name": "CVS-GW9"
+  },
+  "createdAt": "2026-05-18",
+  "updatedAt": "2026-06-20"
+}

@@ -1,0 +1,41 @@
+{
+  "id": "inbox-drug-database-pilocarpine",
+  "slug": "pilocarpine",
+  "title": "Pilocarpine / 毛果芸香碱",
+  "source": {
+    "notionPageId": "49d76b3a-e585-4a10-9e77-846a8c801b4d",
+    "notionDatabaseId": "631ffa28-fc5d-4fbc-8205-2fbd3cfb81e4",
+    "notionDatabaseTitle": "Drug database",
+    "notionUrl": "https://app.notion.com/p/Pilocarpine-49d76b3ae5854a109e77846a8c801b4d"
+  },
+  "properties": {
+    "Related lectures": [
+      "358ee033-c41d-801e-89db-f534ef79468b"
+    ],
+    "Mechanism (MOA)": "Direct muscarinic agonist (M3-dominant clinically) → ↑parasympathetic effect: eye (miosis + ciliary muscle contraction) → ↑aqueous outflow → ↓IOP; glands → ↑secretions.",
+    "disease database": [],
+    "Tags": [
+      "High-yield"
+    ],
+    "Type": "Agonist",
+    "System": [
+      "Neuro / Psych"
+    ],
+    "Contraindications": "Situations where increased cholinergic tone is harmful (e.g., severe asthma/COPD bronchospasm risk).",
+    "Target / receptor": "M (esp. M3)",
+    "Indications": "Glaucoma (high-yield: pilocarpine as M agonist).",
+    "Related cases": [],
+    "Last edited": {
+      "type": "last_edited_time"
+    },
+    "Dosing notes": "",
+    "Class": "Cholinergic",
+    "Created": {
+      "type": "created_time"
+    },
+    "Adverse effects": "Sweating, salivation, GI cramping/diarrhea; bronchospasm (M3), bradycardia (M2) in susceptible patients.",
+    "Drug": "Pilocarpine / 毛果芸香碱"
+  },
+  "createdAt": "2026-05-06",
+  "updatedAt": "2026-05-21"
+}

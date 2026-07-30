@@ -1,0 +1,35 @@
+{
+  "id": "inbox-disease-database-knee-effusion",
+  "slug": "knee-effusion",
+  "title": "Knee effusion（膝关节积液）",
+  "source": {
+    "notionPageId": "f497a579-a70b-43e5-904f-481890909423",
+    "notionDatabaseId": "4c1ee033-c41d-83bd-bfab-0116847a8a69",
+    "notionDatabaseTitle": "disease database",
+    "notionUrl": "https://app.notion.com/p/Knee-effusion-f497a579a70b43e5904f481890909423"
+  },
+  "properties": {
+    "💊 Drug database": [],
+    "Related disease": [],
+    "Prevalence": "high",
+    "category": [
+      "symptom"
+    ],
+    "USMULE Q": [],
+    "related system": [
+      "Musculoskeletal"
+    ],
+    "\nCase Database": [],
+    "disease overview": "Acute or chronic accumulation of fluid within the knee joint (intra-articular), presenting with swelling, pain, and restricted range of motion; has broad differential (trauma, OA, inflammatory, infection).",
+    "Files & media": {
+      "type": "files"
+    },
+    "mechanism": "Synovial inflammation, hemarthrosis after trauma, or infection increases intra-articular fluid; distension of the capsule causes pain and reflex quadriceps inhibition.",
+    "medical lecture": [
+      "8e4ee033-c41d-831e-8199-81386368b945"
+    ],
+    "disorder": "Knee effusion（膝关节积液）"
+  },
+  "createdAt": "2026-06-02",
+  "updatedAt": "2026-06-02"
+}

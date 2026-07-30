@@ -1,0 +1,33 @@
+{
+  "id": "inbox-medical-applications-biopsychosocial-model",
+  "slug": "biopsychosocial-model",
+  "title": "Biopsychosocial Model",
+  "source": {
+    "notionPageId": "74eee033-c41d-829a-b832-01a04b3a4fe4",
+    "notionDatabaseId": "b67ee033-c41d-82c8-9173-0188157db110",
+    "notionDatabaseTitle": "medical applications",
+    "notionUrl": "https://app.notion.com/p/Biopsychosocial-Model-74eee033c41d829ab83201a04b3a4fe4"
+  },
+  "properties": {
+    "medical lecture": [
+      "d06ee033-c41d-83c8-b118-81116daf5cbf"
+    ],
+    "overview": "",
+    "Status": null,
+    "program": [
+      "pass"
+    ],
+    "Created time": {
+      "type": "created_time"
+    },
+    "Last edited time": {
+      "type": "last_edited_time"
+    },
+    "usage": [
+      "class content"
+    ],
+    "Name": "Biopsychosocial Model"
+  },
+  "createdAt": "2026-04-15",
+  "updatedAt": "2026-04-15"
+}

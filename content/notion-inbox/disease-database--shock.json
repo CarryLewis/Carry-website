@@ -1,0 +1,41 @@
+{
+  "id": "inbox-disease-database-shock",
+  "slug": "shock",
+  "title": "休克 (Shock)",
+  "source": {
+    "notionPageId": "d2909a35-16b6-4197-8275-e5be876bede3",
+    "notionDatabaseId": "4c1ee033-c41d-83bd-bfab-0116847a8a69",
+    "notionDatabaseTitle": "disease database",
+    "notionUrl": "https://app.notion.com/p/Shock-d2909a3516b641978275e5be876bede3"
+  },
+  "properties": {
+    "💊 Drug database": [],
+    "Related disease": [
+      "ccd0e4f4-e1dd-43c1-b5a2-dac8c80e395d",
+      "d26ee033-c41d-822e-8c3c-0190d9bb9feb"
+    ],
+    "Prevalence": null,
+    "category": [
+      "symptom"
+    ],
+    "USMULE Q": [],
+    "related system": [
+      "Cardiovascular"
+    ],
+    "\nCase Database": [
+      "2183950d-78bd-4d3a-b3a7-4970fd40bb7e"
+    ],
+    "disease overview": "多种强烈致病因素导致的全身组织灌注/氧供不足，引起器官功能与代谢障碍；关键在血流，不在血压。",
+    "Files & media": {
+      "type": "files"
+    },
+    "mechanism": "微循环灌流障碍为核心：代偿期小血管收缩→失代偿期酸中毒/介质作用致血管扩张+通透性↑→衰竭期无复流与DIC，进展至多器官功能障碍。",
+    "medical lecture": [
+      "375ee033-c41d-80bf-a4a6-fb41dd17f600",
+      "376ee033-c41d-80e9-b305-e724b4e83358"
+    ],
+    "disorder": "休克 (Shock)"
+  },
+  "createdAt": "2026-06-04",
+  "updatedAt": "2026-06-05"
+}

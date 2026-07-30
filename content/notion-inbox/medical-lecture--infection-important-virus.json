@@ -1,0 +1,29 @@
+{
+  "id": "inbox-medical-lecture-infection-important-virus",
+  "slug": "infection-important-virus",
+  "title": "infection:important virus",
+  "source": {
+    "notionPageId": "38aee033-c41d-80f1-89be-e751b81c8d60",
+    "notionDatabaseId": "75fee033-c41d-8242-ac46-014d564f81d8",
+    "notionDatabaseTitle": "medical lecture",
+    "notionUrl": "https://app.notion.com/p/infection-important-virus-38aee033c41d80f189bee751b81c8d60"
+  },
+  "properties": {
+    "program": "infection",
+    "lecture time": "2026-06-25",
+    "weak ratio": null,
+    "coverage score": null,
+    "Related medical lecture": [],
+    "disease database": [],
+    "Files & media": {
+      "type": "files"
+    },
+    "identity": "lecture",
+    "applications": [
+      "38eee033-c41d-8054-a67b-c1b649d15e98"
+    ],
+    "Name": "infection:important virus"
+  },
+  "createdAt": "2026-06-25",
+  "updatedAt": "2026-07-06"
+}

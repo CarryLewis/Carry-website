@@ -1,0 +1,31 @@
+{
+  "id": "inbox-medical-lecture-cvs-6-ecg",
+  "slug": "cvs-6-ecg",
+  "title": "CVS-6:ECG",
+  "source": {
+    "notionPageId": "35fee033-c41d-80b3-90d9-f5d6770cec48",
+    "notionDatabaseId": "75fee033-c41d-8242-ac46-014d564f81d8",
+    "notionDatabaseTitle": "medical lecture",
+    "notionUrl": "https://app.notion.com/p/CVS-6-ECG-35fee033c41d80b390d9f5d6770cec48"
+  },
+  "properties": {
+    "program": "CVS",
+    "lecture time": "2026-05-13",
+    "weak ratio": null,
+    "coverage score": null,
+    "Related medical lecture": [
+      "35fee033-c41d-802f-a41a-ec221c698728"
+    ],
+    "disease database": [],
+    "Files & media": {
+      "type": "files"
+    },
+    "identity": "lecture",
+    "applications": [
+      "36bee033-c41d-80d9-b5ef-e97da4ff4558"
+    ],
+    "Name": "CVS-6:ECG"
+  },
+  "createdAt": "2026-05-13",
+  "updatedAt": "2026-05-25"
+}

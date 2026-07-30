@@ -1,0 +1,34 @@
+{
+  "id": "inbox-disease-database-aplastic-anemia",
+  "slug": "aplastic-anemia",
+  "title": "再生障碍性贫血 Aplastic Anemia",
+  "source": {
+    "notionPageId": "323ee033-c41d-833f-ad8d-0114139fac88",
+    "notionDatabaseId": "4c1ee033-c41d-83bd-bfab-0116847a8a69",
+    "notionDatabaseTitle": "disease database",
+    "notionUrl": "https://app.notion.com/p/Aplastic-Anemia-323ee033c41d833fad8d0114139fac88"
+  },
+  "properties": {
+    "💊 Drug database": [],
+    "Related disease": [],
+    "Prevalence": "medium",
+    "category": [
+      "Acquired disease",
+      "Inherited disease"
+    ],
+    "USMULE Q": [],
+    "related system": [
+      "Hematology"
+    ],
+    "\nCase Database": [],
+    "disease overview": "1. **Bone marrow hematopoietic failure（造血衰竭）, hematopoietic stem cell damage.**\n2. **Deficiency of red cells, neutrophils, monocytes, and platelets in the peripheral blood**",
+    "Files & media": {
+      "type": "files"
+    },
+    "mechanism": "",
+    "medical lecture": [],
+    "disorder": "再生障碍性贫血 Aplastic Anemia"
+  },
+  "createdAt": "2026-04-15",
+  "updatedAt": "2026-04-15"
+}

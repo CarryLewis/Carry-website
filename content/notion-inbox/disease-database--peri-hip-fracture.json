@@ -1,0 +1,37 @@
+{
+  "id": "inbox-disease-database-peri-hip-fracture",
+  "slug": "peri-hip-fracture",
+  "title": "Peri-hip fracture（髋周骨折：股骨颈/转子区等）",
+  "source": {
+    "notionPageId": "b8fcb9ef-2ed0-4b4c-8f7d-a2a7f3be9b25",
+    "notionDatabaseId": "4c1ee033-c41d-83bd-bfab-0116847a8a69",
+    "notionDatabaseTitle": "disease database",
+    "notionUrl": "https://app.notion.com/p/Peri-hip-fracture-b8fcb9ef2ed04b4c8f7da2a7f3be9b25"
+  },
+  "properties": {
+    "💊 Drug database": [],
+    "Related disease": [
+      "285e32d0-2197-437a-8b69-20e78caee753"
+    ],
+    "Prevalence": "high",
+    "category": [
+      "injury"
+    ],
+    "USMULE Q": [],
+    "related system": [
+      "Musculoskeletal"
+    ],
+    "\nCase Database": [],
+    "disease overview": "Fractures around the hip joint, commonly including femoral neck (intracapsular) and trochanteric region (extracapsular) fractures. Typical presentation after trauma includes pain, inability to weight-bear, and the limb may appear shortened and externally rotated.\n\n关键区分：intracapsular vs extracapsular（决定血供风险与并发症）。",
+    "Files & media": {
+      "type": "files"
+    },
+    "mechanism": "Trauma causes fracture across femoral neck or trochanteric region. Intracapsular femoral neck fractures can disrupt the retinacular vessels—most importantly branches from the deep medial circumflex femoral artery—leading to impaired femoral head perfusion and increased risk of avascular necrosis (AVN). Extracapsular fractures are less likely to cause AVN but can have significant bleeding and soft-tissue injury.",
+    "medical lecture": [
+      "d7aee033-c41d-82e1-a82d-8143b5b9f5df"
+    ],
+    "disorder": "Peri-hip fracture（髋周骨折：股骨颈/转子区等）"
+  },
+  "createdAt": "2026-06-02",
+  "updatedAt": "2026-06-02"
+}

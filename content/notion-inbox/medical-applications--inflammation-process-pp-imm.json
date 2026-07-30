@@ -1,0 +1,36 @@
+{
+  "id": "inbox-medical-applications-inflammation-process-pp-imm",
+  "slug": "inflammation-process-pp-imm",
+  "title": "inflammation process:PP&IMM",
+  "source": {
+    "notionPageId": "c85ee033-c41d-8293-9739-0102312f3d4c",
+    "notionDatabaseId": "b67ee033-c41d-82c8-9173-0188157db110",
+    "notionDatabaseTitle": "medical applications",
+    "notionUrl": "https://app.notion.com/p/inflammation-process-PP-IMM-c85ee033c41d829397390102312f3d4c"
+  },
+  "properties": {
+    "medical lecture": [
+      "43cee033-c41d-8315-9c7d-0115bfd463f1",
+      "a83ee033-c41d-8220-ab0d-010469ea7b5d",
+      "842ee033-c41d-8228-b2c0-816086cb13c8"
+    ],
+    "overview": "",
+    "Status": "Done",
+    "program": [
+      "infection",
+      "pathology process"
+    ],
+    "Created time": {
+      "type": "created_time"
+    },
+    "Last edited time": {
+      "type": "last_edited_time"
+    },
+    "usage": [
+      "integration"
+    ],
+    "Name": "inflammation process:PP&IMM"
+  },
+  "createdAt": "2026-04-15",
+  "updatedAt": "2026-04-30"
+}

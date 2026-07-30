@@ -1,0 +1,32 @@
+{
+  "id": "inbox-medical-lecture-cvs-3-development-of-the-heart",
+  "slug": "cvs-3-development-of-the-heart",
+  "title": "CVS-3:development of the heart",
+  "source": {
+    "notionPageId": "35aee033-c41d-806e-a1a3-f182cd5ba512",
+    "notionDatabaseId": "75fee033-c41d-8242-ac46-014d564f81d8",
+    "notionDatabaseTitle": "medical lecture",
+    "notionUrl": "https://app.notion.com/p/CVS-3-development-of-the-heart-35aee033c41d806ea1a3f182cd5ba512"
+  },
+  "properties": {
+    "program": "CVS",
+    "lecture time": "2026-05-08",
+    "weak ratio": 70,
+    "coverage score": 35,
+    "Related medical lecture": [
+      "35dee033-c41d-8024-b644-fee93efc4227"
+    ],
+    "disease database": [],
+    "Files & media": {
+      "type": "files"
+    },
+    "identity": "lecture",
+    "applications": [
+      "36bee033-c41d-80d9-b5ef-e97da4ff4558",
+      "390ee033-c41d-80e7-b67c-d4cb2c9cc642"
+    ],
+    "Name": "CVS-3:development of the heart"
+  },
+  "createdAt": "2026-05-08",
+  "updatedAt": "2026-05-25"
+}

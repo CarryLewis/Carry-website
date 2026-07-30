@@ -1,0 +1,32 @@
+{
+  "id": "inbox-medical-lecture-cvs-2-the-heart-as-a-pump-and-valve-disease-control-of-cardiac-output",
+  "slug": "cvs-2-the-heart-as-a-pump-and-valve-disease-control-of-cardiac-output",
+  "title": "CVS-2:The heart as a pump and valve disease / Control of cardiac output",
+  "source": {
+    "notionPageId": "358ee033-c41d-80f0-b3eb-fb0bbd0e6763",
+    "notionDatabaseId": "75fee033-c41d-8242-ac46-014d564f81d8",
+    "notionDatabaseTitle": "medical lecture",
+    "notionUrl": "https://app.notion.com/p/CVS-2-The-heart-as-a-pump-and-valve-disease-Control-of-cardiac-output-358ee033c41d80f0b3ebfb0bbd0e6763"
+  },
+  "properties": {
+    "program": "CVS",
+    "lecture time": "2026-05-07",
+    "weak ratio": null,
+    "coverage score": null,
+    "Related medical lecture": [
+      "35aee033-c41d-801e-9ce9-c5e8fbfa04c1"
+    ],
+    "disease database": [],
+    "Files & media": {
+      "type": "files"
+    },
+    "identity": "lecture",
+    "applications": [
+      "36bee033-c41d-80d9-b5ef-e97da4ff4558",
+      "390ee033-c41d-80e7-b67c-d4cb2c9cc642"
+    ],
+    "Name": "CVS-2:The heart as a pump and valve disease / Control of cardiac output"
+  },
+  "createdAt": "2026-05-06",
+  "updatedAt": "2026-05-25"
+}

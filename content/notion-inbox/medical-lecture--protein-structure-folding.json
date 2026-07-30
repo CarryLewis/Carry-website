@@ -1,0 +1,29 @@
+{
+  "id": "inbox-medical-lecture-protein-structure-folding",
+  "slug": "protein-structure-folding",
+  "title": "protein:structure&folding",
+  "source": {
+    "notionPageId": "22cee033-c41d-8377-9b69-0120ee2e2a7b",
+    "notionDatabaseId": "75fee033-c41d-8242-ac46-014d564f81d8",
+    "notionDatabaseTitle": "medical lecture",
+    "notionUrl": "https://app.notion.com/p/protein-structure-folding-22cee033c41d83779b690120ee2e2a7b"
+  },
+  "properties": {
+    "program": "MCBG",
+    "lecture time": "2025-10-09",
+    "weak ratio": null,
+    "coverage score": null,
+    "Related medical lecture": [],
+    "disease database": [],
+    "Files & media": {
+      "type": "files"
+    },
+    "identity": "lecture",
+    "applications": [
+      "46eee033-c41d-82e9-b416-017019ad0a05"
+    ],
+    "Name": "protein:structure&folding"
+  },
+  "createdAt": "2026-04-15",
+  "updatedAt": "2026-06-12"
+}

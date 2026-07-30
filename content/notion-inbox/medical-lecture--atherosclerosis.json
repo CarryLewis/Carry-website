@@ -1,0 +1,30 @@
+{
+  "id": "inbox-medical-lecture-atherosclerosis",
+  "slug": "atherosclerosis",
+  "title": "atherosclerosis",
+  "source": {
+    "notionPageId": "21bee033-c41d-8374-8d0f-010d07125050",
+    "notionDatabaseId": "75fee033-c41d-8242-ac46-014d564f81d8",
+    "notionDatabaseTitle": "medical lecture",
+    "notionUrl": "https://app.notion.com/p/atherosclerosis-21bee033c41d83748d0f010d07125050"
+  },
+  "properties": {
+    "program": "pathology",
+    "lecture time": "2025-12-22",
+    "weak ratio": null,
+    "coverage score": null,
+    "Related medical lecture": [],
+    "disease database": [],
+    "Files & media": {
+      "type": "files"
+    },
+    "identity": "lecture",
+    "applications": [
+      "dd0ee033-c41d-83a8-be7b-817909c57e79",
+      "547ee033-c41d-83f0-b64c-01fbea67119f"
+    ],
+    "Name": "atherosclerosis"
+  },
+  "createdAt": "2026-04-15",
+  "updatedAt": "2026-05-27"
+}

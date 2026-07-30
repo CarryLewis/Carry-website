@@ -1,0 +1,27 @@
+{
+  "id": "inbox-medical-lecture-msk-session-9-assessment",
+  "slug": "msk-session-9-assessment",
+  "title": "MSK Session 9 assessment",
+  "source": {
+    "notionPageId": "344ee033-c41d-809b-98c6-f67158e6cc18",
+    "notionDatabaseId": "75fee033-c41d-8242-ac46-014d564f81d8",
+    "notionDatabaseTitle": "medical lecture",
+    "notionUrl": "https://app.notion.com/p/MSK-Session-9-assessment-344ee033c41d809b98c6f67158e6cc18"
+  },
+  "properties": {
+    "program": "MSK",
+    "lecture time": "2026-04-10",
+    "weak ratio": null,
+    "coverage score": null,
+    "Related medical lecture": [],
+    "disease database": [],
+    "Files & media": {
+      "type": "files"
+    },
+    "identity": "quiz",
+    "applications": [],
+    "Name": "MSK Session 9 assessment"
+  },
+  "createdAt": "2026-04-16",
+  "updatedAt": "2026-04-17"
+}

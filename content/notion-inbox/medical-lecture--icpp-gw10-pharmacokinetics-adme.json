@@ -1,0 +1,30 @@
+{
+  "id": "inbox-medical-lecture-icpp-gw10-pharmacokinetics-adme",
+  "slug": "icpp-gw10-pharmacokinetics-adme",
+  "title": "ICPP-GW10: Pharmacokinetics - ADME",
+  "source": {
+    "notionPageId": "352ee033-c41d-8085-bafd-f675b643c946",
+    "notionDatabaseId": "75fee033-c41d-8242-ac46-014d564f81d8",
+    "notionDatabaseTitle": "medical lecture",
+    "notionUrl": "https://app.notion.com/p/ICPP-GW10-Pharmacokinetics-ADME-352ee033c41d8085bafdf675b643c946"
+  },
+  "properties": {
+    "program": "ICPP",
+    "lecture time": "2026-04-30",
+    "weak ratio": null,
+    "coverage score": null,
+    "Related medical lecture": [
+      "350ee033-c41d-8026-8c23-d2dd3011f90a",
+      "351ee033-c41d-8057-8102-d3ef1f741bd4"
+    ],
+    "disease database": [],
+    "Files & media": {
+      "type": "files"
+    },
+    "identity": "GW",
+    "applications": [],
+    "Name": "ICPP-GW10: Pharmacokinetics - ADME"
+  },
+  "createdAt": "2026-04-30",
+  "updatedAt": "2026-05-24"
+}

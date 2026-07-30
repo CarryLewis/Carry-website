@@ -1,0 +1,35 @@
+{
+  "id": "inbox-disease-database-knee-ligament-injury-acl-pcl-mcl-lcl",
+  "slug": "knee-ligament-injury-acl-pcl-mcl-lcl",
+  "title": "Knee ligament injury（膝韧带损伤：ACL/PCL/MCL/LCL）",
+  "source": {
+    "notionPageId": "bcd2d928-422a-4344-9743-407511d7541d",
+    "notionDatabaseId": "4c1ee033-c41d-83bd-bfab-0116847a8a69",
+    "notionDatabaseTitle": "disease database",
+    "notionUrl": "https://app.notion.com/p/Knee-ligament-injury-ACL-PCL-MCL-LCL-bcd2d928422a43449743407511d7541d"
+  },
+  "properties": {
+    "💊 Drug database": [],
+    "Related disease": [],
+    "Prevalence": "high",
+    "category": [
+      "injury"
+    ],
+    "USMULE Q": [],
+    "related system": [
+      "Musculoskeletal"
+    ],
+    "\nCase Database": [],
+    "disease overview": "Injury to knee stabilizing ligaments (ACL, PCL, MCL, LCL) causing instability; key mechanisms include pivot injury for ACL and posterior tibial translation for PCL.",
+    "Files & media": {
+      "type": "files"
+    },
+    "mechanism": "ACL: rapid deceleration/pivot with valgus/rotation; PCL: posteriorly directed force on proximal tibia (dashboard injury); MCL/LCL: valgus/varus stress; severe injury/dislocation can endanger the popliteal artery.",
+    "medical lecture": [
+      "8e4ee033-c41d-831e-8199-81386368b945"
+    ],
+    "disorder": "Knee ligament injury（膝韧带损伤：ACL/PCL/MCL/LCL）"
+  },
+  "createdAt": "2026-06-02",
+  "updatedAt": "2026-06-02"
+}

@@ -1,0 +1,29 @@
+{
+  "id": "inbox-medical-lecture-skin",
+  "slug": "skin",
+  "title": "skin",
+  "source": {
+    "notionPageId": "a93ee033-c41d-8219-8fa2-81459da5ac3e",
+    "notionDatabaseId": "75fee033-c41d-8242-ac46-014d564f81d8",
+    "notionDatabaseTitle": "medical lecture",
+    "notionUrl": "https://app.notion.com/p/skin-a93ee033c41d82198fa281459da5ac3e"
+  },
+  "properties": {
+    "program": "body logistic",
+    "lecture time": "2025-11-10",
+    "weak ratio": null,
+    "coverage score": null,
+    "Related medical lecture": [],
+    "disease database": [],
+    "Files & media": {
+      "type": "files"
+    },
+    "identity": "lecture",
+    "applications": [
+      "d95ee033-c41d-8314-af32-81263a23b93d"
+    ],
+    "Name": "skin"
+  },
+  "createdAt": "2026-04-15",
+  "updatedAt": "2026-06-12"
+}

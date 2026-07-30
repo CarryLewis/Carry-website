@@ -1,0 +1,31 @@
+{
+  "id": "inbox-medical-lecture-hypothalamic-pituitary",
+  "slug": "hypothalamic-pituitary",
+  "title": "hypothalamic&pituitary",
+  "source": {
+    "notionPageId": "745ee033-c41d-8260-8908-01244a380ec6",
+    "notionDatabaseId": "75fee033-c41d-8242-ac46-014d564f81d8",
+    "notionDatabaseTitle": "medical lecture",
+    "notionUrl": "https://app.notion.com/p/hypothalamic-pituitary-745ee033c41d8260890801244a380ec6"
+  },
+  "properties": {
+    "program": "MEH",
+    "lecture time": "2025-12-08",
+    "weak ratio": null,
+    "coverage score": null,
+    "Related medical lecture": [],
+    "disease database": [],
+    "Files & media": {
+      "type": "files"
+    },
+    "identity": "lecture",
+    "applications": [
+      "d11ee033-c41d-82a9-adc2-0173ef384635",
+      "3f4ee033-c41d-8225-a559-0195a6364bdd",
+      "367ee033-c41d-8215-b471-014923e1dee5"
+    ],
+    "Name": "hypothalamic&pituitary"
+  },
+  "createdAt": "2026-04-15",
+  "updatedAt": "2026-06-12"
+}

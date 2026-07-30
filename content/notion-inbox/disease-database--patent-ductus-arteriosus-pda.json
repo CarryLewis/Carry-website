@@ -1,0 +1,34 @@
+{
+  "id": "inbox-disease-database-patent-ductus-arteriosus-pda",
+  "slug": "patent-ductus-arteriosus-pda",
+  "title": "Patent Ductus Arteriosus (PDA)｜动脉导管未闭",
+  "source": {
+    "notionPageId": "8120f0e6-6fa4-4be9-abb6-aefd0782c5c3",
+    "notionDatabaseId": "4c1ee033-c41d-83bd-bfab-0116847a8a69",
+    "notionDatabaseTitle": "disease database",
+    "notionUrl": "https://app.notion.com/p/Patent-Ductus-Arteriosus-PDA-8120f0e66fa44be9abb6aefd0782c5c3"
+  },
+  "properties": {
+    "💊 Drug database": [],
+    "Related disease": [],
+    "Prevalence": null,
+    "category": [
+      "Inherited disease"
+    ],
+    "USMULE Q": [],
+    "related system": [
+      "Cardiovascular",
+      "Pediatrics"
+    ],
+    "\nCase Database": [],
+    "disease overview": "胎儿期连接主动脉与肺动脉的导管出生后未闭；常见于早产儿。多为左→右分流（主动脉→肺动脉）导致肺血流过多。典型体征为连续性“机器样”杂音。",
+    "Files & media": {
+      "type": "files"
+    },
+    "mechanism": "导管持续开放→体循环压力高于肺循环→主动脉血持续流入肺动脉（左→右分流）→肺血流量↑与左心容量负荷↑；长期可肺动脉高压，严重时可分流反转（差异性发绀）。",
+    "medical lecture": [],
+    "disorder": "Patent Ductus Arteriosus (PDA)｜动脉导管未闭"
+  },
+  "createdAt": "2026-05-11",
+  "updatedAt": "2026-05-11"
+}

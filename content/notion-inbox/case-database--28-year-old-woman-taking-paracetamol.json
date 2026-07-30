@@ -1,0 +1,32 @@
+{
+  "id": "inbox-case-database-28-year-old-woman-taking-paracetamol",
+  "slug": "28-year-old-woman-taking-paracetamol",
+  "title": "28 year old woman taking paracetamol",
+  "source": {
+    "notionPageId": "43dee033-c41d-83a0-8e1d-81f1cccac72b",
+    "notionDatabaseId": "7f2ee033-c41d-8294-b8c9-01b833fd7013",
+    "notionDatabaseTitle": "Case Database",
+    "notionUrl": "https://app.notion.com/p/28-year-old-woman-taking-paracetamol-43dee033c41d83a08e1d81f1cccac72b"
+  },
+  "properties": {
+    "disease database": [],
+    "Source link": "https://www.notion.so/cell-injury-clinical-questions-2caee033c41d8082bcd3ce7e5d34e384",
+    "Day add": {
+      "type": "created_time"
+    },
+    "Source Tag": "lecture",
+    "cases overview": "A 28 year old woman, with a history of depression, is admitted to the accident and emergency department. She is vomiting and is jaundiced. She admits to taking 30 tablets of paracetamol 3 days earlier. She deteriorates over the next few days and dies.",
+    "feedback": "",
+    "case requirement": [
+      "pathology"
+    ],
+    "related system": [
+      "Gastroenterology",
+      "Hepatology",
+      "Emergency/Acute"
+    ],
+    "case title": "28 year old woman taking paracetamol"
+  },
+  "createdAt": "2026-04-15",
+  "updatedAt": "2026-05-26"
+}

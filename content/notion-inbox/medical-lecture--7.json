@@ -1,0 +1,27 @@
+{
+  "id": "inbox-medical-lecture-7",
+  "slug": "7",
+  "title": "第7次作业 消化系统疾病实验室检查（三）：肝脏疾病实验室检查",
+  "source": {
+    "notionPageId": "348ee033-c41d-801a-833b-ee855c3de25d",
+    "notionDatabaseId": "75fee033-c41d-8242-ac46-014d564f81d8",
+    "notionDatabaseTitle": "medical lecture",
+    "notionUrl": "https://app.notion.com/p/7-348ee033c41d801a833bee855c3de25d"
+  },
+  "properties": {
+    "program": "诊断学",
+    "lecture time": "2026-04-20",
+    "weak ratio": null,
+    "coverage score": null,
+    "Related medical lecture": [],
+    "disease database": [],
+    "Files & media": {
+      "type": "files"
+    },
+    "identity": "quiz",
+    "applications": [],
+    "Name": "第7次作业 消化系统疾病实验室检查（三）：肝脏疾病实验室检查"
+  },
+  "createdAt": "2026-04-20",
+  "updatedAt": "2026-04-26"
+}

@@ -1,0 +1,29 @@
+{
+  "id": "inbox-medical-lecture-session-8-communicating-risk",
+  "slug": "session-8-communicating-risk",
+  "title": "Session 8:Communicating Risk",
+  "source": {
+    "notionPageId": "60bee033-c41d-82d2-aed8-01dcdc11f62a",
+    "notionDatabaseId": "75fee033-c41d-8242-ac46-014d564f81d8",
+    "notionDatabaseTitle": "medical lecture",
+    "notionUrl": "https://app.notion.com/p/Session-8-Communicating-Risk-60bee033c41d82d2aed801dcdc11f62a"
+  },
+  "properties": {
+    "program": "Pass",
+    "lecture time": "2026-03-11",
+    "weak ratio": 30,
+    "coverage score": 70,
+    "Related medical lecture": [],
+    "disease database": [],
+    "Files & media": {
+      "type": "files"
+    },
+    "identity": "lecture",
+    "applications": [
+      "3f7ee033-c41d-8357-809a-018bcb9313d1"
+    ],
+    "Name": "Session 8:Communicating Risk"
+  },
+  "createdAt": "2026-04-15",
+  "updatedAt": "2026-04-15"
+}

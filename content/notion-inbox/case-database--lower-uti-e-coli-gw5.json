@@ -1,0 +1,32 @@
+{
+  "id": "inbox-case-database-lower-uti-e-coli-gw5",
+  "slug": "lower-uti-e-coli-gw5",
+  "title": "Lower UTI（下尿路感染）— E. coli — GW5",
+  "source": {
+    "notionPageId": "902c2414-8987-410c-99e0-97cc39e63db8",
+    "notionDatabaseId": "7f2ee033-c41d-8294-b8c9-01b833fd7013",
+    "notionDatabaseTitle": "Case Database",
+    "notionUrl": "https://app.notion.com/p/Lower-UTI-E-coli-GW5-902c24148987410c99e097cc39e63db8"
+  },
+  "properties": {
+    "disease database": [],
+    "Source link": "https://www.notion.so/ccfee033c41d8335bea001269d4df425",
+    "Day add": {
+      "type": "created_time"
+    },
+    "Source Tag": "lecture",
+    "cases overview": "无并发症下尿路感染；dipstick 可见 nitrite/LE 线索；送尿培养明确病原。最常见病原：E. coli（上行感染）。一线 nitrofurantoin；替代 TMP / pivmecillinam（按指南）。",
+    "feedback": "",
+    "case requirement": [
+      "treatment",
+      "diagnosis"
+    ],
+    "related system": [
+      "Infection/ID",
+      "Urology"
+    ],
+    "case title": "Lower UTI（下尿路感染）— E. coli — GW5"
+  },
+  "createdAt": "2026-05-26",
+  "updatedAt": "2026-06-13"
+}

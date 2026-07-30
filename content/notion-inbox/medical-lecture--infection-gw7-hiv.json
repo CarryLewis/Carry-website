@@ -1,0 +1,27 @@
+{
+  "id": "inbox-medical-lecture-infection-gw7-hiv",
+  "slug": "infection-gw7-hiv",
+  "title": "Infection-GW7:HIV",
+  "source": {
+    "notionPageId": "f14ee033-c41d-82a8-b6e6-81e52828dde7",
+    "notionDatabaseId": "75fee033-c41d-8242-ac46-014d564f81d8",
+    "notionDatabaseTitle": "medical lecture",
+    "notionUrl": "https://app.notion.com/p/Infection-GW7-HIV-f14ee033c41d82a8b6e681e52828dde7"
+  },
+  "properties": {
+    "program": "infection",
+    "lecture time": "2026-03-23",
+    "weak ratio": null,
+    "coverage score": null,
+    "Related medical lecture": [],
+    "disease database": [],
+    "Files & media": {
+      "type": "files"
+    },
+    "identity": "GW",
+    "applications": [],
+    "Name": "Infection-GW7:HIV"
+  },
+  "createdAt": "2026-04-15",
+  "updatedAt": "2026-05-27"
+}

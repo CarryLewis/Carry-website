@@ -1,0 +1,34 @@
+{
+  "id": "inbox-medical-applications-termiology-of-micrology",
+  "slug": "termiology-of-micrology",
+  "title": "termiology of micrology",
+  "source": {
+    "notionPageId": "0a0ee033-c41d-835d-b110-813a92575812",
+    "notionDatabaseId": "b67ee033-c41d-82c8-9173-0188157db110",
+    "notionDatabaseTitle": "medical applications",
+    "notionUrl": "https://app.notion.com/p/termiology-of-micrology-0a0ee033c41d835db110813a92575812"
+  },
+  "properties": {
+    "medical lecture": [
+      "d7bee033-c41d-8281-9891-815c4da0dea8",
+      "180ee033-c41d-82bd-9926-810a5a6e8148"
+    ],
+    "overview": "",
+    "Status": "Done",
+    "program": [
+      "infection"
+    ],
+    "Created time": {
+      "type": "created_time"
+    },
+    "Last edited time": {
+      "type": "last_edited_time"
+    },
+    "usage": [
+      "reference"
+    ],
+    "Name": "termiology of micrology"
+  },
+  "createdAt": "2026-04-15",
+  "updatedAt": "2026-06-10"
+}

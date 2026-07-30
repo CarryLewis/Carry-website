@@ -1,0 +1,35 @@
+{
+  "id": "inbox-disease-database-septic-arthritis",
+  "slug": "septic-arthritis",
+  "title": "Septic arthritis（化脓性关节炎）",
+  "source": {
+    "notionPageId": "13ff36c6-8ca1-43f9-bde9-8fca61614e5b",
+    "notionDatabaseId": "4c1ee033-c41d-83bd-bfab-0116847a8a69",
+    "notionDatabaseTitle": "disease database",
+    "notionUrl": "https://app.notion.com/p/Septic-arthritis-13ff36c68ca143f9bde98fca61614e5b"
+  },
+  "properties": {
+    "💊 Drug database": [],
+    "Related disease": [],
+    "Prevalence": "medium",
+    "category": [
+      "immume disease"
+    ],
+    "USMULE Q": [],
+    "related system": [
+      "Musculoskeletal"
+    ],
+    "\nCase Database": [],
+    "disease overview": "Acute bacterial infection of the knee joint causing severe pain, swelling, warmth, and marked limitation of movement; a medical emergency requiring urgent aspiration and treatment.",
+    "Files & media": {
+      "type": "files"
+    },
+    "mechanism": "Bacteria enter the joint (hematogenous spread, direct inoculation, or extension) → intense synovial inflammation and purulent effusion → rapid cartilage destruction if untreated.",
+    "medical lecture": [
+      "8e4ee033-c41d-831e-8199-81386368b945"
+    ],
+    "disorder": "Septic arthritis（化脓性关节炎）"
+  },
+  "createdAt": "2026-06-02",
+  "updatedAt": "2026-06-04"
+}

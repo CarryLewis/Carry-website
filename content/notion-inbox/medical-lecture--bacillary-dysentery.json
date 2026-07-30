@@ -1,0 +1,33 @@
+{
+  "id": "inbox-medical-lecture-bacillary-dysentery",
+  "slug": "bacillary-dysentery",
+  "title": "Bacillary dysentery&肾综合性出血热",
+  "source": {
+    "notionPageId": "0f9ee033-c41d-8286-ad22-8168c2f42643",
+    "notionDatabaseId": "75fee033-c41d-8242-ac46-014d564f81d8",
+    "notionDatabaseTitle": "medical lecture",
+    "notionUrl": "https://app.notion.com/p/Bacillary-dysentery-0f9ee033c41d8286ad228168c2f42643"
+  },
+  "properties": {
+    "program": "infection",
+    "lecture time": "2026-03-23",
+    "weak ratio": null,
+    "coverage score": null,
+    "Related medical lecture": [],
+    "disease database": [
+      "be0cb38b-5d80-471a-a40b-741111faec19",
+      "d21b9f39-02ef-4ded-b5b6-26db123a60e6"
+    ],
+    "Files & media": {
+      "type": "files"
+    },
+    "identity": "lecture",
+    "applications": [
+      "c05ee033-c41d-831f-8b29-01a63efca99f",
+      "38eee033-c41d-8054-a67b-c1b649d15e98"
+    ],
+    "Name": "Bacillary dysentery&肾综合性出血热"
+  },
+  "createdAt": "2026-04-15",
+  "updatedAt": "2026-07-01"
+}

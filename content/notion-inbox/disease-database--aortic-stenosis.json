@@ -1,0 +1,35 @@
+{
+  "id": "inbox-disease-database-aortic-stenosis",
+  "slug": "aortic-stenosis",
+  "title": "Aortic Stenosis｜主动脉瓣狭窄",
+  "source": {
+    "notionPageId": "f68578d9-c4a2-4b80-ac19-ac053ba5c7f8",
+    "notionDatabaseId": "4c1ee033-c41d-83bd-bfab-0116847a8a69",
+    "notionDatabaseTitle": "disease database",
+    "notionUrl": "https://app.notion.com/p/Aortic-Stenosis-f68578d9c4a24b80ac19ac053ba5c7f8"
+  },
+  "properties": {
+    "💊 Drug database": [],
+    "Related disease": [],
+    "Prevalence": null,
+    "category": [
+      "Acquired disease"
+    ],
+    "USMULE Q": [],
+    "related system": [
+      "Cardiovascular"
+    ],
+    "\nCase Database": [
+      "fc377a62-b781-4b0a-a52a-b7ffbc882a06"
+    ],
+    "disease overview": "主动脉瓣口狭窄导致左室射血受阻。典型三联征：心绞痛、晕厥、呼吸困难（劳力性）。体征常见收缩期喷射样杂音。",
+    "Files & media": {
+      "type": "files"
+    },
+    "mechanism": "瓣口狭窄→左室后负荷↑→左室压力↑与向心性肥厚；心肌耗氧↑且冠脉灌注相对不足→心绞痛；固定性心排量受限→劳力性晕厥；舒张顺应性下降/左房压↑→肺淤血与呼吸困难；晚期可心衰与猝死风险↑。",
+    "medical lecture": [],
+    "disorder": "Aortic Stenosis｜主动脉瓣狭窄"
+  },
+  "createdAt": "2026-05-11",
+  "updatedAt": "2026-05-11"
+}

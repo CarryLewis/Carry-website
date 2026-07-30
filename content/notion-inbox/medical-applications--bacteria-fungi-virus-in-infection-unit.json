@@ -1,0 +1,40 @@
+{
+  "id": "inbox-medical-applications-bacteria-fungi-virus-in-infection-unit",
+  "slug": "bacteria-fungi-virus-in-infection-unit",
+  "title": "bacteria, fungi, virus in infection unit",
+  "source": {
+    "notionPageId": "c05ee033-c41d-831f-8b29-01a63efca99f",
+    "notionDatabaseId": "b67ee033-c41d-82c8-9173-0188157db110",
+    "notionDatabaseTitle": "medical applications",
+    "notionUrl": "https://app.notion.com/p/bacteria-fungi-virus-in-infection-unit-c05ee033c41d831f8b2901a63efca99f"
+  },
+  "properties": {
+    "medical lecture": [
+      "313ee033-c41d-82d3-9cb9-81b354424b93",
+      "18aee033-c41d-83c4-8b9f-81d5bbe20f5d",
+      "90eee033-c41d-8369-b6c5-81554f06b49a",
+      "180ee033-c41d-82bd-9926-810a5a6e8148",
+      "ccfee033-c41d-8335-bea0-01269d4df425",
+      "a78ee033-c41d-8346-8e37-01cff35351d6",
+      "0f9ee033-c41d-8286-ad22-8168c2f42643"
+    ],
+    "overview": "",
+    "Status": "Done",
+    "program": [
+      "IMM"
+    ],
+    "Created time": {
+      "type": "created_time"
+    },
+    "Last edited time": {
+      "type": "last_edited_time"
+    },
+    "usage": [
+      "question",
+      "class content"
+    ],
+    "Name": "bacteria, fungi, virus in infection unit"
+  },
+  "createdAt": "2026-04-15",
+  "updatedAt": "2026-05-25"
+}

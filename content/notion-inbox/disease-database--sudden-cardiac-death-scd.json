@@ -1,0 +1,35 @@
+{
+  "id": "inbox-disease-database-sudden-cardiac-death-scd",
+  "slug": "sudden-cardiac-death-scd",
+  "title": "心脏性猝死 / Sudden cardiac death (SCD)",
+  "source": {
+    "notionPageId": "3ef87121-ba49-4c20-9498-c2e30139954e",
+    "notionDatabaseId": "4c1ee033-c41d-83bd-bfab-0116847a8a69",
+    "notionDatabaseTitle": "disease database",
+    "notionUrl": "https://app.notion.com/p/Sudden-cardiac-death-SCD-3ef87121ba494c209498c2e30139954e"
+  },
+  "properties": {
+    "💊 Drug database": [],
+    "Related disease": [],
+    "Prevalence": "high",
+    "category": [
+      "Acquired disease"
+    ],
+    "USMULE Q": [],
+    "related system": [
+      "Cardiovascular"
+    ],
+    "\nCase Database": [],
+    "disease overview": "心脏性猝死（SCD）指非创伤性、不可预测的突然死亡事件，通常发生于症状出现后1小时内（目击）或无目击但最后一次见到正常后24小时内，常由致死性心律失常导致。",
+    "Files & media": {
+      "type": "files"
+    },
+    "mechanism": "多由结构性心脏病（最常见冠心病）或电活动异常导致恶性心律失常（VF/VT/TdP）引起有效心排出量骤降；代谢/诱因因素可触发事件。",
+    "medical lecture": [
+      "379ee033-c41d-8038-b403-e92d4eaf26b0"
+    ],
+    "disorder": "心脏性猝死 / Sudden cardiac death (SCD)"
+  },
+  "createdAt": "2026-06-08",
+  "updatedAt": "2026-06-08"
+}

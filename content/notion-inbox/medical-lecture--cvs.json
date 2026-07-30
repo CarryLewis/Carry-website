@@ -1,0 +1,31 @@
+{
+  "id": "inbox-medical-lecture-cvs",
+  "slug": "cvs",
+  "title": "CVS临床示教-高血压",
+  "source": {
+    "notionPageId": "37dee033-c41d-80d7-81b3-cd07c0ee7ec6",
+    "notionDatabaseId": "75fee033-c41d-8242-ac46-014d564f81d8",
+    "notionDatabaseTitle": "medical lecture",
+    "notionUrl": "https://app.notion.com/p/CVS-37dee033c41d80d781b3cd07c0ee7ec6"
+  },
+  "properties": {
+    "program": "CVS",
+    "lecture time": "2026-06-12",
+    "weak ratio": null,
+    "coverage score": null,
+    "Related medical lecture": [
+      "373ee033-c41d-80aa-98c7-f44295442bb1"
+    ],
+    "disease database": [],
+    "Files & media": {
+      "type": "files"
+    },
+    "identity": "experiment",
+    "applications": [
+      "37dee033-c41d-80b4-a7e5-eb62f07be5c4"
+    ],
+    "Name": "CVS临床示教-高血压"
+  },
+  "createdAt": "2026-06-12",
+  "updatedAt": "2026-06-12"
+}

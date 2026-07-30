@@ -1,0 +1,45 @@
+{
+  "id": "inbox-drug-database-empagliflozin",
+  "slug": "empagliflozin",
+  "title": "Empagliflozin / 恩格列净",
+  "source": {
+    "notionPageId": "06c857f6-7d62-4366-97ef-2ef32c363fd4",
+    "notionDatabaseId": "631ffa28-fc5d-4fbc-8205-2fbd3cfb81e4",
+    "notionDatabaseTitle": "Drug database",
+    "notionUrl": "https://app.notion.com/p/Empagliflozin-06c857f67d62436697ef2ef32c363fd4"
+  },
+  "properties": {
+    "Related lectures": [],
+    "Mechanism (MOA)": "Inhibits SGLT2 in proximal tubule → glucosuria + natriuresis/osmotic diuresis → ↓ plasma volume/↓ preload; improves cardiac/renal outcomes → reduces HF hospitalization and improves prognosis (benefit in HFrEF and HFpEF).",
+    "disease database": [
+      "6bd54e41-f8ee-43a5-8232-6e8adc7289f5",
+      "014713bc-b765-496f-bee7-a6da3176f354"
+    ],
+    "Tags": [
+      "High-yield",
+      "First-line"
+    ],
+    "Type": "Inhibitor",
+    "System": [
+      "Cardiovascular",
+      "Renal / Fluid & Electrolytes",
+      "Endocrine"
+    ],
+    "Contraindications": "Severe renal impairment below agent-specific eGFR threshold; history of ketoacidosis; volume depletion/hypotension (relative); pregnancy (relative/avoid).",
+    "Target / receptor": "SGLT2 (proximal renal tubule)",
+    "Indications": "Type 2 diabetes; heart failure (HFrEF and HFpEF benefit); CKD (depending on guideline/renal function).",
+    "Related cases": [],
+    "Last edited": {
+      "type": "last_edited_time"
+    },
+    "Dosing notes": "",
+    "Class": "Endocrine",
+    "Created": {
+      "type": "created_time"
+    },
+    "Adverse effects": "Genital mycotic infections/UTIs; volume depletion/hypotension; euglycemic DKA (rare); very rare Fournier gangrene.",
+    "Drug": "Empagliflozin / 恩格列净"
+  },
+  "createdAt": "2026-06-03",
+  "updatedAt": "2026-06-03"
+}

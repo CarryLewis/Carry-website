@@ -1,0 +1,16 @@
+{
+  "id": "inbox-disease-gallary-immunology",
+  "slug": "immunology",
+  "title": "immunology",
+  "source": {
+    "notionPageId": "102ee033-c41d-83aa-9abb-0139643fb16f",
+    "notionDatabaseId": "aa0ee033-c41d-82c5-875d-01c5362cf918",
+    "notionDatabaseTitle": "disease gallary",
+    "notionUrl": "https://app.notion.com/p/immunology-102ee033c41d83aa9abb0139643fb16f"
+  },
+  "properties": {
+    "Name": "immunology"
+  },
+  "createdAt": "2026-04-15",
+  "updatedAt": "2026-04-15"
+}

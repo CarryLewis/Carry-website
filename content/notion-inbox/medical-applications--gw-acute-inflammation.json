@@ -1,0 +1,33 @@
+{
+  "id": "inbox-medical-applications-gw-acute-inflammation",
+  "slug": "gw-acute-inflammation",
+  "title": "GW:acute inflammation",
+  "source": {
+    "notionPageId": "606ee033-c41d-83f8-a90d-01175202af51",
+    "notionDatabaseId": "b67ee033-c41d-82c8-9173-0188157db110",
+    "notionDatabaseTitle": "medical applications",
+    "notionUrl": "https://app.notion.com/p/GW-acute-inflammation-606ee033c41d83f8a90d01175202af51"
+  },
+  "properties": {
+    "medical lecture": [
+      "43cee033-c41d-8315-9c7d-0115bfd463f1"
+    ],
+    "overview": "",
+    "Status": null,
+    "program": [
+      "pathology process"
+    ],
+    "Created time": {
+      "type": "created_time"
+    },
+    "Last edited time": {
+      "type": "last_edited_time"
+    },
+    "usage": [
+      "class content"
+    ],
+    "Name": "GW:acute inflammation"
+  },
+  "createdAt": "2026-04-15",
+  "updatedAt": "2026-04-23"
+}

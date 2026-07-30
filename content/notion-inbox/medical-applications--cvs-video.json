@@ -1,0 +1,32 @@
+{
+  "id": "inbox-medical-applications-cvs-video",
+  "slug": "cvs-video",
+  "title": "CVS video",
+  "source": {
+    "notionPageId": "358ee033-c41d-803d-b05c-d190c2dda287",
+    "notionDatabaseId": "b67ee033-c41d-82c8-9173-0188157db110",
+    "notionDatabaseTitle": "medical applications",
+    "notionUrl": "https://app.notion.com/p/CVS-video-358ee033c41d803db05cd190c2dda287"
+  },
+  "properties": {
+    "medical lecture": [],
+    "overview": "",
+    "Status": "Done",
+    "program": [
+      "CVS"
+    ],
+    "Created time": {
+      "type": "created_time"
+    },
+    "Last edited time": {
+      "type": "last_edited_time"
+    },
+    "usage": [
+      "class content",
+      "reference"
+    ],
+    "Name": "CVS video"
+  },
+  "createdAt": "2026-05-06",
+  "updatedAt": "2026-05-25"
+}

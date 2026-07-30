@@ -1,0 +1,29 @@
+{
+  "id": "inbox-medical-lecture-icpp-gw-glucose-transport-mechanisms-in-different-tissues-and-regulation-of-cell-ph-and-volume-and-organic-anion-and-cation-transport",
+  "slug": "icpp-gw-glucose-transport-mechanisms-in-different-tissues-and-regulation-of-cell-ph-and-volume-and-organic-anion-and-cation-transport",
+  "title": "ICPP-GW:Glucose Transport Mechanisms in Different Tissues and Regulation of Cell pH and Volume and Organic Anion and Cation Transport",
+  "source": {
+    "notionPageId": "345ee033-c41d-800b-9460-f6c87c66dda1",
+    "notionDatabaseId": "75fee033-c41d-8242-ac46-014d564f81d8",
+    "notionDatabaseTitle": "medical lecture",
+    "notionUrl": "https://app.notion.com/p/ICPP-GW-Glucose-Transport-Mechanisms-in-Different-Tissues-and-Regulation-of-Cell-pH-and-Volume-and-O-345ee033c41d800b9460f6c87c66dda1"
+  },
+  "properties": {
+    "program": "ICPP",
+    "lecture time": "2026-04-17",
+    "weak ratio": null,
+    "coverage score": null,
+    "Related medical lecture": [
+      "344ee033-c41d-8022-a13b-fea0adc3d8bf"
+    ],
+    "disease database": [],
+    "Files & media": {
+      "type": "files"
+    },
+    "identity": "GW",
+    "applications": [],
+    "Name": "ICPP-GW:Glucose Transport Mechanisms in Different Tissues and Regulation of Cell pH and Volume and Organic Anion and Cation Transport"
+  },
+  "createdAt": "2026-04-17",
+  "updatedAt": "2026-05-17"
+}

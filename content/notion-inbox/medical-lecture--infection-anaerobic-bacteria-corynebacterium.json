@@ -1,0 +1,29 @@
+{
+  "id": "inbox-medical-lecture-infection-anaerobic-bacteria-corynebacterium",
+  "slug": "infection-anaerobic-bacteria-corynebacterium",
+  "title": "infection:Anaerobic Bacteria厌氧菌&    Corynebacterium 棒状杆菌",
+  "source": {
+    "notionPageId": "38aee033-c41d-8039-bae8-cb89853b0452",
+    "notionDatabaseId": "75fee033-c41d-8242-ac46-014d564f81d8",
+    "notionDatabaseTitle": "medical lecture",
+    "notionUrl": "https://app.notion.com/p/infection-Anaerobic-Bacteria-Corynebacterium-38aee033c41d8039bae8cb89853b0452"
+  },
+  "properties": {
+    "program": "infection",
+    "lecture time": "2026-06-25",
+    "weak ratio": null,
+    "coverage score": null,
+    "Related medical lecture": [],
+    "disease database": [],
+    "Files & media": {
+      "type": "files"
+    },
+    "identity": "lecture",
+    "applications": [
+      "38eee033-c41d-8054-a67b-c1b649d15e98"
+    ],
+    "Name": "infection:Anaerobic Bacteria厌氧菌&    Corynebacterium 棒状杆菌"
+  },
+  "createdAt": "2026-06-25",
+  "updatedAt": "2026-07-08"
+}

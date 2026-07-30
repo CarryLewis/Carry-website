@@ -1,0 +1,33 @@
+{
+  "id": "inbox-medical-applications-cell-injury-clinical-questions",
+  "slug": "cell-injury-clinical-questions",
+  "title": "cell injury clinical questions",
+  "source": {
+    "notionPageId": "ee4ee033-c41d-82d5-b001-81aee866c60b",
+    "notionDatabaseId": "b67ee033-c41d-82c8-9173-0188157db110",
+    "notionDatabaseTitle": "medical applications",
+    "notionUrl": "https://app.notion.com/p/cell-injury-clinical-questions-ee4ee033c41d82d5b00181aee866c60b"
+  },
+  "properties": {
+    "medical lecture": [
+      "cb3ee033-c41d-83f2-9639-8101d14e2252"
+    ],
+    "overview": "",
+    "Status": null,
+    "program": [
+      "pathology process"
+    ],
+    "Created time": {
+      "type": "created_time"
+    },
+    "Last edited time": {
+      "type": "last_edited_time"
+    },
+    "usage": [
+      "class content"
+    ],
+    "Name": "cell injury clinical questions"
+  },
+  "createdAt": "2026-04-15",
+  "updatedAt": "2026-04-15"
+}

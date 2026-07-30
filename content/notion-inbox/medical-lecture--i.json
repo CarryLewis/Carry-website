@@ -1,0 +1,27 @@
+{
+  "id": "inbox-medical-lecture-i",
+  "slug": "i",
+  "title": "第五次作业（肿瘤免疫/免疫预防/I型超敏反应）",
+  "source": {
+    "notionPageId": "343ee033-c41d-80a0-8a39-da3979dd8156",
+    "notionDatabaseId": "75fee033-c41d-8242-ac46-014d564f81d8",
+    "notionDatabaseTitle": "medical lecture",
+    "notionUrl": "https://app.notion.com/p/I-343ee033c41d80a08a39da3979dd8156"
+  },
+  "properties": {
+    "program": "immune system",
+    "lecture time": "2026-04-01",
+    "weak ratio": null,
+    "coverage score": null,
+    "Related medical lecture": [],
+    "disease database": [],
+    "Files & media": {
+      "type": "files"
+    },
+    "identity": "quiz",
+    "applications": [],
+    "Name": "第五次作业（肿瘤免疫/免疫预防/I型超敏反应）"
+  },
+  "createdAt": "2026-04-15",
+  "updatedAt": "2026-04-15"
+}

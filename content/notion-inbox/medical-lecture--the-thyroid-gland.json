@@ -1,0 +1,30 @@
+{
+  "id": "inbox-medical-lecture-the-thyroid-gland",
+  "slug": "the-thyroid-gland",
+  "title": "the thyroid gland",
+  "source": {
+    "notionPageId": "0d8ee033-c41d-8379-9e84-01273f7373a9",
+    "notionDatabaseId": "75fee033-c41d-8242-ac46-014d564f81d8",
+    "notionDatabaseTitle": "medical lecture",
+    "notionUrl": "https://app.notion.com/p/the-thyroid-gland-0d8ee033c41d83799e8401273f7373a9"
+  },
+  "properties": {
+    "program": "MEH",
+    "lecture time": "2025-12-10",
+    "weak ratio": null,
+    "coverage score": null,
+    "Related medical lecture": [],
+    "disease database": [],
+    "Files & media": {
+      "type": "files"
+    },
+    "identity": "lecture",
+    "applications": [
+      "3f4ee033-c41d-8225-a559-0195a6364bdd",
+      "367ee033-c41d-8215-b471-014923e1dee5"
+    ],
+    "Name": "the thyroid gland"
+  },
+  "createdAt": "2026-04-15",
+  "updatedAt": "2026-06-12"
+}

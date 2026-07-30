@@ -1,0 +1,30 @@
+{
+  "id": "inbox-medical-lecture-infection-gw9-three-case-studies-a-b-and-c-involving-travellers-returning-to-the-uk-malaria-acute-schistosomiasis-legionnaire-s-disease-pneumonia",
+  "slug": "infection-gw9-three-case-studies-a-b-and-c-involving-travellers-returning-to-the-uk-malaria-acute-schistosomiasis-legionnaire-s-disease-pneumonia",
+  "title": "Infection-GW9: Three Case Studies A, B and C involving Travellers Returning to the UK (Malaria, Acute Schistosomiasis, Legionnaire’s Disease (Pneumonia))",
+  "source": {
+    "notionPageId": "90eee033-c41d-8369-b6c5-81554f06b49a",
+    "notionDatabaseId": "75fee033-c41d-8242-ac46-014d564f81d8",
+    "notionDatabaseTitle": "medical lecture",
+    "notionUrl": "https://app.notion.com/p/Infection-GW9-Three-Case-Studies-A-B-and-C-involving-Travellers-Returning-to-the-UK-Malaria-Acut-90eee033c41d8369b6c581554f06b49a"
+  },
+  "properties": {
+    "program": "infection",
+    "lecture time": "2026-03-25",
+    "weak ratio": null,
+    "coverage score": null,
+    "Related medical lecture": [],
+    "disease database": [],
+    "Files & media": {
+      "type": "files"
+    },
+    "identity": "GW",
+    "applications": [
+      "633ee033-c41d-826a-9c5f-017d17e4a400",
+      "c05ee033-c41d-831f-8b29-01a63efca99f"
+    ],
+    "Name": "Infection-GW9: Three Case Studies A, B and C involving Travellers Returning to the UK (Malaria, Acute Schistosomiasis, Legionnaire’s Disease (Pneumonia))"
+  },
+  "createdAt": "2026-04-15",
+  "updatedAt": "2026-05-27"
+}

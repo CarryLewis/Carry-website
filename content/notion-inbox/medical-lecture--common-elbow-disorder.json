@@ -1,0 +1,29 @@
+{
+  "id": "inbox-medical-lecture-common-elbow-disorder",
+  "slug": "common-elbow-disorder",
+  "title": "common elbow disorder",
+  "source": {
+    "notionPageId": "66aee033-c41d-823f-94b0-0168c45e09f4",
+    "notionDatabaseId": "75fee033-c41d-8242-ac46-014d564f81d8",
+    "notionDatabaseTitle": "medical lecture",
+    "notionUrl": "https://app.notion.com/p/common-elbow-disorder-66aee033c41d823f94b00168c45e09f4"
+  },
+  "properties": {
+    "program": "MSK",
+    "lecture time": "2026-04-10",
+    "weak ratio": null,
+    "coverage score": null,
+    "Related medical lecture": [],
+    "disease database": [],
+    "Files & media": {
+      "type": "files"
+    },
+    "identity": "lecture",
+    "applications": [
+      "b7dee033-c41d-83e4-b586-815ea392104d"
+    ],
+    "Name": "common elbow disorder"
+  },
+  "createdAt": "2026-04-15",
+  "updatedAt": "2026-06-09"
+}

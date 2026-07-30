@@ -1,0 +1,35 @@
+{
+  "id": "inbox-disease-database-meniscal-injury",
+  "slug": "meniscal-injury",
+  "title": "Meniscal injury（半月板损伤）",
+  "source": {
+    "notionPageId": "22f04b2d-902c-481f-b0b1-eb931c9cdb74",
+    "notionDatabaseId": "4c1ee033-c41d-83bd-bfab-0116847a8a69",
+    "notionDatabaseTitle": "disease database",
+    "notionUrl": "https://app.notion.com/p/Meniscal-injury-22f04b2d902c481fb0b1eb931c9cdb74"
+  },
+  "properties": {
+    "💊 Drug database": [],
+    "Related disease": [],
+    "Prevalence": "high",
+    "category": [
+      "injury"
+    ],
+    "USMULE Q": [],
+    "related system": [
+      "Musculoskeletal"
+    ],
+    "\nCase Database": [],
+    "disease overview": "Tear of the medial or lateral meniscus, commonly after twisting/pivoting; causes joint line pain and mechanical symptoms such as catching or locking.",
+    "Files & media": {
+      "type": "files"
+    },
+    "mechanism": "Sudden rotational shear on a loaded knee causes meniscal tear (degenerative tears can occur with aging); displaced tear fragments can mechanically block extension and irritate synovium.",
+    "medical lecture": [
+      "8e4ee033-c41d-831e-8199-81386368b945"
+    ],
+    "disorder": "Meniscal injury（半月板损伤）"
+  },
+  "createdAt": "2026-06-02",
+  "updatedAt": "2026-06-02"
+}

@@ -1,0 +1,41 @@
+{
+  "id": "inbox-drug-database-carvedilol",
+  "slug": "carvedilol",
+  "title": "Carvedilol / 卡维地洛",
+  "source": {
+    "notionPageId": "bc0edb53-0b18-42ac-9dc9-723d220db264",
+    "notionDatabaseId": "631ffa28-fc5d-4fbc-8205-2fbd3cfb81e4",
+    "notionDatabaseTitle": "Drug database",
+    "notionUrl": "https://app.notion.com/p/Carvedilol-bc0edb530b1842ac9dc9723d220db264"
+  },
+  "properties": {
+    "Related lectures": [
+      "358ee033-c41d-801e-89db-f534ef79468b"
+    ],
+    "Mechanism (MOA)": "Mixed α1 + β blockade → vasodilation (α1 block) + ↓cardiac workload (β block).",
+    "disease database": [],
+    "Tags": [
+      "High-yield"
+    ],
+    "Type": "Antagonist",
+    "System": [
+      "Cardiovascular"
+    ],
+    "Contraindications": "Severe bradycardia/AV block; caution in asthma/COPD (β blockade).",
+    "Target / receptor": "α1 + β (mixed blocker)",
+    "Indications": "Chronic heart failure; hypertension (common teaching).",
+    "Related cases": [],
+    "Last edited": {
+      "type": "last_edited_time"
+    },
+    "Dosing notes": "",
+    "Class": "Adrenergic",
+    "Created": {
+      "type": "created_time"
+    },
+    "Adverse effects": "Bradycardia, hypotension, dizziness; potential bronchospasm in susceptible patients.",
+    "Drug": "Carvedilol / 卡维地洛"
+  },
+  "createdAt": "2026-05-06",
+  "updatedAt": "2026-05-21"
+}

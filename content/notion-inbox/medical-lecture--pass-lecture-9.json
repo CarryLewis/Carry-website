@@ -1,0 +1,27 @@
+{
+  "id": "inbox-medical-lecture-pass-lecture-9",
+  "slug": "pass-lecture-9",
+  "title": "Pass lecture 9",
+  "source": {
+    "notionPageId": "e81ee033-c41d-8391-a5d4-8175c097d48a",
+    "notionDatabaseId": "75fee033-c41d-8242-ac46-014d564f81d8",
+    "notionDatabaseTitle": "medical lecture",
+    "notionUrl": "https://app.notion.com/p/Pass-lecture-9-e81ee033c41d8391a5d48175c097d48a"
+  },
+  "properties": {
+    "program": "Pass",
+    "lecture time": "2025-09-19",
+    "weak ratio": null,
+    "coverage score": null,
+    "Related medical lecture": [],
+    "disease database": [],
+    "Files & media": {
+      "type": "files"
+    },
+    "identity": null,
+    "applications": [],
+    "Name": "Pass lecture 9"
+  },
+  "createdAt": "2026-04-15",
+  "updatedAt": "2026-04-15"
+}

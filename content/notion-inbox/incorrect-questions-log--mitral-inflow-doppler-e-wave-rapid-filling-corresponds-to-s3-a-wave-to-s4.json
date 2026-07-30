@@ -1,0 +1,40 @@
+{
+  "id": "inbox-incorrect-questions-log-mitral-inflow-doppler-e-wave-rapid-filling-corresponds-to-s3-a-wave-to-s4",
+  "slug": "mitral-inflow-doppler-e-wave-rapid-filling-corresponds-to-s3-a-wave-to-s4",
+  "title": "Mitral inflow Doppler: E wave (rapid filling) corresponds to S3; A wave to S4",
+  "source": {
+    "notionPageId": "84fba7a2-bd8b-4e60-b237-c156be678aa7",
+    "notionDatabaseId": "3a6ee033-c41d-8038-a6c8-fe1a3435de49",
+    "notionDatabaseTitle": "Incorrect Questions Log",
+    "notionUrl": "https://app.notion.com/p/Mitral-inflow-Doppler-E-wave-rapid-filling-corresponds-to-S3-A-wave-to-S4-84fba7a2bd8b4e60b237c156be678aa7"
+  },
+  "properties": {
+    "Review status": "Unprocessed",
+    "Discipline (UWorld)": "Physiology",
+    "Difficulty": 2,
+    "System": [
+      "Cardio"
+    ],
+    "Correct answer": "Third heart sound (S3)",
+    "Created time": {
+      "type": "created_time"
+    },
+    "medical applications": [],
+    "Stem (brief)": "Mitral valve inflow Doppler at apex: arrow at early diastolic E wave (rapid passive filling). Which auscultation finding corresponds?",
+    "Source": "UWorld",
+    "Next review": null,
+    "Related USMLE Step 1 Incorrect Questions Log": [],
+    "Reviewed (this pass)": false,
+    "Takeaway (1 sentence)": "E wave (rapid early ventricular filling) → S3; A wave (atrial kick) → S4.",
+    "Error type": [
+      "Knowledge / concept error",
+      "Reasoning / inference error"
+    ],
+    "Explanation / Notes": "",
+    "Question ID": "",
+    "related disease": [],
+    "One-liner (Key concept)": "Mitral inflow Doppler: E wave (rapid filling) corresponds to S3; A wave to S4"
+  },
+  "createdAt": "2026-07-27",
+  "updatedAt": "2026-07-27"
+}

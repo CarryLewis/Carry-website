@@ -1,0 +1,27 @@
+{
+  "id": "inbox-medical-lecture-statisitic-normal-distribution",
+  "slug": "statisitic-normal-distribution",
+  "title": "statisitic:normal distribution",
+  "source": {
+    "notionPageId": "82eee033-c41d-8247-89e0-8112cf483f62",
+    "notionDatabaseId": "75fee033-c41d-8242-ac46-014d564f81d8",
+    "notionDatabaseTitle": "medical lecture",
+    "notionUrl": "https://app.notion.com/p/statisitic-normal-distribution-82eee033c41d824789e08112cf483f62"
+  },
+  "properties": {
+    "program": "Pass",
+    "lecture time": "2026-03-24",
+    "weak ratio": null,
+    "coverage score": null,
+    "Related medical lecture": [],
+    "disease database": [],
+    "Files & media": {
+      "type": "files"
+    },
+    "identity": "lecture",
+    "applications": [],
+    "Name": "statisitic:normal distribution"
+  },
+  "createdAt": "2026-04-15",
+  "updatedAt": "2026-04-15"
+}

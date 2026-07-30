@@ -1,0 +1,27 @@
+{
+  "id": "inbox-medical-lecture-introduce-to-histological-interpretation",
+  "slug": "introduce-to-histological-interpretation",
+  "title": "introduce to histological interpretation",
+  "source": {
+    "notionPageId": "1d3ee033-c41d-83ad-9fb4-813864c5d989",
+    "notionDatabaseId": "75fee033-c41d-8242-ac46-014d564f81d8",
+    "notionDatabaseTitle": "medical lecture",
+    "notionUrl": "https://app.notion.com/p/introduce-to-histological-interpretation-1d3ee033c41d83ad9fb4813864c5d989"
+  },
+  "properties": {
+    "program": "pathology",
+    "lecture time": "2025-12-16",
+    "weak ratio": null,
+    "coverage score": null,
+    "Related medical lecture": [],
+    "disease database": [],
+    "Files & media": {
+      "type": "files"
+    },
+    "identity": "lecture",
+    "applications": [],
+    "Name": "introduce to histological interpretation"
+  },
+  "createdAt": "2026-04-15",
+  "updatedAt": "2026-05-24"
+}

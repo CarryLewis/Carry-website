@@ -1,0 +1,33 @@
+{
+  "id": "inbox-medical-applications-diabetes-mellitus",
+  "slug": "diabetes-mellitus",
+  "title": "Diabetes mellitus",
+  "source": {
+    "notionPageId": "68fee033-c41d-833b-8b14-01f7f1a2537a",
+    "notionDatabaseId": "b67ee033-c41d-82c8-9173-0188157db110",
+    "notionDatabaseTitle": "medical applications",
+    "notionUrl": "https://app.notion.com/p/Diabetes-mellitus-68fee033c41d833b8b1401f7f1a2537a"
+  },
+  "properties": {
+    "medical lecture": [
+      "cb9ee033-c41d-82b3-9772-81aa2b0c839c"
+    ],
+    "overview": "",
+    "Status": null,
+    "program": [
+      "MEH"
+    ],
+    "Created time": {
+      "type": "created_time"
+    },
+    "Last edited time": {
+      "type": "last_edited_time"
+    },
+    "usage": [
+      "class content"
+    ],
+    "Name": "Diabetes mellitus"
+  },
+  "createdAt": "2026-04-15",
+  "updatedAt": "2026-07-13"
+}

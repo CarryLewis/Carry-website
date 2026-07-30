@@ -1,0 +1,27 @@
+{
+  "id": "inbox-medical-lecture-t-b-apc-t",
+  "slug": "t-b-apc-t",
+  "title": "第三次作业（T细胞/B细胞/APC/T细胞应答/体液免疫）",
+  "source": {
+    "notionPageId": "04bee033-c41d-8317-89d8-810e05118294",
+    "notionDatabaseId": "75fee033-c41d-8242-ac46-014d564f81d8",
+    "notionDatabaseTitle": "medical lecture",
+    "notionUrl": "https://app.notion.com/p/T-B-APC-T-04bee033c41d831789d8810e05118294"
+  },
+  "properties": {
+    "program": "immune system",
+    "lecture time": "2026-03-19",
+    "weak ratio": null,
+    "coverage score": null,
+    "Related medical lecture": [],
+    "disease database": [],
+    "Files & media": {
+      "type": "files"
+    },
+    "identity": "quiz",
+    "applications": [],
+    "Name": "第三次作业（T细胞/B细胞/APC/T细胞应答/体液免疫）"
+  },
+  "createdAt": "2026-04-15",
+  "updatedAt": "2026-04-15"
+}

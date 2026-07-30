@@ -26,7 +26,10 @@ async function resolveDataSourceId(
   }
   const source = db.data_sources[0];
   if (!source?.id) {
-    throw new Error(`No data_sources on database ${databaseId}`);
+    // Empty shells / linked views without a data source — skip gracefully.
+    throw new Error(
+      `No data_sources on database ${databaseId} (empty shell or linked view; skipped)`,
+    );
   }
   return source.id;
 }

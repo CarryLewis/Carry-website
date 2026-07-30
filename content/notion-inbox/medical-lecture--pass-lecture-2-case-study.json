@@ -1,0 +1,27 @@
+{
+  "id": "inbox-medical-lecture-pass-lecture-2-case-study",
+  "slug": "pass-lecture-2-case-study",
+  "title": "Pass lecture 2 case study",
+  "source": {
+    "notionPageId": "47cee033-c41d-838d-9614-01026c4dd10f",
+    "notionDatabaseId": "75fee033-c41d-8242-ac46-014d564f81d8",
+    "notionDatabaseTitle": "medical lecture",
+    "notionUrl": "https://app.notion.com/p/Pass-lecture-2-case-study-47cee033c41d838d961401026c4dd10f"
+  },
+  "properties": {
+    "program": "Pass",
+    "lecture time": "2025-09-10",
+    "weak ratio": null,
+    "coverage score": null,
+    "Related medical lecture": [],
+    "disease database": [],
+    "Files & media": {
+      "type": "files"
+    },
+    "identity": null,
+    "applications": [],
+    "Name": "Pass lecture 2 case study"
+  },
+  "createdAt": "2026-04-15",
+  "updatedAt": "2026-04-15"
+}

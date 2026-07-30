@@ -1,0 +1,32 @@
+{
+  "id": "inbox-medical-lecture-infection-5-hosptial-acquired-infection",
+  "slug": "infection-5-hosptial-acquired-infection",
+  "title": "infection-5:hosptial acquired infection",
+  "source": {
+    "notionPageId": "193ee033-c41d-834d-b521-0174da5bd141",
+    "notionDatabaseId": "75fee033-c41d-8242-ac46-014d564f81d8",
+    "notionDatabaseTitle": "medical lecture",
+    "notionUrl": "https://app.notion.com/p/infection-5-hosptial-acquired-infection-193ee033c41d834db5210174da5bd141"
+  },
+  "properties": {
+    "program": "infection",
+    "lecture time": "2026-03-19",
+    "weak ratio": null,
+    "coverage score": null,
+    "Related medical lecture": [],
+    "disease database": [
+      "884b0dfa-b7cd-423a-9c6e-839c12ad2708",
+      "68579f57-dfe8-4b6f-bbeb-360e2a2a0bff"
+    ],
+    "Files & media": {
+      "type": "files"
+    },
+    "identity": "lecture",
+    "applications": [
+      "36cee033-c41d-8074-9145-ef0add878584"
+    ],
+    "Name": "infection-5:hosptial acquired infection"
+  },
+  "createdAt": "2026-04-15",
+  "updatedAt": "2026-05-28"
+}

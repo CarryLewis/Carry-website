@@ -1,0 +1,46 @@
+{
+  "id": "inbox-drug-database-digoxin",
+  "slug": "digoxin",
+  "title": "Digoxin / 地高辛",
+  "source": {
+    "notionPageId": "9f40000e-1763-492c-ba62-0deebcfe6369",
+    "notionDatabaseId": "631ffa28-fc5d-4fbc-8205-2fbd3cfb81e4",
+    "notionDatabaseTitle": "Drug database",
+    "notionUrl": "https://app.notion.com/p/Digoxin-9f40000e1763492cba620deebcfe6369"
+  },
+  "properties": {
+    "Related lectures": [
+      "365ee033-c41d-80aa-a078-ef90c7eb113d"
+    ],
+    "Mechanism (MOA)": "Inhibits Na⁺/K⁺-ATPase → ↑ intracellular Na⁺ → ↓ Na⁺/Ca²⁺ exchanger activity → ↑ intracellular & SR Ca²⁺ → positive inotropy. Also ↑ vagal tone → slows AV nodal conduction & increases AV nodal refractory period (rate control in AF).",
+    "disease database": [
+      "6bd54e41-f8ee-43a5-8232-6e8adc7289f5",
+      "014713bc-b765-496f-bee7-a6da3176f354"
+    ],
+    "Tags": [
+      "High-yield",
+      "Side-effect heavy",
+      "Needs review"
+    ],
+    "Type": "Inhibitor",
+    "System": [
+      "Cardiovascular"
+    ],
+    "Contraindications": "WPW with AF (may accelerate conduction via accessory pathway → dangerous ventricular rates); 2°/3° AV block or severe bradycardia/sick sinus without pacing (worsens block). Use caution/adjust dose in renal impairment; higher toxicity risk with hypokalemia/hypomagnesemia/hypercalcemia.",
+    "Target / receptor": "Na⁺/K⁺-ATPase (Na⁺-K⁺ pump)",
+    "Indications": "(1) Chronic HFrEF: add-on to guideline-directed therapy to improve symptoms and reduce HF hospitalizations (does not clearly improve mortality). (2) AF/AFlutter: rate control, especially at rest; useful when hypotension limits β-blocker/CCB or when concomitant HFrEF.",
+    "Related cases": [],
+    "Last edited": {
+      "type": "last_edited_time"
+    },
+    "Dosing notes": "Narrow therapeutic index; renal elimination—dose adjust in CKD/elderly/low body weight. Monitor serum level when needed + electrolytes (K⁺/Mg²⁺/Ca²⁺) and ECG; interactions: amiodarone, verapamil/diltiazem, macrolides, azoles can ↑ level.",
+    "Class": "Other",
+    "Created": {
+      "type": "created_time"
+    },
+    "Adverse effects": "N/V, anorexia; confusion, weakness; visual disturbance (yellow/green halos). Cardiac: bradycardia, AV block, atrial tachycardia with block, ventricular ectopy/VT/VF (risk ↑ with low K⁺, low Mg²⁺, high Ca²⁺, renal failure, drug interactions).",
+    "Drug": "Digoxin / 地高辛"
+  },
+  "createdAt": "2026-05-19",
+  "updatedAt": "2026-06-03"
+}

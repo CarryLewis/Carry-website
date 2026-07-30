@@ -1,0 +1,33 @@
+{
+  "id": "inbox-disease-database-anaemia",
+  "slug": "anaemia",
+  "title": "anaemia",
+  "source": {
+    "notionPageId": "e2eee033-c41d-8278-a546-011208334ff1",
+    "notionDatabaseId": "4c1ee033-c41d-83bd-bfab-0116847a8a69",
+    "notionDatabaseTitle": "disease database",
+    "notionUrl": "https://app.notion.com/p/anaemia-e2eee033c41d8278a546011208334ff1"
+  },
+  "properties": {
+    "💊 Drug database": [],
+    "Related disease": [],
+    "Prevalence": "high",
+    "category": [
+      "symptom"
+    ],
+    "USMULE Q": [],
+    "related system": [
+      "Hematology"
+    ],
+    "\nCase Database": [],
+    "disease overview": "",
+    "Files & media": {
+      "type": "files"
+    },
+    "mechanism": "",
+    "medical lecture": [],
+    "disorder": "anaemia"
+  },
+  "createdAt": "2026-04-15",
+  "updatedAt": "2026-05-11"
+}

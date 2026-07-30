@@ -1,0 +1,35 @@
+{
+  "id": "inbox-medical-applications-opsonins-complement-system",
+  "slug": "opsonins-complement-system",
+  "title": "opsonins&complement system",
+  "source": {
+    "notionPageId": "8b0ee033-c41d-8210-affb-01ffbf4360a4",
+    "notionDatabaseId": "b67ee033-c41d-82c8-9173-0188157db110",
+    "notionDatabaseTitle": "medical applications",
+    "notionUrl": "https://app.notion.com/p/opsonins-complement-system-8b0ee033c41d8210affb01ffbf4360a4"
+  },
+  "properties": {
+    "medical lecture": [
+      "90eee033-c41d-8321-a255-014cc83cc7ce",
+      "954ee033-c41d-8228-af67-813bb705fafd"
+    ],
+    "overview": "在IMM以及infection unit中的innate immunology中都涉及到了opsonisation of microbes 以及the complement system",
+    "Status": "Done",
+    "program": [
+      "infection",
+      "IMM"
+    ],
+    "Created time": {
+      "type": "created_time"
+    },
+    "Last edited time": {
+      "type": "last_edited_time"
+    },
+    "usage": [
+      "question"
+    ],
+    "Name": "opsonins&complement system"
+  },
+  "createdAt": "2026-04-15",
+  "updatedAt": "2026-06-10"
+}

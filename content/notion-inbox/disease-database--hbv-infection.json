@@ -1,0 +1,36 @@
+{
+  "id": "inbox-disease-database-hbv-infection",
+  "slug": "hbv-infection",
+  "title": "乙型肝炎（HBV infection）",
+  "source": {
+    "notionPageId": "d73968db-54a0-4e77-84b7-ac9f39ec0d85",
+    "notionDatabaseId": "4c1ee033-c41d-83bd-bfab-0116847a8a69",
+    "notionDatabaseTitle": "disease database",
+    "notionUrl": "https://app.notion.com/p/HBV-infection-d73968db54a04e7784b7ac9f39ec0d85"
+  },
+  "properties": {
+    "💊 Drug database": [],
+    "Related disease": [],
+    "Prevalence": "high",
+    "category": [
+      "Acquired disease"
+    ],
+    "USMULE Q": [],
+    "related system": [
+      "Infectious Diseases",
+      "Gastrointestinal"
+    ],
+    "\nCase Database": [
+      "be8c37ec-f40c-4a92-a75c-f19383831852"
+    ],
+    "disease overview": "乙型肝炎（HBV）可呈急性或慢性过程；慢性感染可进展为肝硬化及肝细胞癌（HCC）。本次病例为典型“乙肝长期未抗病毒治疗 → 肝硬化失代偿 → HCC晚期（门静脉癌栓/骨转移）”。",
+    "Files & media": {
+      "type": "files"
+    },
+    "mechanism": "HBV为DNA病毒，主要感染肝细胞；肝损伤以宿主免疫介导为主（炎症反应/细胞毒性T细胞清除感染肝细胞）。慢性炎症-坏死-再生导致纤维化与结节形成（肝硬化），并增加HCC风险（持续炎症、肝细胞再生与基因改变、HBV基因整合等）。",
+    "medical lecture": [],
+    "disorder": "乙型肝炎（HBV infection）"
+  },
+  "createdAt": "2026-04-28",
+  "updatedAt": "2026-04-28"
+}

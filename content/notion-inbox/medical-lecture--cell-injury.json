@@ -1,0 +1,30 @@
+{
+  "id": "inbox-medical-lecture-cell-injury",
+  "slug": "cell-injury",
+  "title": "cell injury",
+  "source": {
+    "notionPageId": "cb3ee033-c41d-83f2-9639-8101d14e2252",
+    "notionDatabaseId": "75fee033-c41d-8242-ac46-014d564f81d8",
+    "notionDatabaseTitle": "medical lecture",
+    "notionUrl": "https://app.notion.com/p/cell-injury-cb3ee033c41d83f296398101d14e2252"
+  },
+  "properties": {
+    "program": "pathology",
+    "lecture time": "2025-12-15",
+    "weak ratio": null,
+    "coverage score": null,
+    "Related medical lecture": [],
+    "disease database": [],
+    "Files & media": {
+      "type": "files"
+    },
+    "identity": "lecture",
+    "applications": [
+      "dd0ee033-c41d-83a8-be7b-817909c57e79",
+      "ee4ee033-c41d-82d5-b001-81aee866c60b"
+    ],
+    "Name": "cell injury"
+  },
+  "createdAt": "2026-04-15",
+  "updatedAt": "2026-05-27"
+}

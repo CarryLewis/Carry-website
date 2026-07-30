@@ -1,0 +1,35 @@
+{
+  "id": "inbox-disease-database-ketoacidosis",
+  "slug": "ketoacidosis",
+  "title": "ketoacidosis",
+  "source": {
+    "notionPageId": "163ee033-c41d-8397-9055-0152fa172bfa",
+    "notionDatabaseId": "4c1ee033-c41d-83bd-bfab-0116847a8a69",
+    "notionDatabaseTitle": "disease database",
+    "notionUrl": "https://app.notion.com/p/ketoacidosis-163ee033c41d839790550152fa172bfa"
+  },
+  "properties": {
+    "💊 Drug database": [],
+    "Related disease": [
+      "e9aee033-c41d-8202-ad54-8146cbb7d057"
+    ],
+    "Prevalence": "medium",
+    "category": [
+      "symptom"
+    ],
+    "USMULE Q": [],
+    "related system": [
+      "Endocrine"
+    ],
+    "\nCase Database": [],
+    "disease overview": "",
+    "Files & media": {
+      "type": "files"
+    },
+    "mechanism": "",
+    "medical lecture": [],
+    "disorder": "ketoacidosis"
+  },
+  "createdAt": "2026-04-15",
+  "updatedAt": "2026-06-04"
+}

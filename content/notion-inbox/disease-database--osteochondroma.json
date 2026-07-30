@@ -1,0 +1,35 @@
+{
+  "id": "inbox-disease-database-osteochondroma",
+  "slug": "osteochondroma",
+  "title": "Osteochondroma（骨软骨瘤）",
+  "source": {
+    "notionPageId": "303038c3-9e23-4adc-b985-49b95fe23691",
+    "notionDatabaseId": "4c1ee033-c41d-83bd-bfab-0116847a8a69",
+    "notionDatabaseTitle": "disease database",
+    "notionUrl": "https://app.notion.com/p/Osteochondroma-303038c39e234adcb98549b95fe23691"
+  },
+  "properties": {
+    "💊 Drug database": [],
+    "Related disease": [],
+    "Prevalence": "medium",
+    "category": [
+      "tumor"
+    ],
+    "USMULE Q": [],
+    "related system": [
+      "Musculoskeletal"
+    ],
+    "\nCase Database": [],
+    "disease overview": "A common benign bone tumor (cartilage-capped bony outgrowth), typically arising from the metaphysis in adolescents/young people; often presents as a painless hard mass and is usually managed conservatively unless symptomatic.",
+    "Files & media": {
+      "type": "files"
+    },
+    "mechanism": "Developmental/benign osteocartilaginous exostosis with a hyaline cartilage cap continuous with underlying cortex and medullary cavity; symptoms arise from mechanical irritation, compression, or rarely malignant transformation.",
+    "medical lecture": [
+      "acdee033-c41d-832b-a9e9-8157387d61e8"
+    ],
+    "disorder": "Osteochondroma（骨软骨瘤）"
+  },
+  "createdAt": "2026-06-02",
+  "updatedAt": "2026-06-02"
+}

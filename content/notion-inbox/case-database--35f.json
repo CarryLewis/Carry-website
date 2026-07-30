@@ -1,0 +1,37 @@
+{
+  "id": "inbox-case-database-35f",
+  "slug": "35f",
+  "title": "车祸失血性休克：完整诊疗探究思路（35F）",
+  "source": {
+    "notionPageId": "2183950d-78bd-4d3a-b3a7-4970fd40bb7e",
+    "notionDatabaseId": "7f2ee033-c41d-8294-b8c9-01b833fd7013",
+    "notionDatabaseTitle": "Case Database",
+    "notionUrl": "https://app.notion.com/p/35F-2183950d78bd4d3ab3a74970fd40bb7e"
+  },
+  "properties": {
+    "disease database": [
+      "d2909a35-16b6-4197-8275-e5be876bede3"
+    ],
+    "Source link": "https://www.notion.so/CVS-376ee033c41d80e9b305e724b4e83358?v=314ee033c41d83b19e9808adb90657b9&source=copy_link",
+    "Day add": {
+      "type": "created_time"
+    },
+    "Source Tag": "lecture",
+    "cases overview": "35F 车祸左胸损伤 1h 入院，BP60/40，HR146，四肢湿冷、神志模糊；Hb58 g/L，胸腹腔大量积液 → 失血性休克（失代偿期/重度）。",
+    "feedback": "",
+    "case requirement": [
+      "diagnosis",
+      "treatment",
+      "prognosis"
+    ],
+    "related system": [
+      "Cardiology/CVS",
+      "Emergency/Acute",
+      "ICU/Critical care",
+      "Surgery/General"
+    ],
+    "case title": "车祸失血性休克：完整诊疗探究思路（35F）"
+  },
+  "createdAt": "2026-06-05",
+  "updatedAt": "2026-06-20"
+}

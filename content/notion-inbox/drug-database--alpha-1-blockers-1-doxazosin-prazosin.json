@@ -1,0 +1,42 @@
+{
+  "id": "inbox-drug-database-alpha-1-blockers-1-doxazosin-prazosin",
+  "slug": "alpha-1-blockers-1-doxazosin-prazosin",
+  "title": "Alpha-1 blockers / α1受体阻滞剂（例：doxazosin, prazosin）",
+  "source": {
+    "notionPageId": "bfbd05a3-2227-4471-91ef-c1e5ef57b424",
+    "notionDatabaseId": "631ffa28-fc5d-4fbc-8205-2fbd3cfb81e4",
+    "notionDatabaseTitle": "Drug database",
+    "notionUrl": "https://app.notion.com/p/Alpha-1-blockers-1-doxazosin-prazosin-bfbd05a32227447191efc1e5ef57b424"
+  },
+  "properties": {
+    "Related lectures": [],
+    "Mechanism (MOA)": "Block α1-mediated vasoconstriction → arteriolar/venous dilation → ↓TPR → ↓BP. / 阻断α1介导的血管收缩 → 动静脉扩张 → TPR↓ → 血压↓。",
+    "disease database": [
+      "e732bc22-61af-4b9d-aed3-6fe2c6565850"
+    ],
+    "Tags": [
+      "High-yield"
+    ],
+    "Type": "Antagonist",
+    "System": [
+      "Cardiovascular",
+      "Renal / Fluid & Electrolytes"
+    ],
+    "Contraindications": "Caution fall risk/orthostatic symptoms. / 有跌倒风险或明显体位性症状者慎用。",
+    "Target / receptor": "α1 receptors (vascular smooth muscle)",
+    "Indications": "Hypertension (not usually first-line); useful if coexisting BPH. / 高血压（通常非一线）；合并BPH时有利。",
+    "Related cases": [],
+    "Last edited": {
+      "type": "last_edited_time"
+    },
+    "Dosing notes": "",
+    "Class": "Adrenergic",
+    "Created": {
+      "type": "created_time"
+    },
+    "Adverse effects": "Postural hypotension, dizziness (first-dose effect), reflex tachycardia. / 体位性低血压、头晕（首剂效应）、反射性心动过速。",
+    "Drug": "Alpha-1 blockers / α1受体阻滞剂（例：doxazosin, prazosin）"
+  },
+  "createdAt": "2026-05-21",
+  "updatedAt": "2026-05-21"
+}

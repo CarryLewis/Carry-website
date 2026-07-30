@@ -1,0 +1,33 @@
+{
+  "id": "inbox-disease-database-avascular-necrosis-of-femoral-head-avn-osteonecrosis",
+  "slug": "avascular-necrosis-of-femoral-head-avn-osteonecrosis",
+  "title": "Avascular necrosis of femoral head (AVN) / Osteonecrosis / 股骨头坏死",
+  "source": {
+    "notionPageId": "51f3e0ba-060b-475f-8330-84d32ef4bf52",
+    "notionDatabaseId": "4c1ee033-c41d-83bd-bfab-0116847a8a69",
+    "notionDatabaseTitle": "disease database",
+    "notionUrl": "https://app.notion.com/p/Avascular-necrosis-of-femoral-head-AVN-Osteonecrosis-51f3e0ba060b475f833084d32ef4bf52"
+  },
+  "properties": {
+    "💊 Drug database": [],
+    "Related disease": [],
+    "Prevalence": "medium",
+    "category": [
+      "Acquired disease"
+    ],
+    "USMULE Q": [],
+    "related system": [
+      "Musculoskeletal"
+    ],
+    "\nCase Database": [],
+    "disease overview": "股骨头血供不足导致骨细胞死亡，进而微骨折与塌陷，最终继发髋关节骨关节炎。",
+    "Files & media": {
+      "type": "files"
+    },
+    "mechanism": "血供受损/阻塞（内侧旋股动脉支持带血管为主）→骨缺血坏死→骨下骨折（crescent sign）→股骨头塌陷→继发OA。",
+    "medical lecture": [],
+    "disorder": "Avascular necrosis of femoral head (AVN) / Osteonecrosis / 股骨头坏死"
+  },
+  "createdAt": "2026-06-06",
+  "updatedAt": "2026-06-06"
+}

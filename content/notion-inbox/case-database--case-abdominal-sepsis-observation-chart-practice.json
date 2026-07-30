@@ -1,0 +1,37 @@
+{
+  "id": "inbox-case-database-case-abdominal-sepsis-observation-chart-practice",
+  "slug": "case-abdominal-sepsis-observation-chart-practice",
+  "title": "Case｜Abdominal sepsis（observation chart practice）",
+  "source": {
+    "notionPageId": "ce679de0-7f16-4a9e-b681-31bf939d6654",
+    "notionDatabaseId": "7f2ee033-c41d-8294-b8c9-01b833fd7013",
+    "notionDatabaseTitle": "Case Database",
+    "notionUrl": "https://app.notion.com/p/Case-Abdominal-sepsis-observation-chart-practice-ce679de07f164a9eb68131bf939d6654"
+  },
+  "properties": {
+    "disease database": [
+      "7be207b2-b7d9-457a-9c3f-23be61e5d35f"
+    ],
+    "Source link": "https://www.notion.so/18aee033c41d83c48b9f81d5bbe20f5d",
+    "Day add": {
+      "type": "created_time"
+    },
+    "Source Tag": "lecture",
+    "cases overview": "Older patient; suspected intra-abdominal infection; use NEWS2/Red Flags to identify sepsis and start Sepsis 6 + source control.",
+    "feedback": "",
+    "case requirement": [
+      "diagnosis",
+      "treatment",
+      "pathology"
+    ],
+    "related system": [
+      "Infection/ID",
+      "Gastroenterology",
+      "Emergency/Acute",
+      "ICU/Critical care"
+    ],
+    "case title": "Case｜Abdominal sepsis（observation chart practice）"
+  },
+  "createdAt": "2026-05-26",
+  "updatedAt": "2026-05-26"
+}

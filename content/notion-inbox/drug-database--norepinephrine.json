@@ -1,0 +1,42 @@
+{
+  "id": "inbox-drug-database-norepinephrine",
+  "slug": "norepinephrine",
+  "title": "Norepinephrine / 去甲肾上腺素",
+  "source": {
+    "notionPageId": "cc411d5e-1813-4c47-a79d-2663936496fc",
+    "notionDatabaseId": "631ffa28-fc5d-4fbc-8205-2fbd3cfb81e4",
+    "notionDatabaseTitle": "Drug database",
+    "notionUrl": "https://app.notion.com/p/Norepinephrine-cc411d5e18134c47a79d2663936496fc"
+  },
+  "properties": {
+    "Related lectures": [
+      "358ee033-c41d-801e-89db-f534ef79468b"
+    ],
+    "Mechanism (MOA)": "Predominant α1 agonism → strong peripheral vasoconstriction → ↑SVR and ↑BP (pressors).",
+    "disease database": [],
+    "Tags": [
+      "Emergency",
+      "High-yield"
+    ],
+    "Type": "Agonist",
+    "System": [
+      "Cardiovascular"
+    ],
+    "Contraindications": "Severe peripheral vascular thrombosis/ischemia risk (relative); careful extravasation risk.",
+    "Target / receptor": "α1 (dominant)",
+    "Indications": "Shock with hypotension (vasopressor).",
+    "Related cases": [],
+    "Last edited": {
+      "type": "last_edited_time"
+    },
+    "Dosing notes": "",
+    "Class": "Adrenergic",
+    "Created": {
+      "type": "created_time"
+    },
+    "Adverse effects": "Peripheral ischemia, tissue necrosis (extravasation), reduced renal/peripheral perfusion; reflex bradycardia can occur.",
+    "Drug": "Norepinephrine / 去甲肾上腺素"
+  },
+  "createdAt": "2026-05-06",
+  "updatedAt": "2026-05-21"
+}

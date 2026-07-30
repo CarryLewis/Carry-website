@@ -1,0 +1,29 @@
+{
+  "id": "inbox-medical-lecture-infection-gw11-pharyngitis-ebv-influenza-case-studies",
+  "slug": "infection-gw11-pharyngitis-ebv-influenza-case-studies",
+  "title": "Infection-GW11: Pharyngitis, EBV & Influenza Case Studies",
+  "source": {
+    "notionPageId": "2adee033-c41d-83c3-8f36-019acdc3dcf9",
+    "notionDatabaseId": "75fee033-c41d-8242-ac46-014d564f81d8",
+    "notionDatabaseTitle": "medical lecture",
+    "notionUrl": "https://app.notion.com/p/Infection-GW11-Pharyngitis-EBV-Influenza-Case-Studies-2adee033c41d83c38f36019acdc3dcf9"
+  },
+  "properties": {
+    "program": "infection",
+    "lecture time": "2026-03-27",
+    "weak ratio": null,
+    "coverage score": null,
+    "Related medical lecture": [
+      "2c1ee033-c41d-832f-9dcb-817f9e30cf72"
+    ],
+    "disease database": [],
+    "Files & media": {
+      "type": "files"
+    },
+    "identity": "GW",
+    "applications": [],
+    "Name": "Infection-GW11: Pharyngitis, EBV & Influenza Case Studies"
+  },
+  "createdAt": "2026-04-15",
+  "updatedAt": "2026-05-27"
+}

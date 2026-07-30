@@ -1,0 +1,27 @@
+{
+  "id": "inbox-medical-lecture-cvs-gw7-ecgs-continued-arrhythmias-and-cvs-drugs-shock",
+  "slug": "cvs-gw7-ecgs-continued-arrhythmias-and-cvs-drugs-shock",
+  "title": "CVS-GW7:ECGs Continued – Arrhythmias and CVS Drugs & Shock",
+  "source": {
+    "notionPageId": "360ee033-c41d-809a-9357-c51a514a12f0",
+    "notionDatabaseId": "75fee033-c41d-8242-ac46-014d564f81d8",
+    "notionDatabaseTitle": "medical lecture",
+    "notionUrl": "https://app.notion.com/p/CVS-GW7-ECGs-Continued-Arrhythmias-and-CVS-Drugs-Shock-360ee033c41d809a9357c51a514a12f0"
+  },
+  "properties": {
+    "program": "CVS",
+    "lecture time": "2026-05-14",
+    "weak ratio": null,
+    "coverage score": null,
+    "Related medical lecture": [],
+    "disease database": [],
+    "Files & media": {
+      "type": "files"
+    },
+    "identity": "GW",
+    "applications": [],
+    "Name": "CVS-GW7:ECGs Continued – Arrhythmias and CVS Drugs & Shock"
+  },
+  "createdAt": "2026-05-14",
+  "updatedAt": "2026-05-23"
+}

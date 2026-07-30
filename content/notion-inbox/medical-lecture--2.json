@@ -1,0 +1,27 @@
+{
+  "id": "inbox-medical-lecture-2",
+  "slug": "2",
+  "title": "肿瘤（2）",
+  "source": {
+    "notionPageId": "583ee033-c41d-82ec-aa14-81767393c5f9",
+    "notionDatabaseId": "75fee033-c41d-8242-ac46-014d564f81d8",
+    "notionDatabaseTitle": "medical lecture",
+    "notionUrl": "https://app.notion.com/p/2-583ee033c41d82ecaa1481767393c5f9"
+  },
+  "properties": {
+    "program": "pathology",
+    "lecture time": "2025-12-30",
+    "weak ratio": null,
+    "coverage score": null,
+    "Related medical lecture": [],
+    "disease database": [],
+    "Files & media": {
+      "type": "files"
+    },
+    "identity": "experiment",
+    "applications": [],
+    "Name": "肿瘤（2）"
+  },
+  "createdAt": "2026-04-15",
+  "updatedAt": "2026-04-15"
+}

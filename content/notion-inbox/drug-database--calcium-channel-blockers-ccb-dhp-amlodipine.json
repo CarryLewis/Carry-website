@@ -1,0 +1,42 @@
+{
+  "id": "inbox-drug-database-calcium-channel-blockers-ccb-dhp-amlodipine",
+  "slug": "calcium-channel-blockers-ccb-dhp-amlodipine",
+  "title": "Calcium channel blockers / 钙通道阻滞剂（CCB，DHP类例：amlodipine）",
+  "source": {
+    "notionPageId": "16052aae-5e6a-4e1a-a68f-35252ab7fd81",
+    "notionDatabaseId": "631ffa28-fc5d-4fbc-8205-2fbd3cfb81e4",
+    "notionDatabaseTitle": "Drug database",
+    "notionUrl": "https://app.notion.com/p/Calcium-channel-blockers-CCB-DHP-amlodipine-16052aae5e6a4e1aa68f35252ab7fd81"
+  },
+  "properties": {
+    "Related lectures": [],
+    "Mechanism (MOA)": "Block L-type Ca²⁺ entry in vascular smooth muscle → arteriolar vasodilation → ↓TPR → ↓BP. / 阻断血管平滑肌L型Ca²⁺通道 → 小动脉扩张 → TPR↓ → 血压↓。",
+    "disease database": [
+      "e732bc22-61af-4b9d-aed3-6fe2c6565850"
+    ],
+    "Tags": [
+      "First-line",
+      "High-yield"
+    ],
+    "Type": "Modulator",
+    "System": [
+      "Cardiovascular"
+    ],
+    "Contraindications": "Caution in severe hypotension; (non-DHP have different contraindications). / 严重低血压慎用；（非DHP类禁忌证不同）。",
+    "Target / receptor": "L-type Ca²⁺ channels (vascular smooth muscle)",
+    "Indications": "Hypertension (esp. isolated systolic); angina (DHP/N-DHP specifics). / 高血压（尤其单纯收缩期高血压）；心绞痛（不同亚类适应证不同）。",
+    "Related cases": [],
+    "Last edited": {
+      "type": "last_edited_time"
+    },
+    "Dosing notes": "",
+    "Class": "Other",
+    "Created": {
+      "type": "created_time"
+    },
+    "Adverse effects": "Peripheral edema, flushing, headache, gingival hyperplasia. / 外周水肿、潮红、头痛、牙龈增生。",
+    "Drug": "Calcium channel blockers / 钙通道阻滞剂（CCB，DHP类例：amlodipine）"
+  },
+  "createdAt": "2026-05-21",
+  "updatedAt": "2026-05-21"
+}

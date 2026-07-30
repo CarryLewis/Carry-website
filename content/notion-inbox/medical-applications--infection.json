@@ -1,0 +1,34 @@
+{
+  "id": "inbox-medical-applications-infection",
+  "slug": "infection",
+  "title": "infection微生物实验报告",
+  "source": {
+    "notionPageId": "38cee033-c41d-809e-b96f-df8eecd90555",
+    "notionDatabaseId": "b67ee033-c41d-82c8-9173-0188157db110",
+    "notionDatabaseTitle": "medical applications",
+    "notionUrl": "https://app.notion.com/p/infection-38cee033c41d809eb96fdf8eecd90555"
+  },
+  "properties": {
+    "medical lecture": [
+      "38aee033-c41d-8061-ab43-c69b43b469d3",
+      "38bee033-c41d-80a5-8a6c-d7cf69402480"
+    ],
+    "overview": "",
+    "Status": "Done",
+    "program": [
+      "infection"
+    ],
+    "Created time": {
+      "type": "created_time"
+    },
+    "Last edited time": {
+      "type": "last_edited_time"
+    },
+    "usage": [
+      "class content"
+    ],
+    "Name": "infection微生物实验报告"
+  },
+  "createdAt": "2026-06-27",
+  "updatedAt": "2026-06-29"
+}

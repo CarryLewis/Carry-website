@@ -1,0 +1,27 @@
+{
+  "id": "inbox-medical-lecture-bias",
+  "slug": "bias",
+  "title": "bias",
+  "source": {
+    "notionPageId": "4c6ee033-c41d-82da-b4c5-81c1aa5c7abe",
+    "notionDatabaseId": "75fee033-c41d-8242-ac46-014d564f81d8",
+    "notionDatabaseTitle": "medical lecture",
+    "notionUrl": "https://app.notion.com/p/bias-4c6ee033c41d82dab4c581c1aa5c7abe"
+  },
+  "properties": {
+    "program": "Pass",
+    "lecture time": "2026-04-14",
+    "weak ratio": null,
+    "coverage score": null,
+    "Related medical lecture": [],
+    "disease database": [],
+    "Files & media": {
+      "type": "files"
+    },
+    "identity": "lecture",
+    "applications": [],
+    "Name": "bias"
+  },
+  "createdAt": "2026-04-15",
+  "updatedAt": "2026-04-15"
+}

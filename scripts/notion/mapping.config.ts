@@ -22,10 +22,19 @@ export type DatabaseOverride = {
   propertyNames?: Partial<Record<string, string>>;
 };
 
-/** Explicit database ID (dashed UUID) → module. Fill after `npm run discover:notion`. */
+/**
+ * Explicit database ID (dashed UUID) → module.
+ * medical-basement DBs are medical study vaults → notion-inbox until promoted.
+ */
 export const databaseOverrides: Record<string, DatabaseOverride> = {
-  // Example:
-  // "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee": { module: "projects" },
+  // Named medical-basement databases (discovered 2026-07-30)
+  "7f2ee033-c41d-8294-b8c9-01b833fd7013": { module: "notion-inbox" }, // Case Database
+  "4c1ee033-c41d-83bd-bfab-0116847a8a69": { module: "notion-inbox" }, // disease database
+  "aa0ee033-c41d-82c5-875d-01c5362cf918": { module: "notion-inbox" }, // disease gallary
+  "631ffa28-fc5d-4fbc-8205-2fbd3cfb81e4": { module: "notion-inbox" }, // Drug database
+  "3a6ee033-c41d-8038-a6c8-fe1a3435de49": { module: "notion-inbox" }, // Incorrect Questions Log
+  "b67ee033-c41d-82c8-9173-0188157db110": { module: "notion-inbox" }, // medical applications
+  "75fee033-c41d-8242-ac46-014d564f81d8": { module: "notion-inbox" }, // medical lecture
 };
 
 type Rule = { module: ContentModule; patterns: RegExp[] };
@@ -37,7 +46,14 @@ const TITLE_RULES: Rule[] = [
   },
   {
     module: "questions",
-    patterns: [/question/i, /问题/, /research\s*question/i, /active\s*question/i],
+    // Avoid matching study logs like "Incorrect Questions Log"
+    patterns: [
+      /^questions?$/i,
+      /active\s*questions?/i,
+      /research\s*questions?/i,
+      /^问题$/,
+      /研究问题/,
+    ],
   },
   {
     module: "projects",

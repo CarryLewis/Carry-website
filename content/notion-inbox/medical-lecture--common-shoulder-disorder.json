@@ -1,0 +1,31 @@
+{
+  "id": "inbox-medical-lecture-common-shoulder-disorder",
+  "slug": "common-shoulder-disorder",
+  "title": "common shoulder disorder",
+  "source": {
+    "notionPageId": "592ee033-c41d-8332-af12-816ed791c0dc",
+    "notionDatabaseId": "75fee033-c41d-8242-ac46-014d564f81d8",
+    "notionDatabaseTitle": "medical lecture",
+    "notionUrl": "https://app.notion.com/p/common-shoulder-disorder-592ee033c41d8332af12816ed791c0dc"
+  },
+  "properties": {
+    "program": "MSK",
+    "lecture time": "2026-04-09",
+    "weak ratio": null,
+    "coverage score": null,
+    "Related medical lecture": [],
+    "disease database": [
+      "23150123-3d9d-438e-8531-d1d025c86261"
+    ],
+    "Files & media": {
+      "type": "files"
+    },
+    "identity": "lecture",
+    "applications": [
+      "b7dee033-c41d-83e4-b586-815ea392104d"
+    ],
+    "Name": "common shoulder disorder"
+  },
+  "createdAt": "2026-04-15",
+  "updatedAt": "2026-06-06"
+}

@@ -1,0 +1,37 @@
+{
+  "id": "inbox-incorrect-questions-log-pda-l-r-shunt-increases-pulmonary-artery-pao2",
+  "slug": "pda-l-r-shunt-increases-pulmonary-artery-pao2",
+  "title": "PDA (L→R) shunt increases pulmonary artery PaO₂",
+  "source": {
+    "notionPageId": "90788841-1877-4909-b7bb-e7deaa128778",
+    "notionDatabaseId": "3a6ee033-c41d-8038-a6c8-fe1a3435de49",
+    "notionDatabaseTitle": "Incorrect Questions Log",
+    "notionUrl": "https://app.notion.com/p/PDA-L-R-shunt-increases-pulmonary-artery-PaO-9078884118774909b7bbe7deaa128778"
+  },
+  "properties": {
+    "Review status": "Unprocessed",
+    "Discipline (UWorld)": "Pathophysiology",
+    "Difficulty": 1,
+    "System": [
+      "Cardio"
+    ],
+    "Correct answer": "Pulmonary artery",
+    "Created time": {
+      "type": "created_time"
+    },
+    "medical applications": [],
+    "Stem (brief)": "A 4-week-old premature infant (26 wks) in NICU has a moderate PDA. Pulse ox shows 99% in the right hand and left foot. After catheterization but before closure, blood gases are obtained from several locations. Compared with a normal infant, in which location would PaO₂ be higher?",
+    "Source": "UWorld",
+    "Next review": null,
+    "Related USMLE Step 1 Incorrect Questions Log": [],
+    "Reviewed (this pass)": false,
+    "Takeaway (1 sentence)": "In PDA (usually L→R postnatally), oxygenated aortic blood enters the pulmonary artery → pulmonary artery PaO₂ is higher than normal.",
+    "Error type": [],
+    "Explanation / Notes": "Mechanism: Postnatal SVR↑ and PVR↓ → L→R shunt from aorta to pulmonary artery. This raises O₂ content/PaO₂ in the pulmonary artery compared with a normal infant. Aorta/LA are not higher than normal; RA is unaffected. Common trap: thinking LA increases, but the shunt dumps into PA, not LA.\n\nWrong-choice reflection: I initially chose Left atrium; corrected by tracing the actual shunt direction and where the oxygenated blood enters.",
+    "Question ID": "",
+    "related disease": [],
+    "One-liner (Key concept)": "PDA (L→R) shunt increases pulmonary artery PaO₂"
+  },
+  "createdAt": "2026-07-23",
+  "updatedAt": "2026-07-23"
+}

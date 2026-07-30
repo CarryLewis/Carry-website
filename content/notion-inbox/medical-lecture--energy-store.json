@@ -1,0 +1,30 @@
+{
+  "id": "inbox-medical-lecture-energy-store",
+  "slug": "energy-store",
+  "title": "energy store",
+  "source": {
+    "notionPageId": "27cee033-c41d-83dd-a2b8-8161d220ce66",
+    "notionDatabaseId": "75fee033-c41d-8242-ac46-014d564f81d8",
+    "notionDatabaseTitle": "medical lecture",
+    "notionUrl": "https://app.notion.com/p/energy-store-27cee033c41d83dda2b88161d220ce66"
+  },
+  "properties": {
+    "program": "MEH",
+    "lecture time": "2025-11-26",
+    "weak ratio": null,
+    "coverage score": null,
+    "Related medical lecture": [],
+    "disease database": [],
+    "Files & media": {
+      "type": "files"
+    },
+    "identity": "lecture",
+    "applications": [
+      "4a0ee033-c41d-83db-92b4-81d63ba53fbe",
+      "f0cee033-c41d-8232-8b84-8126eea3d9fb"
+    ],
+    "Name": "energy store"
+  },
+  "createdAt": "2026-04-15",
+  "updatedAt": "2026-06-12"
+}

@@ -1,0 +1,41 @@
+{
+  "id": "inbox-disease-database-chronic-heart-failure",
+  "slug": "chronic-heart-failure",
+  "title": "慢性心力衰竭 Chronic Heart Failure",
+  "source": {
+    "notionPageId": "014713bc-b765-496f-bee7-a6da3176f354",
+    "notionDatabaseId": "4c1ee033-c41d-83bd-bfab-0116847a8a69",
+    "notionDatabaseTitle": "disease database",
+    "notionUrl": "https://app.notion.com/p/Chronic-Heart-Failure-014713bcb765496fbee7a6da3176f354"
+  },
+  "properties": {
+    "💊 Drug database": [
+      "1e82920c-671c-4fb8-8d0e-a81d8b45ad71",
+      "06c857f6-7d62-4366-97ef-2ef32c363fd4",
+      "97255a97-6455-4188-a865-538bbb59a44b",
+      "9f40000e-1763-492c-ba62-0deebcfe6369"
+    ],
+    "Related disease": [],
+    "Prevalence": null,
+    "category": [
+      "Acquired disease"
+    ],
+    "USMULE Q": [],
+    "related system": [
+      "Cardiovascular"
+    ],
+    "\nCase Database": [],
+    "disease overview": "长期存在的心脏结构/功能异常导致心排出量不足和/或充盈压升高，表现为活动耐量下降与液体潴留（肺淤血、外周水肿）等。",
+    "Files & media": {
+      "type": "files"
+    },
+    "mechanism": "心肌损伤/压力或容量负荷（冠心病、高血压、瓣膜病、心肌病等）→ 心排出量下降/充盈压升高 → 交感-RAAS-ADH等神经体液代偿（短期维持灌注，长期促水钠潴留与心室重构）→ 逐步失代偿，反复急性加重。",
+    "medical lecture": [
+      "374ee033-c41d-80c4-b81e-f7ad5e9e8010",
+      "365ee033-c41d-8055-ba40-d56b1e69ce12"
+    ],
+    "disorder": "慢性心力衰竭 Chronic Heart Failure"
+  },
+  "createdAt": "2026-06-03",
+  "updatedAt": "2026-06-03"
+}

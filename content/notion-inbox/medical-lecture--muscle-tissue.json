@@ -1,0 +1,29 @@
+{
+  "id": "inbox-medical-lecture-muscle-tissue",
+  "slug": "muscle-tissue",
+  "title": "muscle tissue",
+  "source": {
+    "notionPageId": "df4ee033-c41d-83e0-904c-81768a958f59",
+    "notionDatabaseId": "75fee033-c41d-8242-ac46-014d564f81d8",
+    "notionDatabaseTitle": "medical lecture",
+    "notionUrl": "https://app.notion.com/p/muscle-tissue-df4ee033c41d83e0904c81768a958f59"
+  },
+  "properties": {
+    "program": "body logistic",
+    "lecture time": "2025-11-04",
+    "weak ratio": null,
+    "coverage score": null,
+    "Related medical lecture": [],
+    "disease database": [],
+    "Files & media": {
+      "type": "files"
+    },
+    "identity": "lecture",
+    "applications": [
+      "060ee033-c41d-835a-a803-818adb81eca7"
+    ],
+    "Name": "muscle tissue"
+  },
+  "createdAt": "2026-04-15",
+  "updatedAt": "2026-06-12"
+}

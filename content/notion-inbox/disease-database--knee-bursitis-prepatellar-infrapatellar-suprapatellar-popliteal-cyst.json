@@ -1,0 +1,35 @@
+{
+  "id": "inbox-disease-database-knee-bursitis-prepatellar-infrapatellar-suprapatellar-popliteal-cyst",
+  "slug": "knee-bursitis-prepatellar-infrapatellar-suprapatellar-popliteal-cyst",
+  "title": "Knee bursitis（膝周滑囊炎：prepatellar/infrapatellar/suprapatellar/popliteal cyst）",
+  "source": {
+    "notionPageId": "853d2b75-4528-41bd-b235-6dd853fc4377",
+    "notionDatabaseId": "4c1ee033-c41d-83bd-bfab-0116847a8a69",
+    "notionDatabaseTitle": "disease database",
+    "notionUrl": "https://app.notion.com/p/Knee-bursitis-prepatellar-infrapatellar-suprapatellar-popliteal-cyst-853d2b75452841bdb2356dd853fc4377"
+  },
+  "properties": {
+    "💊 Drug database": [],
+    "Related disease": [],
+    "Prevalence": "medium",
+    "category": [
+      "Acquired disease"
+    ],
+    "USMULE Q": [],
+    "related system": [
+      "Musculoskeletal"
+    ],
+    "\nCase Database": [],
+    "disease overview": "Inflammation of peri-knee bursae causing localized swelling and pain outside the joint (e.g., prepatellar ‘housemaid’s knee’, superficial infrapatellar ‘clergyman’s knee’, suprapatellar bursa involvement, semimembranosus bursa/popliteal cyst).",
+    "Files & media": {
+      "type": "files"
+    },
+    "mechanism": "Repetitive kneeling/pressure or overuse leads to bursal inflammation and fluid accumulation; popliteal cyst often relates to increased intra-articular fluid tracking into the bursa.",
+    "medical lecture": [
+      "8e4ee033-c41d-831e-8199-81386368b945"
+    ],
+    "disorder": "Knee bursitis（膝周滑囊炎：prepatellar/infrapatellar/suprapatellar/popliteal cyst）"
+  },
+  "createdAt": "2026-06-02",
+  "updatedAt": "2026-06-02"
+}

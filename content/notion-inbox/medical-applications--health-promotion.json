@@ -1,0 +1,33 @@
+{
+  "id": "inbox-medical-applications-health-promotion",
+  "slug": "health-promotion",
+  "title": "health promotion",
+  "source": {
+    "notionPageId": "09cee033-c41d-83f4-a62e-8105b11b0205",
+    "notionDatabaseId": "b67ee033-c41d-82c8-9173-0188157db110",
+    "notionDatabaseTitle": "medical applications",
+    "notionUrl": "https://app.notion.com/p/health-promotion-09cee033c41d83f4a62e8105b11b0205"
+  },
+  "properties": {
+    "medical lecture": [
+      "d05ee033-c41d-82dd-82d2-8188c7f25733"
+    ],
+    "overview": "",
+    "Status": null,
+    "program": [
+      "pass"
+    ],
+    "Created time": {
+      "type": "created_time"
+    },
+    "Last edited time": {
+      "type": "last_edited_time"
+    },
+    "usage": [
+      "class content"
+    ],
+    "Name": "health promotion"
+  },
+  "createdAt": "2026-04-15",
+  "updatedAt": "2026-04-15"
+}

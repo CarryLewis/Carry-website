@@ -1,0 +1,40 @@
+{
+  "id": "inbox-incorrect-questions-log-binge-drinking-holiday-heart-atrial-fibrillation-irregularly-irregular-no-p-waves",
+  "slug": "binge-drinking-holiday-heart-atrial-fibrillation-irregularly-irregular-no-p-waves",
+  "title": "Binge drinking (holiday heart) → atrial fibrillation (irregularly irregular, no P waves)",
+  "source": {
+    "notionPageId": "a7f49efd-d5c6-4e9b-bb69-762c201fc777",
+    "notionDatabaseId": "3a6ee033-c41d-8038-a6c8-fe1a3435de49",
+    "notionDatabaseTitle": "Incorrect Questions Log",
+    "notionUrl": "https://app.notion.com/p/Binge-drinking-holiday-heart-atrial-fibrillation-irregularly-irregular-no-P-waves-a7f49efdd5c64e9bbb69762c201fc777"
+  },
+  "properties": {
+    "Review status": "Unprocessed",
+    "Discipline (UWorld)": "Physiology",
+    "Difficulty": 1,
+    "System": [
+      "Cardio"
+    ],
+    "Correct answer": "ECG with irregularly irregular rhythm and no discrete P waves (atrial fibrillation)",
+    "Created time": {
+      "type": "created_time"
+    },
+    "medical applications": [],
+    "Stem (brief)": "Palpitations after binge drinking with irregularly irregular pulse: identify AF on ECG and distinguish from atrial flutter.",
+    "Source": "UWorld",
+    "Next review": null,
+    "Related USMLE Step 1 Incorrect Questions Log": [],
+    "Reviewed (this pass)": false,
+    "Takeaway (1 sentence)": "",
+    "Error type": [
+      "Diagnosis error",
+      "Knowledge / concept error"
+    ],
+    "Explanation / Notes": "",
+    "Question ID": "",
+    "related disease": [],
+    "One-liner (Key concept)": "Binge drinking (holiday heart) → atrial fibrillation (irregularly irregular, no P waves)"
+  },
+  "createdAt": "2026-07-27",
+  "updatedAt": "2026-07-27"
+}

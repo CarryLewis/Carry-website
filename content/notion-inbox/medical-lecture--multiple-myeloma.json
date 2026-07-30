@@ -1,0 +1,27 @@
+{
+  "id": "inbox-medical-lecture-multiple-myeloma",
+  "slug": "multiple-myeloma",
+  "title": "Multiple myeloma 多发性骨髓瘤",
+  "source": {
+    "notionPageId": "f33ee033-c41d-8340-9679-019785f6050d",
+    "notionDatabaseId": "75fee033-c41d-8242-ac46-014d564f81d8",
+    "notionDatabaseTitle": "medical lecture",
+    "notionUrl": "https://app.notion.com/p/Multiple-myeloma-f33ee033c41d83409679019785f6050d"
+  },
+  "properties": {
+    "program": "MEH",
+    "lecture time": "2025-12-19",
+    "weak ratio": null,
+    "coverage score": null,
+    "Related medical lecture": [],
+    "disease database": [],
+    "Files & media": {
+      "type": "files"
+    },
+    "identity": "lecture",
+    "applications": [],
+    "Name": "Multiple myeloma 多发性骨髓瘤"
+  },
+  "createdAt": "2026-04-15",
+  "updatedAt": "2026-06-12"
+}

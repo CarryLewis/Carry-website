@@ -1,0 +1,32 @@
+{
+  "id": "inbox-medical-applications-pathology-process-reflection",
+  "slug": "pathology-process-reflection",
+  "title": "pathology process reflection",
+  "source": {
+    "notionPageId": "349ee033-c41d-803e-ba83-e03c33850fc7",
+    "notionDatabaseId": "b67ee033-c41d-82c8-9173-0188157db110",
+    "notionDatabaseTitle": "medical applications",
+    "notionUrl": "https://app.notion.com/p/pathology-process-reflection-349ee033c41d803eba83e03c33850fc7"
+  },
+  "properties": {
+    "medical lecture": [],
+    "overview": "",
+    "Status": "Done",
+    "program": [
+      "pathology process"
+    ],
+    "Created time": {
+      "type": "created_time"
+    },
+    "Last edited time": {
+      "type": "last_edited_time"
+    },
+    "usage": [
+      "reference",
+      "class content"
+    ],
+    "Name": "pathology process reflection"
+  },
+  "createdAt": "2026-04-21",
+  "updatedAt": "2026-06-02"
+}

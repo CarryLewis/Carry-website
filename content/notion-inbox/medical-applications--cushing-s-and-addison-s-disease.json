@@ -1,0 +1,34 @@
+{
+  "id": "inbox-medical-applications-cushing-s-and-addison-s-disease",
+  "slug": "cushing-s-and-addison-s-disease",
+  "title": "Cushing's and Addison’s disease",
+  "source": {
+    "notionPageId": "d11ee033-c41d-82a9-adc2-0173ef384635",
+    "notionDatabaseId": "b67ee033-c41d-82c8-9173-0188157db110",
+    "notionDatabaseTitle": "medical applications",
+    "notionUrl": "https://app.notion.com/p/Cushing-s-and-Addison-s-disease-d11ee033c41d82a9adc20173ef384635"
+  },
+  "properties": {
+    "medical lecture": [
+      "5abee033-c41d-82d9-baf8-0178b3a72dc9",
+      "745ee033-c41d-8260-8908-01244a380ec6"
+    ],
+    "overview": "",
+    "Status": null,
+    "program": [
+      "MEH"
+    ],
+    "Created time": {
+      "type": "created_time"
+    },
+    "Last edited time": {
+      "type": "last_edited_time"
+    },
+    "usage": [
+      "class content"
+    ],
+    "Name": "Cushing's and Addison’s disease"
+  },
+  "createdAt": "2026-04-15",
+  "updatedAt": "2026-07-13"
+}

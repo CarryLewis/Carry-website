@@ -1,0 +1,33 @@
+{
+  "id": "inbox-medical-applications-glycogen-storage-diseases-hypoglycaemia",
+  "slug": "glycogen-storage-diseases-hypoglycaemia",
+  "title": "Glycogen storage diseases & hypoglycaemia",
+  "source": {
+    "notionPageId": "f0cee033-c41d-8232-8b84-8126eea3d9fb",
+    "notionDatabaseId": "b67ee033-c41d-82c8-9173-0188157db110",
+    "notionDatabaseTitle": "medical applications",
+    "notionUrl": "https://app.notion.com/p/Glycogen-storage-diseases-hypoglycaemia-f0cee033c41d82328b848126eea3d9fb"
+  },
+  "properties": {
+    "medical lecture": [
+      "27cee033-c41d-83dd-a2b8-8161d220ce66"
+    ],
+    "overview": "",
+    "Status": null,
+    "program": [
+      "MEH"
+    ],
+    "Created time": {
+      "type": "created_time"
+    },
+    "Last edited time": {
+      "type": "last_edited_time"
+    },
+    "usage": [
+      "class content"
+    ],
+    "Name": "Glycogen storage diseases & hypoglycaemia"
+  },
+  "createdAt": "2026-04-15",
+  "updatedAt": "2026-07-13"
+}

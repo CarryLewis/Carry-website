@@ -1,0 +1,29 @@
+{
+  "id": "inbox-medical-lecture-session-06-groupwork-gpcrs-rtks-and-intracellular-signalling-pathways",
+  "slug": "session-06-groupwork-gpcrs-rtks-and-intracellular-signalling-pathways",
+  "title": "Session 06 Groupwork: GPCRs RTKs and intracellular signalling pathways",
+  "source": {
+    "notionPageId": "34fee033-c41d-8096-a3c6-dd82ec3971f3",
+    "notionDatabaseId": "75fee033-c41d-8242-ac46-014d564f81d8",
+    "notionDatabaseTitle": "medical lecture",
+    "notionUrl": "https://app.notion.com/p/Session-06-Groupwork-GPCRs-RTKs-and-intracellular-signalling-pathways-34fee033c41d8096a3c6dd82ec3971f3"
+  },
+  "properties": {
+    "program": "ICPP",
+    "lecture time": "2026-04-27",
+    "weak ratio": null,
+    "coverage score": null,
+    "Related medical lecture": [
+      "34aee033-c41d-8080-8db7-c54be9c913a2"
+    ],
+    "disease database": [],
+    "Files & media": {
+      "type": "files"
+    },
+    "identity": "GW",
+    "applications": [],
+    "Name": "Session 06 Groupwork: GPCRs RTKs and intracellular signalling pathways"
+  },
+  "createdAt": "2026-04-27",
+  "updatedAt": "2026-04-28"
+}

@@ -1,0 +1,29 @@
+{
+  "id": "inbox-medical-lecture-cvs-7-arrhythmias-and-cvs-drugs-shock",
+  "slug": "cvs-7-arrhythmias-and-cvs-drugs-shock",
+  "title": "CVS-7:Arrhythmias and CVS Drugs & Shock",
+  "source": {
+    "notionPageId": "360ee033-c41d-8045-9f52-e035023d88b5",
+    "notionDatabaseId": "75fee033-c41d-8242-ac46-014d564f81d8",
+    "notionDatabaseTitle": "medical lecture",
+    "notionUrl": "https://app.notion.com/p/CVS-7-Arrhythmias-and-CVS-Drugs-Shock-360ee033c41d80459f52e035023d88b5"
+  },
+  "properties": {
+    "program": "CVS",
+    "lecture time": "2026-05-14",
+    "weak ratio": null,
+    "coverage score": null,
+    "Related medical lecture": [],
+    "disease database": [],
+    "Files & media": {
+      "type": "files"
+    },
+    "identity": "lecture",
+    "applications": [
+      "36bee033-c41d-80d9-b5ef-e97da4ff4558"
+    ],
+    "Name": "CVS-7:Arrhythmias and CVS Drugs & Shock"
+  },
+  "createdAt": "2026-05-14",
+  "updatedAt": "2026-05-25"
+}

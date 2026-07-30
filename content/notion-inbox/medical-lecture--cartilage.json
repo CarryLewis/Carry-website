@@ -1,0 +1,29 @@
+{
+  "id": "inbox-medical-lecture-cartilage",
+  "slug": "cartilage",
+  "title": "cartilage",
+  "source": {
+    "notionPageId": "56cee033-c41d-8368-8cc2-01e82de71118",
+    "notionDatabaseId": "75fee033-c41d-8242-ac46-014d564f81d8",
+    "notionDatabaseTitle": "medical lecture",
+    "notionUrl": "https://app.notion.com/p/cartilage-56cee033c41d83688cc201e82de71118"
+  },
+  "properties": {
+    "program": "body logistic",
+    "lecture time": "2025-11-06",
+    "weak ratio": null,
+    "coverage score": null,
+    "Related medical lecture": [],
+    "disease database": [],
+    "Files & media": {
+      "type": "files"
+    },
+    "identity": "lecture",
+    "applications": [
+      "54cee033-c41d-82ec-8a1f-81b3dca937f9"
+    ],
+    "Name": "cartilage"
+  },
+  "createdAt": "2026-04-15",
+  "updatedAt": "2026-06-12"
+}

@@ -1,0 +1,42 @@
+{
+  "id": "inbox-drug-database-salbutamol-albuterol",
+  "slug": "salbutamol-albuterol",
+  "title": "Salbutamol (Albuterol) / 沙丁胺醇",
+  "source": {
+    "notionPageId": "cb858238-a474-49be-a8a5-5d507b024b02",
+    "notionDatabaseId": "631ffa28-fc5d-4fbc-8205-2fbd3cfb81e4",
+    "notionDatabaseTitle": "Drug database",
+    "notionUrl": "https://app.notion.com/p/Salbutamol-Albuterol-cb858238a47449bea8a55d507b024b02"
+  },
+  "properties": {
+    "Related lectures": [
+      "358ee033-c41d-801e-89db-f534ef79468b"
+    ],
+    "Mechanism (MOA)": "Selective β2 agonist → bronchiolar smooth muscle relaxation → bronchodilation (fast relief).",
+    "disease database": [],
+    "Tags": [
+      "First-line",
+      "High-yield"
+    ],
+    "Type": "Agonist",
+    "System": [
+      "Respiratory"
+    ],
+    "Contraindications": "Caution in significant tachyarrhythmias (relative).",
+    "Target / receptor": "β2",
+    "Indications": "Acute asthma exacerbation (first-line reliever).",
+    "Related cases": [],
+    "Last edited": {
+      "type": "last_edited_time"
+    },
+    "Dosing notes": "",
+    "Class": "Adrenergic",
+    "Created": {
+      "type": "created_time"
+    },
+    "Adverse effects": "Tremor, palpitations, mild tachycardia; hypokalemia at higher doses.",
+    "Drug": "Salbutamol (Albuterol) / 沙丁胺醇"
+  },
+  "createdAt": "2026-05-06",
+  "updatedAt": "2026-05-21"
+}

@@ -1,0 +1,30 @@
+{
+  "id": "inbox-medical-lecture-the-adrenal-system",
+  "slug": "the-adrenal-system",
+  "title": "the adrenal system",
+  "source": {
+    "notionPageId": "5abee033-c41d-82d9-baf8-0178b3a72dc9",
+    "notionDatabaseId": "75fee033-c41d-8242-ac46-014d564f81d8",
+    "notionDatabaseTitle": "medical lecture",
+    "notionUrl": "https://app.notion.com/p/the-adrenal-system-5abee033c41d82d9baf80178b3a72dc9"
+  },
+  "properties": {
+    "program": "MEH",
+    "lecture time": "2025-12-09",
+    "weak ratio": null,
+    "coverage score": null,
+    "Related medical lecture": [],
+    "disease database": [],
+    "Files & media": {
+      "type": "files"
+    },
+    "identity": "lecture",
+    "applications": [
+      "d11ee033-c41d-82a9-adc2-0173ef384635",
+      "367ee033-c41d-8215-b471-014923e1dee5"
+    ],
+    "Name": "the adrenal system"
+  },
+  "createdAt": "2026-04-15",
+  "updatedAt": "2026-06-12"
+}

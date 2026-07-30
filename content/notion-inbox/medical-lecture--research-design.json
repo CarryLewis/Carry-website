@@ -1,0 +1,27 @@
+{
+  "id": "inbox-medical-lecture-research-design",
+  "slug": "research-design",
+  "title": "research design",
+  "source": {
+    "notionPageId": "8a7ee033-c41d-838a-b953-81619dc7f2c2",
+    "notionDatabaseId": "75fee033-c41d-8242-ac46-014d564f81d8",
+    "notionDatabaseTitle": "medical lecture",
+    "notionUrl": "https://app.notion.com/p/research-design-8a7ee033c41d838ab95381619dc7f2c2"
+  },
+  "properties": {
+    "program": "Pass",
+    "lecture time": "2026-03-04",
+    "weak ratio": null,
+    "coverage score": null,
+    "Related medical lecture": [],
+    "disease database": [],
+    "Files & media": {
+      "type": "files"
+    },
+    "identity": "lecture",
+    "applications": [],
+    "Name": "research design"
+  },
+  "createdAt": "2026-04-15",
+  "updatedAt": "2026-04-15"
+}

@@ -1,0 +1,27 @@
+{
+  "id": "inbox-medical-lecture-disease-distribution",
+  "slug": "disease-distribution",
+  "title": "disease distribution",
+  "source": {
+    "notionPageId": "35bee033-c41d-8041-8bb9-dc54c538467a",
+    "notionDatabaseId": "75fee033-c41d-8242-ac46-014d564f81d8",
+    "notionDatabaseTitle": "medical lecture",
+    "notionUrl": "https://app.notion.com/p/disease-distribution-35bee033c41d80418bb9dc54c538467a"
+  },
+  "properties": {
+    "program": "Pass",
+    "lecture time": "2026-05-01",
+    "weak ratio": null,
+    "coverage score": null,
+    "Related medical lecture": [],
+    "disease database": [],
+    "Files & media": {
+      "type": "files"
+    },
+    "identity": "lecture",
+    "applications": [],
+    "Name": "disease distribution"
+  },
+  "createdAt": "2026-05-09",
+  "updatedAt": "2026-05-09"
+}

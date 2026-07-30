@@ -1,0 +1,29 @@
+{
+  "id": "inbox-medical-lecture-cvs-gw8-special-circulations-peripheral-arterial-and-venous-disease",
+  "slug": "cvs-gw8-special-circulations-peripheral-arterial-and-venous-disease",
+  "title": "CVS-GW8:Special Circulations & Peripheral Arterial and Venous Disease",
+  "source": {
+    "notionPageId": "361ee033-c41d-8019-a4a0-ef12f39f83ae",
+    "notionDatabaseId": "75fee033-c41d-8242-ac46-014d564f81d8",
+    "notionDatabaseTitle": "medical lecture",
+    "notionUrl": "https://app.notion.com/p/CVS-GW8-Special-Circulations-Peripheral-Arterial-and-Venous-Disease-361ee033c41d8019a4a0ef12f39f83ae"
+  },
+  "properties": {
+    "program": "CVS",
+    "lecture time": "2026-05-15",
+    "weak ratio": null,
+    "coverage score": null,
+    "Related medical lecture": [
+      "361ee033-c41d-804f-817e-fd3f0b94cf1a"
+    ],
+    "disease database": [],
+    "Files & media": {
+      "type": "files"
+    },
+    "identity": "GW",
+    "applications": [],
+    "Name": "CVS-GW8:Special Circulations & Peripheral Arterial and Venous Disease"
+  },
+  "createdAt": "2026-05-15",
+  "updatedAt": "2026-05-23"
+}

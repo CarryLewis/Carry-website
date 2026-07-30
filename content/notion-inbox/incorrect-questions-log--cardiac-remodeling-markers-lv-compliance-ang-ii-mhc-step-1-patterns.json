@@ -1,0 +1,37 @@
+{
+  "id": "inbox-incorrect-questions-log-cardiac-remodeling-markers-lv-compliance-ang-ii-mhc-step-1-patterns",
+  "slug": "cardiac-remodeling-markers-lv-compliance-ang-ii-mhc-step-1-patterns",
+  "title": "Cardiac remodeling markers: LV compliance, Ang II, β-MHC (Step 1 patterns)",
+  "source": {
+    "notionPageId": "472f34b0-4fc0-4461-829f-a17bf1316d37",
+    "notionDatabaseId": "3a6ee033-c41d-8038-a6c8-fe1a3435de49",
+    "notionDatabaseTitle": "Incorrect Questions Log",
+    "notionUrl": "https://app.notion.com/p/Cardiac-remodeling-markers-LV-compliance-Ang-II-MHC-Step-1-patterns-472f34b04fc04461829fa17bf1316d37"
+  },
+  "properties": {
+    "Review status": "To review",
+    "Discipline (UWorld)": "Physiology",
+    "Difficulty": 2,
+    "System": [
+      "Cardio"
+    ],
+    "Correct answer": "",
+    "Created time": {
+      "type": "created_time"
+    },
+    "medical applications": [],
+    "Stem (brief)": "Reference note (not a question): How LV compliance, Angiotensin II signaling, and β-MHC expression change across common Step 1 cardiac diseases (pressure overload, volume overload, restrictive, post-MI, HFrEF/HFpEF).",
+    "Source": null,
+    "Next review": null,
+    "Related USMLE Step 1 Incorrect Questions Log": [],
+    "Reviewed (this pass)": false,
+    "Takeaway (1 sentence)": "",
+    "Error type": [],
+    "Explanation / Notes": "",
+    "Question ID": "",
+    "related disease": [],
+    "One-liner (Key concept)": "Cardiac remodeling markers: LV compliance, Ang II, β-MHC (Step 1 patterns)"
+  },
+  "createdAt": "2026-07-27",
+  "updatedAt": "2026-07-27"
+}

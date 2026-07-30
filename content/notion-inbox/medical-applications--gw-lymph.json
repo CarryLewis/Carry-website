@@ -1,0 +1,33 @@
+{
+  "id": "inbox-medical-applications-gw-lymph",
+  "slug": "gw-lymph",
+  "title": "GW:lymph",
+  "source": {
+    "notionPageId": "a66ee033-c41d-835b-8d27-01ced30b4d50",
+    "notionDatabaseId": "b67ee033-c41d-82c8-9173-0188157db110",
+    "notionDatabaseTitle": "medical applications",
+    "notionUrl": "https://app.notion.com/p/GW-lymph-a66ee033c41d835b8d2701ced30b4d50"
+  },
+  "properties": {
+    "medical lecture": [
+      "161ee033-c41d-83ba-b232-81999f8d0d6f"
+    ],
+    "overview": "",
+    "Status": null,
+    "program": [
+      "body logistic"
+    ],
+    "Created time": {
+      "type": "created_time"
+    },
+    "Last edited time": {
+      "type": "last_edited_time"
+    },
+    "usage": [
+      "class content"
+    ],
+    "Name": "GW:lymph"
+  },
+  "createdAt": "2026-04-15",
+  "updatedAt": "2026-04-15"
+}

@@ -1,0 +1,41 @@
+{
+  "id": "inbox-disease-database-sepsis",
+  "slug": "sepsis",
+  "title": "Sepsis｜败血症",
+  "source": {
+    "notionPageId": "7be207b2-b7d9-457a-9c3f-23be61e5d35f",
+    "notionDatabaseId": "4c1ee033-c41d-83bd-bfab-0116847a8a69",
+    "notionDatabaseTitle": "disease database",
+    "notionUrl": "https://app.notion.com/p/Sepsis-7be207b2b7d9457a9c3f23be61e5d35f"
+  },
+  "properties": {
+    "💊 Drug database": [],
+    "Related disease": [
+      "ccd0e4f4-e1dd-43c1-b5a2-dac8c80e395d"
+    ],
+    "Prevalence": "high",
+    "category": [
+      "Acquired disease"
+    ],
+    "USMULE Q": [],
+    "related system": [
+      "Infectious Diseases"
+    ],
+    "\nCase Database": [
+      "ce679de0-7f16-4a9e-b681-31bf939d6654",
+      "190d9ba2-d4e8-4f78-9303-5e2f5b60a6cf",
+      "15859c39-f19f-49e8-b0c9-c62301b53024"
+    ],
+    "disease overview": "感染引发的失调宿主反应导致的危及生命的器官功能障碍（全身性综合征）",
+    "Files & media": {
+      "type": "files"
+    },
+    "mechanism": "炎症介质/细胞因子放大→血管扩张+通透性↑→灌注不足→器官功能障碍",
+    "medical lecture": [
+      "46bee033-c41d-835c-a0d7-01106cf87449"
+    ],
+    "disorder": "Sepsis｜败血症"
+  },
+  "createdAt": "2026-05-26",
+  "updatedAt": "2026-05-27"
+}

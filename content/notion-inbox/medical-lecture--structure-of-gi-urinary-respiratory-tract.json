@@ -1,0 +1,29 @@
+{
+  "id": "inbox-medical-lecture-structure-of-gi-urinary-respiratory-tract",
+  "slug": "structure-of-gi-urinary-respiratory-tract",
+  "title": "Structure of GI/urinary/respiratory tract",
+  "source": {
+    "notionPageId": "729ee033-c41d-828d-9c48-817ea313e2b7",
+    "notionDatabaseId": "75fee033-c41d-8242-ac46-014d564f81d8",
+    "notionDatabaseTitle": "medical lecture",
+    "notionUrl": "https://app.notion.com/p/Structure-of-GI-urinary-respiratory-tract-729ee033c41d828d9c48817ea313e2b7"
+  },
+  "properties": {
+    "program": "body logistic",
+    "lecture time": "2025-10-29",
+    "weak ratio": null,
+    "coverage score": null,
+    "Related medical lecture": [],
+    "disease database": [],
+    "Files & media": {
+      "type": "files"
+    },
+    "identity": "lecture",
+    "applications": [
+      "befee033-c41d-8313-b181-016b01abede5"
+    ],
+    "Name": "Structure of GI/urinary/respiratory tract"
+  },
+  "createdAt": "2026-04-15",
+  "updatedAt": "2026-06-12"
+}

@@ -1,0 +1,43 @@
+{
+  "id": "inbox-drug-database-dopamine",
+  "slug": "dopamine",
+  "title": "Dopamine / 多巴胺",
+  "source": {
+    "notionPageId": "83ae8799-2c1f-4b23-af87-e02b2cb6081d",
+    "notionDatabaseId": "631ffa28-fc5d-4fbc-8205-2fbd3cfb81e4",
+    "notionDatabaseTitle": "Drug database",
+    "notionUrl": "https://app.notion.com/p/Dopamine-83ae87992c1f4b23af87e02b2cb6081d"
+  },
+  "properties": {
+    "Related lectures": [
+      "358ee033-c41d-801e-89db-f534ef79468b"
+    ],
+    "Mechanism (MOA)": "Dose-dependent receptor activation: low-dose D1 (renal vasodilation) → medium β1 (↑cardiac output) → high α1 (vasoconstriction).",
+    "disease database": [],
+    "Tags": [
+      "Emergency",
+      "High-yield"
+    ],
+    "Type": "Agonist",
+    "System": [
+      "Cardiovascular",
+      "Renal / Fluid & Electrolytes"
+    ],
+    "Contraindications": "Pheochromocytoma; caution in tachyarrhythmias.",
+    "Target / receptor": "Dose-dependent: D1 → β1 → α1",
+    "Indications": "Shock (context-dependent); teaching classic for hypotension + renal perfusion discussion.",
+    "Related cases": [],
+    "Last edited": {
+      "type": "last_edited_time"
+    },
+    "Dosing notes": "",
+    "Class": "Adrenergic",
+    "Created": {
+      "type": "created_time"
+    },
+    "Adverse effects": "Arrhythmias; excessive vasoconstriction at high dose → ischemia; extravasation injury.",
+    "Drug": "Dopamine / 多巴胺"
+  },
+  "createdAt": "2026-05-06",
+  "updatedAt": "2026-05-21"
+}

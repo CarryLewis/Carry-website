@@ -1,0 +1,33 @@
+{
+  "id": "inbox-disease-database-adhesive-capsulitis-frozen-shoulder",
+  "slug": "adhesive-capsulitis-frozen-shoulder",
+  "title": "Adhesive capsulitis (Frozen shoulder) / 粘连性肩关节囊炎",
+  "source": {
+    "notionPageId": "6f3a59e1-8a56-490a-98d8-df7965ad7c25",
+    "notionDatabaseId": "4c1ee033-c41d-83bd-bfab-0116847a8a69",
+    "notionDatabaseTitle": "disease database",
+    "notionUrl": "https://app.notion.com/p/Adhesive-capsulitis-Frozen-shoulder-6f3a59e18a56490a98d8df7965ad7c25"
+  },
+  "properties": {
+    "💊 Drug database": [],
+    "Related disease": [],
+    "Prevalence": "medium",
+    "category": [
+      "Acquired disease"
+    ],
+    "USMULE Q": [],
+    "related system": [
+      "Musculoskeletal"
+    ],
+    "\nCase Database": [],
+    "disease overview": "关节囊炎症后纤维化挛缩，导致肩部疼痛及主动/被动活动度均受限（外旋最明显）。",
+    "Files & media": {
+      "type": "files"
+    },
+    "mechanism": "Synovitis → capsular fibrosis/contracture（rotator interval、coracohumeral ligament）→ ROM下降。",
+    "medical lecture": [],
+    "disorder": "Adhesive capsulitis (Frozen shoulder) / 粘连性肩关节囊炎"
+  },
+  "createdAt": "2026-06-06",
+  "updatedAt": "2026-06-06"
+}

@@ -1,0 +1,27 @@
+{
+  "id": "inbox-medical-lecture-homeostasis",
+  "slug": "homeostasis",
+  "title": "homeostasis",
+  "source": {
+    "notionPageId": "e6fee033-c41d-82d1-b95e-012cd7492a69",
+    "notionDatabaseId": "75fee033-c41d-8242-ac46-014d564f81d8",
+    "notionDatabaseTitle": "medical lecture",
+    "notionUrl": "https://app.notion.com/p/homeostasis-e6fee033c41d82d1b95e012cd7492a69"
+  },
+  "properties": {
+    "program": "body logistic",
+    "lecture time": "2025-10-28",
+    "weak ratio": null,
+    "coverage score": null,
+    "Related medical lecture": [],
+    "disease database": [],
+    "Files & media": {
+      "type": "files"
+    },
+    "identity": "lecture",
+    "applications": [],
+    "Name": "homeostasis"
+  },
+  "createdAt": "2026-04-15",
+  "updatedAt": "2026-06-12"
+}

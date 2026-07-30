@@ -1,0 +1,27 @@
+{
+  "id": "inbox-medical-lecture-gene-expression",
+  "slug": "gene-expression",
+  "title": "gene expression",
+  "source": {
+    "notionPageId": "30fee033-c41d-829d-93f1-01944351e02a",
+    "notionDatabaseId": "75fee033-c41d-8242-ac46-014d564f81d8",
+    "notionDatabaseTitle": "medical lecture",
+    "notionUrl": "https://app.notion.com/p/gene-expression-30fee033c41d829d93f101944351e02a"
+  },
+  "properties": {
+    "program": "MCBG",
+    "lecture time": "2025-10-17",
+    "weak ratio": null,
+    "coverage score": null,
+    "Related medical lecture": [],
+    "disease database": [],
+    "Files & media": {
+      "type": "files"
+    },
+    "identity": "lecture",
+    "applications": [],
+    "Name": "gene expression"
+  },
+  "createdAt": "2026-04-15",
+  "updatedAt": "2026-06-12"
+}

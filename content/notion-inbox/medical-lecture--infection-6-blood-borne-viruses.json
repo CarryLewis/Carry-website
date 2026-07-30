@@ -1,0 +1,32 @@
+{
+  "id": "inbox-medical-lecture-infection-6-blood-borne-viruses",
+  "slug": "infection-6-blood-borne-viruses",
+  "title": "infection-6:Blood borne viruses",
+  "source": {
+    "notionPageId": "6feee033-c41d-8260-b66b-0121db43502e",
+    "notionDatabaseId": "75fee033-c41d-8242-ac46-014d564f81d8",
+    "notionDatabaseTitle": "medical lecture",
+    "notionUrl": "https://app.notion.com/p/infection-6-Blood-borne-viruses-6feee033c41d8260b66b0121db43502e"
+  },
+  "properties": {
+    "program": "infection",
+    "lecture time": "2026-03-20",
+    "weak ratio": null,
+    "coverage score": null,
+    "Related medical lecture": [],
+    "disease database": [
+      "44ee54b1-20d2-47c5-b228-f74540f064f9",
+      "398a73a1-19dd-4a3f-a5b2-b7bf92de8f65"
+    ],
+    "Files & media": {
+      "type": "files"
+    },
+    "identity": "lecture",
+    "applications": [
+      "36cee033-c41d-8074-9145-ef0add878584"
+    ],
+    "Name": "infection-6:Blood borne viruses"
+  },
+  "createdAt": "2026-04-15",
+  "updatedAt": "2026-05-28"
+}

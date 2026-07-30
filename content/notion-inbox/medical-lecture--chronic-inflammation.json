@@ -1,0 +1,31 @@
+{
+  "id": "inbox-medical-lecture-chronic-inflammation",
+  "slug": "chronic-inflammation",
+  "title": "chronic inflammation",
+  "source": {
+    "notionPageId": "a83ee033-c41d-8220-ab0d-010469ea7b5d",
+    "notionDatabaseId": "75fee033-c41d-8242-ac46-014d564f81d8",
+    "notionDatabaseTitle": "medical lecture",
+    "notionUrl": "https://app.notion.com/p/chronic-inflammation-a83ee033c41d8220ab0d010469ea7b5d"
+  },
+  "properties": {
+    "program": "pathology",
+    "lecture time": "2025-12-16",
+    "weak ratio": null,
+    "coverage score": null,
+    "Related medical lecture": [],
+    "disease database": [],
+    "Files & media": {
+      "type": "files"
+    },
+    "identity": "lecture",
+    "applications": [
+      "dd0ee033-c41d-83a8-be7b-817909c57e79",
+      "6caee033-c41d-8382-aed2-815edc99971c",
+      "c85ee033-c41d-8293-9739-0102312f3d4c"
+    ],
+    "Name": "chronic inflammation"
+  },
+  "createdAt": "2026-04-15",
+  "updatedAt": "2026-05-27"
+}

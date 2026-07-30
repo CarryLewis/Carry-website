@@ -1,0 +1,33 @@
+{
+  "id": "inbox-medical-applications-cellular-adaptations-clinical-questions",
+  "slug": "cellular-adaptations-clinical-questions",
+  "title": "CELLULAR ADAPTATIONS CLINICAL QUESTIONS",
+  "source": {
+    "notionPageId": "d08ee033-c41d-8325-960e-01c535665335",
+    "notionDatabaseId": "b67ee033-c41d-82c8-9173-0188157db110",
+    "notionDatabaseTitle": "medical applications",
+    "notionUrl": "https://app.notion.com/p/CELLULAR-ADAPTATIONS-CLINICAL-QUESTIONS-d08ee033c41d8325960e01c535665335"
+  },
+  "properties": {
+    "medical lecture": [
+      "553ee033-c41d-8260-bdc9-01b508e77366"
+    ],
+    "overview": "",
+    "Status": null,
+    "program": [
+      "pathology process"
+    ],
+    "Created time": {
+      "type": "created_time"
+    },
+    "Last edited time": {
+      "type": "last_edited_time"
+    },
+    "usage": [
+      "class content"
+    ],
+    "Name": "CELLULAR ADAPTATIONS CLINICAL QUESTIONS"
+  },
+  "createdAt": "2026-04-15",
+  "updatedAt": "2026-04-15"
+}

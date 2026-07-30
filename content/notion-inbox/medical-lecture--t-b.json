@@ -1,0 +1,29 @@
+{
+  "id": "inbox-medical-lecture-t-b",
+  "slug": "t-b",
+  "title": "T&B淋巴细胞,抗原提呈细胞",
+  "source": {
+    "notionPageId": "ac5ee033-c41d-83aa-ad97-0173d5e4af84",
+    "notionDatabaseId": "75fee033-c41d-8242-ac46-014d564f81d8",
+    "notionDatabaseTitle": "medical lecture",
+    "notionUrl": "https://app.notion.com/p/T-B-ac5ee033c41d83aaad970173d5e4af84"
+  },
+  "properties": {
+    "program": "immune system",
+    "lecture time": "2026-03-18",
+    "weak ratio": null,
+    "coverage score": null,
+    "Related medical lecture": [],
+    "disease database": [],
+    "Files & media": {
+      "type": "files"
+    },
+    "identity": "lecture",
+    "applications": [
+      "370ee033-c41d-8077-9e8d-fbb67f06a3aa"
+    ],
+    "Name": "T&B淋巴细胞,抗原提呈细胞"
+  },
+  "createdAt": "2026-04-15",
+  "updatedAt": "2026-05-31"
+}

@@ -1,0 +1,36 @@
+{
+  "id": "inbox-disease-database-clostridioides-difficile-infection-c-difficile",
+  "slug": "clostridioides-difficile-infection-c-difficile",
+  "title": "Clostridioides difficile infection (C. difficile)",
+  "source": {
+    "notionPageId": "884b0dfa-b7cd-423a-9c6e-839c12ad2708",
+    "notionDatabaseId": "4c1ee033-c41d-83bd-bfab-0116847a8a69",
+    "notionDatabaseTitle": "disease database",
+    "notionUrl": "https://app.notion.com/p/Clostridioides-difficile-infection-C-difficile-884b0dfab7cd423a9c6e839c12ad2708"
+  },
+  "properties": {
+    "💊 Drug database": [],
+    "Related disease": [],
+    "Prevalence": "medium",
+    "category": [
+      "Acquired disease"
+    ],
+    "USMULE Q": [],
+    "related system": [
+      "Gastrointestinal",
+      "Infectious Diseases"
+    ],
+    "\nCase Database": [],
+    "disease overview": "抗生素相关性腹泻/结肠炎的重要病因；常见于住院或近期使用抗生素的老年/脆弱人群。可表现为水样腹泻、腹痛、发热，重症可伪膜性结肠炎、毒性巨结肠、脓毒症。",
+    "Files & media": {
+      "type": "files"
+    },
+    "mechanism": "广谱抗生素破坏肠道正常菌群→定植抵抗下降→C. difficile 过度生长；其产生毒素A/B导致肠黏膜损伤与炎症、分泌增加→腹泻。芽孢可在环境中长期存活，促进院内传播。",
+    "medical lecture": [
+      "193ee033-c41d-834d-b521-0174da5bd141"
+    ],
+    "disorder": "Clostridioides difficile infection (C. difficile)"
+  },
+  "createdAt": "2026-05-27",
+  "updatedAt": "2026-05-27"
+}

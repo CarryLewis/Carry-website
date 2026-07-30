@@ -1,0 +1,27 @@
+{
+  "id": "inbox-medical-lecture-concepts-of-epidermiology-statistic",
+  "slug": "concepts-of-epidermiology-statistic",
+  "title": "concepts of epidermiology&statistic",
+  "source": {
+    "notionPageId": "9ceee033-c41d-822c-8fb2-81976409e05a",
+    "notionDatabaseId": "75fee033-c41d-8242-ac46-014d564f81d8",
+    "notionDatabaseTitle": "medical lecture",
+    "notionUrl": "https://app.notion.com/p/concepts-of-epidermiology-statistic-9ceee033c41d822c8fb281976409e05a"
+  },
+  "properties": {
+    "program": "Pass",
+    "lecture time": "2026-03-03",
+    "weak ratio": null,
+    "coverage score": null,
+    "Related medical lecture": [],
+    "disease database": [],
+    "Files & media": {
+      "type": "files"
+    },
+    "identity": "lecture",
+    "applications": [],
+    "Name": "concepts of epidermiology&statistic"
+  },
+  "createdAt": "2026-04-15",
+  "updatedAt": "2026-04-15"
+}

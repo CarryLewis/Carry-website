@@ -1,0 +1,31 @@
+{
+  "id": "inbox-medical-lecture-icpp-2-membranes-as-permeability-barriers-and-the-transport-of-ions-and-small-molecules",
+  "slug": "icpp-2-membranes-as-permeability-barriers-and-the-transport-of-ions-and-small-molecules",
+  "title": "ICPP-2: Membranes as Permeability Barriers and The Transport of Ions and Small Molecules",
+  "source": {
+    "notionPageId": "343ee033-c41d-806c-ae79-d5ddae98ee9e",
+    "notionDatabaseId": "75fee033-c41d-8242-ac46-014d564f81d8",
+    "notionDatabaseTitle": "medical lecture",
+    "notionUrl": "https://app.notion.com/p/ICPP-2-Membranes-as-Permeability-Barriers-and-The-Transport-of-Ions-and-Small-Molecules-343ee033c41d806cae79d5ddae98ee9e"
+  },
+  "properties": {
+    "program": "ICPP",
+    "lecture time": "2026-04-15",
+    "weak ratio": 35,
+    "coverage score": 70,
+    "Related medical lecture": [
+      "344ee033-c41d-80ef-ad99-f0934661cc8b"
+    ],
+    "disease database": [],
+    "Files & media": {
+      "type": "files"
+    },
+    "identity": "lecture",
+    "applications": [
+      "34aee033-c41d-808b-a955-e54abb76a1f8"
+    ],
+    "Name": "ICPP-2: Membranes as Permeability Barriers and The Transport of Ions and Small Molecules"
+  },
+  "createdAt": "2026-04-15",
+  "updatedAt": "2026-05-25"
+}

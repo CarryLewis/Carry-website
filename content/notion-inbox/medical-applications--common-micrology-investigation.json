@@ -1,0 +1,36 @@
+{
+  "id": "inbox-medical-applications-common-micrology-investigation",
+  "slug": "common-micrology-investigation",
+  "title": "common micrology investigation",
+  "source": {
+    "notionPageId": "609ee033-c41d-8223-b066-01d23c58b57e",
+    "notionDatabaseId": "b67ee033-c41d-82c8-9173-0188157db110",
+    "notionDatabaseTitle": "medical applications",
+    "notionUrl": "https://app.notion.com/p/common-micrology-investigation-609ee033c41d8223b06601d23c58b57e"
+  },
+  "properties": {
+    "medical lecture": [
+      "0b9ee033-c41d-8398-8eab-8198c468c76d",
+      "ccfee033-c41d-8335-bea0-01269d4df425",
+      "18aee033-c41d-83c4-8b9f-81d5bbe20f5d"
+    ],
+    "overview": "本页总结 infection 课程 GW4–GW6 中“微生物学临床诊疗方法”的通用路径：急危重优先（NEWS2/Sepsis screening）→ supportive vs specific investigations（FBC/CRP/乳酸/器官功能 vs Gram stain/培养/PCR/AST/MIC）→ 抗生素前采样 → 经验性治疗 → 结果回报后去升级与精准化（narrow spectrum/targeted）→ 院感场景下的隔离与感染控制。并按 GW 分别归纳典型案例与处置：GW4（细菌/病毒性脑膜炎与腹腔脓毒症的检查-治疗并行思路）、GW5（蜂窝织炎/下尿路感染/CAP 的指南选药与用检查修正）、GW6（C. difficile/Norovirus 院内传播的感控措施与支持治疗，以及 MRSA 脓肿的培养药敏与针对性治疗原则）。",
+    "Status": "Done",
+    "program": [
+      "infection"
+    ],
+    "Created time": {
+      "type": "created_time"
+    },
+    "Last edited time": {
+      "type": "last_edited_time"
+    },
+    "usage": [
+      "question",
+      "integration"
+    ],
+    "Name": "common micrology investigation"
+  },
+  "createdAt": "2026-04-15",
+  "updatedAt": "2026-06-10"
+}

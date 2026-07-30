@@ -1,0 +1,29 @@
+{
+  "id": "inbox-medical-lecture-session-03-groupwork-resting-and-changing-membrane-potentials",
+  "slug": "session-03-groupwork-resting-and-changing-membrane-potentials",
+  "title": "Session 03 Groupwork: Resting and Changing Membrane Potentials",
+  "source": {
+    "notionPageId": "348ee033-c41d-8030-8bc4-c44afacb80c3",
+    "notionDatabaseId": "75fee033-c41d-8242-ac46-014d564f81d8",
+    "notionDatabaseTitle": "medical lecture",
+    "notionUrl": "https://app.notion.com/p/Session-03-Groupwork-Resting-and-Changing-Membrane-Potentials-348ee033c41d80308bc4c44afacb80c3"
+  },
+  "properties": {
+    "program": "ICPP",
+    "lecture time": "2026-04-20",
+    "weak ratio": null,
+    "coverage score": null,
+    "Related medical lecture": [
+      "345ee033-c41d-8064-acae-c5356fc2cfbf"
+    ],
+    "disease database": [],
+    "Files & media": {
+      "type": "files"
+    },
+    "identity": "GW",
+    "applications": [],
+    "Name": "Session 03 Groupwork: Resting and Changing Membrane Potentials"
+  },
+  "createdAt": "2026-04-20",
+  "updatedAt": "2026-05-22"
+}

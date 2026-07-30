@@ -1,0 +1,33 @@
+{
+  "id": "inbox-disease-database-myelodysplastic-syndrome",
+  "slug": "myelodysplastic-syndrome",
+  "title": "骨髓增生异常综合征 myelodysplastic syndrome",
+  "source": {
+    "notionPageId": "406ee033-c41d-83f8-bf1b-014a29bffcf9",
+    "notionDatabaseId": "4c1ee033-c41d-83bd-bfab-0116847a8a69",
+    "notionDatabaseTitle": "disease database",
+    "notionUrl": "https://app.notion.com/p/myelodysplastic-syndrome-406ee033c41d83f8bf1b014a29bffcf9"
+  },
+  "properties": {
+    "💊 Drug database": [],
+    "Related disease": [],
+    "Prevalence": "medium",
+    "category": [
+      "immume disease"
+    ],
+    "USMULE Q": [],
+    "related system": [
+      "Hematology"
+    ],
+    "\nCase Database": [],
+    "disease overview": "The myelodysplastic syndromes (MDS) are clonal disorders of hemopoiesis, with characteristics of heterogeneity, acquired and clonality（异质性、获得性、克隆性）. The basic pathologicalchanges are abnormal development of clonal hematopoietic stem and progenitor cells, which lead to abnormal quality and quantity of blood cells.",
+    "Files & media": {
+      "type": "files"
+    },
+    "mechanism": "",
+    "medical lecture": [],
+    "disorder": "骨髓增生异常综合征 myelodysplastic syndrome"
+  },
+  "createdAt": "2026-04-15",
+  "updatedAt": "2026-04-15"
+}

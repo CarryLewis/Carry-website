@@ -1,0 +1,31 @@
+{
+  "id": "inbox-medical-lecture-spine-vertebral",
+  "slug": "spine-vertebral",
+  "title": "spine/vertebral",
+  "source": {
+    "notionPageId": "ef4ee033-c41d-8354-8b32-81087fb93cc5",
+    "notionDatabaseId": "75fee033-c41d-8242-ac46-014d564f81d8",
+    "notionDatabaseTitle": "medical lecture",
+    "notionUrl": "https://app.notion.com/p/spine-vertebral-ef4ee033c41d83548b3281087fb93cc5"
+  },
+  "properties": {
+    "program": "MSK",
+    "lecture time": "2026-04-07",
+    "weak ratio": null,
+    "coverage score": null,
+    "Related medical lecture": [
+      "af6ee033-c41d-8267-bfcc-01cd43c06e61"
+    ],
+    "disease database": [],
+    "Files & media": {
+      "type": "files"
+    },
+    "identity": "lecture",
+    "applications": [
+      "b7dee033-c41d-83e4-b586-815ea392104d"
+    ],
+    "Name": "spine/vertebral"
+  },
+  "createdAt": "2026-04-15",
+  "updatedAt": "2026-06-03"
+}

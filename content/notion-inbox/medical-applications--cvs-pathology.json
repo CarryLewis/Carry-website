@@ -1,0 +1,32 @@
+{
+  "id": "inbox-medical-applications-cvs-pathology",
+  "slug": "cvs-pathology",
+  "title": "CVS-pathology",
+  "source": {
+    "notionPageId": "390ee033-c41d-80a3-97a2-c204a4c02c51",
+    "notionDatabaseId": "b67ee033-c41d-82c8-9173-0188157db110",
+    "notionDatabaseTitle": "medical applications",
+    "notionUrl": "https://app.notion.com/p/CVS-pathology-390ee033c41d80a397a2c204a4c02c51"
+  },
+  "properties": {
+    "medical lecture": [],
+    "overview": "",
+    "Status": "To do",
+    "program": [
+      "CVS"
+    ],
+    "Created time": {
+      "type": "created_time"
+    },
+    "Last edited time": {
+      "type": "last_edited_time"
+    },
+    "usage": [
+      "test",
+      "USMULE"
+    ],
+    "Name": "CVS-pathology"
+  },
+  "createdAt": "2026-07-01",
+  "updatedAt": "2026-07-21"
+}

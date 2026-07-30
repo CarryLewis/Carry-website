@@ -1,0 +1,29 @@
+{
+  "id": "inbox-medical-lecture-session-08-groupwork-the-autonomic-nervous-system",
+  "slug": "session-08-groupwork-the-autonomic-nervous-system",
+  "title": "Session 08 Groupwork:The Autonomic Nervous System",
+  "source": {
+    "notionPageId": "350ee033-c41d-80cc-a914-ed3042315368",
+    "notionDatabaseId": "75fee033-c41d-8242-ac46-014d564f81d8",
+    "notionDatabaseTitle": "medical lecture",
+    "notionUrl": "https://app.notion.com/p/Session-08-Groupwork-The-Autonomic-Nervous-System-350ee033c41d80cca914ed3042315368"
+  },
+  "properties": {
+    "program": "ICPP",
+    "lecture time": "2026-04-28",
+    "weak ratio": null,
+    "coverage score": null,
+    "Related medical lecture": [
+      "34fee033-c41d-807e-a689-c03dd1b4c39f"
+    ],
+    "disease database": [],
+    "Files & media": {
+      "type": "files"
+    },
+    "identity": "GW",
+    "applications": [],
+    "Name": "Session 08 Groupwork:The Autonomic Nervous System"
+  },
+  "createdAt": "2026-04-28",
+  "updatedAt": "2026-05-06"
+}

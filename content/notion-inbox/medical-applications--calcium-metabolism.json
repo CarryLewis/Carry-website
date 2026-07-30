@@ -1,0 +1,33 @@
+{
+  "id": "inbox-medical-applications-calcium-metabolism",
+  "slug": "calcium-metabolism",
+  "title": "Calcium metabolism",
+  "source": {
+    "notionPageId": "d63ee033-c41d-8315-8ba9-811aa33ae841",
+    "notionDatabaseId": "b67ee033-c41d-82c8-9173-0188157db110",
+    "notionDatabaseTitle": "medical applications",
+    "notionUrl": "https://app.notion.com/p/Calcium-metabolism-d63ee033c41d83158ba9811aa33ae841"
+  },
+  "properties": {
+    "medical lecture": [
+      "cbaee033-c41d-82ff-b8ca-01baf230b59e"
+    ],
+    "overview": "",
+    "Status": null,
+    "program": [
+      "MEH"
+    ],
+    "Created time": {
+      "type": "created_time"
+    },
+    "Last edited time": {
+      "type": "last_edited_time"
+    },
+    "usage": [
+      "class content"
+    ],
+    "Name": "Calcium metabolism"
+  },
+  "createdAt": "2026-04-15",
+  "updatedAt": "2026-07-13"
+}

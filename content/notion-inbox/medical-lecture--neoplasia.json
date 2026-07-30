@@ -1,0 +1,31 @@
+{
+  "id": "inbox-medical-lecture-neoplasia",
+  "slug": "neoplasia",
+  "title": "neoplasia",
+  "source": {
+    "notionPageId": "c03ee033-c41d-837f-8979-011d10d8f45d",
+    "notionDatabaseId": "75fee033-c41d-8242-ac46-014d564f81d8",
+    "notionDatabaseTitle": "medical lecture",
+    "notionUrl": "https://app.notion.com/p/neoplasia-c03ee033c41d837f8979011d10d8f45d"
+  },
+  "properties": {
+    "program": "pathology",
+    "lecture time": "2025-12-23",
+    "weak ratio": null,
+    "coverage score": null,
+    "Related medical lecture": [],
+    "disease database": [],
+    "Files & media": {
+      "type": "files"
+    },
+    "identity": "lecture",
+    "applications": [
+      "5c5ee033-c41d-8237-b75b-0142488888f6",
+      "338ee033-c41d-829d-9362-81d7b3454d20",
+      "990ee033-c41d-822a-bf08-01d9b20bc726"
+    ],
+    "Name": "neoplasia"
+  },
+  "createdAt": "2026-04-15",
+  "updatedAt": "2026-05-24"
+}

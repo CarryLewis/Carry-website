@@ -1,0 +1,33 @@
+{
+  "id": "inbox-medical-applications-neoplasia-1-2-clinical-questions",
+  "slug": "neoplasia-1-2-clinical-questions",
+  "title": "Neoplasia 1&2 Clinical Questions",
+  "source": {
+    "notionPageId": "5c5ee033-c41d-8237-b75b-0142488888f6",
+    "notionDatabaseId": "b67ee033-c41d-82c8-9173-0188157db110",
+    "notionDatabaseTitle": "medical applications",
+    "notionUrl": "https://app.notion.com/p/Neoplasia-1-2-Clinical-Questions-5c5ee033c41d8237b75b0142488888f6"
+  },
+  "properties": {
+    "medical lecture": [
+      "c03ee033-c41d-837f-8979-011d10d8f45d"
+    ],
+    "overview": "",
+    "Status": null,
+    "program": [
+      "pathology process"
+    ],
+    "Created time": {
+      "type": "created_time"
+    },
+    "Last edited time": {
+      "type": "last_edited_time"
+    },
+    "usage": [
+      "class content"
+    ],
+    "Name": "Neoplasia 1&2 Clinical Questions"
+  },
+  "createdAt": "2026-04-15",
+  "updatedAt": "2026-04-15"
+}

@@ -1,0 +1,29 @@
+{
+  "id": "inbox-medical-lecture-infection-introduction-to-antibiotics-and-resistance",
+  "slug": "infection-introduction-to-antibiotics-and-resistance",
+  "title": "infection:Introduction to Antibiotics and Resistance",
+  "source": {
+    "notionPageId": "4f2ee033-c41d-83d9-a9f5-010d49f7229e",
+    "notionDatabaseId": "75fee033-c41d-8242-ac46-014d564f81d8",
+    "notionDatabaseTitle": "medical lecture",
+    "notionUrl": "https://app.notion.com/p/infection-Introduction-to-Antibiotics-and-Resistance-4f2ee033c41d83d9a9f5010d49f7229e"
+  },
+  "properties": {
+    "program": "infection",
+    "lecture time": "2026-03-18",
+    "weak ratio": null,
+    "coverage score": null,
+    "Related medical lecture": [],
+    "disease database": [],
+    "Files & media": {
+      "type": "files"
+    },
+    "identity": "lecture",
+    "applications": [
+      "36cee033-c41d-8074-9145-ef0add878584"
+    ],
+    "Name": "infection:Introduction to Antibiotics and Resistance"
+  },
+  "createdAt": "2026-04-15",
+  "updatedAt": "2026-05-28"
+}

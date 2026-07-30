@@ -1,0 +1,34 @@
+{
+  "id": "inbox-case-database-aortic-stenosis-exertional-syncope-angina-doe-usmle-cvs-case",
+  "slug": "aortic-stenosis-exertional-syncope-angina-doe-usmle-cvs-case",
+  "title": "Aortic stenosis — exertional syncope + angina + DOE (USMLE CVS case)",
+  "source": {
+    "notionPageId": "fc377a62-b781-4b0a-a52a-b7ffbc882a06",
+    "notionDatabaseId": "7f2ee033-c41d-8294-b8c9-01b833fd7013",
+    "notionDatabaseTitle": "Case Database",
+    "notionUrl": "https://app.notion.com/p/Aortic-stenosis-exertional-syncope-angina-DOE-USMLE-CVS-case-fc377a62b7814b0aa52ab7ffbc882a06"
+  },
+  "properties": {
+    "disease database": [
+      "f68578d9-c4a2-4b80-ac19-ac053ba5c7f8"
+    ],
+    "Source link": null,
+    "Day add": {
+      "type": "created_time"
+    },
+    "Source Tag": "exam material",
+    "cases overview": "65M with recurrent lightheadedness, chest pain, dyspnea on exertion; exertional syncope while climbing stairs. Doppler echo: heavily calcified aortic valve; valve area ~40% normal → severe aortic stenosis pattern. Discussion emphasized afterload/pressure overload physiology, RUSB systolic ejection murmur radiating to carotids, and maneuver differences vs HOCM.",
+    "feedback": "Key feedback points from our discussion:\n- Corrected mechanism: aortic stenosis causes pressure overload → afterload ↑ → concentric LVH → diastolic dysfunction and exertional symptoms (not primary preload increase).\n- Auscultation correction: AS is best heard at RUSB with carotid radiation; LLSB localization more typical for HOCM/VSD/TR patterns.\n- Maneuvers: Squatting/leg raise (↑ preload) tends to make AS murmur louder; Valsalva/standing (↓ preload) tends to make HOCM louder.\n- Clinical triad anchor: exertional syncope + angina + dyspnea on exertion strongly suggests severe AS.",
+    "case requirement": [
+      "diagnosis",
+      "pathology",
+      "treatment"
+    ],
+    "related system": [
+      "Cardiology/CVS"
+    ],
+    "case title": "Aortic stenosis — exertional syncope + angina + DOE (USMLE CVS case)"
+  },
+  "createdAt": "2026-07-15",
+  "updatedAt": "2026-07-15"
+}

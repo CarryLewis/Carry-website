@@ -1,0 +1,32 @@
+{
+  "id": "inbox-case-database-stable-angina-exertional-substernal-chest-pain-usmle-cvs-case",
+  "slug": "stable-angina-exertional-substernal-chest-pain-usmle-cvs-case",
+  "title": "Stable angina — exertional substernal chest pain (USMLE CVS case)",
+  "source": {
+    "notionPageId": "e9fcc54c-3b77-4505-b4b0-e461695ab272",
+    "notionDatabaseId": "7f2ee033-c41d-8294-b8c9-01b833fd7013",
+    "notionDatabaseTitle": "Case Database",
+    "notionUrl": "https://app.notion.com/p/Stable-angina-exertional-substernal-chest-pain-USMLE-CVS-case-e9fcc54c3b774505b4b0e461695ab272"
+  },
+  "properties": {
+    "disease database": [],
+    "Source link": null,
+    "Day add": {
+      "type": "created_time"
+    },
+    "Source Tag": "exam material",
+    "cases overview": "58M with occasional substernal chest pain during strenuous activity; obesity, HTN, DM; fast-food diet and little exercise → classic stable angina due to fixed atherosclerotic coronary stenosis with exertional demand ischemia.",
+    "feedback": "Key feedback points from our discussion:\n- Corrected concept: stable angina is due to fixed stenosis with exertional demand mismatch, not plaque rupture/acute thrombosis (that is unstable angina/NSTEMI).\n- Corrected ECG concept: stable angina typically shows ST depression (subendocardial ischemia) during pain/exertion and can be normal at rest.\n- Added missing differential: vasospastic (Prinzmetal) angina = episodic coronary vasospasm causing rest pain and transient ST elevation; responds to CCB/nitrates.",
+    "case requirement": [
+      "diagnosis",
+      "pathology",
+      "treatment"
+    ],
+    "related system": [
+      "Cardiology/CVS"
+    ],
+    "case title": "Stable angina — exertional substernal chest pain (USMLE CVS case)"
+  },
+  "createdAt": "2026-07-15",
+  "updatedAt": "2026-07-16"
+}

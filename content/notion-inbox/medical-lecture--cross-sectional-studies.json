@@ -1,0 +1,29 @@
+{
+  "id": "inbox-medical-lecture-cross-sectional-studies",
+  "slug": "cross-sectional-studies",
+  "title": "Cross-Sectional Studies",
+  "source": {
+    "notionPageId": "6c3ee033-c41d-8296-86a1-811159f9964b",
+    "notionDatabaseId": "75fee033-c41d-8242-ac46-014d564f81d8",
+    "notionDatabaseTitle": "medical lecture",
+    "notionUrl": "https://app.notion.com/p/Cross-Sectional-Studies-6c3ee033c41d829686a1811159f9964b"
+  },
+  "properties": {
+    "program": "Pass",
+    "lecture time": "2026-03-05",
+    "weak ratio": null,
+    "coverage score": null,
+    "Related medical lecture": [],
+    "disease database": [],
+    "Files & media": {
+      "type": "files"
+    },
+    "identity": "lecture",
+    "applications": [
+      "3f7ee033-c41d-8357-809a-018bcb9313d1"
+    ],
+    "Name": "Cross-Sectional Studies"
+  },
+  "createdAt": "2026-04-15",
+  "updatedAt": "2026-04-15"
+}

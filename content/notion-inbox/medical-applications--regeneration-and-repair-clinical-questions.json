@@ -1,0 +1,33 @@
+{
+  "id": "inbox-medical-applications-regeneration-and-repair-clinical-questions",
+  "slug": "regeneration-and-repair-clinical-questions",
+  "title": "REGENERATION AND REPAIR CLINICAL QUESTIONS",
+  "source": {
+    "notionPageId": "a1eee033-c41d-8249-8e34-818de50ca669",
+    "notionDatabaseId": "b67ee033-c41d-82c8-9173-0188157db110",
+    "notionDatabaseTitle": "medical applications",
+    "notionUrl": "https://app.notion.com/p/REGENERATION-AND-REPAIR-CLINICAL-QUESTIONS-a1eee033c41d82498e34818de50ca669"
+  },
+  "properties": {
+    "medical lecture": [
+      "905ee033-c41d-82ff-bf1f-81aa30ca97ab"
+    ],
+    "overview": "",
+    "Status": null,
+    "program": [
+      "pathology process"
+    ],
+    "Created time": {
+      "type": "created_time"
+    },
+    "Last edited time": {
+      "type": "last_edited_time"
+    },
+    "usage": [
+      "class content"
+    ],
+    "Name": "REGENERATION AND REPAIR CLINICAL QUESTIONS"
+  },
+  "createdAt": "2026-04-15",
+  "updatedAt": "2026-04-28"
+}

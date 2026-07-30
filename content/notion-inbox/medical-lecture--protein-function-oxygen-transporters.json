@@ -1,0 +1,27 @@
+{
+  "id": "inbox-medical-lecture-protein-function-oxygen-transporters",
+  "slug": "protein-function-oxygen-transporters",
+  "title": "protein function:Oxygen transporters",
+  "source": {
+    "notionPageId": "be6ee033-c41d-833f-8d7e-81827908e496",
+    "notionDatabaseId": "75fee033-c41d-8242-ac46-014d564f81d8",
+    "notionDatabaseTitle": "medical lecture",
+    "notionUrl": "https://app.notion.com/p/protein-function-Oxygen-transporters-be6ee033c41d833f8d7e81827908e496"
+  },
+  "properties": {
+    "program": "MCBG",
+    "lecture time": "2025-10-23",
+    "weak ratio": null,
+    "coverage score": null,
+    "Related medical lecture": [],
+    "disease database": [],
+    "Files & media": {
+      "type": "files"
+    },
+    "identity": "lecture",
+    "applications": [],
+    "Name": "protein function:Oxygen transporters"
+  },
+  "createdAt": "2026-04-15",
+  "updatedAt": "2026-06-12"
+}

@@ -1,0 +1,33 @@
+{
+  "id": "inbox-medical-applications-gw-bone-bone-tissue",
+  "slug": "gw-bone-bone-tissue",
+  "title": "GW:bone&bone tissue",
+  "source": {
+    "notionPageId": "534ee033-c41d-8254-bdd4-81e74e790b2c",
+    "notionDatabaseId": "b67ee033-c41d-82c8-9173-0188157db110",
+    "notionDatabaseTitle": "medical applications",
+    "notionUrl": "https://app.notion.com/p/GW-bone-bone-tissue-534ee033c41d8254bdd481e74e790b2c"
+  },
+  "properties": {
+    "medical lecture": [
+      "d80ee033-c41d-83fe-992f-0157aad2a247"
+    ],
+    "overview": "",
+    "Status": null,
+    "program": [
+      "body logistic"
+    ],
+    "Created time": {
+      "type": "created_time"
+    },
+    "Last edited time": {
+      "type": "last_edited_time"
+    },
+    "usage": [
+      "class content"
+    ],
+    "Name": "GW:bone&bone tissue"
+  },
+  "createdAt": "2026-04-15",
+  "updatedAt": "2026-04-15"
+}

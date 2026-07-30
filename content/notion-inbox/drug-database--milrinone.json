@@ -1,0 +1,42 @@
+{
+  "id": "inbox-drug-database-milrinone",
+  "slug": "milrinone",
+  "title": "Milrinone",
+  "source": {
+    "notionPageId": "2d0c946b-7313-4d4f-aa2d-eade757fe6fd",
+    "notionDatabaseId": "631ffa28-fc5d-4fbc-8205-2fbd3cfb81e4",
+    "notionDatabaseTitle": "Drug database",
+    "notionUrl": "https://app.notion.com/p/Milrinone-2d0c946b73134d4faa2deade757fe6fd"
+  },
+  "properties": {
+    "Related lectures": [],
+    "Mechanism (MOA)": "PDE3 inhibitor → ↑cAMP in cardiac myocytes and vascular smooth muscle → positive inotropy + improved relaxation (lusitropy) + arterial/venous vasodilation (inodilator) → ↑cardiac output and ↓preload/afterload.",
+    "disease database": [
+      "6bd54e41-f8ee-43a5-8232-6e8adc7289f5"
+    ],
+    "Tags": [
+      "Needs review",
+      "High-yield"
+    ],
+    "Type": "Inhibitor",
+    "System": [
+      "Cardiovascular"
+    ],
+    "Contraindications": "Hypersensitivity; caution/avoid in significant hypotension, severe obstructive valvular lesions (e.g., critical aortic stenosis), and in patients at high risk of tachyarrhythmias; dose-adjust in renal impairment.",
+    "Target / receptor": "PDE3 (phosphodiesterase-3)",
+    "Indications": "Short-term IV support in acute decompensated heart failure/low-output states; post–cardiac surgery low cardiac output; sometimes RV failure/pulmonary hypertension with elevated PVR.",
+    "Related cases": [],
+    "Last edited": {
+      "type": "last_edited_time"
+    },
+    "Dosing notes": "",
+    "Class": "Other",
+    "Created": {
+      "type": "created_time"
+    },
+    "Adverse effects": "Arrhythmias (atrial/ventricular), hypotension (vasodilation), headache; accumulation/toxicity risk in renal impairment.",
+    "Drug": "Milrinone"
+  },
+  "createdAt": "2026-07-13",
+  "updatedAt": "2026-07-13"
+}

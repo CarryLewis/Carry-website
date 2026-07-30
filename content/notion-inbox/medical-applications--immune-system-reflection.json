@@ -1,0 +1,39 @@
+{
+  "id": "inbox-medical-applications-immune-system-reflection",
+  "slug": "immune-system-reflection",
+  "title": "immune system reflection",
+  "source": {
+    "notionPageId": "370ee033-c41d-8077-9e8d-fbb67f06a3aa",
+    "notionDatabaseId": "b67ee033-c41d-82c8-9173-0188157db110",
+    "notionDatabaseTitle": "medical applications",
+    "notionUrl": "https://app.notion.com/p/immune-system-reflection-370ee033c41d80779e8dfbb67f06a3aa"
+  },
+  "properties": {
+    "medical lecture": [
+      "471ee033-c41d-8379-9640-8132e3b64e89",
+      "57aee033-c41d-83fd-89c6-81b50a95b150",
+      "842ee033-c41d-8228-b2c0-816086cb13c8",
+      "724ee033-c41d-83f2-b81d-8175739bedec",
+      "ac5ee033-c41d-83aa-ad97-0173d5e4af84",
+      "954ee033-c41d-8228-af67-813bb705fafd"
+    ],
+    "overview": "",
+    "Status": "Done",
+    "program": [
+      "IMM"
+    ],
+    "Created time": {
+      "type": "created_time"
+    },
+    "Last edited time": {
+      "type": "last_edited_time"
+    },
+    "usage": [
+      "test",
+      "reference"
+    ],
+    "Name": "immune system reflection"
+  },
+  "createdAt": "2026-05-30",
+  "updatedAt": "2026-06-02"
+}

@@ -1,0 +1,34 @@
+{
+  "id": "inbox-disease-database-hypoplastic-left-heart-syndrome-hlhs",
+  "slug": "hypoplastic-left-heart-syndrome-hlhs",
+  "title": "Hypoplastic Left Heart Syndrome (HLHS)｜左心发育不良综合征",
+  "source": {
+    "notionPageId": "2030e358-f90c-44e3-8774-74ce646c4823",
+    "notionDatabaseId": "4c1ee033-c41d-83bd-bfab-0116847a8a69",
+    "notionDatabaseTitle": "disease database",
+    "notionUrl": "https://app.notion.com/p/Hypoplastic-Left-Heart-Syndrome-HLHS-2030e358f90c44e3877474ce646c4823"
+  },
+  "properties": {
+    "💊 Drug database": [],
+    "Related disease": [],
+    "Prevalence": null,
+    "category": [
+      "Inherited disease"
+    ],
+    "USMULE Q": [],
+    "related system": [
+      "Cardiovascular",
+      "Pediatrics"
+    ],
+    "\nCase Database": [],
+    "disease overview": "严重青紫型/危重新生儿心脏畸形：左心室、二尖瓣/主动脉等左心结构发育不全，左心难以维持体循环；需依赖PDA开放维持系统灌注。",
+    "Files & media": {
+      "type": "files"
+    },
+    "mechanism": "左心发育不良→左室无法有效输出到体循环；体循环由右心输出经PDA向下游供血（混合血）→低氧与灌注不足风险；若PDA关闭则快速循环崩溃，需紧急维持导管开放并行分期手术/姑息治疗。",
+    "medical lecture": [],
+    "disorder": "Hypoplastic Left Heart Syndrome (HLHS)｜左心发育不良综合征"
+  },
+  "createdAt": "2026-05-11",
+  "updatedAt": "2026-05-11"
+}

@@ -1,0 +1,31 @@
+{
+  "id": "inbox-medical-lecture-icpp-10-pharmacokinetics-and-adme",
+  "slug": "icpp-10-pharmacokinetics-and-adme",
+  "title": "ICPP-10: pharmacokinetics and ADME",
+  "source": {
+    "notionPageId": "351ee033-c41d-8057-8102-d3ef1f741bd4",
+    "notionDatabaseId": "75fee033-c41d-8242-ac46-014d564f81d8",
+    "notionDatabaseTitle": "medical lecture",
+    "notionUrl": "https://app.notion.com/p/ICPP-10-pharmacokinetics-and-ADME-351ee033c41d80578102d3ef1f741bd4"
+  },
+  "properties": {
+    "program": "ICPP",
+    "lecture time": "2026-04-29",
+    "weak ratio": null,
+    "coverage score": null,
+    "Related medical lecture": [
+      "352ee033-c41d-8085-bafd-f675b643c946"
+    ],
+    "disease database": [],
+    "Files & media": {
+      "type": "files"
+    },
+    "identity": "lecture",
+    "applications": [
+      "34aee033-c41d-808b-a955-e54abb76a1f8"
+    ],
+    "Name": "ICPP-10: pharmacokinetics and ADME"
+  },
+  "createdAt": "2026-04-29",
+  "updatedAt": "2026-05-25"
+}

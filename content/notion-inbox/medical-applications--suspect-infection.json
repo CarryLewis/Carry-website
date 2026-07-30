@@ -1,0 +1,34 @@
+{
+  "id": "inbox-medical-applications-suspect-infection",
+  "slug": "suspect-infection",
+  "title": "suspect infection治疗的过程",
+  "source": {
+    "notionPageId": "633ee033-c41d-826a-9c5f-017d17e4a400",
+    "notionDatabaseId": "b67ee033-c41d-82c8-9173-0188157db110",
+    "notionDatabaseTitle": "medical applications",
+    "notionUrl": "https://app.notion.com/p/suspect-infection-633ee033c41d826a9c5f017d17e4a400"
+  },
+  "properties": {
+    "medical lecture": [
+      "90eee033-c41d-8369-b6c5-81554f06b49a",
+      "18aee033-c41d-83c4-8b9f-81d5bbe20f5d"
+    ],
+    "overview": "",
+    "Status": "Done",
+    "program": [
+      "infection"
+    ],
+    "Created time": {
+      "type": "created_time"
+    },
+    "Last edited time": {
+      "type": "last_edited_time"
+    },
+    "usage": [
+      "reference"
+    ],
+    "Name": "suspect infection治疗的过程"
+  },
+  "createdAt": "2026-04-15",
+  "updatedAt": "2026-04-21"
+}

@@ -1,0 +1,27 @@
+{
+  "id": "inbox-medical-lecture-neurons",
+  "slug": "neurons",
+  "title": "neurons",
+  "source": {
+    "notionPageId": "84eee033-c41d-834b-ab1b-01488dbc427a",
+    "notionDatabaseId": "75fee033-c41d-8242-ac46-014d564f81d8",
+    "notionDatabaseTitle": "medical lecture",
+    "notionUrl": "https://app.notion.com/p/neurons-84eee033c41d834bab1b01488dbc427a"
+  },
+  "properties": {
+    "program": "body logistic",
+    "lecture time": "2025-11-17",
+    "weak ratio": null,
+    "coverage score": null,
+    "Related medical lecture": [],
+    "disease database": [],
+    "Files & media": {
+      "type": "files"
+    },
+    "identity": "lecture",
+    "applications": [],
+    "Name": "neurons"
+  },
+  "createdAt": "2026-04-15",
+  "updatedAt": "2026-06-12"
+}
