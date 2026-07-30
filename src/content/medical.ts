@@ -241,7 +241,7 @@ export function getMedicalRecord(
 }
 
 export function medicalRecordHref(record: MedicalRecordView): string {
-  return `/medical/${record.collectionId}/${record.slug}/`;
+  return `/knowledge/medical-basement/${record.collectionId}/${record.slug}/`;
 }
 
 export function listDisplayFields(

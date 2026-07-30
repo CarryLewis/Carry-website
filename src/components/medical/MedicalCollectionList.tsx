@@ -14,10 +14,17 @@ export function MedicalCollectionList({ collection, records }: Props) {
     <section className="mx-auto max-w-shell px-margin py-lab-9">
       <p className="font-sans text-label uppercase text-ink-tertiary">
         <Link
-          href="/medical/"
-          className="text-ink-tertiary hover:text-accent focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+          href="/knowledge/"
+          className="hover:text-accent focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
         >
-          Medical
+          Knowledge
+        </Link>
+        {" / "}
+        <Link
+          href="/knowledge/medical-basement/"
+          className="hover:text-accent focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+        >
+          medical basement
         </Link>
         {" / "}
         {collection.label}
@@ -36,7 +43,7 @@ export function MedicalCollectionList({ collection, records }: Props) {
         {records.map((record) => (
           <li key={record.id}>
             <Link
-              href={`/medical/${collection.id}/${record.slug}/`}
+              href={`/knowledge/medical-basement/${collection.id}/${record.slug}/`}
               className="group block py-lab-5 transition-colors duration-fast hover:bg-surface-raised/40 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
             >
               <h2 className="font-serif text-section text-ink group-hover:text-accent">

@@ -11,9 +11,17 @@ export function MedicalVaultIndex({ collections }: Props) {
   return (
     <section className="mx-auto max-w-shell px-margin py-lab-9">
       <p className="font-sans text-label uppercase text-ink-tertiary">
-        Medical Basement
+        <Link
+          href="/knowledge/"
+          className="hover:text-accent focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+        >
+          Knowledge
+        </Link>
+        {" / Medical basement"}
       </p>
-      <h1 className="mt-lab-3 font-serif text-page text-ink">Medical vault</h1>
+      <h1 className="mt-lab-3 font-serif text-page text-ink">
+        medical basement
+      </h1>
       <p className="mt-lab-4 max-w-prose font-sans text-body-ui text-ink-secondary">
         Read-only mirror of the Notion medical-basement databases — lectures,
         diseases, drugs, cases, and study logs.
@@ -26,7 +34,7 @@ export function MedicalVaultIndex({ collections }: Props) {
         {collections.map((collection) => (
           <li key={collection.id}>
             <Link
-              href={`/medical/${collection.id}/`}
+              href={`/knowledge/medical-basement/${collection.id}/`}
               className="group flex items-baseline justify-between gap-lab-4 py-lab-5 transition-colors duration-fast hover:bg-surface-raised/40 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
             >
               <div className="min-w-0">

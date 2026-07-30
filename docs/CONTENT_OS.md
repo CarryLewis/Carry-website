@@ -65,7 +65,7 @@ npm run sync:notion       # write JSON + regenerate manifest
 Mapping rules live in `scripts/notion/mapping.config.ts` (title heuristics + `databaseOverrides`).  
 The integration never writes back to Notion.
 
-Medical basement databases currently land in `content/notion-inbox/` and are shown on the site under **`/medical`** (Lectures, Diseases, Drugs, Cases, etc.) until promoted into stricter Content OS modules.
+Medical basement databases currently land in `content/notion-inbox/` and are shown on the site under **Knowledge → medical basement** (`/knowledge/medical-basement`) until promoted into stricter Content OS modules.
 
 ---
 

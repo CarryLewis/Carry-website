@@ -16,14 +16,21 @@ export function MedicalRecordDetail({ collection, record, fields }: Props) {
     <article className="mx-auto max-w-shell px-margin py-lab-9">
       <p className="font-sans text-label uppercase text-ink-tertiary">
         <Link
-          href="/medical/"
+          href="/knowledge/"
           className="hover:text-accent focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
         >
-          Medical
+          Knowledge
         </Link>
         {" / "}
         <Link
-          href={`/medical/${collection.id}/`}
+          href="/knowledge/medical-basement/"
+          className="hover:text-accent focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+        >
+          medical basement
+        </Link>
+        {" / "}
+        <Link
+          href={`/knowledge/medical-basement/${collection.id}/`}
           className="hover:text-accent focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
         >
           {collection.label}
