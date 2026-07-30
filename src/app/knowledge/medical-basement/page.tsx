@@ -10,8 +10,9 @@ import Link from "next/link";
 export const MEDICAL_BASEMENT_NOTION_URL =
   "https://serious-fireplace-18e.notion.site/medical-basement-574ee033c41d83bd828f8118c9820b27";
 
+/** From Notion: Share → Publish → Embed this page → Copy code */
 export const MEDICAL_BASEMENT_EMBED_URL =
-  "https://serious-fireplace-18e.notion.site/ebd/medical-basement-574ee033c41d83bd828f8118c9820b27";
+  "https://serious-fireplace-18e.notion.site/ebd/574ee033c41d83bd828f8118c9820b27";
 
 export const metadata: Metadata = {
   title: "medical basement",

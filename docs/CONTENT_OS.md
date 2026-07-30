@@ -109,7 +109,7 @@ Not stored in `/content`. One Knowledge entry embeds the published Notion Site:
 
 - Site route: `/knowledge/medical-basement`
 - Public page: https://serious-fireplace-18e.notion.site/medical-basement-574ee033c41d83bd828f8118c9820b27
-- Embed URL (iframe `src`): `…/ebd/medical-basement-574ee033c41d83bd828f8118c9820b27`
+- Embed URL (iframe `src`): `…/ebd/574ee033c41d83bd828f8118c9820b27` (from Notion Embed this page)
 
 **Why `/ebd/`:** the plain public URL sends `X-Frame-Options: SAMEORIGIN` / a restrictive `frame-ancestors` CSP, so browsers show a blank iframe on your domain. Notion’s Embed this page link (`/ebd/…`) allows framing on any `https:` / `http:` origin.
 
