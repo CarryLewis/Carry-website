@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { StatusIndicator } from "@/components/ui/StatusIndicator";
 import { Tag } from "@/components/ui/Tag";
-import { getProjectById } from "@/data/projects";
+import { getProjectById } from "@/content/database";
 import type { IntellectualFocus } from "@/domain/entities";
 
 type ExplorationCardProps = {

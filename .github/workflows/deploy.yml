@@ -24,6 +24,17 @@ jobs:
           node-version: "22"
           cache: npm
       - run: npm ci
+      - name: Sync Notion → Content OS (read-only)
+        env:
+          NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
+          NOTION_ROOT_PAGE_ID: ${{ vars.NOTION_ROOT_PAGE_ID }}
+        run: |
+          if [ -z "$NOTION_TOKEN" ]; then
+            echo "NOTION_TOKEN not set; skipping Notion sync (using committed /content)."
+            exit 0
+          fi
+          export NOTION_ROOT_PAGE_ID="${NOTION_ROOT_PAGE_ID:-574ee033-c41d-83bd-828f-8118c9820b27}"
+          npm run sync:notion
       - run: npm run build
       - uses: actions/upload-pages-artifact@v3
         with:

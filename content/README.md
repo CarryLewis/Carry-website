@@ -11,7 +11,8 @@ content/
 ├── concepts/         # Knowledge nodes
 ├── signals/          # Information radar
 ├── timeline/         # Intellectual development events
-└── relations/        # Global relationship edges
+├── relations/        # Global relationship edges
+└── notion-inbox/     # Unmapped Notion DB rows (sync)
 ```
 
 ## Rules
@@ -21,6 +22,7 @@ content/
 3. IDs are stable kebab-case strings (`proj-ecg-simulator`, `q-ecg-conduction`, …).
 4. TypeScript mirrors live in `src/content/types.ts`.
 5. Runtime loader / query API: `src/content/database.ts` + `src/content/relations.ts`.
+6. After adding files, run `npm run content:manifest` (also runs on `prebuild` / `sync:notion`).
 
 ## Relationship system
 
@@ -36,6 +38,9 @@ content/
 | Clinical Reasoning AI | prototype | Clinical reasoning question, AI + medicine concepts |
 | Personal Knowledge OS | active | Human Systems concept, knowledge-graph signals |
 
-## Next step (UI deferred)
+## Notion sync
 
-Wire `ContentRepository` to `src/content/database.ts` so homepage sections consume this layer exclusively. UI components should not change shape — only their data source.
+Read-only build-time sync: `npm run discover:notion` / `npm run sync:notion`  
+See root README and `docs/CONTENT_OS.md`.
+
+`ContentRepository` defaults to LocalJSON over this layer.

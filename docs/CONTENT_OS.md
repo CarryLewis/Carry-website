@@ -30,6 +30,9 @@ Acceptable in UI: chrome microcopy (Skip link), presentational taxonomy maps (st
 
 ## Global content modules
 
+Runtime API: `src/content/database.ts` + `src/content/relations.ts`  
+UI consumes this layer through `LocalJsonRepository` (`src/data/adapters/local-json.ts`).
+
 | Module | Content path | Schema | TypeScript |
 |---|---|---|---|
 | Intellectual Focus | `content/focus/` | `schemas/focus.schema.json` | `IntellectualFocusRecord` |
@@ -39,9 +42,28 @@ Acceptable in UI: chrome microcopy (Skip link), presentational taxonomy maps (st
 | Information Radar | `content/signals/` | `schemas/signal.schema.json` | `SignalRecord` |
 | Timeline | `content/timeline/` | `schemas/timeline.schema.json` | `TimelineEventRecord` |
 | Relations | `content/relations/edges.json` | `schemas/relation.schema.json` | `RelationRecord` |
+| Notion inbox (unmapped) | `content/notion-inbox/` | free-form sync payload | — |
 
-Runtime API: `src/content/database.ts` + `src/content/relations.ts`  
-UI wiring to this layer is intentional and staged — homepage sections must eventually consume only this database.
+After adding or syncing JSON files, regenerate imports:
+
+```bash
+npm run content:manifest
+```
+
+---
+
+## Notion → Content OS (read-only)
+
+Build-time sync from the medical-basement Notion page into `/content`:
+
+```bash
+# requires NOTION_TOKEN (Read content integration shared on the page)
+npm run discover:notion   # list child databases + inferred modules
+npm run sync:notion       # write JSON + regenerate manifest
+```
+
+Mapping rules live in `scripts/notion/mapping.config.ts` (title heuristics + `databaseOverrides`).  
+The integration never writes back to Notion.
 
 ---
 
@@ -99,7 +121,7 @@ Modules and `ContentRepository` must remain compatible with:
 - Knowledge graph visualization  
 - Automated information pipelines (RSS → Signal)
 
-Adapters live under `src/data/adapters/` (local mock is default).
+Adapters live under `src/data/adapters/` (`local-json` is default; Notion enters via build-time sync).
 
 ---
 
