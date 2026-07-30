@@ -1,0 +1,10 @@
+{
+  "$schema": "../schemas/timeline.schema.json",
+  "id": "tl-knowledge-os-start",
+  "slug": "knowledge-os-initiated",
+  "title": "Personal Knowledge OS initiated",
+  "summary": "Began designing a personal operating system for long-term intellectual accumulation.",
+  "kind": "project-start",
+  "occurredAt": "2025-06-01",
+  "relatedEntityIds": ["proj-knowledge-os", "focus-knowledge-os", "concept-human-systems"]
+}

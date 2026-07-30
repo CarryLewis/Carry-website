@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://carrylewis.com/schemas/focus.json",
+  "title": "IntellectualFocus",
+  "description": "Current major areas of intellectual exploration.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "slug",
+    "title",
+    "description",
+    "domain",
+    "status",
+    "priority",
+    "relatedProjectIds",
+    "createdAt",
+    "updatedAt"
+  ],
+  "properties": {
+    "id": { "$ref": "common.schema.json#/$defs/entityId" },
+    "slug": { "$ref": "common.schema.json#/$defs/entityId" },
+    "title": { "type": "string", "minLength": 1 },
+    "description": { "type": "string", "minLength": 1 },
+    "domain": { "type": "string", "minLength": 1 },
+    "status": {
+      "anyOf": [
+        { "$ref": "common.schema.json#/$defs/entityStatus" },
+        { "$ref": "common.schema.json#/$defs/projectStatus" }
+      ]
+    },
+    "priority": { "$ref": "common.schema.json#/$defs/priority" },
+    "relatedProjectIds": {
+      "type": "array",
+      "items": { "$ref": "common.schema.json#/$defs/entityId" }
+    },
+    "relatedQuestionIds": {
+      "type": "array",
+      "items": { "$ref": "common.schema.json#/$defs/entityId" }
+    },
+    "relatedConceptIds": {
+      "type": "array",
+      "items": { "$ref": "common.schema.json#/$defs/entityId" }
+    },
+    "fields": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "createdAt": { "$ref": "common.schema.json#/$defs/isoDate" },
+    "updatedAt": { "$ref": "common.schema.json#/$defs/isoDate" }
+  }
+}

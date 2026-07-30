@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://carrylewis.com/schemas/timeline.json",
+  "title": "TimelineEvent",
+  "description": "Long-term intellectual development timeline entries.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "slug",
+    "title",
+    "summary",
+    "kind",
+    "occurredAt",
+    "relatedEntityIds"
+  ],
+  "properties": {
+    "id": { "$ref": "common.schema.json#/$defs/entityId" },
+    "slug": { "$ref": "common.schema.json#/$defs/entityId" },
+    "title": { "type": "string", "minLength": 1 },
+    "summary": { "type": "string", "minLength": 1 },
+    "kind": { "$ref": "common.schema.json#/$defs/timelineKind" },
+    "occurredAt": { "$ref": "common.schema.json#/$defs/isoDate" },
+    "relatedEntityIds": {
+      "type": "array",
+      "items": { "$ref": "common.schema.json#/$defs/entityId" }
+    },
+    "body": { "type": "string" }
+  }
+}

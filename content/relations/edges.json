@@ -1,0 +1,133 @@
+{
+  "$schema": "../schemas/relations-collection.schema.json",
+  "version": 1,
+  "edges": [
+    {
+      "id": "rel-hs-medicine",
+      "from": "concept-human-systems",
+      "to": "concept-medicine",
+      "type": "part-of"
+    },
+    {
+      "id": "rel-hs-ai",
+      "from": "concept-human-systems",
+      "to": "concept-ai",
+      "type": "related-to"
+    },
+    {
+      "id": "rel-hs-neuro",
+      "from": "concept-human-systems",
+      "to": "concept-neuroscience",
+      "type": "part-of"
+    },
+    {
+      "id": "rel-hs-biology",
+      "from": "concept-human-systems",
+      "to": "concept-biology",
+      "type": "informed-by"
+    },
+    {
+      "id": "rel-hs-philosophy",
+      "from": "concept-human-systems",
+      "to": "concept-philosophy",
+      "type": "informed-by"
+    },
+    {
+      "id": "rel-medicine-biology",
+      "from": "concept-medicine",
+      "to": "concept-biology",
+      "type": "related-to"
+    },
+    {
+      "id": "rel-ai-philosophy",
+      "from": "concept-ai",
+      "to": "concept-philosophy",
+      "type": "related-to"
+    },
+    {
+      "id": "rel-ap-sa",
+      "from": "concept-action-potential",
+      "to": "concept-sa-node",
+      "type": "related-to"
+    },
+    {
+      "id": "rel-sa-av",
+      "from": "concept-sa-node",
+      "to": "concept-av-node",
+      "type": "precedes"
+    },
+    {
+      "id": "rel-av-ecg",
+      "from": "concept-av-node",
+      "to": "concept-ecg-generation",
+      "type": "related-to"
+    },
+    {
+      "id": "rel-ap-ecg",
+      "from": "concept-action-potential",
+      "to": "concept-ecg-generation",
+      "type": "informed-by"
+    },
+    {
+      "id": "rel-proj-ecg-explores-q",
+      "from": "proj-ecg-simulator",
+      "to": "q-ecg-conduction",
+      "type": "explores",
+      "note": "Primary research question for the ECG Simulator"
+    },
+    {
+      "id": "rel-proj-ecg-builds-on-generation",
+      "from": "proj-ecg-simulator",
+      "to": "concept-ecg-generation",
+      "type": "builds-on"
+    },
+    {
+      "id": "rel-proj-reasoning-explores-q",
+      "from": "proj-clinical-reasoning-ai",
+      "to": "q-clinical-reasoning",
+      "type": "explores"
+    },
+    {
+      "id": "rel-proj-kos-exemplifies-hs",
+      "from": "proj-knowledge-os",
+      "to": "concept-human-systems",
+      "type": "exemplifies"
+    },
+    {
+      "id": "rel-focus-ecg-related-proj",
+      "from": "focus-ecg-simulator",
+      "to": "proj-ecg-simulator",
+      "type": "related-to"
+    },
+    {
+      "id": "rel-focus-reasoning-related-proj",
+      "from": "focus-clinical-reasoning-ai",
+      "to": "proj-clinical-reasoning-ai",
+      "type": "related-to"
+    },
+    {
+      "id": "rel-focus-kos-related-proj",
+      "from": "focus-knowledge-os",
+      "to": "proj-knowledge-os",
+      "type": "related-to"
+    },
+    {
+      "id": "rel-sig-twins-related-ecg",
+      "from": "sig-cardiac-digital-twins",
+      "to": "proj-ecg-simulator",
+      "type": "related-to"
+    },
+    {
+      "id": "rel-sig-tutors-related-reasoning",
+      "from": "sig-agentic-clinical-tutors",
+      "to": "proj-clinical-reasoning-ai",
+      "type": "related-to"
+    },
+    {
+      "id": "rel-sig-graphs-related-kos",
+      "from": "sig-local-knowledge-graphs",
+      "to": "proj-knowledge-os",
+      "type": "related-to"
+    }
+  ]
+}

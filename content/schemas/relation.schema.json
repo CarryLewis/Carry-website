@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://carrylewis.com/schemas/relation.json",
+  "title": "Relation",
+  "description": "Directed edge in the knowledge graph between any two entities.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "from", "to", "type"],
+  "properties": {
+    "id": { "$ref": "common.schema.json#/$defs/entityId" },
+    "from": { "$ref": "common.schema.json#/$defs/entityId" },
+    "to": { "$ref": "common.schema.json#/$defs/entityId" },
+    "type": { "$ref": "common.schema.json#/$defs/relationType" },
+    "note": { "type": "string" }
+  }
+}

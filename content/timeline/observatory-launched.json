@@ -1,0 +1,10 @@
+{
+  "$schema": "../schemas/timeline.schema.json",
+  "id": "tl-observatory-launch",
+  "slug": "observatory-launched",
+  "title": "Digital Laboratory Observatory launched",
+  "summary": "Public Observatory surface published as the entrance to the knowledge system.",
+  "kind": "milestone",
+  "occurredAt": "2026-07-30",
+  "relatedEntityIds": ["proj-knowledge-os", "concept-human-systems"]
+}

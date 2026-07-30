@@ -1,0 +1,10 @@
+{
+  "$schema": "../schemas/timeline.schema.json",
+  "id": "tl-bio-to-compute-opened",
+  "slug": "mechanism-to-model-opened",
+  "title": "Opened question: biological mechanisms → computational models",
+  "summary": "Framed the core translation problem between biology and computation.",
+  "kind": "question-opened",
+  "occurredAt": "2025-08-01",
+  "relatedEntityIds": ["q-bio-to-compute", "proj-ecg-simulator", "proj-knowledge-os"]
+}

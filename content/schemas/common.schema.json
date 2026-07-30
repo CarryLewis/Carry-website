@@ -1,0 +1,121 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://carrylewis.com/schemas/common.json",
+  "title": "Common Content Primitives",
+  "$defs": {
+    "entityId": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+      "description": "Stable kebab-case entity id"
+    },
+    "isoDate": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+    },
+    "entityStatus": {
+      "type": "string",
+      "enum": ["active", "dormant", "archived", "prototype", "experiment"]
+    },
+    "projectStatus": {
+      "type": "string",
+      "enum": ["active", "prototype", "experiment", "archive"]
+    },
+    "priority": {
+      "type": "string",
+      "enum": ["p0", "p1", "p2"]
+    },
+    "relationType": {
+      "type": "string",
+      "enum": [
+        "related-to",
+        "informed-by",
+        "builds-on",
+        "contradicts",
+        "exemplifies",
+        "references",
+        "part-of",
+        "precedes",
+        "explores",
+        "answers"
+      ]
+    },
+    "researchCategory": {
+      "type": "string",
+      "enum": [
+        "biomedical-systems",
+        "computational-medicine",
+        "neuroscience",
+        "immunology",
+        "future-medicine"
+      ]
+    },
+    "conceptCategory": {
+      "type": "string",
+      "enum": [
+        "medicine",
+        "ai",
+        "biology",
+        "philosophy",
+        "technology",
+        "neuroscience",
+        "human-systems"
+      ]
+    },
+    "signalCategory": {
+      "type": "string",
+      "enum": [
+        "medical-intelligence",
+        "ai-intelligence",
+        "technology",
+        "society",
+        "personal-learning"
+      ]
+    },
+    "signalImportance": {
+      "type": "string",
+      "enum": ["low", "medium", "high"]
+    },
+    "timelineKind": {
+      "type": "string",
+      "enum": [
+        "milestone",
+        "project-start",
+        "question-opened",
+        "publication",
+        "experiment",
+        "reflection"
+      ]
+    },
+    "reference": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "title", "kind"],
+      "properties": {
+        "id": { "$ref": "#/$defs/entityId" },
+        "title": { "type": "string" },
+        "authors": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "year": { "type": "integer" },
+        "url": { "type": "string", "format": "uri" },
+        "doi": { "type": "string" },
+        "kind": {
+          "type": "string",
+          "enum": ["paper", "book", "article", "dataset", "other"]
+        }
+      }
+    },
+    "layoutHint": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["x", "y"],
+      "properties": {
+        "x": { "type": "number", "minimum": 0, "maximum": 1 },
+        "y": { "type": "number", "minimum": 0, "maximum": 1 },
+        "weight": { "type": "number", "minimum": 0, "maximum": 1 }
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "$schema": "../schemas/concept.schema.json",
+  "id": "concept-sa-node",
+  "slug": "sa-node",
+  "name": "SA node",
+  "category": "medicine",
+  "summary": "Primary pacemaker of the heart initiating atrial depolarization.",
+  "references": [],
+  "connectedNodeIds": [
+    "concept-av-node",
+    "concept-action-potential",
+    "concept-ecg-generation"
+  ]
+}

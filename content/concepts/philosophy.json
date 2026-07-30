@@ -1,0 +1,11 @@
+{
+  "$schema": "../schemas/concept.schema.json",
+  "id": "concept-philosophy",
+  "slug": "philosophy",
+  "name": "Philosophy",
+  "category": "philosophy",
+  "summary": "Epistemology and systems thinking for interpreting scientific models.",
+  "references": [],
+  "connectedNodeIds": ["concept-human-systems", "concept-ai"],
+  "layout": { "x": 0.82, "y": 0.72, "weight": 0.65 }
+}

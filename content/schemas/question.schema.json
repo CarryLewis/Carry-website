@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://carrylewis.com/schemas/question.json",
+  "title": "ActiveQuestion",
+  "description": "Current research questions (not finished achievements).",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "slug",
+    "question",
+    "category",
+    "relatedConceptIds",
+    "relatedProjectIds",
+    "createdAt",
+    "status"
+  ],
+  "properties": {
+    "id": { "$ref": "common.schema.json#/$defs/entityId" },
+    "slug": { "$ref": "common.schema.json#/$defs/entityId" },
+    "question": { "type": "string", "minLength": 1 },
+    "category": { "$ref": "common.schema.json#/$defs/researchCategory" },
+    "relatedConceptIds": {
+      "type": "array",
+      "items": { "$ref": "common.schema.json#/$defs/entityId" }
+    },
+    "relatedProjectIds": {
+      "type": "array",
+      "items": { "$ref": "common.schema.json#/$defs/entityId" }
+    },
+    "createdAt": { "$ref": "common.schema.json#/$defs/isoDate" },
+    "status": { "$ref": "common.schema.json#/$defs/entityStatus" },
+    "href": { "type": "string" }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "$schema": "../schemas/signal.schema.json",
+  "id": "sig-cardiac-digital-twins",
+  "slug": "cardiac-digital-twins",
+  "title": "Cardiac digital twins move closer to bedside decision support",
+  "summary": "Recent work links patient-specific electrophysiology models with clinical imaging pipelines.",
+  "category": "medical-intelligence",
+  "importance": "high",
+  "source": "Literature radar",
+  "date": "2026-07-24",
+  "relatedTopicIds": [
+    "concept-ecg-generation",
+    "concept-medicine",
+    "proj-ecg-simulator",
+    "q-ecg-conduction"
+  ],
+  "createdAt": "2026-07-24",
+  "updatedAt": "2026-07-24"
+}

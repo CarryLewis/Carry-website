@@ -1,0 +1,56 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://carrylewis.com/schemas/project.json",
+  "title": "Project",
+  "description": "Things being built in the laboratory.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "slug",
+    "title",
+    "problem",
+    "architecture",
+    "status",
+    "technology",
+    "relatedResearchIds",
+    "relatedConceptIds",
+    "summary",
+    "createdAt",
+    "updatedAt"
+  ],
+  "properties": {
+    "id": { "$ref": "common.schema.json#/$defs/entityId" },
+    "slug": { "$ref": "common.schema.json#/$defs/entityId" },
+    "title": { "type": "string", "minLength": 1 },
+    "summary": { "type": "string", "minLength": 1 },
+    "problem": { "type": "string", "minLength": 1 },
+    "architecture": { "type": "string", "minLength": 1 },
+    "status": { "$ref": "common.schema.json#/$defs/projectStatus" },
+    "technology": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "relatedResearchIds": {
+      "type": "array",
+      "items": { "$ref": "common.schema.json#/$defs/entityId" }
+    },
+    "relatedConceptIds": {
+      "type": "array",
+      "items": { "$ref": "common.schema.json#/$defs/entityId" }
+    },
+    "relatedSignalIds": {
+      "type": "array",
+      "items": { "$ref": "common.schema.json#/$defs/entityId" }
+    },
+    "relatedFocusIds": {
+      "type": "array",
+      "items": { "$ref": "common.schema.json#/$defs/entityId" }
+    },
+    "designPhilosophy": { "type": "string" },
+    "implementation": { "type": "string" },
+    "reflection": { "type": "string" },
+    "createdAt": { "$ref": "common.schema.json#/$defs/isoDate" },
+    "updatedAt": { "$ref": "common.schema.json#/$defs/isoDate" }
+  }
+}

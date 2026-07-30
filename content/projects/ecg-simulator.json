@@ -1,0 +1,29 @@
+{
+  "$schema": "../schemas/project.schema.json",
+  "id": "proj-ecg-simulator",
+  "slug": "ecg-simulator",
+  "title": "ECG Simulator",
+  "summary": "Computational cardiac electrophysiology pipeline that connects cellular mechanisms to clinical ECG signals.",
+  "problem": "How can we connect ion-channel and tissue-level conduction models to interpretable ECG waveforms?",
+  "architecture": "Modular simulation pipeline: cell models → tissue conduction → body-surface potential → ECG synthesis.",
+  "status": "active",
+  "technology": [
+    "TypeScript",
+    "Numerical simulation",
+    "Electrophysiology models"
+  ],
+  "relatedResearchIds": ["q-ecg-conduction", "q-bio-to-compute"],
+  "relatedConceptIds": [
+    "concept-action-potential",
+    "concept-sa-node",
+    "concept-av-node",
+    "concept-ecg-generation",
+    "concept-medicine",
+    "concept-biology"
+  ],
+  "relatedSignalIds": ["sig-cardiac-digital-twins"],
+  "relatedFocusIds": ["focus-ecg-simulator"],
+  "designPhilosophy": "Prefer mechanistic clarity over black-box accuracy; every waveform stage must be inspectable.",
+  "createdAt": "2025-09-01",
+  "updatedAt": "2026-07-20"
+}

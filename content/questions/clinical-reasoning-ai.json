@@ -1,0 +1,20 @@
+{
+  "$schema": "../schemas/question.schema.json",
+  "id": "q-clinical-reasoning",
+  "slug": "clinical-reasoning-ai",
+  "question": "How can AI simulate clinical reasoning?",
+  "category": "future-medicine",
+  "relatedConceptIds": [
+    "concept-ai",
+    "concept-medicine",
+    "concept-philosophy",
+    "concept-human-systems"
+  ],
+  "relatedProjectIds": [
+    "proj-clinical-reasoning-ai",
+    "proj-knowledge-os"
+  ],
+  "createdAt": "2025-11-20",
+  "status": "active",
+  "href": "/research/future-medicine/clinical-reasoning-ai/"
+}

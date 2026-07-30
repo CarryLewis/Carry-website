@@ -1,0 +1,15 @@
+{
+  "$schema": "../schemas/concept.schema.json",
+  "id": "concept-action-potential",
+  "slug": "action-potential",
+  "name": "Action potential",
+  "category": "biology",
+  "summary": "Rapid membrane voltage change that propagates electrical signals in excitable cells.",
+  "references": [],
+  "connectedNodeIds": [
+    "concept-sa-node",
+    "concept-av-node",
+    "concept-ecg-generation",
+    "concept-biology"
+  ]
+}

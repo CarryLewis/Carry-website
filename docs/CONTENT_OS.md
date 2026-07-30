@@ -6,8 +6,8 @@
 The website is a **living knowledge system**, not a collection of pages.
 
 ```
-Content Layer  →  Data Layer  →  UI Layer
-   (facts)         (typed modules + relations)   (pure renderers)
+Content Layer (/content JSON)  →  Data Layer (src/content + repository)  →  UI Layer
+   (single source of truth)         (typed loaders + relations)              (pure renderers)
 ```
 
 ---
@@ -16,13 +16,13 @@ Content Layer  →  Data Layer  →  UI Layer
 
 **Never hardcode meaningful personal or intellectual content in UI components.**
 
-All meaningful content lives in structured data modules. UI only renders data.
+All meaningful content lives in `/content/{collection}/*.json`. UI only renders data.
 
 | Wrong | Correct |
 |---|---|
-| Homepage string: “Currently exploring cardiac simulation” | `intellectual-focus.ts` entry rendered by `ExplorationCard` |
-| Nav brand typed in JSX | `site.ts` / `profile.ts` |
-| Project slugs duplicated in `generateStaticParams` | Derived from `listProjects()` |
+| Homepage string: “Currently exploring cardiac simulation” | `content/focus/ecg-simulator.json` rendered by a card |
+| Nav brand typed in JSX | `src/data/profile.ts` / site chrome (until moved under content/meta) |
+| Project slugs duplicated in `generateStaticParams` | Derived from `listProjects()` / content database |
 
 Acceptable in UI: chrome microcopy (Skip link), presentational taxonomy maps (status label → color), layout geometry.
 
@@ -30,17 +30,18 @@ Acceptable in UI: chrome microcopy (Skip link), presentational taxonomy maps (st
 
 ## Global content modules
 
-| Module | Data file | Domain type | Surfaces |
+| Module | Content path | Schema | TypeScript |
 |---|---|---|---|
-| Intellectual Focus | `src/data/intellectual-focus.ts` | `IntellectualFocus` | Home, About, Research overview |
-| Active Questions | `src/data/active-questions.ts` | `ActiveQuestion` | Home, Research, Knowledge graph |
-| Connected Concepts | `src/data/concepts.ts` | `Concept` | Knowledge, Research, Graph |
-| Information Radar | `src/data/signals.ts` | `Signal` | Home, Signals |
-| Projects | `src/data/projects.ts` | `Project` | Home, Projects, Research links |
-| Relations | `src/data/relations.ts` | `Relation` | Cross-cutting |
-| Profile / Site | `src/data/profile.ts`, `site.ts` | `PersonProfile`, `SiteChrome` | Shell, Hero, About |
+| Intellectual Focus | `content/focus/` | `schemas/focus.schema.json` | `IntellectualFocusRecord` |
+| Active Questions | `content/questions/` | `schemas/question.schema.json` | `ActiveQuestionRecord` |
+| Projects | `content/projects/` | `schemas/project.schema.json` | `ProjectRecord` |
+| Connected Concepts | `content/concepts/` | `schemas/concept.schema.json` | `ConceptRecord` |
+| Information Radar | `content/signals/` | `schemas/signal.schema.json` | `SignalRecord` |
+| Timeline | `content/timeline/` | `schemas/timeline.schema.json` | `TimelineEventRecord` |
+| Relations | `content/relations/edges.json` | `schemas/relation.schema.json` | `RelationRecord` |
 
-Every new item **must** declare relationships (`related*Ids` and/or `relations` edges). Isolated content is not allowed.
+Runtime API: `src/content/database.ts` + `src/content/relations.ts`  
+UI wiring to this layer is intentional and staged — homepage sections must eventually consume only this database.
 
 ---
 

@@ -1,0 +1,23 @@
+{
+  "$schema": "../schemas/project.schema.json",
+  "id": "proj-clinical-reasoning-ai",
+  "slug": "clinical-reasoning-ai",
+  "title": "Clinical Reasoning AI",
+  "summary": "Agent architectures that approximate diagnostic reasoning for medical learning.",
+  "problem": "How can AI systems expose intermediate clinical hypotheses rather than only final answers?",
+  "architecture": "Multi-agent tutor loop: case intake → differential generation → evidence critique → teaching trace.",
+  "status": "prototype",
+  "technology": ["LLM agents", "Medical education", "Trace evaluation"],
+  "relatedResearchIds": ["q-clinical-reasoning"],
+  "relatedConceptIds": [
+    "concept-ai",
+    "concept-medicine",
+    "concept-philosophy",
+    "concept-human-systems"
+  ],
+  "relatedSignalIds": ["sig-agentic-clinical-tutors"],
+  "relatedFocusIds": ["focus-clinical-reasoning-ai"],
+  "designPhilosophy": "Teach the reasoning path, not only the label.",
+  "createdAt": "2025-11-12",
+  "updatedAt": "2026-07-18"
+}

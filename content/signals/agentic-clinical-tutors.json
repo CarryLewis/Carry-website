@@ -1,0 +1,19 @@
+{
+  "$schema": "../schemas/signal.schema.json",
+  "id": "sig-agentic-clinical-tutors",
+  "slug": "agentic-clinical-tutors",
+  "title": "Agentic tutors begin evaluating multi-step diagnostic traces",
+  "summary": "New prototypes score intermediate clinical hypotheses, not only final answers.",
+  "category": "ai-intelligence",
+  "importance": "high",
+  "source": "AI development watch",
+  "date": "2026-07-21",
+  "relatedTopicIds": [
+    "concept-ai",
+    "concept-medicine",
+    "proj-clinical-reasoning-ai",
+    "q-clinical-reasoning"
+  ],
+  "createdAt": "2026-07-21",
+  "updatedAt": "2026-07-21"
+}

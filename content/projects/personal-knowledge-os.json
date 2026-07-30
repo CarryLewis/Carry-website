@@ -1,0 +1,23 @@
+{
+  "$schema": "../schemas/project.schema.json",
+  "id": "proj-knowledge-os",
+  "slug": "personal-knowledge-os",
+  "title": "Personal Knowledge OS",
+  "summary": "A personal operating system for accumulating, relating, and retrieving intellectual work over time.",
+  "problem": "How can long-term intellectual work stay connected across research, projects, and signals?",
+  "architecture": "Entity graph + repository adapters + Observatory surfaces; Notion/CMS/agent writes later.",
+  "status": "active",
+  "technology": ["Next.js", "Knowledge graphs", "Content adapters"],
+  "relatedResearchIds": ["q-bio-to-compute", "q-clinical-reasoning"],
+  "relatedConceptIds": [
+    "concept-human-systems",
+    "concept-ai",
+    "concept-philosophy",
+    "concept-technology"
+  ],
+  "relatedSignalIds": ["sig-local-knowledge-graphs"],
+  "relatedFocusIds": ["focus-knowledge-os"],
+  "designPhilosophy": "Connected information structures over isolated pages.",
+  "createdAt": "2025-06-01",
+  "updatedAt": "2026-07-22"
+}

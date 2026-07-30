@@ -1,0 +1,18 @@
+{
+  "$schema": "../schemas/signal.schema.json",
+  "id": "sig-local-knowledge-graphs",
+  "slug": "local-knowledge-graphs",
+  "title": "Personal knowledge graphs re-emerge as research infrastructure",
+  "summary": "Tooling trends favor local-first graphs with exportable relation schemas.",
+  "category": "technology",
+  "importance": "medium",
+  "source": "Technology trends",
+  "date": "2026-07-18",
+  "relatedTopicIds": [
+    "concept-technology",
+    "concept-human-systems",
+    "proj-knowledge-os"
+  ],
+  "createdAt": "2026-07-18",
+  "updatedAt": "2026-07-18"
+}

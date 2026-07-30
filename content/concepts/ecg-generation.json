@@ -1,0 +1,15 @@
+{
+  "$schema": "../schemas/concept.schema.json",
+  "id": "concept-ecg-generation",
+  "slug": "ecg-generation",
+  "name": "ECG generation",
+  "category": "medicine",
+  "summary": "How myocardial depolarization and repolarization project onto body-surface potentials.",
+  "references": [],
+  "connectedNodeIds": [
+    "concept-action-potential",
+    "concept-sa-node",
+    "concept-av-node",
+    "concept-medicine"
+  ]
+}
