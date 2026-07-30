@@ -30,7 +30,7 @@ Static export output: `out/` (GitHub Pages).
 - `docs/CONTENT_OS.md` — content modules, sync rules, update workflow
 - `docs/ARCHITECTURE.md` — technical architecture
 - `docs/DESIGN_SYSTEM.md` — visual identity
-- Knowledge → **medical basement** — public Notion site embed
+- Knowledge → **medical basement** — Notion Sites embed (`/ebd/…` iframe)
 
 Meaningful content lives in `src/data/*`. UI components only render data.
-medical basement content is edited in Notion and mirrored at `/knowledge/medical-basement`.
+medical basement is edited in Notion (Share → Publish); the site iframes the embed URL at `/knowledge/medical-basement`.
