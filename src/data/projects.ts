@@ -10,19 +10,19 @@ export const projects: Project[] = [
     slug: "ecg-simulator",
     title: "ECG Simulator",
     summary:
-      "Interactive physiology & ECG learning simulator — 3D cardiac anatomy as the biological source model for ECG generation.",
+      "Interactive physiology & ECG learning simulator — 3D cardiac anatomy, shared dipole → 12-lead projection, and pathology scenarios (block, AF/flutter, VF/flutter, MI).",
     problem:
-      "How can we connect ion-channel and tissue-level conduction models to interpretable ECG waveforms?",
+      "How can we connect tissue-level conduction models to interpretable clinical ECG waveforms — including disease states — without hardcoding lead millivolts?",
     architecture:
-      "Modular simulation pipeline: cell models → tissue conduction → body-surface potential → ECG synthesis. Interactive 3D anatomy viewport in the browser.",
+      "Physiology packs emit effects → PhysiologicalModel → CyclePlan → shared dipole sampler that drives both 3D heart glow and live 12-lead ECG. Scenarios: sinus, conduction block, AF/flutter, VF/flutter, MI.",
     status: "active",
     technology: [
       "TypeScript",
       "React",
       "Three.js",
       "Vite",
-      "Numerical simulation",
-      "Electrophysiology models",
+      "Dipole → 12-lead ECG",
+      "Disease simulation packs",
     ],
     relatedResearchIds: ["q-ecg-conduction", "q-bio-to-compute"],
     relatedConceptIds: [
@@ -35,7 +35,9 @@ export const projects: Project[] = [
     ],
     relatedSignalIds: ["sig-001"],
     designPhilosophy:
-      "Prefer mechanistic clarity over black-box accuracy; every waveform stage must be inspectable.",
+      "Prefer mechanistic clarity over black-box accuracy; diseases never hardcode waveforms — they alter physiology once, and glow + ECG update together.",
+    implementation:
+      "Embedded build from CarryLewis/ECG-stimulator (pathology ECG models tip) at /ecg-simulator/.",
     demoUrl: "/ecg-simulator/",
     repoUrl: "https://github.com/CarryLewis/ECG-stimulator",
     createdAt: "2025-09-01",

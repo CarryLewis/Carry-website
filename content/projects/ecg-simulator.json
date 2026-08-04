@@ -3,14 +3,17 @@
   "id": "proj-ecg-simulator",
   "slug": "ecg-simulator",
   "title": "ECG Simulator",
-  "summary": "Computational cardiac electrophysiology pipeline that connects cellular mechanisms to clinical ECG signals.",
-  "problem": "How can we connect ion-channel and tissue-level conduction models to interpretable ECG waveforms?",
-  "architecture": "Modular simulation pipeline: cell models → tissue conduction → body-surface potential → ECG synthesis.",
+  "summary": "Interactive physiology & ECG learning simulator — 3D cardiac anatomy, shared dipole → 12-lead projection, and pathology scenarios (block, AF/flutter, VF/flutter, MI).",
+  "problem": "How can we connect tissue-level conduction models to interpretable clinical ECG waveforms — including disease states — without hardcoding lead millivolts?",
+  "architecture": "Physiology packs emit effects → PhysiologicalModel → CyclePlan → shared dipole sampler that drives both 3D heart glow and live 12-lead ECG. Scenarios: sinus, conduction block, AF/flutter, VF/flutter, MI.",
   "status": "active",
   "technology": [
     "TypeScript",
-    "Numerical simulation",
-    "Electrophysiology models"
+    "React",
+    "Three.js",
+    "Vite",
+    "Dipole → 12-lead ECG",
+    "Disease simulation packs"
   ],
   "relatedResearchIds": ["q-ecg-conduction", "q-bio-to-compute"],
   "relatedConceptIds": [
@@ -23,7 +26,8 @@
   ],
   "relatedSignalIds": ["sig-cardiac-digital-twins"],
   "relatedFocusIds": ["focus-ecg-simulator"],
-  "designPhilosophy": "Prefer mechanistic clarity over black-box accuracy; every waveform stage must be inspectable.",
+  "designPhilosophy": "Prefer mechanistic clarity over black-box accuracy; diseases never hardcode waveforms — they alter physiology once, and glow + ECG update together.",
+  "implementation": "Embedded build from CarryLewis/ECG-stimulator (pathology ECG models tip) at /ecg-simulator/.",
   "demoUrl": "/ecg-simulator/",
   "repoUrl": "https://github.com/CarryLewis/ECG-stimulator",
   "createdAt": "2025-09-01",

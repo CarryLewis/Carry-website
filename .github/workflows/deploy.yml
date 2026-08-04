@@ -21,10 +21,19 @@ jobs:
       - name: Checkout website
         uses: actions/checkout@v4
 
+      - name: Resolve ECG embed ref
+        id: ecg
+        run: |
+          # shellcheck disable=SC1091
+          source ecg-embed.ref
+          echo "ref=${ECG_REF}" >> "$GITHUB_OUTPUT"
+          echo "Using ECG-stimulator ref: ${ECG_REF}"
+
       - name: Checkout ECG-stimulator
         uses: actions/checkout@v4
         with:
           repository: CarryLewis/ECG-stimulator
+          ref: ${{ steps.ecg.outputs.ref }}
           path: .ecg-stimulator
 
       - uses: actions/setup-node@v4

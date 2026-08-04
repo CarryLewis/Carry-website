@@ -29,13 +29,15 @@ Static export output: `out/` (GitHub Pages).
 
 The interactive ECG app from [`CarryLewis/ECG-stimulator`](https://github.com/CarryLewis/ECG-stimulator) is built and copied into `public/ecg-simulator/`, served at `/ecg-simulator/`.
 
-Refresh the embedded build locally:
+Source tip is pinned in `ecg-embed.ref` (currently the pathology ECG models branch). Refresh locally:
 
 ```bash
 bash scripts/sync-ecg-stimulator.sh
+# or pin another tip:
+# ECG_REF=main bash scripts/sync-ecg-stimulator.sh
 ```
 
-CI (`.github/workflows/deploy.yml`) rebuilds ECG from that repository on every site deploy.
+CI (`.github/workflows/deploy.yml`) rebuilds from the same ref on every site deploy.
 
 ## Structure
 
