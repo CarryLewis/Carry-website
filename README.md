@@ -29,7 +29,33 @@ Static export output: `out/` (GitHub Pages).
 
 The interactive ECG app from [`CarryLewis/ECG-stimulator`](https://github.com/CarryLewis/ECG-stimulator) is built and copied into `public/ecg-simulator/`, served at `/ecg-simulator/`.
 
-Source tip is pinned in `ecg-embed.ref` (currently the pathology ECG models branch). Refresh locally:
+Source tip is pinned in `ecg-embed.ref` (currently the pathology ECG models branch).
+
+#### Auto-sync (Method C)
+
+When ECG pushes to `main` or the pinned embed branch, it can notify this repo via `repository_dispatch` (`ecg-updated`), which rebuilds and redeploys Pages automatically.
+
+One-time setup (needs push access to ECG-stimulator + a PAT):
+
+1. Create a GitHub PAT that can access **Carry-website** (classic: `repo` scope).
+2. Install the notify workflow + secret:
+
+```bash
+export WEBSITE_DISPATCH_TOKEN=ghp_your_token_here
+bash scripts/install-ecg-notify-workflow.sh
+```
+
+Template only: `docs/templates/ecg-notify-website.yml`
+
+Manual test after setup:
+
+```bash
+gh workflow run "Notify website to rebuild ECG embed" --repo CarryLewis/ECG-stimulator
+# or:
+gh api repos/CarryLewis/Carry-website/dispatches -f event_type='ecg-updated'
+```
+
+#### Manual refresh
 
 ```bash
 bash scripts/sync-ecg-stimulator.sh
@@ -37,7 +63,7 @@ bash scripts/sync-ecg-stimulator.sh
 # ECG_REF=main bash scripts/sync-ecg-stimulator.sh
 ```
 
-CI (`.github/workflows/deploy.yml`) rebuilds from the same ref on every site deploy.
+CI also rebuilds from `ecg-embed.ref` on every site deploy (`push` to `main`, `workflow_dispatch`, or `repository_dispatch`).
 
 ## Structure
 
