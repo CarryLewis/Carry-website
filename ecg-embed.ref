@@ -1,0 +1,5 @@
+# Git ref in CarryLewis/ECG-stimulator used for the embedded demo at /ecg-simulator/
+# Update this file, then run: bash scripts/sync-ecg-stimulator.sh
+# CI reads the same ref on every GitHub Pages deploy.
+ECG_REF=cursor/pathology-ecg-models-fab9
+ECG_SHA=3a8f8a3
