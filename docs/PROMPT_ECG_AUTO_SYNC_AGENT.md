@@ -169,7 +169,6 @@ Success criteria:
 
 - Live demo path: `/ecg-simulator/` on https://carrylewis.com
 - Website deploy workflow listens for `ecg-updated`
-- Website pin file `ecg-embed.ref` currently points at
-  `cursor/pathology-ecg-models-fab9`
+- Website pin file `ecg-embed.ref` currently points at `main`
 - Docs on website: `docs/ECG_AUTO_SYNC.md`
 ````

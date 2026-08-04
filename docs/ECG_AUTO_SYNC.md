@@ -42,8 +42,8 @@ bash scripts/install-ecg-notify-workflow.sh
 This will:
 
 1. Set secret `WEBSITE_DISPATCH_TOKEN` on `CarryLewis/ECG-stimulator`
-2. Commit `notify-website.yml` to the current embed branch (`cursor/pathology-ecg-models-fab9`)
-3. Also push the same workflow onto `main`
+2. Commit `notify-website.yml` to the current embed branch (`main`)
+3. Also ensure the same workflow is on any other notify branches if listed
 
 Or copy manually:
 
