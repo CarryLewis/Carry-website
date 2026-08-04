@@ -1,0 +1,51 @@
+# Install into: CarryLewis/ECG-stimulator/.github/workflows/notify-website.yml
+#
+# When this file is on a branch and that branch is pushed, GitHub runs it and
+# asks Carry-website to rebuild /ecg-simulator/ via repository_dispatch.
+#
+# Required secret on ECG-stimulator:
+#   WEBSITE_DISPATCH_TOKEN — fine-grained PAT (or classic) with access to
+#   CarryLewis/Carry-website and permission to trigger workflows /
+#   repository_dispatch (classic: `repo` scope).
+#
+# Quick install (from a machine that can push to ECG-stimulator):
+#   bash scripts/install-ecg-notify-workflow.sh
+
+name: Notify website to rebuild ECG embed
+
+on:
+  push:
+    branches:
+      - main
+      - cursor/pathology-ecg-models-fab9
+  workflow_dispatch:
+
+concurrency:
+  group: notify-website
+  cancel-in-progress: true
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check dispatch token
+        env:
+          TOKEN: ${{ secrets.WEBSITE_DISPATCH_TOKEN }}
+        run: |
+          if [[ -z "$TOKEN" ]]; then
+            echo "::error::Missing secret WEBSITE_DISPATCH_TOKEN on ECG-stimulator."
+            echo "Create a PAT with access to CarryLewis/Carry-website, then:"
+            echo "  gh secret set WEBSITE_DISPATCH_TOKEN --repo CarryLewis/ECG-stimulator"
+            exit 1
+          fi
+
+      - name: Trigger Carry-website deploy (repository_dispatch)
+        env:
+          GH_TOKEN: ${{ secrets.WEBSITE_DISPATCH_TOKEN }}
+        run: |
+          gh api repos/CarryLewis/Carry-website/dispatches \
+            -f event_type='ecg-updated' \
+            -f "client_payload[ref]=${{ github.ref_name }}" \
+            -f "client_payload[sha]=${{ github.sha }}" \
+            -f "client_payload[source]=ecg-stimulator"
+          echo "Dispatched ecg-updated → CarryLewis/Carry-website (ref=${{ github.ref_name }})"

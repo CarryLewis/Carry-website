@@ -4,6 +4,10 @@ on:
   push:
     branches: [main]
   workflow_dispatch:
+  # Fired by CarryLewis/ECG-stimulator when its embed tip is updated
+  # (see docs/templates/ecg-notify-website.yml).
+  repository_dispatch:
+    types: [ecg-updated]
 
 permissions:
   contents: read
@@ -23,11 +27,20 @@ jobs:
 
       - name: Resolve ECG embed ref
         id: ecg
+        env:
+          PAYLOAD_REF: ${{ github.event.client_payload.ref }}
         run: |
           # shellcheck disable=SC1091
           source ecg-embed.ref
-          echo "ref=${ECG_REF}" >> "$GITHUB_OUTPUT"
-          echo "Using ECG-stimulator ref: ${ECG_REF}"
+          # Prefer the branch that triggered the dispatch when provided;
+          # otherwise use the pinned embed tip.
+          if [[ -n "${PAYLOAD_REF:-}" ]]; then
+            REF="$PAYLOAD_REF"
+          else
+            REF="$ECG_REF"
+          fi
+          echo "ref=${REF}" >> "$GITHUB_OUTPUT"
+          echo "Using ECG-stimulator ref: ${REF}"
 
       - name: Checkout ECG-stimulator
         uses: actions/checkout@v4
