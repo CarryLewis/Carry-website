@@ -15,7 +15,7 @@ set -euo pipefail
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 TEMPLATE="$ROOT/docs/templates/ecg-notify-website.yml"
 ECG_REPO="${ECG_REPO:-CarryLewis/ECG-stimulator}"
-ECG_BRANCH="${ECG_BRANCH:-cursor/pathology-ecg-models-fab9}"
+ECG_BRANCH="${ECG_BRANCH:-main}"
 WEBSITE_REPO="${WEBSITE_REPO:-CarryLewis/Carry-website}"
 
 if [[ ! -f "$TEMPLATE" ]]; then
