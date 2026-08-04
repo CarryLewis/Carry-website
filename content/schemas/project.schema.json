@@ -50,6 +50,14 @@
     "designPhilosophy": { "type": "string" },
     "implementation": { "type": "string" },
     "reflection": { "type": "string" },
+    "demoUrl": {
+      "type": "string",
+      "description": "Same-origin or absolute URL of the interactive demo."
+    },
+    "repoUrl": {
+      "type": "string",
+      "description": "Source repository URL."
+    },
     "createdAt": { "$ref": "common.schema.json#/$defs/isoDate" },
     "updatedAt": { "$ref": "common.schema.json#/$defs/isoDate" }
   }

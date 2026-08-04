@@ -25,6 +25,18 @@ npm run build
 
 Static export output: `out/` (GitHub Pages).
 
+### Embedded ECG Stimulator
+
+The interactive ECG app from [`CarryLewis/ECG-stimulator`](https://github.com/CarryLewis/ECG-stimulator) is built and copied into `public/ecg-simulator/`, served at `/ecg-simulator/`.
+
+Refresh the embedded build locally:
+
+```bash
+bash scripts/sync-ecg-stimulator.sh
+```
+
+CI (`.github/workflows/deploy.yml`) rebuilds ECG from that repository on every site deploy.
+
 ## Structure
 
 - `docs/CONTENT_OS.md` — content modules, sync rules, update workflow

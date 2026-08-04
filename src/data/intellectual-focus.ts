@@ -14,7 +14,7 @@ export const intellectualFocus: IntellectualFocus[] = [
     domain: "Computational Medicine",
     status: "active",
     priority: "p0",
-    relatedProjectIds: ["proj-cardiac-simulation"],
+    relatedProjectIds: ["proj-ecg-simulator"],
     relatedQuestionIds: ["q-ecg-conduction", "q-bio-to-compute"],
     relatedConceptIds: [
       "concept-ecg-generation",

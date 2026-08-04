@@ -18,13 +18,38 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout website
+        uses: actions/checkout@v4
+
+      - name: Checkout ECG-stimulator
+        uses: actions/checkout@v4
+        with:
+          repository: CarryLewis/ECG-stimulator
+          path: .ecg-stimulator
+
       - uses: actions/setup-node@v4
         with:
           node-version: "22"
           cache: npm
-      - run: npm ci
-      - run: npm run build
+
+      - name: Install website dependencies
+        run: npm ci
+
+      - name: Build ECG stimulator
+        working-directory: .ecg-stimulator
+        run: |
+          npm ci
+          npm run build
+
+      - name: Embed ECG build into public/
+        run: |
+          rm -rf public/ecg-simulator
+          mkdir -p public/ecg-simulator
+          cp -R .ecg-stimulator/dist/. public/ecg-simulator/
+
+      - name: Build website
+        run: npm run build
+
       - uses: actions/upload-pages-artifact@v3
         with:
           path: out

@@ -6,17 +6,24 @@ import type { Project } from "@/domain/entities";
  */
 export const projects: Project[] = [
   {
-    id: "proj-cardiac-simulation",
-    slug: "cardiac-simulation-engine",
-    title: "Cardiac Simulation Engine",
+    id: "proj-ecg-simulator",
+    slug: "ecg-simulator",
+    title: "ECG Simulator",
     summary:
-      "Modeling cardiac electrophysiology to connect cellular mechanisms with clinical ECG signals.",
+      "Interactive physiology & ECG learning simulator — 3D cardiac anatomy as the biological source model for ECG generation.",
     problem:
       "How can we connect ion-channel and tissue-level conduction models to interpretable ECG waveforms?",
     architecture:
-      "Modular simulation pipeline: cell models → tissue conduction → body-surface potential → ECG synthesis.",
+      "Modular simulation pipeline: cell models → tissue conduction → body-surface potential → ECG synthesis. Interactive 3D anatomy viewport in the browser.",
     status: "active",
-    technology: ["TypeScript", "Numerical simulation", "Electrophysiology models"],
+    technology: [
+      "TypeScript",
+      "React",
+      "Three.js",
+      "Vite",
+      "Numerical simulation",
+      "Electrophysiology models",
+    ],
     relatedResearchIds: ["q-ecg-conduction", "q-bio-to-compute"],
     relatedConceptIds: [
       "concept-action-potential",
@@ -27,8 +34,12 @@ export const projects: Project[] = [
       "concept-biology",
     ],
     relatedSignalIds: ["sig-001"],
+    designPhilosophy:
+      "Prefer mechanistic clarity over black-box accuracy; every waveform stage must be inspectable.",
+    demoUrl: "/ecg-simulator/",
+    repoUrl: "https://github.com/CarryLewis/ECG-stimulator",
     createdAt: "2025-09-01",
-    updatedAt: "2026-07-20",
+    updatedAt: "2026-08-04",
   },
   {
     id: "proj-clinical-reasoning-ai",

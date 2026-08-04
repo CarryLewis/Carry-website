@@ -153,6 +153,10 @@ export type Project = {
   designPhilosophy?: string;
   implementation?: string;
   reflection?: string;
+  /** Interactive demo (prefer same-origin path under /public). */
+  demoUrl?: string;
+  /** Source repository. */
+  repoUrl?: string;
   createdAt: ISODate;
   updatedAt: ISODate;
 };

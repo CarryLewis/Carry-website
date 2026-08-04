@@ -78,13 +78,13 @@ export const relations: Relation[] = [
   // Project ↔ research / concepts (explicit graph edges)
   {
     id: "rel-proj-cardiac-explores-ecg",
-    from: "proj-cardiac-simulation",
+    from: "proj-ecg-simulator",
     to: "q-ecg-conduction",
     type: "explores",
   },
   {
     id: "rel-proj-cardiac-builds-ecg",
-    from: "proj-cardiac-simulation",
+    from: "proj-ecg-simulator",
     to: "concept-ecg-generation",
     type: "builds-on",
   },
