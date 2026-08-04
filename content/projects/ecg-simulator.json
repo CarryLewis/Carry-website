@@ -24,6 +24,8 @@
   "relatedSignalIds": ["sig-cardiac-digital-twins"],
   "relatedFocusIds": ["focus-ecg-simulator"],
   "designPhilosophy": "Prefer mechanistic clarity over black-box accuracy; every waveform stage must be inspectable.",
+  "demoUrl": "/ecg-simulator/",
+  "repoUrl": "https://github.com/CarryLewis/ECG-stimulator",
   "createdAt": "2025-09-01",
-  "updatedAt": "2026-07-20"
+  "updatedAt": "2026-08-04"
 }

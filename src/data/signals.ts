@@ -18,7 +18,7 @@ export const signals: Signal[] = [
     relatedTopicIds: [
       "concept-ecg-generation",
       "concept-medicine",
-      "proj-cardiac-simulation",
+      "proj-ecg-simulator",
       "q-ecg-conduction",
     ],
     createdAt: "2026-07-24",
