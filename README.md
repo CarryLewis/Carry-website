@@ -29,7 +29,7 @@ Static export output: `out/` (GitHub Pages).
 
 The interactive ECG app from [`CarryLewis/ECG-stimulator`](https://github.com/CarryLewis/ECG-stimulator) is built and copied into `public/ecg-simulator/`, served at `/ecg-simulator/`.
 
-Source tip is pinned in `ecg-embed.ref` (currently **`main`** — consolidated EP lab).
+Source tip is pinned in `ecg-embed.ref` (currently **`cursor/pathology-ecg-models-fab9`** — ECG `main` was reverted to anatomy-only).
 
 #### Auto-sync (Method C)
 

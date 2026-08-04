@@ -32,12 +32,12 @@ jobs:
         run: |
           # shellcheck disable=SC1091
           source ecg-embed.ref
-          # Prefer the branch that triggered the dispatch when provided;
-          # otherwise use the pinned embed tip.
-          if [[ -n "${PAYLOAD_REF:-}" ]]; then
-            REF="$PAYLOAD_REF"
-          else
-            REF="$ECG_REF"
+          # Always embed the pinned tip. repository_dispatch is only a
+          # rebuild signal — do not follow payload.ref (ECG main may lag
+          # behind feature tips after reverts).
+          REF="$ECG_REF"
+          if [[ -n "${PAYLOAD_REF:-}" && "$PAYLOAD_REF" != "$ECG_REF" ]]; then
+            echo "Ignoring dispatch ref '$PAYLOAD_REF'; embedding pinned '$ECG_REF'"
           fi
           echo "ref=${REF}" >> "$GITHUB_OUTPUT"
           echo "Using ECG-stimulator ref: ${REF}"

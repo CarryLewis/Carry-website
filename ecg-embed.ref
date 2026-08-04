@@ -1,5 +1,8 @@
 # Git ref in CarryLewis/ECG-stimulator used for the embedded demo at /ecg-simulator/
 # Update this file, then run: bash scripts/sync-ecg-stimulator.sh
 # CI reads the same ref on every GitHub Pages deploy.
-ECG_REF=main
-ECG_SHA=b32d1dc
+#
+# NOTE: ECG main was reverted to anatomy-only (#23). Embed the richer
+# pathology tip until a new consolidation lands on main.
+ECG_REF=cursor/pathology-ecg-models-fab9
+ECG_SHA=fd2a781
