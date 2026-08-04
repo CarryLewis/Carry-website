@@ -10,20 +10,20 @@ export const projects: Project[] = [
     slug: "ecg-simulator",
     title: "ECG Simulator",
     summary:
-      "Cardiac electrophysiology laboratory — interactive 3D heart, activation→vector→12-lead ECG pipeline, continuous recording monitor, and physiology-driven pathology scenarios.",
+      "Interactive physiology & ECG learning simulator — 3D cardiac anatomy, bilingual UI, shared dipole → 12-lead projection, and pathology scenarios (block, AF/flutter, VF/flutter, MI).",
     problem:
       "How can we connect tissue-level conduction models to interpretable clinical ECG waveforms — including disease states — without hardcoding lead millivolts?",
     architecture:
-      "Cardiac anatomy → electrophysiology → electrical activation → electrical vector → body-surface potential → 12-lead ECG → clinical interpretation. Disease packs alter the physiological model once; glow, monitor, and leads update together.",
+      "Physiology packs emit effects → PhysiologicalModel → CyclePlan → shared dipole sampler that drives both 3D heart glow and live 12-lead ECG. Bilingual 中文/English chrome. Scenarios: sinus, conduction block, AF/flutter, VF/flutter, MI.",
     status: "active",
     technology: [
       "TypeScript",
       "React",
       "Three.js",
       "Vite",
-      "Vector → 12-lead ECG",
-      "Continuous ECG recording",
+      "Dipole → 12-lead ECG",
       "Disease simulation packs",
+      "i18n (中文 / English)",
     ],
     relatedResearchIds: ["q-ecg-conduction", "q-bio-to-compute"],
     relatedConceptIds: [
@@ -38,7 +38,7 @@ export const projects: Project[] = [
     designPhilosophy:
       "Prefer mechanistic clarity over black-box accuracy; diseases never hardcode waveforms — they alter physiology once, and glow + ECG update together.",
     implementation:
-      "Embedded build from CarryLewis/ECG-stimulator main (consolidated EP lab tip b32d1dc) at /ecg-simulator/.",
+      "Embedded build from CarryLewis/ECG-stimulator @ cursor/pathology-ecg-models-fab9 (fd2a781). ECG main was reverted to anatomy-only (#23); site tracks the pathology tip until a new consolidation lands.",
     demoUrl: "/ecg-simulator/",
     repoUrl: "https://github.com/CarryLewis/ECG-stimulator",
     createdAt: "2025-09-01",
