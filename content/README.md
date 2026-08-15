@@ -35,6 +35,7 @@ content/
 | ECG Simulator | active | ECG conduction question, action potential / SA / AV / ECG concepts |
 | Clinical Reasoning AI | prototype | Clinical reasoning question, AI + medicine concepts |
 | Personal Knowledge OS | active | Human Systems concept, knowledge-graph signals |
+| Research Brief | active | Thinking Vault HTML talk, Knowledge OS, technology concept |
 
 ## Next step (UI deferred)
 

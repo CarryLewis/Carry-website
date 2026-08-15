@@ -45,6 +45,14 @@ export function KnowledgeObservatorySection({
             >
               medical basement
             </Link>
+            {" · "}
+            Research Brief talk:{" "}
+            <Link
+              href="/knowledge/thinking-vault/"
+              className="text-accent hover:text-accent-muted focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+            >
+              Thinking Vault
+            </Link>
           </p>
         </div>
       </div>

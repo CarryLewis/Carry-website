@@ -90,6 +90,42 @@ export const projects: Project[] = [
     createdAt: "2025-06-01",
     updatedAt: "2026-07-22",
   },
+  {
+    id: "proj-research-brief",
+    slug: "research-brief",
+    title: "Research Brief",
+    summary:
+      "Personal observatory pipeline — Notion Thinking Vault as input, Obsidian as memory/graph, public HTML talks as the projection on this site.",
+    problem:
+      "How can captured reading and thinking become a durable, public, graph-linked research memory?",
+    architecture:
+      "Content Lake + Knowledge Objects + one-way Notion → vault/Thinking sync + Quartz garden. Public talks are self-contained HTML decks copied onto carrylewis.com.",
+    status: "active",
+    technology: [
+      "Python",
+      "Notion API",
+      "Obsidian",
+      "Quartz",
+      "GitHub Actions",
+      "Self-contained HTML",
+    ],
+    relatedResearchIds: ["q-bio-to-compute"],
+    relatedConceptIds: [
+      "concept-human-systems",
+      "concept-technology",
+      "concept-ai",
+      "concept-philosophy",
+    ],
+    relatedSignalIds: ["sig-003"],
+    designPhilosophy:
+      "Notion is the input layer; Obsidian is the memory/graph layer; the website is the public projection.",
+    implementation:
+      "Embedded talk from CarryLewis/research_brief docs/talks/thinking-vault.html. Source tip pinned in research-brief-embed.ref (cursor/thinking-vault-talk-03da @ d238db0).",
+    demoUrl: "/talks/thinking-vault/",
+    repoUrl: "https://github.com/CarryLewis/research_brief",
+    createdAt: "2026-07-01",
+    updatedAt: "2026-08-15",
+  },
 ];
 
 export function getProjectById(id: string) {

@@ -6,8 +6,9 @@ on:
   workflow_dispatch:
   # Fired by CarryLewis/ECG-stimulator when its embed tip is updated
   # (see docs/templates/ecg-notify-website.yml).
+  # research-brief-updated: CarryLewis/research_brief talk HTML changed.
   repository_dispatch:
-    types: [ecg-updated]
+    types: [ecg-updated, research-brief-updated]
 
 permissions:
   contents: read
@@ -49,6 +50,28 @@ jobs:
           ref: ${{ steps.ecg.outputs.ref }}
           path: .ecg-stimulator
 
+      - name: Resolve research_brief embed ref
+        id: brief
+        env:
+          PAYLOAD_REF: ${{ github.event.client_payload.ref }}
+          PAYLOAD_SOURCE: ${{ github.event.client_payload.source }}
+        run: |
+          # shellcheck disable=SC1091
+          source research-brief-embed.ref
+          REF="$RESEARCH_BRIEF_REF"
+          if [[ "${PAYLOAD_SOURCE:-}" == "research-brief" && -n "${PAYLOAD_REF:-}" ]]; then
+            REF="$PAYLOAD_REF"
+          fi
+          echo "ref=${REF}" >> "$GITHUB_OUTPUT"
+          echo "Using research_brief ref: ${REF}"
+
+      - name: Checkout research_brief
+        uses: actions/checkout@v4
+        with:
+          repository: CarryLewis/research_brief
+          ref: ${{ steps.brief.outputs.ref }}
+          path: .research-brief
+
       - uses: actions/setup-node@v4
         with:
           node-version: "22"
@@ -68,6 +91,19 @@ jobs:
           rm -rf public/ecg-simulator
           mkdir -p public/ecg-simulator
           cp -R .ecg-stimulator/dist/. public/ecg-simulator/
+
+      - name: Embed research_brief talk HTML
+        run: |
+          mkdir -p public/talks/thinking-vault
+          SRC=".research-brief/docs/talks/thinking-vault.html"
+          if [[ -f "$SRC" ]]; then
+            cp "$SRC" public/talks/thinking-vault/index.html
+          elif [[ -f public/talks/thinking-vault/index.html ]]; then
+            echo "Talk missing in research_brief checkout; keeping vendored copy"
+          else
+            echo "::error::Missing docs/talks/thinking-vault.html and no vendored copy"
+            exit 1
+          fi
 
       - name: Build website
         run: npm run build

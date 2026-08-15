@@ -1,0 +1,9 @@
+# Git ref in CarryLewis/research_brief used for the public HTML talk
+# at /talks/thinking-vault/
+# Update this file, then run: bash scripts/sync-research-brief-talk.sh
+# CI reads the same ref on every GitHub Pages deploy.
+#
+# The talk currently lives on the slides branch (not yet on main).
+RESEARCH_BRIEF_REF=cursor/thinking-vault-talk-03da
+RESEARCH_BRIEF_SHA=d238db0
+TALK_SRC=docs/talks/thinking-vault.html

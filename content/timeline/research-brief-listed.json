@@ -1,0 +1,15 @@
+{
+  "$schema": "../schemas/timeline.schema.json",
+  "id": "tl-research-brief-listed",
+  "slug": "research-brief-listed",
+  "title": "Research Brief HTML listed on the Observatory",
+  "summary": "Thinking Vault talk from CarryLewis/research_brief published at /talks/thinking-vault/ and listed under Knowledge and Projects.",
+  "kind": "publication",
+  "occurredAt": "2026-08-15",
+  "relatedEntityIds": [
+    "proj-research-brief",
+    "proj-knowledge-os",
+    "focus-knowledge-os",
+    "concept-human-systems"
+  ]
+}

@@ -57,6 +57,7 @@ export const signals: Signal[] = [
       "concept-technology",
       "concept-human-systems",
       "proj-knowledge-os",
+      "proj-research-brief",
     ],
     createdAt: "2026-07-18",
     updatedAt: "2026-07-18",

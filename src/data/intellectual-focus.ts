@@ -50,7 +50,7 @@ export const intellectualFocus: IntellectualFocus[] = [
     domain: "Information Systems",
     status: "active",
     priority: "p1",
-    relatedProjectIds: ["proj-knowledge-os"],
+    relatedProjectIds: ["proj-knowledge-os", "proj-research-brief"],
     relatedQuestionIds: ["q-bio-to-compute"],
     relatedConceptIds: [
       "concept-human-systems",

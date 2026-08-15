@@ -100,4 +100,22 @@ export const relations: Relation[] = [
     to: "concept-human-systems",
     type: "exemplifies",
   },
+  {
+    id: "rel-proj-brief-related-kos",
+    from: "proj-research-brief",
+    to: "proj-knowledge-os",
+    type: "related-to",
+  },
+  {
+    id: "rel-proj-brief-exemplifies-hs",
+    from: "proj-research-brief",
+    to: "concept-human-systems",
+    type: "exemplifies",
+  },
+  {
+    id: "rel-proj-brief-builds-tech",
+    from: "proj-research-brief",
+    to: "concept-technology",
+    type: "builds-on",
+  },
 ];
