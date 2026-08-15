@@ -1,7 +1,9 @@
 #!/usr/bin/env bash
 # Copy CarryLewis/research_brief public HTML into this site:
-#   frontend/                    → public/research-brief/     (/research-brief/)
-#   docs/talks/thinking-vault.html → public/talks/thinking-vault/  (if present)
+#   frontend/  → public/research-brief/  (/research-brief/)
+#
+# The Thinking Vault talk is unpublished until a later HTML replaces it.
+# Do not copy docs/talks/* into public/.
 #
 # Optional env:
 #   RESEARCH_BRIEF_REF  — branch / tag / SHA (defaults to research-brief-embed.ref)
@@ -13,9 +15,7 @@ REF_FILE="$ROOT/research-brief-embed.ref"
 SRC_DIR="${RESEARCH_BRIEF_SRC:-}"
 TMP_CLONE=""
 FRONTEND_SRC="frontend"
-TALK_SRC="docs/talks/thinking-vault.html"
 OUT_HOME="$ROOT/public/research-brief"
-OUT_TALK="$ROOT/public/talks/thinking-vault"
 
 if [[ -z "${RESEARCH_BRIEF_REF:-}" && -f "$REF_FILE" ]]; then
   # shellcheck disable=SC1090
@@ -23,7 +23,6 @@ if [[ -z "${RESEARCH_BRIEF_REF:-}" && -f "$REF_FILE" ]]; then
 fi
 RESEARCH_BRIEF_REF="${RESEARCH_BRIEF_REF:-main}"
 FRONTEND_SRC="${FRONTEND_SRC:-frontend}"
-TALK_SRC="${TALK_SRC:-docs/talks/thinking-vault.html}"
 
 cleanup() {
   if [[ -n "$TMP_CLONE" && -d "$TMP_CLONE" ]]; then
@@ -53,14 +52,8 @@ rm -rf "$OUT_HOME"
 mkdir -p "$OUT_HOME"
 cp -R "$FRONTEND_DIR/." "$OUT_HOME/"
 
-TALK_FILE="$SRC_DIR/$TALK_SRC"
-if [[ -f "$TALK_FILE" ]]; then
-  echo "Copying $TALK_SRC → $OUT_TALK/index.html"
-  mkdir -p "$OUT_TALK"
-  cp "$TALK_FILE" "$OUT_TALK/index.html"
-else
-  echo "Talk HTML not on this ref; leaving vendored $OUT_TALK if present"
-fi
+# Keep the talk unpublished until a later HTML is ready to list.
+rm -rf "$ROOT/public/talks/thinking-vault"
 
 cat > "$REF_FILE" <<EOF
 # Git ref in CarryLewis/research_brief used for the public HTML
@@ -70,7 +63,6 @@ cat > "$REF_FILE" <<EOF
 RESEARCH_BRIEF_REF=$RESEARCH_BRIEF_REF
 RESEARCH_BRIEF_SHA=$SHA
 FRONTEND_SRC=$FRONTEND_SRC
-TALK_SRC=$TALK_SRC
 EOF
 
 echo "Done. Homepage: /research-brief/ (ref=$RESEARCH_BRIEF_REF sha=$SHA)"
