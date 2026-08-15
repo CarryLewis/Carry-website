@@ -50,7 +50,7 @@ export const activeQuestions: ActiveQuestion[] = [
       "concept-ai",
       "concept-human-systems",
     ],
-    relatedProjectIds: ["proj-ecg-simulator", "proj-knowledge-os"],
+    relatedProjectIds: ["proj-ecg-simulator", "proj-knowledge-os", "proj-research-brief"],
     createdAt: "2025-08-01",
     status: "active",
     href: "/research/biomedical-systems/mechanism-to-model",

@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Knowledge",
   description:
-    "Personal knowledge graph and medical basement vault.",
+    "Personal knowledge graph, Research Brief observatory, and medical basement vault.",
 };
 
 export default function KnowledgeIndexPage() {
@@ -25,8 +25,32 @@ export default function KnowledgeIndexPage() {
           Vault
         </p>
         <Link
-          href="/knowledge/medical-basement/"
+          href="/knowledge/research-brief/"
           className="group mt-lab-4 block focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+        >
+          <h2 className="font-serif text-section text-ink transition-colors duration-fast group-hover:text-accent">
+            Research Brief
+          </h2>
+          <p className="mt-lab-3 max-w-prose font-sans text-body-ui text-ink-secondary">
+            Latest HTML from CarryLewis/research_brief — MUJI Observatory
+            homepage. Quiet knowledge objects rendered from the vault.
+          </p>
+        </Link>
+        <Link
+          href="/knowledge/thinking-vault/"
+          className="group mt-lab-7 block focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+        >
+          <h2 className="font-serif text-section text-ink transition-colors duration-fast group-hover:text-accent">
+            Thinking Vault
+          </h2>
+          <p className="mt-lab-3 max-w-prose font-sans text-body-ui text-ink-secondary">
+            HTML talk — Notion as the input layer, Obsidian as the
+            memory/graph. Arrow keys or space to advance.
+          </p>
+        </Link>
+        <Link
+          href="/knowledge/medical-basement/"
+          className="group mt-lab-7 block focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
         >
           <h2 className="font-serif text-section text-ink transition-colors duration-fast group-hover:text-accent">
             medical basement

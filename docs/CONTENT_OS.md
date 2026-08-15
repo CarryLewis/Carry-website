@@ -124,6 +124,21 @@ API sync into `/content` is still future work (see Architecture Phase 2).
 
 ---
 
+## Research Brief HTML
+
+Latest public HTML from [`CarryLewis/research_brief`](https://github.com/CarryLewis/research_brief):
+
+- Homepage: `/research-brief/` (`public/research-brief/`, MUJI Observatory prototype)
+- Knowledge player: `/knowledge/research-brief`
+- Talk deck (if present): `/talks/thinking-vault/` and `/knowledge/thinking-vault`
+- Project record: `/projects/active/research-brief/`
+- Pin / sync: `research-brief-embed.ref` + `scripts/sync-research-brief.sh`
+- Details: [`RESEARCH_BRIEF_EMBED.md`](./RESEARCH_BRIEF_EMBED.md)
+
+This is a public projection of the Research Brief frontend, not a Notion iframe.
+
+---
+
 ## Agent operating stance
 
 Think in **connected information structures**, not pages.  

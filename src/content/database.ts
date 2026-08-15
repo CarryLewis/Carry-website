@@ -31,6 +31,7 @@ import questionBio from "../../content/questions/mechanism-to-model.json";
 import projectEcg from "../../content/projects/ecg-simulator.json";
 import projectReasoning from "../../content/projects/clinical-reasoning-ai.json";
 import projectKos from "../../content/projects/personal-knowledge-os.json";
+import projectBrief from "../../content/projects/research-brief.json";
 
 import conceptHumanSystems from "../../content/concepts/human-systems.json";
 import conceptMedicine from "../../content/concepts/medicine.json";
@@ -53,6 +54,7 @@ import timelineBio from "../../content/timeline/mechanism-to-model-opened.json";
 import timelineEcg from "../../content/timeline/ecg-simulator-started.json";
 import timelineReasoning from "../../content/timeline/clinical-reasoning-ai-started.json";
 import timelineObservatory from "../../content/timeline/observatory-launched.json";
+import timelineBrief from "../../content/timeline/research-brief-listed.json";
 
 import relationsCollection from "../../content/relations/edges.json";
 
@@ -77,6 +79,7 @@ const projects = [
   stripSchema(projectEcg),
   stripSchema(projectReasoning),
   stripSchema(projectKos),
+  stripSchema(projectBrief),
 ] as ProjectRecord[];
 
 const concepts = [
@@ -105,6 +108,7 @@ const timeline = [
   stripSchema(timelineEcg),
   stripSchema(timelineReasoning),
   stripSchema(timelineObservatory),
+  stripSchema(timelineBrief),
 ].sort((a, b) =>
   a.occurredAt.localeCompare(b.occurredAt),
 ) as TimelineEventRecord[];

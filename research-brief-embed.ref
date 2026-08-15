@@ -1,0 +1,12 @@
+# Git ref in CarryLewis/research_brief used for the public HTML
+# at /research-brief/ (MUJI Observatory homepage prototype).
+# Update this file, then run: bash scripts/sync-research-brief.sh
+# CI reads the same ref on every GitHub Pages deploy.
+#
+# Latest generated HTML currently lives on the homepage prototype branch
+# (not yet on main). The Thinking Vault talk is copied when present on
+# the same ref; otherwise the vendored /talks/thinking-vault/ copy is kept.
+RESEARCH_BRIEF_REF=cursor/muji-homepage-prototype-5c8e
+RESEARCH_BRIEF_SHA=8bfa32e
+FRONTEND_SRC=frontend
+TALK_SRC=docs/talks/thinking-vault.html
