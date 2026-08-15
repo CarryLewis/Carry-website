@@ -130,10 +130,11 @@ Latest public HTML from [`CarryLewis/research_brief`](https://github.com/CarryLe
 
 - Homepage: `/research-brief/` (`public/research-brief/`, MUJI Observatory prototype)
 - Knowledge player: `/knowledge/research-brief`
-- Talk deck (if present): `/talks/thinking-vault/` and `/knowledge/thinking-vault`
 - Project record: `/projects/active/research-brief/`
 - Pin / sync: `research-brief-embed.ref` + `scripts/sync-research-brief.sh`
 - Details: [`RESEARCH_BRIEF_EMBED.md`](./RESEARCH_BRIEF_EMBED.md)
+
+The Thinking Vault talk (`/knowledge/thinking-vault/`, `/talks/thinking-vault/`) is unpublished until a later HTML replaces it.
 
 This is a public projection of the Research Brief frontend, not a Notion iframe.
 

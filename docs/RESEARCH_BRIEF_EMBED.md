@@ -3,15 +3,15 @@
 ```text
 CarryLewis/research_brief  (pinned ref)
   frontend/   → public/research-brief/   → https://carrylewis.com/research-brief/
-  docs/talks/thinking-vault.html
-              → public/talks/thinking-vault/  (when that file exists on the pin)
 
 Listed on:
   /knowledge/                     (vault index)
   /knowledge/research-brief/      (framed MUJI homepage)
-  /knowledge/thinking-vault/      (framed talk, if vendored)
   /projects/active/research-brief/
 ```
+
+The Thinking Vault talk is **unpublished** until a later HTML replaces it.
+Do not copy `docs/talks/*` into `public/`.
 
 ## Refresh from research_brief
 
@@ -21,7 +21,7 @@ bash scripts/sync-research-brief.sh
 # RESEARCH_BRIEF_REF=main bash scripts/sync-research-brief.sh
 ```
 
-CI copies the same tree on every GitHub Pages deploy (`push` to `main`,
+CI copies the homepage on every GitHub Pages deploy (`push` to `main`,
 `workflow_dispatch`, or `repository_dispatch` type `research-brief-updated`).
 
 The current pin is in `research-brief-embed.ref` (homepage prototype branch

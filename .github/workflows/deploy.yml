@@ -106,13 +106,8 @@ jobs:
             exit 1
           fi
 
-          mkdir -p public/talks/thinking-vault
-          TALK_SRC=".research-brief/docs/talks/thinking-vault.html"
-          if [[ -f "$TALK_SRC" ]]; then
-            cp "$TALK_SRC" public/talks/thinking-vault/index.html
-          elif [[ -f public/talks/thinking-vault/index.html ]]; then
-            echo "Talk missing in research_brief checkout; keeping vendored copy"
-          fi
+          # Thinking Vault talk is unpublished until a later HTML replaces it.
+          rm -rf public/talks/thinking-vault
 
       - name: Build website
         run: npm run build
