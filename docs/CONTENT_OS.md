@@ -124,17 +124,18 @@ API sync into `/content` is still future work (see Architecture Phase 2).
 
 ---
 
-## Thinking Vault (Research Brief HTML)
+## Research Brief HTML
 
-Self-contained talk from [`CarryLewis/research_brief`](https://github.com/CarryLewis/research_brief):
+Latest public HTML from [`CarryLewis/research_brief`](https://github.com/CarryLewis/research_brief):
 
-- Raw deck: `/talks/thinking-vault/` (`public/talks/thinking-vault/index.html`)
-- Knowledge player: `/knowledge/thinking-vault`
+- Homepage: `/research-brief/` (`public/research-brief/`, MUJI Observatory prototype)
+- Knowledge player: `/knowledge/research-brief`
+- Talk deck (if present): `/talks/thinking-vault/` and `/knowledge/thinking-vault`
 - Project record: `/projects/active/research-brief/`
-- Pin / sync: `research-brief-embed.ref` + `scripts/sync-research-brief-talk.sh`
+- Pin / sync: `research-brief-embed.ref` + `scripts/sync-research-brief.sh`
 - Details: [`RESEARCH_BRIEF_EMBED.md`](./RESEARCH_BRIEF_EMBED.md)
 
-This is a public projection of the Thinking Vault architecture, not a Notion iframe.
+This is a public projection of the Research Brief frontend, not a Notion iframe.
 
 ---
 

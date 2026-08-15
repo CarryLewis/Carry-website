@@ -2,29 +2,30 @@
 
 ```text
 CarryLewis/research_brief  (pinned ref)
+  frontend/   → public/research-brief/   → https://carrylewis.com/research-brief/
   docs/talks/thinking-vault.html
-    → public/talks/thinking-vault/index.html
-    → https://carrylewis.com/talks/thinking-vault/
+              → public/talks/thinking-vault/  (when that file exists on the pin)
 
 Listed on:
-  /knowledge/                  (vault index)
-  /knowledge/thinking-vault/   (framed player)
+  /knowledge/                     (vault index)
+  /knowledge/research-brief/      (framed MUJI homepage)
+  /knowledge/thinking-vault/      (framed talk, if vendored)
   /projects/active/research-brief/
 ```
 
-## Refresh the talk
+## Refresh from research_brief
 
 ```bash
-bash scripts/sync-research-brief-talk.sh
+bash scripts/sync-research-brief.sh
 # or pin another tip:
-# RESEARCH_BRIEF_REF=main bash scripts/sync-research-brief-talk.sh
+# RESEARCH_BRIEF_REF=main bash scripts/sync-research-brief.sh
 ```
 
-CI copies the same file on every GitHub Pages deploy (`push` to `main`,
+CI copies the same tree on every GitHub Pages deploy (`push` to `main`,
 `workflow_dispatch`, or `repository_dispatch` type `research-brief-updated`).
 
-The current pin is in `research-brief-embed.ref` (slides branch
-`cursor/thinking-vault-talk-03da` until that HTML lands on `main`).
+The current pin is in `research-brief-embed.ref` (homepage prototype branch
+`cursor/muji-homepage-prototype-5c8e` until that HTML lands on `main`).
 
 ## Optional auto-sync from research_brief
 

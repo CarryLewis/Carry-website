@@ -38,20 +38,20 @@ export function KnowledgeObservatorySection({
             {copy.figureCaption}
           </p>
           <p className="mt-lab-5 font-sans text-meta text-ink-secondary">
+            Research Brief:{" "}
+            <Link
+              href="/knowledge/research-brief/"
+              className="text-accent hover:text-accent-muted focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+            >
+              Observatory homepage
+            </Link>
+            {" · "}
             Medical study vault:{" "}
             <Link
               href="/knowledge/medical-basement/"
               className="text-accent hover:text-accent-muted focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
             >
               medical basement
-            </Link>
-            {" · "}
-            Research Brief talk:{" "}
-            <Link
-              href="/knowledge/thinking-vault/"
-              className="text-accent hover:text-accent-muted focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
-            >
-              Thinking Vault
             </Link>
           </p>
         </div>

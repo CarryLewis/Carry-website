@@ -95,11 +95,11 @@ export const projects: Project[] = [
     slug: "research-brief",
     title: "Research Brief",
     summary:
-      "Personal observatory pipeline — Notion Thinking Vault as input, Obsidian as memory/graph, public HTML talks as the projection on this site.",
+      "Personal observatory pipeline — Notion Thinking Vault as input, Obsidian as memory/graph, public MUJI homepage as the projection on this site.",
     problem:
       "How can captured reading and thinking become a durable, public, graph-linked research memory?",
     architecture:
-      "Content Lake + Knowledge Objects + one-way Notion → vault/Thinking sync + Quartz garden. Public talks are self-contained HTML decks copied onto carrylewis.com.",
+      "Content Lake + Knowledge Objects + one-way Notion → vault/Thinking sync. Public HTML is the MUJI Observatory homepage in frontend/, copied onto carrylewis.com.",
     status: "active",
     technology: [
       "Python",
@@ -107,7 +107,7 @@ export const projects: Project[] = [
       "Obsidian",
       "Quartz",
       "GitHub Actions",
-      "Self-contained HTML",
+      "Static HTML/CSS",
     ],
     relatedResearchIds: ["q-bio-to-compute"],
     relatedConceptIds: [
@@ -120,8 +120,8 @@ export const projects: Project[] = [
     designPhilosophy:
       "Notion is the input layer; Obsidian is the memory/graph layer; the website is the public projection.",
     implementation:
-      "Embedded talk from CarryLewis/research_brief docs/talks/thinking-vault.html. Source tip pinned in research-brief-embed.ref (cursor/thinking-vault-talk-03da @ d238db0).",
-    demoUrl: "/talks/thinking-vault/",
+      "Embedded MUJI homepage from CarryLewis/research_brief frontend/. Source tip pinned in research-brief-embed.ref (cursor/muji-homepage-prototype-5c8e @ 8bfa32e).",
+    demoUrl: "/research-brief/",
     repoUrl: "https://github.com/CarryLewis/research_brief",
     createdAt: "2026-07-01",
     updatedAt: "2026-08-15",

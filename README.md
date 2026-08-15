@@ -65,14 +65,16 @@ bash scripts/sync-ecg-stimulator.sh
 
 CI also rebuilds from `ecg-embed.ref` on every site deploy (`push` to `main`, `workflow_dispatch`, or `repository_dispatch`).
 
-### Embedded Research Brief talk
+### Embedded Research Brief HTML
 
-The self-contained HTML deck from [`CarryLewis/research_brief`](https://github.com/CarryLewis/research_brief) (`docs/talks/thinking-vault.html`) is copied into `public/talks/thinking-vault/`, served at `/talks/thinking-vault/`, and listed at `/knowledge/thinking-vault/` and `/projects/active/research-brief/`.
+The MUJI Observatory homepage from [`CarryLewis/research_brief`](https://github.com/CarryLewis/research_brief) (`frontend/`) is copied into `public/research-brief/`, served at `/research-brief/`, and listed at `/knowledge/research-brief/` and `/projects/active/research-brief/`.
+
+The Thinking Vault talk remains at `/talks/thinking-vault/` when that file exists on the pinned ref (or as a vendored copy).
 
 Source tip is pinned in `research-brief-embed.ref`.
 
 ```bash
-bash scripts/sync-research-brief-talk.sh
+bash scripts/sync-research-brief.sh
 ```
 
 See `docs/RESEARCH_BRIEF_EMBED.md`.
@@ -82,9 +84,10 @@ See `docs/RESEARCH_BRIEF_EMBED.md`.
 - `docs/CONTENT_OS.md` — content modules, sync rules, update workflow
 - `docs/ARCHITECTURE.md` — technical architecture
 - `docs/DESIGN_SYSTEM.md` — visual identity
+- Knowledge → **Research Brief** — MUJI Observatory homepage at `/research-brief/`
 - Knowledge → **medical basement** — Notion Sites embed (`/ebd/…` iframe)
 - Knowledge → **Thinking Vault** — Research Brief HTML talk at `/talks/thinking-vault/`
 
 Meaningful content lives in `src/data/*`. UI components only render data.
 medical basement is edited in Notion (Share → Publish); the site iframes the embed URL at `/knowledge/medical-basement`.
-Thinking Vault is synced from CarryLewis/research_brief (`docs/RESEARCH_BRIEF_EMBED.md`).
+Research Brief HTML is synced from CarryLewis/research_brief (`docs/RESEARCH_BRIEF_EMBED.md`).
