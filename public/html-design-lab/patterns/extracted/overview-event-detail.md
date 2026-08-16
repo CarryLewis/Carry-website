@@ -1,0 +1,21 @@
+# Pattern: Overview → Event → Detail
+
+- **ID:** overview-event-detail
+- **Kind:** original
+- **Maturity:** EXPERIMENTAL
+- **Problem:** Chronologies shown all at once flatten sequence and overwhelm detail.
+- **Design principle:** Time is an axis you sample. Overview and event cannot share the same visual weight at once.
+- **Visual structure:** One rail. Events exist along it. A playhead. A detail panel that replaces, never stacks.
+- **Interaction:** Scrub the axis; click an event to drop into detail.
+- **Motion:** Appear — events fade on as the playhead reaches them. Follow — the year label tracks the playhead.
+- **Information logic:** Position = time. Opacity = “has been reached.” The panel = selected scale.
+- **Strengths:** Sequence remains visible while reading one event.
+- **Weaknesses:** Horizontal axes crowd on mobile; many events need clustering (not in v01).
+- **Best use cases:** Project histories, disease progression, research chronologies, exhibition sequences.
+- **Poor use cases:** Simultaneous comparison of two timescales (use comparison).
+- **Technical complexity:** medium
+- **Performance:** DOM nodes per event; cluster before you animate hundreds.
+- **Accessibility:** Range input is keyboard-native; event buttons need names (they have `aria-label`).
+- **Related references:** —
+- **Related experiments:** [progressive-timeline-v01](../../experiments/visualization/progressive-timeline-v01/)
+- **Used in projects:** none yet

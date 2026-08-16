@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Knowledge — HTML Design Lab</title>
+    <link rel="stylesheet" href="../tokens/fonts.css" />
+    <link rel="stylesheet" href="../tokens/tokens.css" />
+    <link rel="stylesheet" href="../tokens/languages/notebook.css" />
+    <link rel="stylesheet" href="lab.css" />
+  </head>
+  <body class="lab" data-knowledge-url="knowledge.json" data-from-lab="true">
+    <a class="skip" href="#main">Skip to content</a>
+    <div class="lab-frame">
+      <header class="lab-top">
+        <a class="wordmark" href="../index.html">HTML Design Lab</a>
+        <nav class="lab-nav" aria-label="Lab">
+          <a href="gallery.html">Gallery</a>
+          <a href="knowledge.html" aria-current="page">Knowledge</a>
+          <a href="playground.html">Playground</a>
+          <a href="../DESIGN_KNOWLEDGE.md">Guide</a>
+        </nav>
+      </header>
+
+      <main id="main">
+        <div class="page-intro">
+          <h1>Design knowledge</h1>
+          <p>
+            References inspire patterns. Patterns are implemented as experiments.
+            Experiments are adapted to projects. Do not copy interfaces. Extract
+            design intelligence.
+          </p>
+        </div>
+
+        <div class="gallery-filters" role="toolbar" aria-label="Knowledge layer">
+          <button type="button" data-kfilter="patterns" aria-pressed="true">Patterns</button>
+          <button type="button" data-kfilter="references" aria-pressed="false">References</button>
+          <button type="button" data-kfilter="graph" aria-pressed="false">Graph</button>
+        </div>
+
+        <ul class="gallery-list" data-knowledge></ul>
+        <ul class="graph-list" data-graph hidden></ul>
+      </main>
+
+      <footer class="lab-foot">
+        <span>Maturity: discovered → core pattern</span>
+        <a href="../patterns/INDEX.md">Pattern index</a>
+      </footer>
+    </div>
+    <script src="lab.js"></script>
+  </body>
+</html>

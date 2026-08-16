@@ -1,0 +1,21 @@
+# Pattern: Unbounded Cluster Canvas
+
+- **ID:** unbounded-cluster-canvas
+- **Kind:** original
+- **Maturity:** EXPERIMENTAL
+- **Problem:** Page scroll forces a single reading order onto material that is spatial and clustered.
+- **Design principle:** A board, not a chapter. Proximity is relatedness; there is no page end.
+- **Visual structure:** Overflow-hidden viewport; a large plane of clusters; a reader panel for the selected note.
+- **Interaction:** Explore (pan with inertia); Focus (click note). Zoom is deferred to Distance as Relatedness.
+- **Motion:** Follow via gentle camera ease; Settle via coasting friction.
+- **Information logic:** Clusters are topics. Notes are particulars. The reader panel is detail without leaving the field.
+- **Strengths:** Working-wall feel; combinations of ideas stay beside each other.
+- **Weaknesses:** Easy to lose origin; no search in v01; inertia can fight precision.
+- **Best use cases:** Research boards, digital notebooks, exhibition backrooms.
+- **Poor use cases:** Canonical documents; legal text; anything that needs a stable URL per paragraph (unless notes are addressable).
+- **Technical complexity:** high
+- **Performance:** One transformed world; keep node count modest or virtualize later.
+- **Accessibility:** Pan is pointer-heavy; provide clickable notes and a close control. Consider a list alternative.
+- **Related references:** —
+- **Related experiments:** [infinite-canvas-v01](../../experiments/layout/infinite-canvas-v01/)
+- **Used in projects:** none yet

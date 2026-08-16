@@ -1,0 +1,28 @@
+/* Language A — Minimal / editorial */
+
+:root {
+  --color-bg: #f6f1e8;
+  --color-bg-elevated: #fbf8f2;
+  --color-surface: #ebe4d6;
+  --color-text: #14110e;
+  --color-text-muted: #6a6258;
+  --color-border: #d2c8b6;
+  --color-accent: #9a3b2f;
+  --color-accent-text: #9a3b2f;
+  --viz-1: #9a3b2f;
+  --viz-2: #1e4a5c;
+  --viz-3: #3d5a40;
+  --viz-4: #8a6a28;
+  --viz-5: #5a4a6a;
+  --viz-6: #6a6258;
+  --viz-grid: #e4dccb;
+  --viz-axis: #8a8174;
+  --font-display: "Fraunces", "Source Serif 4", Georgia, serif;
+  --font-body: "Source Serif 4", Georgia, serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+  --size-display: 5rem;
+  --leading-body: 1.62;
+  --measure: 40rem;
+  --radius: 0;
+  --duration-medium: 320ms;
+}

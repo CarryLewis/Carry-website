@@ -1,0 +1,111 @@
+/* HTML Design Lab — token contract
+   Languages override these names. Do not lock a brand here. */
+
+:root {
+  /* Color */
+  --color-bg: #f4efe6;
+  --color-bg-elevated: #faf7f1;
+  --color-surface: #ece6da;
+  --color-text: #1c1916;
+  --color-text-muted: #6b645a;
+  --color-border: #cfc6b8;
+  --color-accent: #8c3a2f;
+  --color-accent-text: #8c3a2f;
+  --color-danger: #9b2c2c;
+  --color-warning: #9a6700;
+  --color-success: #2f6b4f;
+  --color-info: #2c5f7c;
+
+  /* Visualization */
+  --viz-1: #8c3a2f;
+  --viz-2: #2c5f7c;
+  --viz-3: #2f6b4f;
+  --viz-4: #9a6700;
+  --viz-5: #5c4d7a;
+  --viz-6: #6b645a;
+  --viz-grid: #ddd6c8;
+  --viz-axis: #8a8174;
+
+  /* Typography */
+  --font-display: "Fraunces", "Source Serif 4", Georgia, serif;
+  --font-body: "Source Serif 4", Georgia, serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+  --size-xs: 0.75rem;
+  --size-sm: 0.875rem;
+  --size-md: 1.0625rem;
+  --size-lg: 1.25rem;
+  --size-xl: 1.625rem;
+  --size-2xl: 2.25rem;
+  --size-3xl: 3.25rem;
+  --size-display: 4.5rem;
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+  --weight-bold: 650;
+  --leading-tight: 1.12;
+  --leading-snug: 1.32;
+  --leading-body: 1.58;
+  --leading-loose: 1.78;
+  --tracking-tight: -0.028em;
+  --tracking-normal: 0;
+  --tracking-wide: 0.06em;
+  --tracking-label: 0.14em;
+
+  /* Spacing */
+  --space-micro: 0.25rem;
+  --space-small: 0.5rem;
+  --space-medium: 1rem;
+  --space-large: 2rem;
+  --space-section: 4.5rem;
+  --space-display: 7rem;
+
+  /* Motion */
+  --duration-instant: 80ms;
+  --duration-fast: 160ms;
+  --duration-medium: 280ms;
+  --duration-slow: 520ms;
+  --duration-glacial: 900ms;
+  --delay-stagger: 70ms;
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.45, 0, 0.55, 1);
+  --ease-linear: linear;
+  --distance-sm: 0.5rem;
+  --distance-md: 1rem;
+  --distance-lg: 2rem;
+  --opacity-dim: 0.38;
+  --opacity-ghost: 0.14;
+  --scale-press: 0.985;
+  --scale-emphasis: 1.03;
+
+  /* Layout */
+  --container: 72rem;
+  --grid-columns: 12;
+  --gap: 1.25rem;
+  --radius-none: 0;
+  --radius-sm: 2px;
+  --radius-md: 4px;
+  --radius: 0;
+  --border-width: 1px;
+  --measure: 38rem;
+}
+
+html {
+  background: var(--color-bg);
+  color: var(--color-text);
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: var(--size-md);
+  font-weight: var(--weight-regular);
+  line-height: var(--leading-body);
+  background: var(--color-bg);
+  color: var(--color-text);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}

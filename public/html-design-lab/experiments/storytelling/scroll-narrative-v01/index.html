@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Scroll Narrative — HTML Design Lab</title>
+    <link rel="stylesheet" href="../../../tokens/fonts.css" />
+    <link rel="stylesheet" href="../../../tokens/tokens.css" />
+    <link rel="stylesheet" href="../../../tokens/languages/editorial.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="exp-bar">
+      <a href="../../../index.html">HTML Design Lab</a>
+      <span>Storytelling · Scroll Narrative v01</span>
+    </header>
+
+    <main>
+      <section class="opening">
+        <p class="kicker">Experiment · Time / Narrative</p>
+        <h1>How a relation becomes a system</h1>
+        <p class="deck">
+          Scroll. The diagram on the right is not an illustration of the essay.
+          It is the essay, constructed in the same order as the argument.
+        </p>
+      </section>
+
+      <div class="story">
+        <article class="chapters">
+          <section data-stage="1">
+            <h2>01 · An element</h2>
+            <p>
+              Begin with one thing. Isolated, it has presence but no meaning
+              beyond itself. A concept that does not yet relate cannot explain.
+            </p>
+          </section>
+          <section data-stage="2">
+            <h2>02 · A relation</h2>
+            <p>
+              A second element appears. The line between them is the first
+              claim: these two participate in the same structure. The claim is
+              visible before it is named.
+            </p>
+          </section>
+          <section data-stage="3">
+            <h2>03 · A consequence</h2>
+            <p>
+              From the relation, a third state becomes possible. It did not
+              exist at the start. Emergence is not a label added at the end —
+              it is what the previous steps make inevitable.
+            </p>
+          </section>
+          <section data-stage="4">
+            <h2>04 · A system</h2>
+            <p>
+              Only now are the parts named. Naming too early pretends the
+              structure was always complete. Understanding is the structure
+              appearing in time.
+            </p>
+          </section>
+        </article>
+
+        <aside class="stage" aria-hidden="true">
+          <svg viewBox="0 0 320 360">
+            <g class="part part-a">
+              <circle cx="70" cy="180" r="22" />
+              <text x="70" y="186">A</text>
+            </g>
+            <line class="part part-ab" x1="92" y1="180" x2="148" y2="180" />
+            <g class="part part-b">
+              <circle cx="170" cy="180" r="22" />
+              <text x="170" y="186">B</text>
+            </g>
+            <line class="part part-bc" x1="184" y1="162" x2="228" y2="108" />
+            <g class="part part-c">
+              <circle cx="248" cy="92" r="22" />
+              <text x="248" y="98">C</text>
+            </g>
+            <g class="part part-labels">
+              <text class="name" x="70" y="224">Element</text>
+              <text class="name" x="170" y="224">Relation</text>
+              <text class="name" x="248" y="136">Emergent</text>
+            </g>
+          </svg>
+          <p class="stage-caption" data-caption>Waiting for the first element.</p>
+        </aside>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+# Composite: Explorable Knowledge Field
+
+- **ID:** explorable-knowledge-field
+- **Kind:** composite
+- **Maturity:** DECONSTRUCTED
+- **Problem:** A knowledge system needs overview and conceptual detail without becoming a menu or a wall of text.
+- **Design principle:** Allow the user to move from a field of relations into a local neighborhood, then into a document — without destroying the field.
+- **Visual structure:** Spatial or graph overview + node highlighting + a dossier or note + a way back.
+- **Interaction:** Explore + Focus + Expand + Dissolve.
+- **Motion:** Camera or neighborhood emphasis; dossier as expand, not a route change.
+- **Information logic:** Overview = map of concepts. Focus = neighborhood. Detail = prose bound to a node.
+- **Components:**
+  - [Neighborhood Focus](../extracted/neighborhood-focus.md)
+  - [Distance as Relatedness](../extracted/distance-as-relatedness.md)
+  - [Unbounded Cluster Canvas](../extracted/unbounded-cluster-canvas.md)
+  - (optional) [Causal Scroll Construction](../extracted/causal-scroll-construction.md) for the document layer
+- **Strengths:** Matches how people actually wander a body of thought.
+- **Weaknesses:** Not yet a single experiment; combining all four naively will be noisy.
+- **Best use cases:** Thinking Database, research observatories, knowledge graphs with writing attached.
+- **Poor use cases:** Short marketing pages; single-mechanism explainers (use Animation as Explanation instead).
+- **Technical complexity:** high
+- **Performance:** One spatial system at a time; do not run a force graph inside an infinite canvas until measured.
+- **Accessibility:** Always keep a non-spatial path to the same nodes (list or search) when this becomes a product.
+- **Related references:** —
+- **Related experiments:** knowledge-graph-v01, spatial-map-v01, infinite-canvas-v01 (not yet combined)
+- **Used in projects:** none yet — proposed for Thinking Database after a project brief

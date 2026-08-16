@@ -23,6 +23,7 @@ import { validateRelations } from "@/content/relations";
 import focusEcg from "../../content/focus/ecg-simulator.json";
 import focusReasoning from "../../content/focus/clinical-reasoning-ai.json";
 import focusKos from "../../content/focus/personal-knowledge-os.json";
+import focusLab from "../../content/focus/html-design-lab.json";
 
 import questionEcg from "../../content/questions/ecg-conduction.json";
 import questionReasoning from "../../content/questions/clinical-reasoning-ai.json";
@@ -32,6 +33,7 @@ import projectEcg from "../../content/projects/ecg-simulator.json";
 import projectReasoning from "../../content/projects/clinical-reasoning-ai.json";
 import projectKos from "../../content/projects/personal-knowledge-os.json";
 import projectBrief from "../../content/projects/research-brief.json";
+import projectLab from "../../content/projects/html-design-lab.json";
 
 import conceptHumanSystems from "../../content/concepts/human-systems.json";
 import conceptMedicine from "../../content/concepts/medicine.json";
@@ -55,6 +57,7 @@ import timelineEcg from "../../content/timeline/ecg-simulator-started.json";
 import timelineReasoning from "../../content/timeline/clinical-reasoning-ai-started.json";
 import timelineObservatory from "../../content/timeline/observatory-launched.json";
 import timelineBrief from "../../content/timeline/research-brief-listed.json";
+import timelineLab from "../../content/timeline/html-design-lab-listed.json";
 
 import relationsCollection from "../../content/relations/edges.json";
 
@@ -67,6 +70,7 @@ const focus = [
   stripSchema(focusEcg),
   stripSchema(focusReasoning),
   stripSchema(focusKos),
+  stripSchema(focusLab),
 ] as IntellectualFocusRecord[];
 
 const questions = [
@@ -80,6 +84,7 @@ const projects = [
   stripSchema(projectReasoning),
   stripSchema(projectKos),
   stripSchema(projectBrief),
+  stripSchema(projectLab),
 ] as ProjectRecord[];
 
 const concepts = [
@@ -109,6 +114,7 @@ const timeline = [
   stripSchema(timelineReasoning),
   stripSchema(timelineObservatory),
   stripSchema(timelineBrief),
+  stripSchema(timelineLab),
 ].sort((a, b) =>
   a.occurredAt.localeCompare(b.occurredAt),
 ) as TimelineEventRecord[];

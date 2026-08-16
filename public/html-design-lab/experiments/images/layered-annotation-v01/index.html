@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Layered Image Annotation — HTML Design Lab</title>
+    <link rel="stylesheet" href="../../../tokens/fonts.css" />
+    <link rel="stylesheet" href="../../../tokens/tokens.css" />
+    <link rel="stylesheet" href="../../../tokens/languages/exhibition.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="exp-bar">
+      <a href="../../../index.html">HTML Design Lab</a>
+      <span>Images · Layered Annotation v01</span>
+    </header>
+    <main>
+      <header class="intro">
+        <p class="kicker">Experiment · Representation / Scale</p>
+        <h1>Layered image annotation</h1>
+        <p>A caption cannot point. Numbers can. Select a region of the plate.</p>
+      </header>
+
+      <div class="plate" id="plate">
+        <svg viewBox="0 0 640 400" aria-hidden="true">
+          <rect class="ground" width="640" height="400" />
+          <rect class="mass chamber" x="80" y="70" width="280" height="240" />
+          <circle class="mass core" cx="220" cy="190" r="54" />
+          <rect class="mass conduit" x="360" y="160" width="160" height="24" />
+          <rect class="mass port" x="520" y="140" width="40" height="64" />
+          <line class="mass axis" x1="80" y1="330" x2="560" y2="330" />
+        </svg>
+        <button class="hot" style="left:33%;top:46%" data-id="1" aria-label="Annotation 1">1</button>
+        <button class="hot" style="left:18%;top:28%" data-id="2" aria-label="Annotation 2">2</button>
+        <button class="hot" style="left:62%;top:42%" data-id="3" aria-label="Annotation 3">3</button>
+        <button class="hot" style="left:82%;top:38%" data-id="4" aria-label="Annotation 4">4</button>
+        <button class="hot" style="left:50%;top:82%" data-id="5" aria-label="Annotation 5">5</button>
+        <aside class="callout" hidden>
+          <p class="kicker" data-num></p>
+          <h2 data-title></h2>
+          <p data-body></p>
+        </aside>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

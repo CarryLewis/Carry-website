@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Gallery — HTML Design Lab</title>
+    <link rel="stylesheet" href="../tokens/fonts.css" />
+    <link rel="stylesheet" href="../tokens/tokens.css" />
+    <link rel="stylesheet" href="../tokens/languages/notebook.css" />
+    <link rel="stylesheet" href="lab.css" />
+  </head>
+  <body class="lab" data-index-url="experiments.json" data-from-lab="true">
+    <a class="skip" href="#main">Skip to content</a>
+    <div class="lab-frame">
+      <header class="lab-top">
+        <a class="wordmark" href="../index.html">HTML Design Lab</a>
+        <nav class="lab-nav" aria-label="Lab">
+          <a href="gallery.html" aria-current="page">Gallery</a>
+          <a href="knowledge.html">Knowledge</a>
+          <a href="playground.html">Playground</a>
+          <a href="../DESIGN_KNOWLEDGE.md">Guide</a>
+        </nav>
+      </header>
+
+      <main id="main">
+        <div class="page-intro">
+          <h1>Experiment gallery</h1>
+          <p>
+            Isolated studies, versioned in place. Filter by category. Each entry
+            is a pattern, not a product.
+          </p>
+        </div>
+
+        <div class="gallery-filters" role="toolbar" aria-label="Filter by category">
+          <button type="button" data-filter="all" aria-pressed="true">All</button>
+          <button type="button" data-filter="motion" aria-pressed="false">Motion</button>
+          <button type="button" data-filter="interaction" aria-pressed="false">Interaction</button>
+          <button type="button" data-filter="visualization" aria-pressed="false">Visualization</button>
+          <button type="button" data-filter="typography" aria-pressed="false">Typography</button>
+          <button type="button" data-filter="layout" aria-pressed="false">Layout</button>
+          <button type="button" data-filter="storytelling" aria-pressed="false">Storytelling</button>
+          <button type="button" data-filter="scientific" aria-pressed="false">Scientific</button>
+          <button type="button" data-filter="data" aria-pressed="false">Data</button>
+          <button type="button" data-filter="images" aria-pressed="false">Images</button>
+        </div>
+
+        <ul class="gallery-list" data-gallery></ul>
+      </main>
+
+      <footer class="lab-foot">
+        <span>Design index also lives in DESIGN_INDEX.md</span>
+        <a href="playground.html">Open playground</a>
+      </footer>
+    </div>
+    <script src="lab.js"></script>
+  </body>
+</html>

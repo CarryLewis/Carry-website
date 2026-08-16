@@ -1,0 +1,21 @@
+# Pattern: Causal Scroll Construction
+
+- **ID:** causal-scroll-construction
+- **Kind:** original
+- **Maturity:** EXPERIMENTAL
+- **Problem:** Sequential ideas dumped as a wall of text lose causal order.
+- **Design principle:** Reading order should be construction order. The diagram is not an illustration of the essay; it is the essay appearing in time.
+- **Visual structure:** Sticky stage + scrolling chapters. Parts of a diagram exist in the DOM but remain absent until their section is current.
+- **Interaction:** Follow (scroll). No click required.
+- **Motion:** Assemble — parts fade/translate into place as their claim is made.
+- **Information logic:** Presence encodes “has been argued.” Labels arrive last so naming cannot precede structure.
+- **Strengths:** Causal clarity; contemplative pace; works without instruction.
+- **Weaknesses:** Costly on small screens (sticky fights the essay); easy to over-pin.
+- **Best use cases:** Interactive essays, research explanations, system onboarding.
+- **Poor use cases:** Reference docs that must be scanned; dashboards.
+- **Technical complexity:** medium
+- **Performance:** IntersectionObserver is cheap; avoid heavy canvas in the sticky pane.
+- **Accessibility:** Honour `prefers-reduced-motion` (show the complete diagram). Keep chapter headings in the document order.
+- **Related references:** [Internal: Scroll Narrative](../../references/internal/lab-scroll-narrative.md)
+- **Related experiments:** [scroll-narrative-v01](../../experiments/storytelling/scroll-narrative-v01/)
+- **Used in projects:** none yet

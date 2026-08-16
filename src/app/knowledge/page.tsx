@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Knowledge",
   description:
-    "Personal knowledge graph, Research Brief observatory, and medical basement vault.",
+    "Personal knowledge graph, Research Brief observatory, medical basement vault, and HTML Design Lab atlas.",
 };
 
 export default function KnowledgeIndexPage() {
@@ -46,6 +46,18 @@ export default function KnowledgeIndexPage() {
           <p className="mt-lab-3 max-w-prose font-sans text-body-ui text-ink-secondary">
             Live mirror of the Notion medical-basement workspace — databases,
             views, and notes as published on the web.
+          </p>
+        </Link>
+        <Link
+          href="/lab/"
+          className="group mt-lab-7 block focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+        >
+          <h2 className="font-serif text-section text-ink transition-colors duration-fast group-hover:text-accent">
+            HTML Design Lab
+          </h2>
+          <p className="mt-lab-3 max-w-prose font-sans text-body-ui text-ink-secondary">
+            Structure Atlas — experiments filed by information structure.
+            Form follows the shape of the knowledge, not fashion.
           </p>
         </Link>
       </div>

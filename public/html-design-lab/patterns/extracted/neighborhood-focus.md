@@ -1,0 +1,21 @@
+# Pattern: Neighborhood Focus
+
+- **ID:** neighborhood-focus
+- **Kind:** original
+- **Maturity:** EXPERIMENTAL
+- **Problem:** Relationship networks are unreadable when every node is equally present.
+- **Design principle:** A graph should stay quiet until the reader asks “what is near this?” Focus encodes local structure without deleting the global map.
+- **Visual structure:** Predetermined SVG layout (not physics). Edges and nodes recede; the selected node and its neighbors remain.
+- **Interaction:** Reveal on hover; Expand on click (dossier); Dissolve on close.
+- **Motion:** Connect / Separate — opacity and stroke, not jitter.
+- **Information logic:** Nodes are concepts; edges are relations. Dossier is the detail scale; the field is the overview scale.
+- **Strengths:** Asks a precise question; returns to overview; typed concepts in the dossier.
+- **Weaknesses:** Predetermined layout does not scale to live databases; hover is weak on touch.
+- **Best use cases:** Knowledge systems, research mapping, Thinking Database.
+- **Poor use cases:** Thousands of live nodes; purely hierarchical data (use a tree).
+- **Technical complexity:** high
+- **Performance:** Static SVG is fine; force layout is the thing to refuse until needed.
+- **Accessibility:** Nodes are focusable; dossier is explicit. Provide a non-hover path (click).
+- **Related references:** —
+- **Related experiments:** [knowledge-graph-v01](../../experiments/visualization/knowledge-graph-v01/)
+- **Used in projects:** none yet

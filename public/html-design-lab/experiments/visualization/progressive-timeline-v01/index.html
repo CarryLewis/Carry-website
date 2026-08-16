@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Progressive Timeline — HTML Design Lab</title>
+    <link rel="stylesheet" href="../../../tokens/fonts.css" />
+    <link rel="stylesheet" href="../../../tokens/tokens.css" />
+    <link rel="stylesheet" href="../../../tokens/languages/data.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="exp-bar">
+      <a href="../../../index.html">HTML Design Lab</a>
+      <span>Visualization · Progressive Timeline v01</span>
+    </header>
+    <main>
+      <header class="intro">
+        <p class="kicker">Experiment · Time / Scale</p>
+        <h1>Progressive timeline</h1>
+        <p>Scrub to reveal events. Click one to drop from overview into detail.</p>
+      </header>
+
+      <div class="controls">
+        <label class="kicker" for="playhead">Playhead</label>
+        <input id="playhead" type="range" min="0" max="100" value="0" />
+        <p class="year" data-year>Year 0</p>
+      </div>
+
+      <div class="axis" aria-label="Timeline">
+        <span class="rail"></span>
+        <ol class="events"></ol>
+      </div>
+
+      <section class="detail" hidden>
+        <p class="kicker" data-when></p>
+        <h2 data-title></h2>
+        <p data-body></p>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -61,4 +61,24 @@ export const intellectualFocus: IntellectualFocus[] = [
     createdAt: "2025-06-01",
     updatedAt: "2026-07-22",
   },
+  {
+    id: "focus-visual-systems",
+    slug: "html-design-lab",
+    title: "HTML Design Lab",
+    description:
+      "Choosing visual form from the structure of information — a laboratory of isolated HTML experiments for explanation, not decoration.",
+    domain: "Visual Systems",
+    status: "active",
+    priority: "p1",
+    relatedProjectIds: ["proj-html-design-lab"],
+    relatedQuestionIds: ["q-bio-to-compute"],
+    relatedConceptIds: [
+      "concept-human-systems",
+      "concept-technology",
+      "concept-philosophy",
+    ],
+    fields: ["Visualization", "Interaction", "Information Structure"],
+    createdAt: "2026-08-15",
+    updatedAt: "2026-08-16",
+  },
 ];

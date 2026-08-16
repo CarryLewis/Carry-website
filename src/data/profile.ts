@@ -31,12 +31,14 @@ export const siteChrome: SiteChrome = {
     { href: "/", label: "Observatory" },
     { href: "/research", label: "Research" },
     { href: "/projects", label: "Projects" },
+    { href: "/lab", label: "Lab" },
     { href: "/knowledge", label: "Knowledge" },
     { href: "/signals", label: "Signals" },
     { href: "/archive", label: "Archive" },
     { href: "/about", label: "About" },
   ],
   footerLinks: [
+    { href: "/lab", label: "Lab" },
     { href: "/about", label: "About" },
     { href: "/signals", label: "Signals" },
   ],
@@ -53,6 +55,11 @@ export const systemLinks: SystemLink[] = [
     label: "Projects",
     href: "/projects",
     description: "Things under construction",
+  },
+  {
+    label: "Lab",
+    href: "/lab",
+    description: "Visual experiments by information structure",
   },
   {
     label: "Knowledge",

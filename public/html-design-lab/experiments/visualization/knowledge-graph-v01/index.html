@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Interactive Knowledge Graph — HTML Design Lab</title>
+    <link rel="stylesheet" href="../../../tokens/fonts.css" />
+    <link rel="stylesheet" href="../../../tokens/tokens.css" />
+    <link rel="stylesheet" href="../../../tokens/languages/scientific.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="exp-bar">
+      <a href="../../../index.html">HTML Design Lab</a>
+      <span>Visualization · Knowledge Graph v01</span>
+    </header>
+    <main>
+      <header class="intro">
+        <p class="kicker">Experiment · Relationship</p>
+        <h1>Interactive knowledge graph</h1>
+        <p>Hover a node to see what it touches. Click to read the dossier.</p>
+      </header>
+      <div class="workspace">
+        <svg id="graph" viewBox="0 0 760 480" role="img" aria-label="Concept relationship graph"></svg>
+        <aside class="dossier" hidden>
+          <p class="kicker" data-kind></p>
+          <h2 data-title></h2>
+          <p data-body></p>
+          <p class="related-label">Related</p>
+          <ul data-related></ul>
+          <button type="button" data-close>Close</button>
+        </aside>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

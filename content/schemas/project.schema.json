@@ -54,6 +54,10 @@
       "type": "string",
       "description": "Same-origin or absolute URL of the interactive demo."
     },
+    "showcaseUrl": {
+      "type": "string",
+      "description": "Designed viewing surface on this site (may include site chrome)."
+    },
     "repoUrl": {
       "type": "string",
       "description": "Source repository URL."

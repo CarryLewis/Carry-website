@@ -1,0 +1,157 @@
+{
+  "featured_patterns": [
+    "neighborhood-focus",
+    "animation-as-explanation",
+    "labeled-control-loop"
+  ],
+  "references": [
+    {
+      "id": "lab-scroll-narrative",
+      "name": "Scroll Narrative (internal)",
+      "kind": "internal",
+      "path": "../references/internal/lab-scroll-narrative.md",
+      "primary_strength": "Causal construction in time",
+      "design_language": "editorial",
+      "patterns": ["causal-scroll-construction"]
+    }
+  ],
+  "patterns": [
+    {
+      "id": "causal-scroll-construction",
+      "name": "Causal Scroll Construction",
+      "kind": "original",
+      "maturity": "EXPERIMENTAL",
+      "principle": "Reading order is construction order.",
+      "path": "../patterns/extracted/causal-scroll-construction.md",
+      "experiments": ["scroll-narrative-v01"],
+      "interactions": ["follow", "assemble"],
+      "motions": ["assemble"]
+    },
+    {
+      "id": "neighborhood-focus",
+      "name": "Neighborhood Focus",
+      "kind": "original",
+      "maturity": "EXPERIMENTAL",
+      "principle": "Ask what is near this without deleting the map.",
+      "path": "../patterns/extracted/neighborhood-focus.md",
+      "experiments": ["knowledge-graph-v01"],
+      "interactions": ["reveal", "focus", "expand", "connect", "dissolve"],
+      "motions": ["connect", "separate", "expand"]
+    },
+    {
+      "id": "overview-event-detail",
+      "name": "Overview → Event → Detail",
+      "kind": "original",
+      "maturity": "EXPERIMENTAL",
+      "principle": "Time is an axis you sample.",
+      "path": "../patterns/extracted/overview-event-detail.md",
+      "experiments": ["progressive-timeline-v01"],
+      "interactions": ["scrub", "expand"],
+      "motions": ["appear", "follow"]
+    },
+    {
+      "id": "animation-as-explanation",
+      "name": "Animation as Explanation",
+      "kind": "original",
+      "maturity": "EXPERIMENTAL",
+      "principle": "The motion is the causal claim.",
+      "path": "../patterns/extracted/animation-as-explanation.md",
+      "experiments": ["process-diagram-v01"],
+      "interactions": ["trace"],
+      "motions": ["propagate", "transform", "appear"]
+    },
+    {
+      "id": "distance-as-relatedness",
+      "name": "Distance as Relatedness",
+      "kind": "original",
+      "maturity": "EXPERIMENTAL",
+      "principle": "Proximity is meaning; zoom is reading.",
+      "path": "../patterns/extracted/distance-as-relatedness.md",
+      "experiments": ["spatial-map-v01"],
+      "interactions": ["explore", "zoom", "focus", "navigate"],
+      "motions": ["reveal"]
+    },
+    {
+      "id": "shared-axis-comparison",
+      "name": "Shared-Axis Comparison",
+      "kind": "original",
+      "maturity": "EXPERIMENTAL",
+      "principle": "Difference needs one frame and named properties.",
+      "path": "../patterns/extracted/shared-axis-comparison.md",
+      "experiments": ["comparison-v01"],
+      "interactions": ["compare", "scrub", "focus"],
+      "motions": ["transform", "connect"]
+    },
+    {
+      "id": "labeled-control-loop",
+      "name": "Labeled Control Loop",
+      "kind": "original",
+      "maturity": "EXPERIMENTAL",
+      "principle": "Name sensor, integrator, effector, and variable.",
+      "path": "../patterns/extracted/labeled-control-loop.md",
+      "experiments": ["mechanism-v01"],
+      "interactions": ["trace"],
+      "motions": ["drift", "propagate", "settle"]
+    },
+    {
+      "id": "in-situ-annotation",
+      "name": "In-situ Annotation",
+      "kind": "original",
+      "maturity": "EXPERIMENTAL",
+      "principle": "Point into the plate, not under it.",
+      "path": "../patterns/extracted/in-situ-annotation.md",
+      "experiments": ["layered-annotation-v01"],
+      "interactions": ["reveal", "focus", "dissolve"],
+      "motions": ["reveal"]
+    },
+    {
+      "id": "syntactic-entrance",
+      "name": "Syntactic Entrance",
+      "kind": "original",
+      "maturity": "EXPERIMENTAL",
+      "principle": "Entrance order is the argument.",
+      "path": "../patterns/extracted/syntactic-entrance.md",
+      "experiments": ["kinetic-type-v01"],
+      "interactions": ["assemble"],
+      "motions": ["appear"]
+    },
+    {
+      "id": "unbounded-cluster-canvas",
+      "name": "Unbounded Cluster Canvas",
+      "kind": "original",
+      "maturity": "EXPERIMENTAL",
+      "principle": "A board, not a chapter.",
+      "path": "../patterns/extracted/unbounded-cluster-canvas.md",
+      "experiments": ["infinite-canvas-v01"],
+      "interactions": ["explore", "focus"],
+      "motions": ["follow", "settle"]
+    },
+    {
+      "id": "explorable-knowledge-field",
+      "name": "Explorable Knowledge Field",
+      "kind": "composite",
+      "maturity": "DECONSTRUCTED",
+      "principle": "Field → neighborhood → document without destroying the field.",
+      "path": "../patterns/composites/explorable-knowledge-field.md",
+      "experiments": ["knowledge-graph-v01", "spatial-map-v01", "infinite-canvas-v01"],
+      "interactions": ["explore", "focus", "expand", "dissolve"],
+      "motions": ["reveal", "expand"]
+    }
+  ],
+  "edges": [
+    { "from": "reference:lab-scroll-narrative", "rel": "inspires", "to": "pattern:causal-scroll-construction" },
+    { "from": "pattern:causal-scroll-construction", "rel": "implemented_as", "to": "experiment:scroll-narrative-v01" },
+    { "from": "pattern:neighborhood-focus", "rel": "implemented_as", "to": "experiment:knowledge-graph-v01" },
+    { "from": "pattern:overview-event-detail", "rel": "implemented_as", "to": "experiment:progressive-timeline-v01" },
+    { "from": "pattern:animation-as-explanation", "rel": "implemented_as", "to": "experiment:process-diagram-v01" },
+    { "from": "pattern:distance-as-relatedness", "rel": "implemented_as", "to": "experiment:spatial-map-v01" },
+    { "from": "pattern:shared-axis-comparison", "rel": "implemented_as", "to": "experiment:comparison-v01" },
+    { "from": "pattern:labeled-control-loop", "rel": "implemented_as", "to": "experiment:mechanism-v01" },
+    { "from": "pattern:in-situ-annotation", "rel": "implemented_as", "to": "experiment:layered-annotation-v01" },
+    { "from": "pattern:syntactic-entrance", "rel": "implemented_as", "to": "experiment:kinetic-type-v01" },
+    { "from": "pattern:unbounded-cluster-canvas", "rel": "implemented_as", "to": "experiment:infinite-canvas-v01" },
+    { "from": "pattern:neighborhood-focus", "rel": "composes", "to": "pattern:explorable-knowledge-field" },
+    { "from": "pattern:distance-as-relatedness", "rel": "composes", "to": "pattern:explorable-knowledge-field" },
+    { "from": "pattern:unbounded-cluster-canvas", "rel": "composes", "to": "pattern:explorable-knowledge-field" }
+  ]
+}

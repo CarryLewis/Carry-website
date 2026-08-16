@@ -1,0 +1,7 @@
+# Git ref in CarryLewis/HTML-Design-Lab used for the public lab shell
+# at /html-design-lab/ (isolated experiments + original gallery).
+# The Structure Atlas UI lives in this repo at /lab/.
+# Update this file, then run: bash scripts/sync-html-design-lab.sh
+# CI reads the same ref on every GitHub Pages deploy.
+HTML_DESIGN_LAB_REF=cursor/html-design-lab-foundation-ee45
+HTML_DESIGN_LAB_SHA=97da38e
