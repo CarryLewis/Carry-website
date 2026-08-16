@@ -72,6 +72,28 @@ jobs:
           ref: ${{ steps.brief.outputs.ref }}
           path: .research-brief
 
+      - name: Resolve Thinking Vault talk ref
+        id: talk
+        env:
+          PAYLOAD_REF: ${{ github.event.client_payload.ref }}
+          PAYLOAD_SOURCE: ${{ github.event.client_payload.source }}
+        run: |
+          # shellcheck disable=SC1091
+          source thinking-vault-embed.ref
+          REF="$THINKING_VAULT_REF"
+          if [[ "${PAYLOAD_SOURCE:-}" == "thinking-vault" && -n "${PAYLOAD_REF:-}" ]]; then
+            REF="$PAYLOAD_REF"
+          fi
+          echo "ref=${REF}" >> "$GITHUB_OUTPUT"
+          echo "Using Thinking Vault talk ref: ${REF}"
+
+      - name: Checkout research_brief talk
+        uses: actions/checkout@v4
+        with:
+          repository: CarryLewis/research_brief
+          ref: ${{ steps.talk.outputs.ref }}
+          path: .research-brief-talk
+
       - name: Resolve HTML Design Lab embed ref
         id: lab
         env:
@@ -128,8 +150,20 @@ jobs:
             exit 1
           fi
 
-          # Thinking Vault talk is unpublished until a later HTML replaces it.
-          rm -rf public/talks/thinking-vault
+      - name: Embed Thinking Vault talk HTML
+        run: |
+          mkdir -p public/talks/thinking-vault
+          # shellcheck disable=SC1091
+          source thinking-vault-embed.ref
+          SRC_FILE=".research-brief-talk/${TALK_SRC}"
+          if [[ -f "$SRC_FILE" ]]; then
+            cp "$SRC_FILE" public/talks/thinking-vault/index.html
+          elif [[ -f public/talks/thinking-vault/index.html ]]; then
+            echo "Talk missing in research_brief checkout; keeping vendored copy"
+          else
+            echo "::error::Missing ${TALK_SRC} and no vendored copy"
+            exit 1
+          fi
 
       - name: Embed HTML Design Lab shell
         run: |

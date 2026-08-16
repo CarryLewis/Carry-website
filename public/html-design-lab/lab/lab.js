@@ -208,10 +208,66 @@ function renderFeaturedPatterns(container, data) {
     .join("");
 }
 
+function initOwnPages(data, fromLabFolder) {
+  const list = document.querySelector("[data-own-pages]");
+  const recent = document.querySelector("[data-own-recent]");
+  const pages = data.pages || [];
+
+  if (list) {
+    list.innerHTML = pages
+      .map((item) => {
+        const href = experimentHref(item, fromLabFolder);
+        return `<li class="gallery-item">
+          <div class="specimen" data-language="${item.visual_language}">
+            <span>${item.status}</span>
+            <span>${item.project}</span>
+          </div>
+          <div class="gallery-body">
+            <h2><a href="${href}">${item.name}</a></h2>
+            <p>${item.short}</p>
+            <div class="tags">
+              ${item.tags.map((tag) => `<span>${tag}</span>`).join("")}
+            </div>
+          </div>
+          <div class="gallery-side">
+            <span>${item.structure}</span>
+            <span>${item.form}</span>
+            <span>${item.interaction}</span>
+            <a href="${href}">Open</a>
+          </div>
+        </li>`;
+      })
+      .join("");
+  }
+
+  if (recent) {
+    const featured = (data.featured || [])
+      .map((id) => pages.find((item) => item.id === id))
+      .filter(Boolean);
+    recent.innerHTML = featured
+      .map((item, index) => {
+        const href = experimentHref(item, fromLabFolder);
+        const n = String(index + 1).padStart(2, "0");
+        return `<li>
+          <a href="${href}">
+            <span class="recent-idx">${n}</span>
+            <span>
+              <span class="recent-name">${item.name}</span>
+              <span class="recent-short">${item.short}</span>
+            </span>
+            <span class="recent-meta">${item.status}</span>
+          </a>
+        </li>`;
+      })
+      .join("");
+  }
+}
+
 async function boot() {
   const root = document.body;
   const indexUrl = root.dataset.indexUrl;
   const knowledgeUrl = root.dataset.knowledgeUrl;
+  const projectsUrl = root.dataset.projectsUrl;
   initLanguageSwitcher();
 
   const fail = (selector, message) => {
@@ -243,6 +299,17 @@ async function boot() {
     } catch (error) {
       fail("[data-featured-patterns]", "Serve the lab over HTTP to load patterns.");
       fail("[data-knowledge]", "Serve the lab over HTTP to load knowledge.");
+      console.warn(error);
+    }
+  }
+
+  if (projectsUrl) {
+    try {
+      const projects = await loadIndex(projectsUrl);
+      initOwnPages(projects, root.dataset.fromLab === "true");
+    } catch (error) {
+      fail("[data-own-pages]", "Serve the lab over HTTP to load own HTML.");
+      fail("[data-own-recent]", "Serve the lab over HTTP to load own HTML.");
       console.warn(error);
     }
   }

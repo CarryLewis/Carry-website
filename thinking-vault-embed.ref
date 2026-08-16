@@ -1,0 +1,7 @@
+# Git ref in CarryLewis/research_brief used for the Thinking Vault talk
+# at /talks/thinking-vault/. Unpublished from the Knowledge index;
+# registered on /lab/ for iteration.
+# Update this file, then run: bash scripts/sync-research-brief-talk.sh
+THINKING_VAULT_REF=cursor/thinking-vault-talk-03da
+THINKING_VAULT_SHA=d238db0
+TALK_SRC=docs/talks/thinking-vault.html

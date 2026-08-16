@@ -2,8 +2,9 @@
 # Copy CarryLewis/research_brief public HTML into this site:
 #   frontend/  → public/research-brief/  (/research-brief/)
 #
-# The Thinking Vault talk is unpublished until a later HTML replaces it.
-# Do not copy docs/talks/* into public/.
+# Keep the talk registered for Lab iteration at /talks/thinking-vault/.
+# It is unpublished from the Knowledge vault index until a later HTML
+# replaces it. Do not delete public/talks/thinking-vault here.
 #
 # Optional env:
 #   RESEARCH_BRIEF_REF  — branch / tag / SHA (defaults to research-brief-embed.ref)
@@ -51,9 +52,6 @@ echo "Copying $FRONTEND_SRC → $OUT_HOME ($SHA)…"
 rm -rf "$OUT_HOME"
 mkdir -p "$OUT_HOME"
 cp -R "$FRONTEND_DIR/." "$OUT_HOME/"
-
-# Keep the talk unpublished until a later HTML is ready to list.
-rm -rf "$ROOT/public/talks/thinking-vault"
 
 cat > "$REF_FILE" <<EOF
 # Git ref in CarryLewis/research_brief used for the public HTML

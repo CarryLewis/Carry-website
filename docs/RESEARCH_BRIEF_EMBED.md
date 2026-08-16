@@ -1,36 +1,35 @@
 # Research Brief HTML → Website
 
 ```text
-CarryLewis/research_brief  (pinned ref)
-  frontend/   → public/research-brief/   → https://carrylewis.com/research-brief/
+CarryLewis/research_brief  (two pinned refs)
 
-Listed on:
-  /knowledge/                     (vault index)
-  /knowledge/research-brief/      (framed MUJI homepage)
-  /projects/active/research-brief/
+  frontend/                         → public/research-brief/        → /research-brief/
+  docs/talks/thinking-vault.html    → public/talks/thinking-vault/  → /talks/thinking-vault/
 ```
 
-The Thinking Vault talk is **unpublished** until a later HTML replaces it.
-Do not copy `docs/talks/*` into `public/`.
+Listed on:
 
-## Refresh from research_brief
+| Surface | Where |
+| --- | --- |
+| MUJI Observatory homepage | `/knowledge/research-brief/`, `/projects/active/research-brief/`, Knowledge vault index, **Lab Own HTML** |
+| Thinking Vault talk | `/knowledge/thinking-vault/`, Knowledge **In iteration**, **Lab Own HTML** — not on the public vault index |
+
+The talk is written and still iterating. It was unpublished from the vault index until a later HTML replaces it; it stays viewable for self-iteration.
+
+Also recorded in `CarryLewis/HTML-Design-Lab` under `projects/research-brief/`.
+
+## Refresh homepage
 
 ```bash
 bash scripts/sync-research-brief.sh
-# or pin another tip:
-# RESEARCH_BRIEF_REF=main bash scripts/sync-research-brief.sh
 ```
 
-CI copies the homepage on every GitHub Pages deploy (`push` to `main`,
-`workflow_dispatch`, or `repository_dispatch` type `research-brief-updated`).
+Pin: `research-brief-embed.ref` (`cursor/muji-homepage-prototype-5c8e`).
 
-The current pin is in `research-brief-embed.ref` (homepage prototype branch
-`cursor/muji-homepage-prototype-5c8e` until that HTML lands on `main`).
+## Refresh talk
 
-## Optional auto-sync from research_brief
+```bash
+bash scripts/sync-research-brief-talk.sh
+```
 
-Same Method C pattern as ECG (`docs/ECG_AUTO_SYNC.md`):
-
-1. PAT that can `repository_dispatch` on Carry-website
-2. On research_brief, workflow that posts `event_type=research-brief-updated`
-3. This repo already listens for that type
+Pin: `thinking-vault-embed.ref` (`cursor/thinking-vault-talk-03da`).

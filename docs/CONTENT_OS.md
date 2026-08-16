@@ -134,7 +134,7 @@ Latest public HTML from [`CarryLewis/research_brief`](https://github.com/CarryLe
 - Pin / sync: `research-brief-embed.ref` + `scripts/sync-research-brief.sh`
 - Details: [`RESEARCH_BRIEF_EMBED.md`](./RESEARCH_BRIEF_EMBED.md)
 
-The Thinking Vault talk (`/knowledge/thinking-vault/`, `/talks/thinking-vault/`) is unpublished until a later HTML replaces it.
+The Thinking Vault talk is written and still iterating. It is listed under Knowledge **In iteration** and on `/lab/`, not on the public vault index, until a later HTML replaces it.
 
 This is a public projection of the Research Brief frontend, not a Notion iframe.
 

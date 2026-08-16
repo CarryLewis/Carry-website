@@ -3,5 +3,5 @@
 # The Structure Atlas UI lives in this repo at /lab/.
 # Update this file, then run: bash scripts/sync-html-design-lab.sh
 # CI reads the same ref on every GitHub Pages deploy.
-HTML_DESIGN_LAB_REF=cursor/html-design-lab-foundation-ee45
-HTML_DESIGN_LAB_SHA=97da38e
+HTML_DESIGN_LAB_REF=cursor/own-html-projects-75ea
+HTML_DESIGN_LAB_SHA=0a67161

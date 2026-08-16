@@ -9,7 +9,9 @@ import {
   DEFAULT_SPECIMEN_ID,
   LAB_THESIS,
   STRUCTURES,
+  allSpecimens,
   getSpecimen,
+  ownPages,
   specimens,
   specimensForStructure,
   type InformationStructure,
@@ -77,16 +79,16 @@ export function LabWorkbench({ initialSlug }: LabWorkbenchProps) {
       ) {
         return;
       }
-      const index = specimens.findIndex((item) => item.id === active.id);
+      const index = allSpecimens.findIndex((item) => item.id === active.id);
       if (event.key === "ArrowDown" || event.key === "j") {
         event.preventDefault();
-        const next = specimens[(index + 1) % specimens.length];
+        const next = allSpecimens[(index + 1) % allSpecimens.length];
         select(next);
       }
       if (event.key === "ArrowUp" || event.key === "k") {
         event.preventDefault();
         const next =
-          specimens[(index - 1 + specimens.length) % specimens.length];
+          allSpecimens[(index - 1 + allSpecimens.length) % allSpecimens.length];
         select(next);
       }
     };
@@ -108,13 +110,14 @@ export function LabWorkbench({ initialSlug }: LabWorkbenchProps) {
             {LAB_THESIS}
           </p>
           <p className="mt-lab-4 max-w-prose font-sans text-body-ui text-ink-tertiary">
-            Ten isolated experiments, filed by information structure. This
-            page is itself a visualization: overview of the field, then the
-            selected structure, then the live specimen.
+            Own HTML still under iteration, then isolated experiments filed by
+            information structure. This page is itself a visualization:
+            overview of the field, then the selected structure, then the live
+            specimen.
           </p>
           <p className="mt-lab-6 font-mono text-code text-ink-faint">
-            fig.lab — structure → form → specimen · {specimens.length}{" "}
-            experiments · j/k to step
+            fig.lab — structure → form → specimen · {ownPages.length} own HTML
+            · {specimens.length} experiments · j/k to step
           </p>
         </div>
       </section>
@@ -155,10 +158,16 @@ export function LabWorkbench({ initialSlug }: LabWorkbenchProps) {
         <div className="mx-auto grid max-w-shell gap-lab-6 px-margin py-lab-7 lg:grid-cols-[minmax(0,0.92fr)_minmax(0,1.08fr)] lg:items-start">
           <div>
             <p className="mb-lab-4 font-sans text-label uppercase text-ink-tertiary">
-              Trace
+              Own HTML · in iteration
             </p>
             <div className="border border-rule">
-              <TraceList activeId={active.id} onSelect={select} />
+              <TraceList activeId={active.id} items={ownPages} onSelect={select} />
+            </div>
+            <p className="mb-lab-4 mt-lab-7 font-sans text-label uppercase text-ink-tertiary">
+              Method experiments
+            </p>
+            <div className="border border-rule">
+              <TraceList activeId={active.id} items={specimens} onSelect={select} />
             </div>
           </div>
           <div>

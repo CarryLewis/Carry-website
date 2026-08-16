@@ -40,6 +40,10 @@ export type LabSpecimen = {
   /** Same-origin path to the isolated experiment (trailing slash). */
   embedUrl: string;
   featured?: boolean;
+  kind?: "experiment" | "own-html";
+  listing?: "live" | "iterating";
+  originLabel?: string;
+  siteUrl?: string;
 };
 
 export type StructureNode = {
@@ -448,10 +452,72 @@ export const specimens: LabSpecimen[] = [
   },
 ];
 
-export const DEFAULT_SPECIMEN_ID = "knowledge-graph-v01";
+/** First-party HTML still under iteration — not seed experiments. */
+export const ownPages: LabSpecimen[] = [
+  {
+    id: "research-brief-observatory",
+    name: "MUJI Observatory homepage",
+    version: "live",
+    kind: "own-html",
+    listing: "live",
+    structure: "emergence",
+    form: "Quiet numbered editorial + object fields",
+    formRationale:
+      "A knowledge system that displays its machinery becomes noisier than the notes. Sequence is the argument; objects appear only after the system has been named.",
+    category: "own-html",
+    interaction: "scroll + index jump",
+    motion: "none required — sequence is the layout",
+    information: "argument constructed in reading order, then objects",
+    complexity: "medium",
+    reusability: "high",
+    visualLanguage: "editorial",
+    problem:
+      "A knowledge system that displays its own machinery becomes noisier than the notes it holds.",
+    short:
+      "Public MUJI homepage on carrylewis.com. Restraint is the interface claim. Still iterating the object fields.",
+    tags: ["own-html", "editorial", "observatory", "live"],
+    recommendedFor: ["personal observatory", "public knowledge projection"],
+    embedUrl: "/research-brief/",
+    originLabel: "CarryLewis/research_brief frontend/",
+    siteUrl: "/projects/active/research-brief/",
+    featured: true,
+  },
+  {
+    id: "thinking-vault-talk",
+    name: "Thinking Vault talk",
+    version: "iterating",
+    kind: "own-html",
+    listing: "iterating",
+    structure: "sequence",
+    form: "Keyboard slide deck",
+    formRationale:
+      "A pipeline explained as documentation loses causal order. A talk is a sequence: one claim visible, the rest withheld. Keyboard is the matching interaction.",
+    category: "own-html",
+    interaction: "arrow keys / space",
+    motion: "slide replace, not stack",
+    information: "one claim per beat",
+    complexity: "medium",
+    reusability: "medium",
+    visualLanguage: "exhibition",
+    problem:
+      "Notion → Obsidian → public HTML explained as documentation loses the causal order of the argument.",
+    short:
+      "Self-contained HTML deck. Written; unpublished from the Knowledge index until a later HTML replaces it.",
+    tags: ["own-html", "talk", "sequence", "unpublished", "iterating"],
+    recommendedFor: ["talks", "system explanations", "self-iteration"],
+    embedUrl: "/talks/thinking-vault/",
+    originLabel: "CarryLewis/research_brief docs/talks/thinking-vault.html",
+    siteUrl: "/knowledge/thinking-vault/",
+    featured: true,
+  },
+];
+
+export const allSpecimens: LabSpecimen[] = [...ownPages, ...specimens];
+
+export const DEFAULT_SPECIMEN_ID = "research-brief-observatory";
 
 export function getSpecimen(id: string) {
-  return specimens.find((item) => item.id === id);
+  return allSpecimens.find((item) => item.id === id);
 }
 
 export function getStructure(id: InformationStructure) {
@@ -459,9 +525,9 @@ export function getStructure(id: InformationStructure) {
 }
 
 export function specimensForStructure(id: InformationStructure) {
-  return specimens.filter((item) => item.structure === id);
+  return allSpecimens.filter((item) => item.structure === id);
 }
 
 export function getLabStaticParams() {
-  return specimens.map((item) => ({ slug: item.id }));
+  return allSpecimens.map((item) => ({ slug: item.id }));
 }

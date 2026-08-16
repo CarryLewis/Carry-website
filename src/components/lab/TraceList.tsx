@@ -3,12 +3,12 @@
 import { cn } from "@/lib/cn";
 import {
   STRUCTURES,
-  specimens,
   type LabSpecimen,
 } from "@/data/lab-catalog";
 
 type TraceListProps = {
   activeId: string;
+  items: LabSpecimen[];
   onSelect: (specimen: LabSpecimen) => void;
 };
 
@@ -16,7 +16,7 @@ type TraceListProps = {
  * Structure → form → specimen as a traced path.
  * Ruled rows, not cards. The selected row is the "event" in overview→detail.
  */
-export function TraceList({ activeId, onSelect }: TraceListProps) {
+export function TraceList({ activeId, items, onSelect }: TraceListProps) {
   return (
     <div>
       <div className="hidden grid-cols-[minmax(0,1.1fr)_minmax(0,1fr)_minmax(0,1.3fr)] gap-lab-4 border-b border-rule px-lab-4 py-lab-3 md:grid">
@@ -31,7 +31,7 @@ export function TraceList({ activeId, onSelect }: TraceListProps) {
         </p>
       </div>
       <ul role="listbox" aria-label="Specimens by information structure">
-        {specimens.map((specimen) => {
+        {items.map((specimen) => {
           const structure = STRUCTURES.find((s) => s.id === specimen.structure);
           const selected = specimen.id === activeId;
           return (

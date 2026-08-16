@@ -69,7 +69,7 @@ CI also rebuilds from `ecg-embed.ref` on every site deploy (`push` to `main`, `w
 
 The MUJI Observatory homepage from [`CarryLewis/research_brief`](https://github.com/CarryLewis/research_brief) (`frontend/`) is copied into `public/research-brief/`, served at `/research-brief/`, and listed at `/knowledge/research-brief/` and `/projects/active/research-brief/`.
 
-The Thinking Vault talk is unpublished until a later HTML replaces it.
+The Thinking Vault talk is written and still iterating. It is listed on `/lab/` and Knowledge **In iteration**, not on the public vault index.
 
 Source tip is pinned in `research-brief-embed.ref`.
 

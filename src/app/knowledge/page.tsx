@@ -56,8 +56,26 @@ export default function KnowledgeIndexPage() {
             HTML Design Lab
           </h2>
           <p className="mt-lab-3 max-w-prose font-sans text-body-ui text-ink-secondary">
-            Structure Atlas — experiments filed by information structure.
-            Form follows the shape of the knowledge, not fashion.
+            Structure Atlas — own HTML under iteration, then experiments
+            filed by information structure.
+          </p>
+        </Link>
+      </div>
+
+      <div className="mt-lab-9 border-t border-rule pt-lab-8">
+        <p className="font-sans text-label uppercase text-ink-tertiary">
+          In iteration
+        </p>
+        <Link
+          href="/knowledge/thinking-vault/"
+          className="group mt-lab-4 block focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+        >
+          <h2 className="font-serif text-section text-ink transition-colors duration-fast group-hover:text-accent">
+            Thinking Vault talk
+          </h2>
+          <p className="mt-lab-3 max-w-prose font-sans text-body-ui text-ink-secondary">
+            HTML deck from Research Brief — written, still iterating, not the
+            public vault homepage. Arrow keys or space to advance.
           </p>
         </Link>
       </div>

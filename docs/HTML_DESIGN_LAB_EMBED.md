@@ -32,8 +32,7 @@ bash scripts/sync-html-design-lab.sh
 CI copies the lab shell on every GitHub Pages deploy (`push` to `main`,
 `workflow_dispatch`, or `repository_dispatch` type `html-design-lab-updated`).
 
-The current pin is in `html-design-lab-embed.ref` (foundation branch
-`cursor/html-design-lab-foundation-ee45` until that work lands on `main`).
+The current pin is in `html-design-lab-embed.ref`. Own HTML (Research Brief homepage + Thinking Vault talk) is recorded in the lab repo under `projects/` and listed first on `/lab/`.
 
 After adding experiments in HTML-Design-Lab, also update
 `src/data/lab-catalog.ts` so the atlas gains a structure → form row.

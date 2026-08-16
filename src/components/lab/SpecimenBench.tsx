@@ -20,7 +20,9 @@ export function SpecimenBench({ specimen }: SpecimenBenchProps) {
     >
       <header className="border-b border-rule px-lab-5 py-lab-5">
         <p className="font-sans text-label uppercase text-ink-tertiary">
-          Specimen · {structure?.label} → {structure?.form}
+          {specimen.kind === "own-html" ? "Own HTML" : "Specimen"} ·{" "}
+          {structure?.label} → {structure?.form}
+          {specimen.listing ? ` · ${specimen.listing}` : ""}
         </p>
         <h2
           id="specimen-title"
@@ -58,7 +60,7 @@ export function SpecimenBench({ specimen }: SpecimenBenchProps) {
 
       <div className="flex flex-wrap items-center justify-between gap-lab-3 border-b border-rule bg-surface-sunken px-lab-5 py-lab-3">
         <p className="font-sans text-label uppercase text-ink-tertiary">
-          Live experiment
+          {specimen.kind === "own-html" ? "Live page" : "Live experiment"}
         </p>
         <div className="flex flex-wrap gap-lab-4">
           <a
@@ -69,12 +71,21 @@ export function SpecimenBench({ specimen }: SpecimenBenchProps) {
           >
             Open fullscreen
           </a>
-          <a
-            href="/html-design-lab/"
-            className="font-sans text-meta text-ink-secondary hover:text-ink focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
-          >
-            Source lab shell
-          </a>
+          {specimen.siteUrl ? (
+            <a
+              href={specimen.siteUrl}
+              className="font-sans text-meta text-ink-secondary hover:text-ink focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+            >
+              Site record
+            </a>
+          ) : (
+            <a
+              href="/html-design-lab/"
+              className="font-sans text-meta text-ink-secondary hover:text-ink focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+            >
+              Source lab shell
+            </a>
+          )}
         </div>
       </div>
 
