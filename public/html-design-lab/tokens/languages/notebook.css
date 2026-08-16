@@ -1,0 +1,29 @@
+/* Language G — Digital notebook */
+
+:root {
+  --color-bg: #f3eee4;
+  --color-bg-elevated: #f8f4eb;
+  --color-surface: #e8e1d2;
+  --color-text: #1e1a14;
+  --color-text-muted: #6d6658;
+  --color-border: #d0c6b4;
+  --color-accent: #2a4a6a;
+  --color-accent-text: #2a4a6a;
+  --viz-1: #2a4a6a;
+  --viz-2: #8c3a2f;
+  --viz-3: #3d6b4a;
+  --viz-4: #8a6a20;
+  --viz-5: #5c4a78;
+  --viz-6: #6d6658;
+  --viz-grid: #e0d8c8;
+  --viz-axis: #8a8174;
+  --font-display: "Newsreader", "Source Serif 4", Georgia, serif;
+  --font-body: "Newsreader", "Source Serif 4", Georgia, serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+  --size-md: 1.0625rem;
+  --size-display: 3.75rem;
+  --leading-body: 1.65;
+  --measure: 36rem;
+  --radius-sm: 1px;
+  --radius: 0;
+}

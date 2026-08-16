@@ -1,0 +1,21 @@
+# Pattern: [Name]
+
+- **ID:**
+- **Kind:** original | adaptation | variant | composite
+- **Maturity:** DISCOVERED | DECONSTRUCTED | EXPERIMENTAL | VALIDATED | REUSABLE | CORE PATTERN
+- **Problem:**
+- **Design principle:**
+- **Visual structure:**
+- **Interaction:**
+- **Motion:**
+- **Information logic:**
+- **Strengths:**
+- **Weaknesses:**
+- **Best use cases:**
+- **Poor use cases:**
+- **Technical complexity:** low | medium | high
+- **Performance:**
+- **Accessibility:**
+- **Related references:**
+- **Related experiments:**
+- **Used in projects:** none yet

@@ -1,0 +1,30 @@
+/* Language F — Museum / exhibition */
+
+:root {
+  --color-bg: #f7f4ee;
+  --color-bg-elevated: #fcfaf6;
+  --color-surface: #efeae0;
+  --color-text: #1b1814;
+  --color-text-muted: #746c60;
+  --color-border: #d6cfc2;
+  --color-accent: #5c3d2e;
+  --color-accent-text: #5c3d2e;
+  --viz-1: #5c3d2e;
+  --viz-2: #3d5348;
+  --viz-3: #8a5a2a;
+  --viz-4: #4a4e62;
+  --viz-5: #6a3a3a;
+  --viz-6: #746c60;
+  --viz-grid: #e6dfd2;
+  --viz-axis: #8a8276;
+  --font-display: "Cormorant Garamond", "Fraunces", serif;
+  --font-body: "Source Serif 4", Georgia, serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+  --size-display: 5.25rem;
+  --size-3xl: 3.4rem;
+  --leading-body: 1.68;
+  --measure: 36rem;
+  --space-section: 5.5rem;
+  --radius: 0;
+  --duration-slow: 640ms;
+}

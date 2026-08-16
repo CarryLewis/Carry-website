@@ -1,0 +1,32 @@
+/* Language C — Spatial / architectural */
+
+:root {
+  --color-bg: #e8e4dc;
+  --color-bg-elevated: #f0ece4;
+  --color-surface: #ddd8ce;
+  --color-text: #1a1916;
+  --color-text-muted: #6e6a62;
+  --color-border: #c4bfb4;
+  --color-accent: #3a3a36;
+  --color-accent-text: #3a3a36;
+  --viz-1: #3a3a36;
+  --viz-2: #7a5c3a;
+  --viz-3: #4a5c54;
+  --viz-4: #6a5050;
+  --viz-5: #50586a;
+  --viz-6: #6e6a62;
+  --viz-grid: #d4cfc4;
+  --viz-axis: #8a847a;
+  --font-display: "Syne", "IBM Plex Sans", sans-serif;
+  --font-body: "IBM Plex Sans", "Helvetica Neue", sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+  --size-display: 5.5rem;
+  --size-3xl: 3.5rem;
+  --leading-tight: 1.02;
+  --space-section: 6rem;
+  --space-display: 9rem;
+  --measure: 34rem;
+  --radius: 0;
+  --duration-slow: 700ms;
+  --distance-lg: 3rem;
+}

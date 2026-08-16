@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Negative-Feedback Loop — HTML Design Lab</title>
+    <link rel="stylesheet" href="../../../tokens/fonts.css" />
+    <link rel="stylesheet" href="../../../tokens/tokens.css" />
+    <link rel="stylesheet" href="../../../tokens/languages/simulator.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="exp-bar">
+      <a href="../../../index.html">HTML Design Lab</a>
+      <span>Scientific · Mechanism v01</span>
+    </header>
+    <main>
+      <header class="intro">
+        <p class="kicker">Experiment · Mechanism / accuracy</p>
+        <h1>Negative-feedback loop</h1>
+        <p>
+          Core temperature as a regulated variable. Disturb it. The effector
+          opposes the error; it does not decorate a circle.
+        </p>
+      </header>
+
+      <div class="readout">
+        <div><span>Variable</span><strong data-variable>37.0</strong> °C</div>
+        <div><span>Setpoint</span><strong>37.0</strong> °C</div>
+        <div><span>Error</span><strong data-error>0.00</strong> °C</div>
+        <div><span>Effector</span><strong data-effector>0</strong></div>
+      </div>
+
+      <svg class="loop" viewBox="0 0 640 320" role="img" aria-label="Negative feedback control loop">
+        <polygon class="flow" points="140,70 500,70 500,250 140,250" fill="none" />
+        <g class="block" data-block="variable">
+          <rect x="250" y="40" width="140" height="60" />
+          <text x="320" y="66">Variable</text>
+          <text class="sub" x="320" y="86">core temperature</text>
+        </g>
+        <g class="block" data-block="sensor">
+          <rect x="470" y="130" width="140" height="60" />
+          <text x="540" y="156">Sensor</text>
+          <text class="sub" x="540" y="176">thermoreceptors</text>
+        </g>
+        <g class="block" data-block="integrator">
+          <rect x="250" y="220" width="140" height="60" />
+          <text x="320" y="246">Integrator</text>
+          <text class="sub" x="320" y="266">hypothalamus</text>
+        </g>
+        <g class="block" data-block="effector">
+          <rect x="30" y="130" width="140" height="60" />
+          <text x="100" y="156">Effector</text>
+          <text class="sub" x="100" y="176">heat-loss response</text>
+        </g>
+        <text class="arrow" x="320" y="28">disturbance →</text>
+      </svg>
+
+      <p class="status" data-status>At setpoint. No error, effector silent.</p>
+
+      <div class="actions">
+        <button type="button" data-disturb>Disturb (+1.2 °C)</button>
+        <button type="button" data-play>Run loop</button>
+        <button type="button" data-reset>Reset</button>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

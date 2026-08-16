@@ -1,0 +1,21 @@
+# Pattern: Distance as Relatedness
+
+- **ID:** distance-as-relatedness
+- **Kind:** original
+- **Maturity:** EXPERIMENTAL
+- **Problem:** Hierarchical menus hide neighborhood. Overview becomes a table of contents.
+- **Design principle:** Space can carry meaning: proximity is relatedness; zoom is reading.
+- **Visual structure:** A pan-zoom plane of regions. Fine labels resolve past a scale threshold.
+- **Interaction:** Explore (pan), Zoom, Focus (click), Navigate (double-click to frame).
+- **Motion:** Camera translate/scale. Reveal of labels. No ornamental drift.
+- **Information logic:** Position = neighborhood. Scale = level of detail. Clusters are categories.
+- **Strengths:** Overview feels like a field, not an index.
+- **Weaknesses:** Easy to get lost; weak without a HUD; touch needs larger hit areas.
+- **Best use cases:** Knowledge observatories, exhibition plans, system maps.
+- **Poor use cases:** Linear arguments (use scroll construction); precise data lookup (use a table).
+- **Technical complexity:** high
+- **Performance:** CSS transform on one plane; do not zoom individual bitmaps.
+- **Accessibility:** Provide zoom buttons, not wheel-only. Keep a text note of the selection.
+- **Related references:** —
+- **Related experiments:** [spatial-map-v01](../../experiments/layout/spatial-map-v01/)
+- **Used in projects:** none yet

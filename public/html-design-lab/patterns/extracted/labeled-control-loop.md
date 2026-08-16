@@ -1,0 +1,21 @@
+# Pattern: Labeled Control Loop
+
+- **ID:** labeled-control-loop
+- **Kind:** original
+- **Maturity:** EXPERIMENTAL
+- **Problem:** Feedback is drawn as a pretty circle that does not encode sensor, integrator, effector, or variable.
+- **Design principle:** Scientific accuracy over decoration. Name the control elements. Let the variable move; let the effector oppose error.
+- **Visual structure:** Four labeled blocks (variable, sensor, integrator, effector) on a loop. Numeric readout. Disturb / run / reset.
+- **Interaction:** Trace after a disturbance (play). Drift is the user’s action.
+- **Motion:** Drift of the variable; Propagate of error into effector; Settle at setpoint.
+- **Information logic:** Error = setpoint − variable. Heat-loss effector activates when the variable is above setpoint (negative feedback). This is a teaching diagram, not a complete physiology simulator.
+- **Strengths:** The labels are the science; the motion tests whether the signs are honest.
+- **Weaknesses:** Oversimplifies thermoregulation (no opposing heat-gain effector in v01). Must not be mistaken for a medical device.
+- **Best use cases:** Physiology explainers, control-systems teaching, medical-education *patterns*.
+- **Poor use cases:** Decorative “cycles”; product ECG/medical simulators (those are production projects).
+- **Technical complexity:** high
+- **Performance:** Interval updates of a few numbers; trivial.
+- **Accessibility:** Readout and status text carry the state. Do not rely on block opacity alone.
+- **Related references:** —
+- **Related experiments:** [mechanism-v01](../../experiments/scientific/mechanism-v01/)
+- **Used in projects:** none yet

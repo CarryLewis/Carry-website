@@ -54,14 +54,29 @@ export default async function ProjectPage({ params }: Props) {
         {project.summary}
       </p>
 
-      {(project.demoUrl || project.repoUrl) && (
+      {(project.demoUrl || project.repoUrl || project.showcaseUrl) && (
         <div className="mt-lab-6 flex flex-wrap gap-lab-3">
-          {project.demoUrl ? (
+          {project.showcaseUrl ? (
+            <a
+              href={project.showcaseUrl}
+              className="inline-flex h-10 items-center justify-center bg-accent px-lab-4 font-sans text-meta text-ink-inverse transition-colors duration-fast ease-lab hover:bg-accent-muted focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+            >
+              Open showcase
+            </a>
+          ) : project.demoUrl ? (
             <a
               href={project.demoUrl}
               className="inline-flex h-10 items-center justify-center bg-accent px-lab-4 font-sans text-meta text-ink-inverse transition-colors duration-fast ease-lab hover:bg-accent-muted focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
             >
               Open live demo
+            </a>
+          ) : null}
+          {project.showcaseUrl && project.demoUrl ? (
+            <a
+              href={project.demoUrl}
+              className="inline-flex h-10 items-center justify-center border border-rule px-lab-4 font-sans text-meta text-ink transition-colors duration-fast ease-lab hover:border-rule-strong focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+            >
+              Open source gallery
             </a>
           ) : null}
           {project.repoUrl ? (
@@ -121,7 +136,7 @@ export default async function ProjectPage({ params }: Props) {
         </div>
       </dl>
 
-      {project.demoUrl ? (
+      {project.demoUrl && project.demoUrl !== project.showcaseUrl ? (
         <section className="mt-lab-9 border border-rule bg-surface-sunken">
           <div className="flex flex-wrap items-center justify-between gap-lab-3 border-b border-rule px-lab-4 py-lab-3">
             <p className="font-sans text-label uppercase text-ink-tertiary">

@@ -118,4 +118,22 @@ export const relations: Relation[] = [
     to: "concept-technology",
     type: "builds-on",
   },
+  {
+    id: "rel-proj-lab-exemplifies-hs",
+    from: "proj-html-design-lab",
+    to: "concept-human-systems",
+    type: "exemplifies",
+  },
+  {
+    id: "rel-proj-lab-builds-tech",
+    from: "proj-html-design-lab",
+    to: "concept-technology",
+    type: "builds-on",
+  },
+  {
+    id: "rel-proj-lab-informed-philosophy",
+    from: "proj-html-design-lab",
+    to: "concept-philosophy",
+    type: "informed-by",
+  },
 ];

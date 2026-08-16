@@ -12,9 +12,11 @@ export function ExplorationCard({ focus }: ExplorationCardProps) {
   const primaryProject = focus.relatedProjectIds
     .map((id) => getProjectById(id))
     .find(Boolean);
-  const href = primaryProject
-    ? `/projects/${primaryProject.status}/${primaryProject.slug}`
-    : "/projects";
+  const href =
+    primaryProject?.showcaseUrl ??
+    (primaryProject
+      ? `/projects/${primaryProject.status}/${primaryProject.slug}`
+      : "/projects");
 
   return (
     <Link

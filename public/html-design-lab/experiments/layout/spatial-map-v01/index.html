@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Spatial Information Map — HTML Design Lab</title>
+    <link rel="stylesheet" href="../../../tokens/fonts.css" />
+    <link rel="stylesheet" href="../../../tokens/tokens.css" />
+    <link rel="stylesheet" href="../../../tokens/languages/spatial.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="exp-bar">
+      <a href="../../../index.html">HTML Design Lab</a>
+      <span>Layout · Spatial Map v01</span>
+    </header>
+    <div class="hud">
+      <p class="kicker">Experiment · Navigation / Scale</p>
+      <h1>Spatial information map</h1>
+      <p>Drag to pan. Wheel to zoom. Distance is relatedness; zoom is reading.</p>
+      <div class="zoom-actions">
+        <button type="button" data-zoom="-1">−</button>
+        <button type="button" data-zoom="1">+</button>
+        <button type="button" data-reset>Reset</button>
+      </div>
+      <aside class="note" data-note>Click a region.</aside>
+    </div>
+    <div class="viewport" id="viewport">
+      <div class="plane" id="plane">
+        <article class="region" style="left:120px;top:140px" data-title="Representation" data-body="How a concept becomes a visual structure. Nearby: metaphor, diagram, type.">
+          <h2>Representation</h2>
+          <p class="fine">Metaphor · Diagram · Type</p>
+        </article>
+        <article class="region" style="left:520px;top:80px" data-title="Time" data-body="Chronology, process, and change. Nearby: timeline, narrative, state.">
+          <h2>Time</h2>
+          <p class="fine">Timeline · Narrative · State</p>
+        </article>
+        <article class="region" style="left:900px;top:200px" data-title="Mechanism" data-body="Causal process made watchable. Nearby: signal, activation, emergence.">
+          <h2>Mechanism</h2>
+          <p class="fine">Signal · Activation · Emergence</p>
+        </article>
+        <article class="region" style="left:280px;top:420px" data-title="Scale" data-body="Overview and detail as a camera problem, not a menu problem.">
+          <h2>Scale</h2>
+          <p class="fine">Overview · Detail · Threshold</p>
+        </article>
+        <article class="region" style="left:700px;top:480px" data-title="Relationship" data-body="Edges, neighborhoods, and dossiers. Nearby: graph, comparison, annotation.">
+          <h2>Relationship</h2>
+          <p class="fine">Graph · Comparison · Annotation</p>
+        </article>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

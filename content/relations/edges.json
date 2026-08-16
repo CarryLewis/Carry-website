@@ -158,6 +158,36 @@
       "from": "sig-local-knowledge-graphs",
       "to": "proj-research-brief",
       "type": "related-to"
+    },
+    {
+      "id": "rel-proj-lab-exemplifies-hs",
+      "from": "proj-html-design-lab",
+      "to": "concept-human-systems",
+      "type": "exemplifies"
+    },
+    {
+      "id": "rel-proj-lab-builds-tech",
+      "from": "proj-html-design-lab",
+      "to": "concept-technology",
+      "type": "builds-on"
+    },
+    {
+      "id": "rel-proj-lab-informed-philosophy",
+      "from": "proj-html-design-lab",
+      "to": "concept-philosophy",
+      "type": "informed-by"
+    },
+    {
+      "id": "rel-focus-visual-related-proj",
+      "from": "focus-visual-systems",
+      "to": "proj-html-design-lab",
+      "type": "related-to"
+    },
+    {
+      "id": "rel-sig-graphs-related-lab",
+      "from": "sig-local-knowledge-graphs",
+      "to": "proj-html-design-lab",
+      "type": "related-to"
     }
   ]
 }

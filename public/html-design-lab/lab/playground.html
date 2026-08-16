@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Playground — HTML Design Lab</title>
+    <link rel="stylesheet" href="../tokens/fonts.css" />
+    <link rel="stylesheet" href="../tokens/tokens.css" />
+    <link id="language-sheet" rel="stylesheet" href="../tokens/languages/notebook.css" />
+    <link rel="stylesheet" href="lab.css" />
+    <link rel="stylesheet" href="playground.css" />
+  </head>
+  <body class="lab" data-from-lab="true">
+    <a class="skip" href="#main">Skip to content</a>
+    <div class="lab-frame">
+      <header class="lab-top">
+        <a class="wordmark" href="../index.html">HTML Design Lab</a>
+        <nav class="lab-nav" aria-label="Lab">
+          <a href="gallery.html">Gallery</a>
+          <a href="knowledge.html">Knowledge</a>
+          <a href="playground.html" aria-current="page">Playground</a>
+          <a href="../DESIGN_KNOWLEDGE.md">Guide</a>
+        </nav>
+      </header>
+
+      <main id="main">
+        <div class="page-intro">
+          <h1>Specimen playground</h1>
+          <p>
+            A controlled environment for typography, spacing, motion, interaction,
+            visualization, and image treatment. Switch visual languages; the
+            structure stays. The language is not the brand.
+          </p>
+        </div>
+
+        <div class="lang-bar" role="toolbar" aria-label="Visual language">
+          <span class="label">Language</span>
+          <button type="button" data-lang="notebook" aria-pressed="true">Notebook</button>
+          <button type="button" data-lang="editorial" aria-pressed="false">Editorial</button>
+          <button type="button" data-lang="scientific" aria-pressed="false">Scientific</button>
+          <button type="button" data-lang="spatial" aria-pressed="false">Spatial</button>
+          <button type="button" data-lang="data" aria-pressed="false">Data</button>
+          <button type="button" data-lang="kinetic" aria-pressed="false">Kinetic</button>
+          <button type="button" data-lang="exhibition" aria-pressed="false">Exhibition</button>
+          <button type="button" data-lang="simulator" aria-pressed="false">Simulator</button>
+        </div>
+
+        <section class="station" id="typography">
+          <header class="station-head">
+            <span class="label">01 · Typography</span>
+            <p>Hierarchy is an argument. Annotation is a second voice.</p>
+          </header>
+          <div class="type-grid">
+            <div class="type-display">
+              <p class="display-line">The diagram is the sentence.</p>
+              <p class="lede">
+                Complex ideas become understandable when structure, sequence, and
+                emphasis are visible — not when they are decorated.
+              </p>
+            </div>
+            <aside class="marginalia">
+              <p>
+                <span class="label">Marginalia</span>
+                A side note should be quieter than the body, never a competing
+                headline.
+              </p>
+            </aside>
+          </div>
+          <ol class="type-scale">
+            <li style="font-size: var(--size-display)">Display</li>
+            <li style="font-size: var(--size-3xl)">Title</li>
+            <li style="font-size: var(--size-xl)">Section</li>
+            <li style="font-size: var(--size-md)">Body</li>
+            <li style="font-size: var(--size-sm)">Caption</li>
+            <li class="mono-sample">IBM Plex Mono · labels, data, meta</li>
+          </ol>
+        </section>
+
+        <section class="station" id="spacing">
+          <header class="station-head">
+            <span class="label">02 · Spacing</span>
+            <p>Rhythm is measured. These bars are the token ladder.</p>
+          </header>
+          <ul class="space-ladder">
+            <li><i style="width: var(--space-micro)"></i><span>micro</span></li>
+            <li><i style="width: var(--space-small)"></i><span>small</span></li>
+            <li><i style="width: var(--space-medium)"></i><span>medium</span></li>
+            <li><i style="width: var(--space-large)"></i><span>large</span></li>
+            <li><i style="width: var(--space-section)"></i><span>section</span></li>
+            <li><i style="width: 12rem"></i><span>display (truncated)</span></li>
+          </ul>
+        </section>
+
+        <section class="station" id="motion">
+          <header class="station-head">
+            <span class="label">03 · Motion</span>
+            <p>Two reasons to move: attention, and state. Replay each.</p>
+          </header>
+          <div class="motion-pair">
+            <figure>
+              <figcaption>Attention — ease-out, distance</figcaption>
+              <div class="motion-stage" id="motion-attention">
+                <span class="motion-chip">Look here</span>
+              </div>
+              <button type="button" data-replay="attention">Replay</button>
+            </figure>
+            <figure>
+              <figcaption>State — opacity and fill, no bounce</figcaption>
+              <div class="motion-stage" id="motion-state">
+                <span class="state-node idle">Idle</span>
+                <span class="state-node active">Active</span>
+              </div>
+              <button type="button" data-replay="state">Replay</button>
+            </figure>
+          </div>
+        </section>
+
+        <section class="station" id="interaction">
+          <header class="station-head">
+            <span class="label">04 · Interaction</span>
+            <p>Hover reveals. Click discloses. Neither should surprise.</p>
+          </header>
+          <div class="interact-grid">
+            <div>
+              <span class="label">Hover reveal</span>
+              <p class="hover-term" tabindex="0">
+                Setpoint
+                <span class="hover-def">The value a control loop tries to maintain. Hover is a gloss, not a destination.</span>
+              </p>
+            </div>
+            <div>
+              <span class="label">Progressive disclosure</span>
+              <button type="button" class="disclose" aria-expanded="false" aria-controls="disclosed">
+                Show the nested note
+              </button>
+              <p id="disclosed" hidden>
+                Nested information stays closed until asked for. The overview
+                remains an overview.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="station" id="visualization">
+          <header class="station-head">
+            <span class="label">05 · Visualization</span>
+            <p>A relationship graph. Hover a node to see its neighborhood.</p>
+          </header>
+          <svg class="mini-graph" viewBox="0 0 480 220" role="img" aria-label="Five-node relationship graph">
+            <g class="edges" stroke="var(--viz-grid)" stroke-width="1" fill="none">
+              <line data-edge="a-b" x1="80" y1="110" x2="180" y2="50" />
+              <line data-edge="a-c" x1="80" y1="110" x2="180" y2="170" />
+              <line data-edge="b-d" x1="180" y1="50" x2="320" y2="80" />
+              <line data-edge="c-d" x1="180" y1="170" x2="320" y2="80" />
+              <line data-edge="d-e" x1="320" y1="80" x2="400" y2="140" />
+            </g>
+            <g class="nodes" font-family="var(--font-mono)" font-size="11">
+              <g class="node" data-node="a" data-neighbors="b,c">
+                <circle cx="80" cy="110" r="18" />
+                <text x="80" y="114" text-anchor="middle">A</text>
+              </g>
+              <g class="node" data-node="b" data-neighbors="a,d">
+                <circle cx="180" cy="50" r="18" />
+                <text x="180" y="54" text-anchor="middle">B</text>
+              </g>
+              <g class="node" data-node="c" data-neighbors="a,d">
+                <circle cx="180" cy="170" r="18" />
+                <text x="180" y="174" text-anchor="middle">C</text>
+              </g>
+              <g class="node" data-node="d" data-neighbors="b,c,e">
+                <circle cx="320" cy="80" r="18" />
+                <text x="320" y="84" text-anchor="middle">D</text>
+              </g>
+              <g class="node" data-node="e" data-neighbors="d">
+                <circle cx="400" cy="140" r="18" />
+                <text x="400" y="144" text-anchor="middle">E</text>
+              </g>
+            </g>
+          </svg>
+          <p class="station-caption" data-graph-caption>Neighborhood idle.</p>
+        </section>
+
+        <section class="station" id="image">
+          <header class="station-head">
+            <span class="label">06 · Image treatment</span>
+            <p>Same plate, three roles: bleed, annotate, compare.</p>
+          </header>
+          <div class="image-treatments">
+            <figure class="bleed">
+              <svg viewBox="0 0 320 180" aria-hidden="true">
+                <rect width="320" height="180" fill="var(--color-surface)" />
+                <rect x="24" y="20" width="180" height="120" fill="none" stroke="var(--color-text)" stroke-width="1.2" />
+                <circle cx="230" cy="70" r="36" fill="none" stroke="var(--color-accent)" />
+                <path d="M40 140 L120 90 L200 130" fill="none" stroke="var(--color-text-muted)" />
+              </svg>
+              <figcaption>Full-bleed crop — the plate is the field.</figcaption>
+            </figure>
+            <figure class="annotated">
+              <svg viewBox="0 0 320 180" aria-hidden="true">
+                <rect width="320" height="180" fill="var(--color-surface)" />
+                <rect x="40" y="36" width="140" height="96" fill="none" stroke="var(--color-text)" />
+                <circle cx="220" cy="80" r="28" fill="none" stroke="var(--color-accent)" />
+                <line x1="248" y1="80" x2="286" y2="80" stroke="var(--color-accent)" />
+                <text x="292" y="84" fill="var(--color-accent-text)" font-size="11" font-family="var(--font-mono)">01</text>
+              </svg>
+              <figcaption>Annotated — a pointer into structure.</figcaption>
+            </figure>
+            <figure class="compare">
+              <div class="compare-split">
+                <svg viewBox="0 0 160 180" aria-hidden="true">
+                  <rect width="160" height="180" fill="var(--color-surface)" />
+                  <circle cx="80" cy="90" r="40" fill="none" stroke="var(--viz-1)" />
+                </svg>
+                <svg viewBox="0 0 160 180" aria-hidden="true">
+                  <rect width="160" height="180" fill="var(--color-bg-elevated)" />
+                  <rect x="40" y="50" width="80" height="80" fill="none" stroke="var(--viz-2)" />
+                </svg>
+              </div>
+              <figcaption>Comparison — shared frame, two states.</figcaption>
+            </figure>
+          </div>
+        </section>
+      </main>
+
+      <footer class="lab-foot">
+        <span>Tokens are control, not identity</span>
+        <a href="gallery.html">Back to gallery</a>
+      </footer>
+    </div>
+    <script src="lab.js"></script>
+    <script src="playground.js"></script>
+  </body>
+</html>

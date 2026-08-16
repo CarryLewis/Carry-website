@@ -155,6 +155,8 @@ export type Project = {
   reflection?: string;
   /** Interactive demo (prefer same-origin path under /public). */
   demoUrl?: string;
+  /** Designed viewing surface on this site (may include site chrome). */
+  showcaseUrl?: string;
   /** Source repository. */
   repoUrl?: string;
   createdAt: ISODate;

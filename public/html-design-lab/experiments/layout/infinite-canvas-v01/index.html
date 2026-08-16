@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Infinite Canvas — HTML Design Lab</title>
+    <link rel="stylesheet" href="../../../tokens/fonts.css" />
+    <link rel="stylesheet" href="../../../tokens/tokens.css" />
+    <link rel="stylesheet" href="../../../tokens/languages/notebook.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="exp-bar">
+      <a href="../../../index.html">HTML Design Lab</a>
+      <span>Layout · Infinite Canvas v01</span>
+    </header>
+    <p class="hint">Drag the field. Click a note. There is no bottom of the page.</p>
+    <div class="viewport" id="viewport">
+      <div class="world" id="world">
+        <section class="cluster" style="left:180px;top:140px">
+          <h2>Questions</h2>
+          <article data-note="A question is a gap with a direction.">What is the unit of understanding?</article>
+          <article data-note="If the unit is a page, spatial material will be crushed.">Is a page the wrong container?</article>
+        </section>
+        <section class="cluster" style="left:720px;top:80px">
+          <h2>Relations</h2>
+          <article data-note="Edges are claims. An unlabeled edge is an unfinished sentence.">Graphs without types</article>
+          <article data-note="Neighborhoods matter more than global layout at first glance.">Local before global</article>
+        </section>
+        <section class="cluster" style="left:420px;top:520px">
+          <h2>Time</h2>
+          <article data-note="Sequence is not a list. It is a construction.">Construction vs list</article>
+          <article data-note="A process that does not move cannot explain causality.">Motion as explanation</article>
+        </section>
+        <section class="cluster" style="left:980px;top:480px">
+          <h2>Field notes</h2>
+          <article data-note="Strange experiments are allowed. Standardization comes later.">Exploration first</article>
+          <article data-note="Production projects borrow patterns; they do not live here.">Lab ≠ product</article>
+        </section>
+      </div>
+    </div>
+    <aside class="reader" hidden>
+      <p data-read></p>
+      <button type="button" data-close>Close</button>
+    </aside>
+    <script src="script.js"></script>
+  </body>
+</html>

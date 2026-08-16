@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>HTML Design Lab</title>
+    <meta
+      name="description"
+      content="A laboratory for interactive visual systems — a library of ways to explain things through HTML."
+    />
+    <link rel="stylesheet" href="tokens/fonts.css" />
+    <link rel="stylesheet" href="tokens/tokens.css" />
+    <link rel="stylesheet" href="tokens/languages/notebook.css" />
+    <link rel="stylesheet" href="lab/lab.css" />
+  </head>
+  <body class="lab" data-index-url="lab/experiments.json" data-knowledge-url="lab/knowledge.json">
+    <a class="skip" href="#main">Skip to content</a>
+    <div class="lab-frame">
+      <header class="lab-top">
+        <span class="wordmark">HTML Design Lab</span>
+        <nav class="lab-nav" aria-label="Lab">
+          <a href="lab/gallery.html">Gallery</a>
+          <a href="lab/knowledge.html">Knowledge</a>
+          <a href="lab/playground.html">Playground</a>
+          <a href="DESIGN_KNOWLEDGE.md">Guide</a>
+        </nav>
+      </header>
+
+      <main id="main">
+        <section class="hero">
+          <h1>A laboratory for<br /><em>interactive visual systems.</em></h1>
+          <p class="hero-aside">
+            Not a website. Not a template. A library of ways to explain things
+            through HTML — references deconstructed into patterns, patterns
+            tested as experiments, experiments adapted to projects.
+          </p>
+        </section>
+
+        <section class="section" id="explore">
+          <div class="section-head">
+            <span class="label">Explore</span>
+            <a class="label" href="lab/gallery.html">All experiments</a>
+          </div>
+          <div class="explore">
+            <a href="lab/gallery.html?category=motion">
+              <span class="explore-name">Motion</span>
+              <span class="explore-note">Change, sequence, emergence</span>
+            </a>
+            <a href="lab/gallery.html?category=interaction">
+              <span class="explore-name">Interaction</span>
+              <span class="explore-note">Doing as a way of seeing</span>
+            </a>
+            <a href="lab/gallery.html?category=visualization">
+              <span class="explore-name">Visualization</span>
+              <span class="explore-note">Structure made visible</span>
+            </a>
+            <a href="lab/gallery.html?category=typography">
+              <span class="explore-name">Typography</span>
+              <span class="explore-note">Text as visual system</span>
+            </a>
+            <a href="lab/gallery.html?category=layout">
+              <span class="explore-name">Layout</span>
+              <span class="explore-note">Spatial information</span>
+            </a>
+            <a href="lab/gallery.html?category=storytelling">
+              <span class="explore-name">Storytelling</span>
+              <span class="explore-note">Narrative as structure</span>
+            </a>
+            <a href="lab/gallery.html?category=scientific">
+              <span class="explore-name">Scientific</span>
+              <span class="explore-note">Accuracy before decoration</span>
+            </a>
+            <a href="lab/gallery.html?category=data">
+              <span class="explore-name">Data</span>
+              <span class="explore-note">Distribution and comparison</span>
+            </a>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-head">
+            <span class="label">Knowledge</span>
+            <a class="label" href="lab/knowledge.html">Graph</a>
+          </div>
+          <div class="knowledge-links">
+            <a href="references/INDEX.md">
+              <span class="explore-name">References</span>
+              <span class="explore-note">Specimens. Observe, then interpret.</span>
+            </a>
+            <a href="patterns/INDEX.md">
+              <span class="explore-name">Patterns</span>
+              <span class="explore-note">Principles with maturity, not copies.</span>
+            </a>
+            <a href="languages/INTERACTION.md">
+              <span class="explore-name">Interaction</span>
+              <span class="explore-note">Reveal, trace, scrub, assemble.</span>
+            </a>
+            <a href="languages/MOTION.md">
+              <span class="explore-name">Motion</span>
+              <span class="explore-note">Propagate, settle, drift — by meaning.</span>
+            </a>
+            <a href="languages/VISUALIZATION.md">
+              <span class="explore-name">Visualization</span>
+              <span class="explore-note">Form follows information structure.</span>
+            </a>
+            <a href="modes/CRITIQUE.md">
+              <span class="explore-name">Modes</span>
+              <span class="explore-note">Critique, adapt, implement, reverse.</span>
+            </a>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-head">
+            <span class="label">Extracted patterns</span>
+            <a class="label" href="patterns/INDEX.md">All patterns</a>
+          </div>
+          <ol class="recent-list" data-featured-patterns></ol>
+        </section>
+
+        <section class="section">
+          <div class="section-head">
+            <span class="label">Recent experiments</span>
+          </div>
+          <ol class="recent-list" data-recent></ol>
+        </section>
+
+        <section class="section">
+          <div class="section-head">
+            <span class="label">Design principles</span>
+          </div>
+          <div class="principles">
+            <article>
+              <h3>Representation</h3>
+              <p>How a concept becomes a visual structure.</p>
+            </article>
+            <article>
+              <h3>Interaction</h3>
+              <p>How doing makes a mechanism easier to understand.</p>
+            </article>
+            <article>
+              <h3>Motion</h3>
+              <p>How change, causality, and time are shown rather than described.</p>
+            </article>
+            <article>
+              <h3>Structure</h3>
+              <p>How information finds a form that matches its relationships.</p>
+            </article>
+            <article>
+              <h3>Understanding</h3>
+              <p>The only success criterion. Display is not enough.</p>
+            </article>
+          </div>
+        </section>
+      </main>
+
+      <footer class="lab-foot">
+        <span>Visual language laboratory</span>
+        <span>Exploration before standardization</span>
+      </footer>
+    </div>
+    <script src="lab/lab.js"></script>
+  </body>
+</html>

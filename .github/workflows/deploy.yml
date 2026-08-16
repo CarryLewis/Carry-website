@@ -8,7 +8,7 @@ on:
   # (see docs/templates/ecg-notify-website.yml).
   # research-brief-updated: CarryLewis/research_brief talk HTML changed.
   repository_dispatch:
-    types: [ecg-updated, research-brief-updated]
+    types: [ecg-updated, research-brief-updated, html-design-lab-updated]
 
 permissions:
   contents: read
@@ -72,6 +72,28 @@ jobs:
           ref: ${{ steps.brief.outputs.ref }}
           path: .research-brief
 
+      - name: Resolve HTML Design Lab embed ref
+        id: lab
+        env:
+          PAYLOAD_REF: ${{ github.event.client_payload.ref }}
+          PAYLOAD_SOURCE: ${{ github.event.client_payload.source }}
+        run: |
+          # shellcheck disable=SC1091
+          source html-design-lab-embed.ref
+          REF="$HTML_DESIGN_LAB_REF"
+          if [[ "${PAYLOAD_SOURCE:-}" == "html-design-lab" && -n "${PAYLOAD_REF:-}" ]]; then
+            REF="$PAYLOAD_REF"
+          fi
+          echo "ref=${REF}" >> "$GITHUB_OUTPUT"
+          echo "Using HTML-Design-Lab ref: ${REF}"
+
+      - name: Checkout HTML-Design-Lab
+        uses: actions/checkout@v4
+        with:
+          repository: CarryLewis/HTML-Design-Lab
+          ref: ${{ steps.lab.outputs.ref }}
+          path: .html-design-lab
+
       - uses: actions/setup-node@v4
         with:
           node-version: "22"
@@ -108,6 +130,21 @@ jobs:
 
           # Thinking Vault talk is unpublished until a later HTML replaces it.
           rm -rf public/talks/thinking-vault
+
+      - name: Embed HTML Design Lab shell
+        run: |
+          LAB_SRC=".html-design-lab"
+          if [[ -d "$LAB_SRC/experiments" ]]; then
+            rm -rf public/html-design-lab
+            mkdir -p public/html-design-lab
+            tar -C "$LAB_SRC" --exclude='.git' --exclude='.cursor' --exclude='.gitignore' -cf - . \
+              | tar -C public/html-design-lab -xf -
+          elif [[ -d public/html-design-lab/experiments ]]; then
+            echo "experiments/ missing in HTML-Design-Lab checkout; keeping vendored copy"
+          else
+            echo "::error::Missing HTML-Design-Lab experiments and no vendored copy"
+            exit 1
+          fi
 
       - name: Build website
         run: npm run build

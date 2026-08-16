@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Animated Process Diagram — HTML Design Lab</title>
+    <link rel="stylesheet" href="../../../tokens/fonts.css" />
+    <link rel="stylesheet" href="../../../tokens/tokens.css" />
+    <link rel="stylesheet" href="../../../tokens/languages/scientific.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="exp-bar">
+      <a href="../../../index.html">HTML Design Lab</a>
+      <span>Visualization · Process Diagram v01</span>
+    </header>
+    <main>
+      <header class="intro">
+        <p class="kicker">Experiment · Mechanism</p>
+        <h1>Animated process diagram</h1>
+        <p>Play the process. The motion is the explanation, not an ornament on the arrows.</p>
+      </header>
+
+      <p class="status" data-status>Idle. Source holds a signal.</p>
+
+      <svg class="diagram" viewBox="0 0 720 220" role="img" aria-label="Three-stage process">
+        <line class="wire" x1="130" y1="110" x2="310" y2="110" />
+        <line class="wire" x1="410" y1="110" x2="590" y2="110" />
+        <circle class="token" cx="80" cy="110" r="5" />
+        <g class="box source is-on">
+          <rect x="40" y="70" width="80" height="80" />
+          <text x="80" y="116">A</text>
+        </g>
+        <g class="box processor">
+          <rect x="320" y="70" width="80" height="80" />
+          <text x="360" y="116">B</text>
+        </g>
+        <g class="box output">
+          <rect x="600" y="70" width="80" height="80" />
+          <text x="640" y="116">C</text>
+        </g>
+        <text class="caption" x="80" y="176">Source</text>
+        <text class="caption" x="360" y="176">Processor</text>
+        <text class="caption" x="640" y="176">Emergent</text>
+      </svg>
+
+      <div class="actions">
+        <button type="button" data-play>Play</button>
+        <button type="button" data-step>Step</button>
+        <button type="button" data-reset>Reset</button>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

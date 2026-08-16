@@ -126,6 +126,43 @@ export const projects: Project[] = [
     createdAt: "2026-07-01",
     updatedAt: "2026-08-15",
   },
+  {
+    id: "proj-html-design-lab",
+    slug: "html-design-lab",
+    title: "HTML Design Lab",
+    summary:
+      "A laboratory of isolated HTML visual systems — experiments filed by information structure, so form can be chosen from the shape of the knowledge rather than from fashion.",
+    problem:
+      "How should the structure of information determine its visual form — so that interaction makes a mechanism visible, instead of decorating a page?",
+    architecture:
+      "Versioned HTML/CSS/JS experiments by category; patterns extracted from references; a Structure Atlas on this site maps structure → form → live specimen. Source lab shell is copied from CarryLewis/HTML-Design-Lab.",
+    status: "active",
+    technology: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "SVG",
+      "Design tokens",
+      "Pattern library",
+    ],
+    relatedResearchIds: ["q-bio-to-compute"],
+    relatedConceptIds: [
+      "concept-human-systems",
+      "concept-technology",
+      "concept-philosophy",
+      "concept-ai",
+    ],
+    relatedSignalIds: ["sig-003"],
+    designPhilosophy:
+      "Form follows information structure. Visualization is a decision protocol — name the structure, choose the matching form, then test whether doing makes the mechanism visible. Display is not enough.",
+    implementation:
+      "Structure Atlas at /lab/ (overview → event → detail). Isolated experiments vendored to /html-design-lab/ from the HTML-Design-Lab foundation tip pinned in html-design-lab-embed.ref.",
+    demoUrl: "/html-design-lab/",
+    showcaseUrl: "/lab/",
+    repoUrl: "https://github.com/CarryLewis/HTML-Design-Lab",
+    createdAt: "2026-08-15",
+    updatedAt: "2026-08-16",
+  },
 ];
 
 export function getProjectById(id: string) {

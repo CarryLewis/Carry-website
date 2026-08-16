@@ -1,0 +1,29 @@
+/* Language D — Data-driven */
+
+:root {
+  --color-bg: #f3f4f2;
+  --color-bg-elevated: #fbfbfa;
+  --color-surface: #e7e9e4;
+  --color-text: #111210;
+  --color-text-muted: #5c6158;
+  --color-border: #c9cdc6;
+  --color-accent: #0f6b4c;
+  --color-accent-text: #0f6b4c;
+  --viz-1: #0f6b4c;
+  --viz-2: #c2410c;
+  --viz-3: #1d4ed8;
+  --viz-4: #a16207;
+  --viz-5: #7c3aed;
+  --viz-6: #5c6158;
+  --viz-grid: #d8dcd4;
+  --viz-axis: #7a8076;
+  --font-display: "IBM Plex Sans", "Helvetica Neue", sans-serif;
+  --font-body: "IBM Plex Sans", "Helvetica Neue", sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+  --size-md: 0.9375rem;
+  --size-display: 3rem;
+  --tracking-label: 0.16em;
+  --measure: 44rem;
+  --radius: 0;
+  --duration-medium: 200ms;
+}

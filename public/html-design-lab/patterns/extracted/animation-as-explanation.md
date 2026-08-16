@@ -1,0 +1,21 @@
+# Pattern: Animation as Explanation
+
+- **ID:** animation-as-explanation
+- **Kind:** original
+- **Maturity:** EXPERIMENTAL
+- **Problem:** Processes described as A → B → C hide activation, change, and emergence. Arrows become labels.
+- **Design principle:** The motion *is* the explanation: propagate, activate, emerge. If you can pause and the meaning remains as a static diagram, the animation was decoration.
+- **Visual structure:** Source, processor, emergent output. A token for the signal. Play / step / reset.
+- **Interaction:** Trace (play or step).
+- **Motion:** Propagate (token), Transform (processor fill), Appear (output).
+- **Information logic:** Token position = where the signal is. Fill = activation. Presence of C = the process produced something new.
+- **Strengths:** Causality becomes watchable; stepping supports inspection.
+- **Weaknesses:** Easy to over-stage; scientific processes may need more than three boxes.
+- **Best use cases:** System demonstrations, protocol explainers, onboarding to a mechanism.
+- **Poor use cases:** State that is not causal (use comparison or matrix).
+- **Technical complexity:** medium
+- **Performance:** One token, rAF; avoid particles unless the information is a field.
+- **Accessibility:** Status text announces each phase. Reduced motion jumps to end states.
+- **Related references:** —
+- **Related experiments:** [process-diagram-v01](../../experiments/visualization/process-diagram-v01/)
+- **Used in projects:** none yet

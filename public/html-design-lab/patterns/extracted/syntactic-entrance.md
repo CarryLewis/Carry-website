@@ -1,0 +1,21 @@
+# Pattern: Syntactic Entrance
+
+- **ID:** syntactic-entrance
+- **Kind:** original
+- **Maturity:** EXPERIMENTAL
+- **Problem:** Motion on type often decorates instead of encoding hierarchy and sequence.
+- **Design principle:** Entrance order is the argument. Subject, copula, complement, then the qualifier that revises the claim.
+- **Visual structure:** A few lines, no stagecraft. The last line is typographically other (mono, accent) because it is a revision.
+- **Interaction:** Replay.
+- **Motion:** Appear by role, staggered. Emphasis is weight and delay, not bounce.
+- **Information logic:** Order of appearance = order of thought.
+- **Strengths:** Cheap, memorable, language-first.
+- **Weaknesses:** One sentence long; repeats poorly; fails if the copy has no syntactic argument.
+- **Best use cases:** Essay openings, exhibition titles, conceptual framing.
+- **Poor use cases:** Body text; data; anything that must be scanned.
+- **Technical complexity:** low
+- **Performance:** CSS transitions.
+- **Accessibility:** Reduced motion shows the full sentence immediately.
+- **Related references:** —
+- **Related experiments:** [kinetic-type-v01](../../experiments/typography/kinetic-type-v01/)
+- **Used in projects:** none yet

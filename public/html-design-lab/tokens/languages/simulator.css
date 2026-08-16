@@ -1,0 +1,35 @@
+/* Language H — Scientific simulator */
+
+:root {
+  --color-bg: #0c1116;
+  --color-bg-elevated: #141b22;
+  --color-surface: #1a232c;
+  --color-text: #d7e0e8;
+  --color-text-muted: #7d8b98;
+  --color-border: #2a3642;
+  --color-accent: #3ec7b8;
+  --color-accent-text: #3ec7b8;
+  --color-danger: #e07070;
+  --color-warning: #d4a017;
+  --color-success: #3ec7b8;
+  --color-info: #5aa7d4;
+  --viz-1: #3ec7b8;
+  --viz-2: #e07070;
+  --viz-3: #d4a017;
+  --viz-4: #5aa7d4;
+  --viz-5: #b08cff;
+  --viz-6: #7d8b98;
+  --viz-grid: #1e2832;
+  --viz-axis: #5a6a78;
+  --font-display: "IBM Plex Sans", "Helvetica Neue", sans-serif;
+  --font-body: "IBM Plex Sans", "Helvetica Neue", sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+  --size-md: 0.9rem;
+  --size-display: 2.75rem;
+  --leading-body: 1.45;
+  --tracking-label: 0.18em;
+  --measure: 46rem;
+  --radius: 0;
+  --duration-fast: 100ms;
+  --duration-medium: 180ms;
+}

@@ -50,7 +50,14 @@ export default async function ProjectsIndexPage() {
               >
                 Project record →
               </Link>
-              {project.demoUrl ? (
+              {project.showcaseUrl ? (
+                <Link
+                  href={project.showcaseUrl}
+                  className="font-sans text-meta text-accent hover:text-accent-muted focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+                >
+                  Open atlas →
+                </Link>
+              ) : project.demoUrl ? (
                 <a
                   href={project.demoUrl}
                   className="font-sans text-meta text-ink-secondary hover:text-ink focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"

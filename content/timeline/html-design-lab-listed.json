@@ -1,0 +1,15 @@
+{
+  "$schema": "../schemas/timeline.schema.json",
+  "id": "tl-html-design-lab-listed",
+  "slug": "html-design-lab-listed",
+  "title": "HTML Design Lab Structure Atlas listed on the Observatory",
+  "summary": "Ten isolated visual experiments published at /lab/ as a structure → form → specimen atlas, with the source lab shell at /html-design-lab/.",
+  "kind": "publication",
+  "occurredAt": "2026-08-16",
+  "relatedEntityIds": [
+    "proj-html-design-lab",
+    "focus-visual-systems",
+    "concept-human-systems",
+    "concept-technology"
+  ]
+}

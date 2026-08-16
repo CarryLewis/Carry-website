@@ -1,0 +1,21 @@
+# Pattern: In-situ Annotation
+
+- **ID:** in-situ-annotation
+- **Kind:** original
+- **Maturity:** EXPERIMENTAL
+- **Problem:** A caption under an image cannot point at structure inside the image.
+- **Design principle:** Numbers are stable identifiers into a plate. Focus dims the rest so the callout is local to a region.
+- **Visual structure:** One plate. Numbered hotspots. Layered callout. Dimmed unused mass.
+- **Interaction:** Reveal (hover/preview via presence of numbers); Focus (click); Dissolve (click plate or toggle).
+- **Motion:** Focus dimming; callout fade. No zoom gimmick.
+- **Information logic:** Index = identity of a region. Callout text is bound to that region.
+- **Strengths:** Figure and explanation occupy one place.
+- **Weaknesses:** Too many hotspots become a legend in disguise; SVG plates are not photographs (v01).
+- **Best use cases:** Anatomy, scientific figures, screenshot evidence, museum labels.
+- **Poor use cases:** Images whose meaning is only atmospheric.
+- **Technical complexity:** medium
+- **Performance:** One SVG + a handful of buttons.
+- **Accessibility:** Hotspots are buttons with aria-labels. Callout is text, not color-only.
+- **Related references:** —
+- **Related experiments:** [layered-annotation-v01](../../experiments/images/layered-annotation-v01/)
+- **Used in projects:** none yet

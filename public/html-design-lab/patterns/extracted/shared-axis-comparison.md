@@ -1,0 +1,21 @@
+# Pattern: Shared-Axis Comparison
+
+- **ID:** shared-axis-comparison
+- **Kind:** original
+- **Maturity:** EXPERIMENTAL
+- **Problem:** Two systems described in adjacent paragraphs cannot be compared on shared structure.
+- **Design principle:** Difference is visible only when both models occupy the same frame and the same named properties.
+- **Visual structure:** Two diagrams stacked in one stage; a wipe; a matrix of properties that highlight corresponding parts.
+- **Interaction:** Compare (scrub wipe); Focus a property row.
+- **Motion:** Transform via clip. Connect matrix row to diagram parts.
+- **Information logic:** Shared rows = comparable dimensions. Wipe = same frame, different system.
+- **Strengths:** Prevents “two posters.” Property names force structural honesty.
+- **Weaknesses:** Only works if the two systems actually share dimensions; a dishonest matrix is worse than prose.
+- **Best use cases:** Architectures, protocols, visual-language comparison, treatment vs control.
+- **Poor use cases:** Unrelated objects; marketing before/after without shared axes.
+- **Technical complexity:** medium
+- **Performance:** Two SVGs + clip-path; cheap.
+- **Accessibility:** Slider is labeled. Matrix rows are buttons in effect (clickable). State the two names in text.
+- **Related references:** —
+- **Related experiments:** [comparison-v01](../../experiments/visualization/comparison-v01/)
+- **Used in projects:** none yet
