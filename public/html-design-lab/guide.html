@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Guide — HTML Design Lab</title>
+    <meta
+      name="description"
+      content="What HTML Design Lab is: a library of visual thinking patterns, a pipeline from reference to project, and a constitution for form that follows information structure."
+    />
+    <link rel="stylesheet" href="tokens/fonts.css" />
+    <link rel="stylesheet" href="tokens/tokens.css" />
+    <link rel="stylesheet" href="tokens/languages/notebook.css" />
+    <link rel="stylesheet" href="lab/lab.css" />
+  </head>
+  <body class="lab">
+    <a class="skip" href="#main">Skip to content</a>
+    <div class="lab-frame">
+      <header class="lab-top">
+        <a class="wordmark" href="index.html">HTML Design Lab</a>
+        <nav class="lab-nav" aria-label="Lab">
+          <a href="lab/gallery.html">Gallery</a>
+          <a href="lab/projects.html">Own HTML</a>
+          <a href="lab/knowledge.html">Knowledge</a>
+          <a href="lab/playground.html">Playground</a>
+          <a href="guide.html" aria-current="page">Guide</a>
+        </nav>
+      </header>
+
+      <main id="main">
+        <div class="page-intro guide-intro">
+          <p class="label">Constitution · readable surface</p>
+          <h1>A laboratory, not a website.</h1>
+          <p>
+            HTML Design Lab is not a portfolio, a landing page, or a template kit.
+            It is a library of <em>visual thinking patterns</em> — ways information
+            should be seen, compared, and understood. HTML is the thinking medium.
+            The question every specimen answers:
+            <strong>does this form make the structure of the information clearer?</strong>
+          </p>
+        </div>
+
+        <nav class="guide-toc" aria-label="On this page">
+          <a href="#pipeline">Pipeline</a>
+          <a href="#architecture">Architecture</a>
+          <a href="#thesis">Thesis</a>
+          <a href="#validity">Validity</a>
+          <a href="#languages">Languages</a>
+          <a href="#maturity">Maturity</a>
+          <a href="#modes">Modes</a>
+          <a href="#state">Seed state</a>
+          <a href="#enter">Enter</a>
+        </nav>
+
+        <section class="guide-section" id="pipeline">
+          <h2>The pipeline</h2>
+          <p>
+            Knowledge does not start as UI. A reference is observed, then
+            deconstructed, then named as a pattern, then tested as live HTML,
+            then — only if it survives — adapted into a project. Interfaces are
+            never copied. Forms are derived from information structure.
+          </p>
+          <ol class="guide-pipeline" aria-label="Knowledge pipeline">
+            <li>
+              <span class="guide-step-id">01</span>
+              <strong>Reference</strong>
+              <span class="guide-step-rel">inspires</span>
+              <p>A paper, a book, a site. Specimen, not source file. Observe before you interpret.</p>
+            </li>
+            <li>
+              <span class="guide-step-id">02</span>
+              <strong>Pattern</strong>
+              <span class="guide-step-rel">implemented as</span>
+              <p>A named principle that can travel. Maturity is explicit. Copies are not patterns.</p>
+            </li>
+            <li>
+              <span class="guide-step-id">03</span>
+              <strong>Experiment</strong>
+              <span class="guide-step-rel">adapted to</span>
+              <p>Isolated HTML. One question. Own CSS. The lab shell never bleeds in.</p>
+            </li>
+            <li>
+              <span class="guide-step-id">04</span>
+              <strong>Project</strong>
+              <span class="guide-step-rel">reflects back</span>
+              <p>Composition of surviving patterns. Built last. Recorded under Own HTML while it iterates.</p>
+            </li>
+          </ol>
+          <p class="guide-note">
+            The same chain is a graph in
+            <a href="lab/knowledge.html">Knowledge</a>.
+            Markdown notes remain in
+            <a href="DESIGN_KNOWLEDGE.md">DESIGN_KNOWLEDGE.md</a>
+            for git, not for reading in a browser.
+          </p>
+        </section>
+
+        <section class="guide-section" id="architecture">
+          <h2>Architecture</h2>
+          <p>
+            The repository is a small operating system for visual thought.
+            Tokens stay global. The lab shell is quiet chrome. Experiments never
+            import lab CSS. Languages and modes are lenses, not pages.
+          </p>
+          <dl class="guide-arch">
+            <div>
+              <dt><code>tokens/</code></dt>
+              <dd>Control, not brand. Type, color, space, motion. Language overlays live under <code>tokens/languages/</code>.</dd>
+            </div>
+            <div>
+              <dt><code>lab/</code></dt>
+              <dd>Quiet operating surface — gallery, knowledge graph, playground, own-HTML index, JSON catalogs.</dd>
+            </div>
+            <div>
+              <dt><code>experiments/</code></dt>
+              <dd>Isolated thinking pieces, versioned in place. One folder, one question.</dd>
+            </div>
+            <div>
+              <dt><code>patterns/</code></dt>
+              <dd>Named principles extracted from experiments. Markdown records, not a UI kit.</dd>
+            </div>
+            <div>
+              <dt><code>references/</code></dt>
+              <dd>Specimens. Observation and interpretation kept apart.</dd>
+            </div>
+            <div>
+              <dt><code>languages/</code></dt>
+              <dd>Interaction, motion, visualization, translation vocabularies.</dd>
+            </div>
+            <div>
+              <dt><code>modes/</code></dt>
+              <dd>Critique, adaptation, implementation, reverse engineering.</dd>
+            </div>
+            <div>
+              <dt><code>projects/</code></dt>
+              <dd>First-party HTML still under iteration. Not experiments, not third-party copies.</dd>
+            </div>
+            <div>
+              <dt><code>dna/</code></dt>
+              <dd>Compact visual-language sketches, including the lab shell itself.</dd>
+            </div>
+            <div>
+              <dt><code>briefs/</code></dt>
+              <dd>Project design briefs written before another repository is touched.</dd>
+            </div>
+          </dl>
+        </section>
+
+        <section class="guide-section" id="thesis">
+          <h2>Visualization thesis</h2>
+          <blockquote class="guide-pull">
+            Form follows information structure. If the underlying structure is a
+            relationship, the interface should not flatten it into a list. If it
+            is a sequence, it should not be shuffled into cards.
+          </blockquote>
+          <p>
+            This is the contract every experiment is judged against. Structure on
+            the left, form in the middle, live specimen on the right. Empty cells
+            are honest: the lab has not tested them yet.
+          </p>
+          <div class="guide-table-wrap">
+            <table class="guide-table">
+              <thead>
+                <tr>
+                  <th>Structure</th>
+                  <th>Form</th>
+                  <th>Specimen</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Relationship</td>
+                  <td>Graph</td>
+                  <td><a href="experiments/visualization/knowledge-graph-v01/index.html">Interactive Knowledge Graph</a></td>
+                </tr>
+                <tr>
+                  <td>Sequence</td>
+                  <td>Timeline</td>
+                  <td><a href="experiments/visualization/progressive-timeline-v01/index.html">Progressive Timeline</a></td>
+                </tr>
+                <tr>
+                  <td>Process / causality</td>
+                  <td>Flow, traced path</td>
+                  <td><a href="experiments/visualization/process-diagram-v01/index.html">Animated Process Diagram</a></td>
+                </tr>
+                <tr>
+                  <td>Comparison</td>
+                  <td>Matrix, shared frame</td>
+                  <td><a href="experiments/visualization/comparison-v01/index.html">Interactive Comparison</a></td>
+                </tr>
+                <tr>
+                  <td>Mechanism</td>
+                  <td>Simulation</td>
+                  <td><a href="experiments/scientific/mechanism-v01/index.html">Negative-Feedback Loop</a></td>
+                </tr>
+                <tr>
+                  <td>Spatial relationship</td>
+                  <td>Map, field</td>
+                  <td><a href="experiments/layout/spatial-map-v01/index.html">Spatial Information Map</a></td>
+                </tr>
+                <tr>
+                  <td>Overview → detail</td>
+                  <td>Zoomable canvas</td>
+                  <td><a href="experiments/layout/infinite-canvas-v01/index.html">Infinite Canvas</a></td>
+                </tr>
+                <tr>
+                  <td>Emergence</td>
+                  <td>Progressive construction</td>
+                  <td><a href="experiments/storytelling/scroll-narrative-v01/index.html">Scroll Narrative</a></td>
+                </tr>
+                <tr>
+                  <td>Structure-in-image</td>
+                  <td>In-situ annotation</td>
+                  <td><a href="experiments/images/layered-annotation-v01/index.html">Layered Image Annotation</a></td>
+                </tr>
+                <tr>
+                  <td>Hierarchy in language</td>
+                  <td>Syntactic entrance</td>
+                  <td><a href="experiments/typography/kinetic-type-v01/index.html">Kinetic Typography</a></td>
+                </tr>
+                <tr>
+                  <td>Hierarchy as tree</td>
+                  <td>Tree, nested frames</td>
+                  <td><span class="guide-gap">Not yet — the spatial map is a field, not a tree</span></td>
+                </tr>
+                <tr>
+                  <td>Uncertainty</td>
+                  <td>Opacity, range, branching</td>
+                  <td><span class="guide-gap">Not yet a dedicated specimen</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="guide-section" id="validity">
+          <h2>When an experiment is valid</h2>
+          <p>
+            A specimen is not done when it looks finished. It is valid when it
+            addresses at least one of these questions, and produces a reusable
+            insight rather than a polished page.
+          </p>
+          <ol class="guide-questions">
+            <li>
+              <div>
+                <strong>Representation</strong>
+                How can this concept become a visual structure?
+              </div>
+            </li>
+            <li>
+              <div>
+                <strong>Explanation</strong>
+                How can interaction make a mechanism easier to understand?
+              </div>
+            </li>
+            <li>
+              <div>
+                <strong>Navigation</strong>
+                How can a large information space be explored without overwhelm?
+              </div>
+            </li>
+            <li>
+              <div>
+                <strong>Relationship</strong>
+                How can relationships between concepts become visible?
+              </div>
+            </li>
+            <li>
+              <div>
+                <strong>Time</strong>
+                How can change, evolution, or chronology be represented?
+              </div>
+            </li>
+            <li>
+              <div>
+                <strong>Mechanism</strong>
+                How can a process be animated instead of merely described?
+              </div>
+            </li>
+            <li>
+              <div>
+                <strong>Comparison</strong>
+                How can two or more systems be visually compared?
+              </div>
+            </li>
+            <li>
+              <div>
+                <strong>Scale</strong>
+                How can users move between overview and detail?
+              </div>
+            </li>
+            <li>
+              <div>
+                <strong>Uncertainty</strong>
+                How can ambiguity, confidence, or incomplete knowledge be shown?
+              </div>
+            </li>
+            <li>
+              <div>
+                <strong>Emergence</strong>
+                How can complex structures emerge from simple elements?
+              </div>
+            </li>
+          </ol>
+        </section>
+
+        <section class="guide-section" id="languages">
+          <h2>Eight visual languages</h2>
+          <p>
+            Languages are lenses, not themes. The lab shell currently speaks
+            <strong>Notebook + Editorial</strong>: warm paper, ruled type, quiet
+            chrome. Experiments are allowed to contradict the shell. That
+            contradiction is the point of isolation.
+          </p>
+          <ul class="guide-langs">
+            <li>
+              <span class="guide-lang-id">A</span>
+              <strong>Editorial</strong>
+              Long argument, hierarchy of type, restrained chrome.
+            </li>
+            <li>
+              <span class="guide-lang-id">B</span>
+              <strong>Scientific</strong>
+              Technical precision, labeled parts, accuracy before mood.
+            </li>
+            <li>
+              <span class="guide-lang-id">C</span>
+              <strong>Spatial</strong>
+              Territory, legend, scale, you-are-here.
+            </li>
+            <li>
+              <span class="guide-lang-id">D</span>
+              <strong>Data</strong>
+              Shared axes, comparison, distribution without decoration.
+            </li>
+            <li>
+              <span class="guide-lang-id">E</span>
+              <strong>Kinetic</strong>
+              Motion as claim, not ornament.
+            </li>
+            <li>
+              <span class="guide-lang-id">F</span>
+              <strong>Exhibition</strong>
+              Plate, label, in-situ pointing.
+            </li>
+            <li>
+              <span class="guide-lang-id">G</span>
+              <strong>Notebook</strong>
+              Annotation, residue, thinking in public.
+            </li>
+            <li>
+              <span class="guide-lang-id">H</span>
+              <strong>Simulator</strong>
+              Control, disturbance, readout.
+            </li>
+          </ul>
+        </section>
+
+        <section class="guide-section" id="maturity">
+          <h2>Pattern maturity</h2>
+          <p>
+            Naming a pattern too early freezes a guess. Nothing is promoted by
+            taste alone.
+          </p>
+          <ol class="guide-ladder" aria-label="Pattern maturity">
+            <li><span>Discovered</span> Seen in an external reference.</li>
+            <li><span>Deconstructed</span> Mechanism understood.</li>
+            <li><span>Experimental</span> Reimplemented independently here.</li>
+            <li><span>Validated</span> Used in a meaningful project context.</li>
+            <li><span>Reusable</span> Stable across more than one project.</li>
+            <li><span>Core pattern</span> Part of the personal design language.</li>
+          </ol>
+        </section>
+
+        <section class="guide-section" id="modes">
+          <h2>Four modes of use</h2>
+          <div class="guide-modes">
+            <article>
+              <h3>Critique</h3>
+              <p>Analyze a site, screenshot, or HTML. Do not recreate it. Observation is not interpretation.</p>
+            </article>
+            <article>
+              <h3>Adaptation</h3>
+              <p>Take a pattern into another domain. Name what remains and what changes before implementing.</p>
+            </article>
+            <article>
+              <h3>Implementation</h3>
+              <p>Build the next specimen. Smallest change. Preserve existing behavior. No unrelated rewrites.</p>
+            </article>
+            <article>
+              <h3>Reverse engineering</h3>
+              <p>Infer Design DNA. Do not restyle the source. Decompose website → principle, never the reverse.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="guide-section" id="state">
+          <h2>Seed state</h2>
+          <p>
+            The laboratory opened 15 August 2026. Everything here is a first cut,
+            not a canon. Exploration before standardization.
+          </p>
+          <ul class="guide-stats">
+            <li>
+              <strong>10</strong>
+              <span>Experiments, all v01, still isolated questions</span>
+            </li>
+            <li>
+              <strong>10</strong>
+              <span>Patterns at EXPERIMENTAL — none validated yet</span>
+            </li>
+            <li>
+              <strong>1</strong>
+              <span>Composite deconstructed, not yet a single specimen</span>
+            </li>
+            <li>
+              <strong>Own HTML</strong>
+              <span>Recorded for iteration; not composed from core patterns</span>
+            </li>
+          </ul>
+        </section>
+
+        <section class="guide-section" id="enter">
+          <h2>Enter here</h2>
+          <p>
+            HTML is the reading surface. Markdown is the note behind it. Start
+            with a live page, then open the source if you need the text.
+          </p>
+          <ul class="guide-enter">
+            <li>
+              <a href="lab/knowledge.html">
+                <span class="guide-enter-name">Knowledge graph</span>
+                <span class="guide-enter-note">References, patterns, experiments as a field — not a document dump.</span>
+              </a>
+            </li>
+            <li>
+              <a href="lab/gallery.html">
+                <span class="guide-enter-name">Gallery</span>
+                <span class="guide-enter-note">All ten specimens as a catalog of questions.</span>
+              </a>
+            </li>
+            <li>
+              <a href="lab/playground.html">
+                <span class="guide-enter-name">Playground</span>
+                <span class="guide-enter-note">Scratch HTML against the same tokens. Switch languages; structure stays.</span>
+              </a>
+            </li>
+            <li>
+              <a href="lab/projects.html">
+                <span class="guide-enter-name">Own HTML</span>
+                <span class="guide-enter-note">First-party pages still under iteration.</span>
+              </a>
+            </li>
+            <li>
+              <a href="index.html">
+                <span class="guide-enter-name">Index</span>
+                <span class="guide-enter-note">The lab door. Quiet. No marketing.</span>
+              </a>
+            </li>
+          </ul>
+        </section>
+      </main>
+
+      <footer class="lab-foot">
+        <span>Visual language laboratory</span>
+        <span>Guide · constitution in HTML</span>
+      </footer>
+    </div>
+  </body>
+</html>

@@ -7,6 +7,11 @@ CarryLewis/HTML-Design-Lab  (pinned ref)
 Designed viewing surface (this repo):
   /lab/                  Structure Bench (structure → form → live specimen)
   /lab/<experiment-id>/  permalink for one specimen
+
+Lab shell (vendored HTML):
+  /html-design-lab/              notebook index
+  /html-design-lab/guide.html    constitution: pipeline, architecture, thesis
+  /html-design-lab/lab/knowledge.html
 ```
 
 Listed on:
