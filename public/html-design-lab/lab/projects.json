@@ -1,0 +1,48 @@
+{
+  "featured": [
+    "research-brief-observatory-home",
+    "research-brief-thinking-vault-talk"
+  ],
+  "pages": [
+    {
+      "id": "research-brief-observatory-home",
+      "name": "MUJI Observatory homepage",
+      "project": "Research Brief",
+      "version": "live",
+      "mode": "record",
+      "status": "live",
+      "structure": "emergence",
+      "form": "quiet numbered editorial + object fields",
+      "interaction": "scroll + index jump",
+      "motion": "none required — sequence is the layout",
+      "information": "argument constructed in reading order, then objects",
+      "visual_language": "editorial",
+      "path": "../projects/research-brief/pages/observatory-home/",
+      "live_url": "/research-brief/",
+      "origin": "CarryLewis/research_brief frontend/ @ 8bfa32e",
+      "problem": "A knowledge system that displays its own machinery becomes noisier than the notes it holds.",
+      "short": "Public MUJI homepage — restraint as the interface claim. Live on carrylewis.com.",
+      "tags": ["own-html", "editorial", "observatory", "iterating"]
+    },
+    {
+      "id": "research-brief-thinking-vault-talk",
+      "name": "Thinking Vault talk",
+      "project": "Research Brief",
+      "version": "iterating",
+      "mode": "record",
+      "status": "iterating",
+      "structure": "sequence",
+      "form": "keyboard slide deck",
+      "interaction": "arrow keys / space",
+      "motion": "slide replace, not stack",
+      "information": "one claim per beat",
+      "visual_language": "exhibition",
+      "path": "../projects/research-brief/pages/thinking-vault-talk/",
+      "live_url": "/talks/thinking-vault/",
+      "origin": "CarryLewis/research_brief docs/talks/thinking-vault.html @ d238db0",
+      "problem": "A pipeline (Notion → Obsidian → public HTML) explained as documentation loses the causal order of the argument.",
+      "short": "Self-contained HTML deck. Written; unpublished from the Knowledge index; kept here to iterate.",
+      "tags": ["own-html", "talk", "sequence", "unpublished", "iterating"]
+    }
+  ]
+}
