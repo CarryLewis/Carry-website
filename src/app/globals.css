@@ -59,6 +59,38 @@
     opacity: 0;
     animation: note-appear var(--duration-medium) var(--ease-lab) forwards;
   }
+
+  .origin-core {
+    transform-box: fill-box;
+    transform-origin: center;
+    animation: origin-appear var(--duration-medium) var(--ease-lab) both;
+  }
+
+  .origin-pulse {
+    transform-box: fill-box;
+    transform-origin: center;
+    animation: origin-pulse 4.8s var(--ease-lab) 0.8s infinite;
+  }
+
+  .derive-edge {
+    animation: edge-draw 480ms var(--ease-lab) both;
+  }
+
+  .mesh-edge {
+    animation: edge-draw 400ms var(--ease-lab) both;
+  }
+
+  .derive-node {
+    transform-box: fill-box;
+    transform-origin: center;
+    opacity: 0;
+    animation: derive-node var(--duration-medium) var(--ease-lab) both;
+  }
+
+  .derive-label {
+    opacity: 0;
+    animation: note-appear var(--duration-medium) var(--ease-lab) both;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -67,6 +99,20 @@
   }
 
   .constellation-node {
+    opacity: 1;
+  }
+
+  .derive-edge {
+    stroke-dashoffset: 0;
+  }
+
+  .mesh-edge {
+    stroke-dashoffset: 0;
+  }
+
+  .derive-node,
+  .derive-label,
+  .origin-core {
     opacity: 1;
   }
 }
@@ -85,5 +131,37 @@
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@keyframes origin-appear {
+  from {
+    opacity: 0;
+    transform: scale(0.35);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes origin-pulse {
+  0%,
+  100% {
+    opacity: 0.28;
+  }
+  50% {
+    opacity: 0.55;
+  }
+}
+
+@keyframes derive-node {
+  from {
+    opacity: 0;
+    transform: scale(0.4);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
   }
 }

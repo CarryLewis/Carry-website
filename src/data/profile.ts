@@ -92,11 +92,10 @@ export const observatoryCopy: ObservatoryCopy = {
   },
   knowledge: {
     label: "Knowledge Observatory",
-    title: "Connected concepts",
+    title: "Practice fields",
     description:
-      "A preview of the personal knowledge graph — relations first, pages second.",
-    figureCaption:
-      "fig.02 — neighborhood around Human Systems · derived from concept graph",
+      "An unnamed origin. Fields currently in practice branch from it — each node opens a summary of what exists on this site.",
+    figureCaption: "fig.02 — derivation from origin · practice fields",
     ctaLabel: "Enter knowledge →",
   },
   signals: {

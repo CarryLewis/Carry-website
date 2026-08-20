@@ -233,3 +233,57 @@ export type KnowledgeGraphPreview = {
   nodes: GraphNodeView[];
   edges: GraphEdgeView[];
 };
+
+/** A live practice plate on the site — maps 1:1 to a field summary page */
+export type PracticeVaultLink = {
+  label: string;
+  href: string;
+  description: string;
+};
+
+export type PracticeFieldStatus = "emerging" | "active";
+
+export type PracticeField = {
+  id: EntityId;
+  slug: string;
+  label: string;
+  status: PracticeFieldStatus;
+  summary: string;
+  thesis: string;
+  /** Existing fields this plate joins — mesh edges, not origin spokes. */
+  connectedFieldIds: EntityId[];
+  relatedProjectIds: EntityId[];
+  relatedQuestionIds: EntityId[];
+  relatedSignalIds: EntityId[];
+  relatedConceptIds: EntityId[];
+  relatedFocusIds: EntityId[];
+  vaults: PracticeVaultLink[];
+  /** Optional. Omit to occupy the next free slot on the origin ring. */
+  layout?: { x: number; y: number };
+};
+
+export type PracticeGraphNode = {
+  id: EntityId;
+  kind: "origin" | "field";
+  /** Origin is unnamed. Field nodes carry the practice-plate label. */
+  label: string | null;
+  slug?: string;
+  href?: string;
+  summary?: string;
+  status?: PracticeFieldStatus;
+  x: number;
+  y: number;
+};
+
+export type PracticeGraphEdge = {
+  id: EntityId;
+  from: EntityId;
+  to: EntityId;
+  kind: "derive" | "mesh";
+};
+
+export type PracticeGraph = {
+  originId: EntityId;
+  nodes: PracticeGraphNode[];
+  edges: PracticeGraphEdge[];
+};
