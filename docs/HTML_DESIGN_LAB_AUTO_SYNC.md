@@ -30,9 +30,24 @@ Create a PAT that can trigger workflows on **CarryLewis/Carry-website**:
 | Kind | Requirement |
 |------|-------------|
 | Classic | `repo` scope |
-| Fine-grained | Resource owner CarryLewis, repository **Carry-website**, permissions: **Contents: Read**, **Actions: Write** (or equivalent that allows `repository_dispatch`) |
+| Fine-grained | Resource owner CarryLewis, only **Carry-website**, permission **Contents: Read and write** (Metadata is selected automatically) |
 
-The same token used for ECG (`WEBSITE_DISPATCH_TOKEN` on ECG-stimulator) can be reused here.
+The same token used for ECG (`WEBSITE_DISPATCH_TOKEN` on ECG-stimulator) can be reused here. GitHub will not show that old value again; if you did not save it, create a new PAT.
+
+### Create a fine-grained PAT (recommended)
+
+1. Open [GitHub → Settings → Developer settings → Personal access tokens → Fine-grained tokens](https://github.com/settings/personal-access-tokens)
+2. **Generate new token**
+3. Fill the form:
+   - **Token name:** `carry-website-dispatch` (any label)
+   - **Expiration:** 90 days or longer (you will rotate it later)
+   - **Resource owner:** `CarryLewis` (your account or org that owns Carry-website)
+   - **Repository access:** Only select repositories → **Carry-website**
+   - **Permissions → Repository permissions → Contents:** **Read and write**  
+     Metadata/read-only is selected automatically. Leave other permissions as No access.
+4. Generate. Copy the string that starts with `github_pat_`. You will not see it again.
+
+Classic PAT also works: [tokens/new](https://github.com/settings/tokens/new), enable **repo**, copy `ghp_…`. It is broader than needed.
 
 ### 3. Install into HTML-Design-Lab
 
