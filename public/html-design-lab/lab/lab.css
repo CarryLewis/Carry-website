@@ -390,10 +390,152 @@ body.lab {
   color: var(--color-accent-text);
 }
 
-.knowledge-links {
+.knowledge-board[hidden],
+.gallery-list[hidden] {
+  display: none;
+}
+
+.knowledge-graph {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: var(--space-large) var(--space-medium);
+  grid-template-columns: 1.45fr 0.85fr;
+  gap: var(--space-large);
+  padding-block: var(--space-large);
+  align-items: start;
+}
+
+.graph-figure {
+  margin: 0;
+  border: var(--border-width) solid var(--lab-rule);
+  background: var(--color-bg-elevated);
+}
+
+.graph-svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.graph-figure figcaption {
+  padding: var(--space-small) var(--space-medium);
+  border-top: var(--border-width) solid var(--lab-rule);
+  font-family: var(--font-mono);
+  font-size: var(--size-xs);
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+}
+
+.graph-grid {
+  fill: var(--color-bg-elevated);
+}
+
+.graph-col {
+  fill: var(--color-text-muted);
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.graph-edge {
+  stroke: var(--color-border);
+  stroke-width: 1;
+}
+
+.graph-node {
+  cursor: pointer;
+}
+
+.graph-node circle {
+  fill: var(--color-surface);
+  stroke: var(--color-border);
+  stroke-width: 1;
+}
+
+.graph-node[data-kind="pattern"] circle,
+.graph-node[data-kind="composite"] circle {
+  fill: var(--color-bg);
+  stroke: var(--color-accent);
+}
+
+.graph-node[data-kind="experiment"] circle {
+  fill: var(--color-surface);
+  stroke: var(--viz-2);
+}
+
+.graph-node[data-kind="reference"] circle {
+  fill: var(--color-bg-elevated);
+  stroke: var(--viz-2);
+}
+
+.graph-node text {
+  fill: var(--color-text);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.02em;
+}
+
+.graph-svg.is-focus .graph-node,
+.graph-svg.is-focus .graph-edge {
+  opacity: var(--opacity-dim);
+}
+
+.graph-svg.is-focus .graph-node.is-hot,
+.graph-svg.is-focus .graph-edge.is-hot {
+  opacity: 1;
+}
+
+.graph-svg.is-focus .graph-edge.is-hot {
+  stroke: var(--color-accent);
+}
+
+.graph-dossier {
+  border: var(--border-width) solid var(--lab-rule);
+  padding: var(--space-large);
+  min-height: 16rem;
+}
+
+.graph-dossier h2 {
+  font-family: var(--font-display);
+  font-size: var(--size-xl);
+  font-weight: var(--weight-medium);
+  margin: var(--space-small) 0 var(--space-medium);
+}
+
+.graph-dossier p {
+  margin: 0 0 var(--space-medium);
+  color: var(--color-text-muted);
+}
+
+.graph-related {
+  list-style: none;
+  margin: 0 0 var(--space-medium);
+  padding: 0;
+  font-family: var(--font-mono);
+  font-size: var(--size-xs);
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+}
+
+.graph-related li {
+  padding-block: var(--space-small);
+  border-bottom: var(--border-width) solid var(--lab-rule);
+}
+
+.graph-dossier a {
+  color: var(--color-accent-text);
+  font-family: var(--font-mono);
+  font-size: var(--size-xs);
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+@media (max-width: 900px) {
+  .knowledge-graph {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 900px) {

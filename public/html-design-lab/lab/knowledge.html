@@ -9,13 +9,19 @@
     <link rel="stylesheet" href="../tokens/languages/notebook.css" />
     <link rel="stylesheet" href="lab.css" />
   </head>
-  <body class="lab" data-knowledge-url="knowledge.json" data-from-lab="true">
+  <body
+    class="lab"
+    data-knowledge-url="knowledge.json"
+    data-index-url="experiments.json"
+    data-from-lab="true"
+  >
     <a class="skip" href="#main">Skip to content</a>
     <div class="lab-frame">
       <header class="lab-top">
         <a class="wordmark" href="../index.html">HTML Design Lab</a>
         <nav class="lab-nav" aria-label="Lab">
           <a href="gallery.html">Gallery</a>
+          <a href="projects.html">Own HTML</a>
           <a href="knowledge.html" aria-current="page">Knowledge</a>
           <a href="playground.html">Playground</a>
           <a href="../DESIGN_KNOWLEDGE.md">Guide</a>
@@ -27,8 +33,8 @@
           <h1>Design knowledge</h1>
           <p>
             References inspire patterns. Patterns are implemented as experiments.
-            Experiments are adapted to projects. Do not copy interfaces. Extract
-            design intelligence.
+            Experiments are adapted to projects. The graph is the relationship;
+            the lists are the readable index.
           </p>
         </div>
 
@@ -39,12 +45,31 @@
         </div>
 
         <ul class="gallery-list" data-knowledge></ul>
-        <ul class="graph-list" data-graph hidden></ul>
+
+        <div class="knowledge-board" data-graph-board hidden>
+          <div class="knowledge-graph">
+            <figure class="graph-figure">
+              <svg
+                class="graph-svg"
+                data-graph-svg
+                viewBox="0 0 1120 680"
+                role="img"
+                aria-label="Relationship graph of references, patterns, and experiments. Hover isolates a neighborhood."
+              ></svg>
+              <figcaption>
+                Reference → pattern → experiment. Hover isolates a neighborhood;
+                click opens a dossier.
+              </figcaption>
+            </figure>
+            <aside class="graph-dossier" data-graph-dossier></aside>
+          </div>
+          <ul class="graph-list" data-graph></ul>
+        </div>
       </main>
 
       <footer class="lab-foot">
         <span>Maturity: discovered → core pattern</span>
-        <a href="../patterns/INDEX.md">Pattern index</a>
+        <a href="gallery.html">Open gallery</a>
       </footer>
     </div>
     <script src="lab.js"></script>

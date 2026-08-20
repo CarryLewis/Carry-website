@@ -4,7 +4,7 @@ A laboratory for interactive visual systems.
 
 This is not a website, a portfolio, or a template. It is a long-term HTML visual design laboratory: references are deconstructed, patterns are extracted, experiments test them, and production projects adapt them.
 
-Read [DESIGN_CONSTITUTION.md](DESIGN_CONSTITUTION.md) before adding work. Browse experiments in [DESIGN_INDEX.md](DESIGN_INDEX.md) or the [gallery](lab/gallery.html). Design knowledge lives in [DESIGN_KNOWLEDGE.md](DESIGN_KNOWLEDGE.md).
+Read [DESIGN_CONSTITUTION.md](DESIGN_CONSTITUTION.md) before adding work. Browse experiments in [DESIGN_INDEX.md](DESIGN_INDEX.md) or the [gallery](lab/gallery.html). Own HTML under iteration lives in [projects/](projects/) and the [own HTML index](lab/projects.html). Design knowledge lives in [DESIGN_KNOWLEDGE.md](DESIGN_KNOWLEDGE.md).
 
 ## Serve locally
 
@@ -34,6 +34,7 @@ patterns/                named principles with maturity
 languages/               interaction, motion, visualization vocabularies
 dna/                     compact visual-language sketches
 briefs/                  project design briefs
+projects/                recorded first-party HTML (own pages under iteration)
 modes/                   critique / adaptation / implementation / reverse
 components/              extract primitives here only when they repeat
 ```
@@ -66,7 +67,9 @@ Never copy an interface into a production project. Abstract, then adapt. Write a
 
 ## Production projects
 
-Do not build production products here. When a production project hits a visual problem: audit it, write a brief, search the Lab, adapt the principle. Import and export are manual.
+Do not build production products here. Record first-party pages in [`projects/`](projects/) so the Lab can see them as cases. When a production project hits a visual problem: audit it, write a brief, search the Lab, adapt the principle. Import and export remain manual.
+
+Current recorded pages: Research Brief Observatory homepage (live) and Thinking Vault talk (iterating, unpublished from the public Knowledge index).
 
 ## Playground
 

@@ -158,6 +158,30 @@ No standalone experiments in these categories yet. Motion and interaction are de
 
 ---
 
+## Own HTML (recorded production pages)
+
+Not experiments. Snapshots of first-party pages still under iteration. Machine index: [`lab/projects.json`](lab/projects.json). Browse: [`lab/projects.html`](lab/projects.html).
+
+### MUJI Observatory homepage
+
+- **Path:** [`projects/research-brief/pages/observatory-home/`](projects/research-brief/pages/observatory-home/)
+- **Live:** `/research-brief/` on carrylewis.com
+- **Problem:** A knowledge system that displays its own machinery becomes noisier than the notes it holds.
+- **Structure:** emergence (argument constructed in reading order) + object fields
+- **Form:** quiet numbered editorial
+- **Status:** live · iterating
+
+### Thinking Vault talk
+
+- **Path:** [`projects/research-brief/pages/thinking-vault-talk/`](projects/research-brief/pages/thinking-vault-talk/)
+- **Live (iteration URL):** `/talks/thinking-vault/`
+- **Problem:** A pipeline explained as documentation loses causal order.
+- **Structure:** sequence
+- **Form:** keyboard slide deck
+- **Status:** written · unpublished from Knowledge index · iterating
+
+---
+
 ## Playground
 
 - **Path:** [`lab/playground.html`](lab/playground.html)
