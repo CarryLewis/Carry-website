@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { StatusIndicator } from "@/components/ui/StatusIndicator";
 import { contentRepository } from "@/data";
 
 export const metadata: Metadata = {
@@ -9,7 +10,12 @@ export const metadata: Metadata = {
 };
 
 export default async function KnowledgeIndexPage() {
-  const fields = await contentRepository.listPracticeFields();
+  const fields = [...(await contentRepository.listPracticeFields())].sort(
+    (a, b) => {
+      if (a.status === b.status) return 0;
+      return a.status === "emerging" ? -1 : 1;
+    },
+  );
 
   return (
     <section className="mx-auto max-w-shell px-margin py-lab-9">
@@ -32,9 +38,12 @@ export default async function KnowledgeIndexPage() {
               href={`/knowledge/${field.slug}/`}
               className="group block focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
             >
-              <h2 className="font-serif text-section text-ink transition-colors duration-fast group-hover:text-accent">
-                {field.label}
-              </h2>
+              <div className="flex flex-wrap items-center gap-lab-3">
+                <h2 className="font-serif text-section text-ink transition-colors duration-fast group-hover:text-accent">
+                  {field.label}
+                </h2>
+                <StatusIndicator status={field.status} />
+              </div>
               <p className="mt-lab-3 max-w-prose font-sans text-body-ui text-ink-secondary">
                 {field.summary}
               </p>

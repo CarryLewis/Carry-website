@@ -1,6 +1,7 @@
 import { activeQuestions } from "@/data/active-questions";
 import { concepts, getConceptById } from "@/data/concepts";
 import { intellectualFocus } from "@/data/intellectual-focus";
+import { buildPracticeGraph } from "@/data/practice-graph";
 import {
   getPracticeFieldBySlug,
   practiceFields,
@@ -38,6 +39,7 @@ export type PracticeFieldRecord = {
   signals: Signal[];
   focus: IntellectualFocus[];
   concepts: Concept[];
+  connectedFields: PracticeField[];
 };
 
 /**
@@ -186,6 +188,9 @@ class LocalMockRepository implements ContentRepository {
     const relatedConcepts = field.relatedConceptIds
       .map((id) => getConceptById(id))
       .filter((c): c is Concept => Boolean(c));
+    const connectedFields = field.connectedFieldIds
+      .map((id) => practiceFields.find((item) => item.id === id))
+      .filter((item): item is PracticeField => Boolean(item));
 
     return {
       field,
@@ -194,39 +199,12 @@ class LocalMockRepository implements ContentRepository {
       signals: relatedSignals,
       focus: relatedFocus,
       concepts: relatedConcepts,
+      connectedFields,
     };
   }
 
   async getPracticeGraph(): Promise<PracticeGraph> {
-    const originId = "origin-practice";
-    const origin: PracticeGraph["nodes"][number] = {
-      id: originId,
-      kind: "origin",
-      label: null,
-      x: 0.5,
-      y: 0.5,
-    };
-
-    const fieldNodes = practiceFields.map((field) => ({
-      id: field.id,
-      kind: "field" as const,
-      label: field.label,
-      slug: field.slug,
-      href: `/knowledge/${field.slug}/`,
-      summary: field.summary,
-      x: field.layout.x,
-      y: field.layout.y,
-    }));
-
-    return {
-      originId,
-      nodes: [origin, ...fieldNodes],
-      edges: fieldNodes.map((node) => ({
-        id: `edge-${originId}-${node.id}`,
-        from: originId,
-        to: node.id,
-      })),
-    };
+    return buildPracticeGraph(practiceFields);
   }
 }
 

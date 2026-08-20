@@ -1,8 +1,13 @@
 import { cn } from "@/lib/cn";
-import type { EntityStatus, ProjectStatus } from "@/domain/entities";
+import type {
+  EntityStatus,
+  PracticeFieldStatus,
+  ProjectStatus,
+} from "@/domain/entities";
 
 const statusColor: Record<string, string> = {
   active: "bg-status-active",
+  emerging: "bg-status-signal",
   prototype: "bg-status-prototype",
   experiment: "bg-status-experiment",
   dormant: "bg-status-dormant",
@@ -12,6 +17,7 @@ const statusColor: Record<string, string> = {
 
 const statusLabel: Record<string, string> = {
   active: "Active",
+  emerging: "New",
   prototype: "Prototype",
   experiment: "Experiment",
   dormant: "Dormant",
@@ -20,7 +26,7 @@ const statusLabel: Record<string, string> = {
 };
 
 type StatusIndicatorProps = {
-  status: EntityStatus | ProjectStatus;
+  status: EntityStatus | ProjectStatus | PracticeFieldStatus;
   className?: string;
 };
 

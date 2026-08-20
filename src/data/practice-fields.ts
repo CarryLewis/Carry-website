@@ -3,12 +3,39 @@ import type { PracticeField } from "@/domain/entities";
 /**
  * Practice fields — plates currently being worked, each with a site summary page.
  * The Observatory derivation graph is built from this module, not from abstract concepts.
+ *
+ * Add a field:
+ * 1. Copy the template at the bottom of this comment into the array.
+ * 2. Set `status: "emerging"` for a new display domain (dashed spoke, New mark).
+ * 3. Set `connectedFieldIds` to existing field ids to weave it into the mesh.
+ * 4. Omit `layout` to occupy the next free slot on the origin ring.
+ * 5. Fill vaults / related* ids when the site has something to show.
+ *
+ * Example (not loaded — paste into the array when the domain is real):
+ *
+ * {
+ *   id: "field-neuroscience",
+ *   slug: "neuroscience",
+ *   label: "Neuroscience",
+ *   status: "emerging",
+ *   summary: "…",
+ *   thesis: "…",
+ *   connectedFieldIds: ["field-medicine"],
+ *   relatedProjectIds: [],
+ *   relatedQuestionIds: [],
+ *   relatedSignalIds: [],
+ *   relatedConceptIds: [],
+ *   relatedFocusIds: [],
+ *   vaults: [],
+ * }
  */
 export const practiceFields: PracticeField[] = [
   {
     id: "field-medicine",
     slug: "medicine",
     label: "Medicine",
+    status: "active",
+    connectedFieldIds: [],
     summary:
       "Clinical study, cardiac electrophysiology, and the medical-basement vault — physiology made inspectable.",
     thesis:
@@ -47,6 +74,8 @@ export const practiceFields: PracticeField[] = [
     id: "field-ai",
     slug: "ai",
     label: "AI",
+    status: "active",
+    connectedFieldIds: [],
     summary:
       "Agent architectures for diagnostic traces — reasoning made visible, not only answered.",
     thesis:
@@ -78,6 +107,8 @@ export const practiceFields: PracticeField[] = [
     id: "field-html",
     slug: "html",
     label: "HTML",
+    status: "active",
+    connectedFieldIds: [],
     summary:
       "Visual form chosen from information structure — isolated HTML experiments on the Structure Bench.",
     thesis:
@@ -110,6 +141,8 @@ export const practiceFields: PracticeField[] = [
     id: "field-knowledge",
     slug: "systems",
     label: "Knowledge",
+    status: "active",
+    connectedFieldIds: [],
     summary:
       "A personal operating system for capturing, relating, and projecting intellectual work.",
     thesis:

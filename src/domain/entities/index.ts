@@ -241,19 +241,25 @@ export type PracticeVaultLink = {
   description: string;
 };
 
+export type PracticeFieldStatus = "emerging" | "active";
+
 export type PracticeField = {
   id: EntityId;
   slug: string;
   label: string;
+  status: PracticeFieldStatus;
   summary: string;
   thesis: string;
+  /** Existing fields this plate joins — mesh edges, not origin spokes. */
+  connectedFieldIds: EntityId[];
   relatedProjectIds: EntityId[];
   relatedQuestionIds: EntityId[];
   relatedSignalIds: EntityId[];
   relatedConceptIds: EntityId[];
   relatedFocusIds: EntityId[];
   vaults: PracticeVaultLink[];
-  layout: { x: number; y: number };
+  /** Optional. Omit to occupy the next free slot on the origin ring. */
+  layout?: { x: number; y: number };
 };
 
 export type PracticeGraphNode = {
@@ -264,6 +270,7 @@ export type PracticeGraphNode = {
   slug?: string;
   href?: string;
   summary?: string;
+  status?: PracticeFieldStatus;
   x: number;
   y: number;
 };
@@ -272,6 +279,7 @@ export type PracticeGraphEdge = {
   id: EntityId;
   from: EntityId;
   to: EntityId;
+  kind: "derive" | "mesh";
 };
 
 export type PracticeGraph = {

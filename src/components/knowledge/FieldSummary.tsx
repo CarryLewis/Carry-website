@@ -17,8 +17,16 @@ type FieldSummaryProps = {
  * Content is resolved by the repository — this component only renders.
  */
 export function FieldSummary({ record, className }: FieldSummaryProps) {
-  const { field, projects, questions, signals, focus, concepts } = record;
+  const { field, projects, questions, signals, focus, concepts, connectedFields } =
+    record;
   const primaryVault = field.vaults[0];
+  const hasBody =
+    field.vaults.length > 0 ||
+    projects.length > 0 ||
+    focus.length > 0 ||
+    questions.length > 0 ||
+    signals.length > 0 ||
+    connectedFields.length > 0;
 
   return (
     <article className={cn("mx-auto max-w-shell px-margin py-lab-9", className)}>
@@ -33,7 +41,10 @@ export function FieldSummary({ record, className }: FieldSummaryProps) {
         {field.label}
       </p>
 
-      <h1 className="mt-lab-3 font-serif text-page text-ink">{field.label}</h1>
+      <div className="mt-lab-3 flex flex-wrap items-center gap-lab-3">
+        <h1 className="font-serif text-page text-ink">{field.label}</h1>
+        <StatusIndicator status={field.status} />
+      </div>
       <p className="mt-lab-4 max-w-prose font-sans text-body-ui text-ink-secondary">
         {field.thesis}
       </p>
@@ -71,7 +82,27 @@ export function FieldSummary({ record, className }: FieldSummaryProps) {
         </div>
       ) : null}
 
+      {hasBody ? (
       <dl className="mt-lab-8 grid gap-lab-8 border-t border-rule pt-lab-8">
+        {connectedFields.length > 0 ? (
+          <div>
+            <dt className="font-sans text-label uppercase text-ink-tertiary">
+              Joins
+            </dt>
+            <dd className="mt-lab-4 flex flex-wrap gap-lab-3">
+              {connectedFields.map((item) => (
+                <Link
+                  key={item.id}
+                  href={`/knowledge/${item.slug}/`}
+                  className="font-sans text-meta text-accent hover:text-accent-muted focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+                >
+                  {item.label}
+                </Link>
+              ))}
+            </dd>
+          </div>
+        ) : null}
+
         {field.vaults.length > 0 ? (
           <div>
             <dt className="font-sans text-label uppercase text-ink-tertiary">
@@ -180,6 +211,12 @@ export function FieldSummary({ record, className }: FieldSummaryProps) {
           </div>
         ) : null}
       </dl>
+      ) : (
+        <p className="mt-lab-8 max-w-prose font-sans text-body-ui text-ink-tertiary">
+          This plate is on the graph. Vaults, projects, and questions will
+          appear here as they are recorded.
+        </p>
+      )}
     </article>
   );
 }

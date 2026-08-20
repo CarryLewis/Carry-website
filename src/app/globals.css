@@ -76,6 +76,10 @@
     animation: edge-draw 480ms var(--ease-lab) both;
   }
 
+  .mesh-edge {
+    animation: edge-draw 400ms var(--ease-lab) both;
+  }
+
   .derive-node {
     transform-box: fill-box;
     transform-origin: center;
@@ -99,6 +103,10 @@
   }
 
   .derive-edge {
+    stroke-dashoffset: 0;
+  }
+
+  .mesh-edge {
     stroke-dashoffset: 0;
   }
 

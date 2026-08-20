@@ -30,9 +30,13 @@ function percent(node: Pick<PracticeGraphNode, "x" | "y">) {
   };
 }
 
+function touches(edge: { from: string; to: string }, id: string | null) {
+  return Boolean(id && (edge.from === id || edge.to === id));
+}
+
 /**
  * Interactive derivation: unnamed origin appears, then branches to practice fields.
- * Field nodes map 1:1 to /knowledge/[slug] summary pages.
+ * New (emerging) fields join last, with dashed spokes and optional mesh edges.
  */
 export function PracticeDerivationGraph({
   graph,
@@ -44,6 +48,8 @@ export function PracticeDerivationGraph({
   const fields = graph.nodes.filter((n) => n.kind === "field");
   const byId = Object.fromEntries(graph.nodes.map((n) => [n.id, n]));
   const active = fields.find((n) => n.id === activeId) ?? null;
+  const deriveEdges = graph.edges.filter((edge) => edge.kind !== "mesh");
+  const meshEdges = graph.edges.filter((edge) => edge.kind === "mesh");
 
   const clearIfLeaving = useCallback(
     (event: FocusEvent<HTMLDivElement> | MouseEvent<HTMLDivElement>) => {
@@ -57,6 +63,7 @@ export function PracticeDerivationGraph({
   if (!origin) return null;
 
   const originPx = toPx(origin);
+  const meshDelayBase = 280 + deriveEdges.length * 140 + 200;
 
   return (
     <div onMouseLeave={clearIfLeaving} onBlur={clearIfLeaving}>
@@ -88,14 +95,15 @@ export function PracticeDerivationGraph({
             </defs>
             <rect width={WIDTH} height={HEIGHT} fill="url(#practice-field-grid)" />
 
-            {graph.edges.map((edge, i) => {
+            {deriveEdges.map((edge, i) => {
               const from = byId[edge.from];
               const to = byId[edge.to];
               if (!from || !to) return null;
               const a = toPx(from);
               const b = toPx(to);
               const length = Math.hypot(b.px - a.px, b.py - a.py);
-              const lit = activeId === edge.to;
+              const lit = touches(edge, activeId);
+              const emerging = to.status === "emerging";
               return (
                 <line
                   key={edge.id}
@@ -107,7 +115,7 @@ export function PracticeDerivationGraph({
                     lit ? "var(--color-accent)" : "var(--color-rule-strong)"
                   }
                   strokeWidth={lit ? 1.5 : 1}
-                  strokeDasharray={length}
+                  strokeDasharray={emerging ? "5 4" : length}
                   strokeDashoffset={length}
                   className="derive-edge"
                   style={{ animationDelay: `${280 + i * 140}ms` }}
@@ -115,20 +123,49 @@ export function PracticeDerivationGraph({
               );
             })}
 
+            {meshEdges.map((edge, i) => {
+              const from = byId[edge.from];
+              const to = byId[edge.to];
+              if (!from || !to) return null;
+              const a = toPx(from);
+              const b = toPx(to);
+              const length = Math.hypot(b.px - a.px, b.py - a.py);
+              const lit = touches(edge, activeId);
+              return (
+                <line
+                  key={edge.id}
+                  x1={a.px}
+                  y1={a.py}
+                  x2={b.px}
+                  y2={b.py}
+                  stroke={lit ? "var(--color-accent)" : "var(--color-rule)"}
+                  strokeWidth={lit ? 1.25 : 1}
+                  strokeDasharray="3 5"
+                  strokeDashoffset={length}
+                  className="mesh-edge"
+                  style={{ animationDelay: `${meshDelayBase + i * 100}ms` }}
+                />
+              );
+            })}
+
             {fields.map((node, i) => {
               const { px, py } = toPx(node);
               const lit = activeId === node.id;
+              const emerging = node.status === "emerging";
+              const r = emerging ? (lit ? 7 : 5) : lit ? 8 : 6;
               return (
                 <circle
                   key={node.id}
                   cx={px}
                   cy={py}
-                  r={lit ? 8 : 6}
+                  r={r}
                   fill={
                     lit ? "var(--color-accent-soft)" : "var(--color-panel)"
                   }
                   stroke={
-                    lit ? "var(--color-accent)" : "var(--color-rule-strong)"
+                    lit || emerging
+                      ? "var(--color-accent)"
+                      : "var(--color-rule-strong)"
                   }
                   strokeWidth="1.5"
                   className="derive-node"
@@ -163,6 +200,7 @@ export function PracticeDerivationGraph({
               const pos = percent(node);
               const lit = activeId === node.id;
               if (!node.href || !node.label) return null;
+              const emerging = node.status === "emerging";
               return (
                 <li
                   key={node.id}
@@ -175,7 +213,11 @@ export function PracticeDerivationGraph({
                 >
                   <Link
                     href={node.href}
-                    aria-label={`${node.label} field summary`}
+                    aria-label={
+                      emerging
+                        ? `${node.label} field summary, new`
+                        : `${node.label} field summary`
+                    }
                     aria-describedby={lit ? "practice-field-probe" : undefined}
                     onMouseEnter={() => setActiveId(node.id)}
                     onFocus={() => setActiveId(node.id)}
@@ -190,6 +232,11 @@ export function PracticeDerivationGraph({
                     >
                       {node.label}
                     </span>
+                    {emerging ? (
+                      <span className="pointer-events-none absolute left-1/2 top-[calc(100%+1.35rem)] -translate-x-1/2 font-sans text-label uppercase tracking-[0.08em] text-accent">
+                        new
+                      </span>
+                    ) : null}
                   </Link>
                 </li>
               );
@@ -211,6 +258,7 @@ export function PracticeDerivationGraph({
           <div>
             <p className="font-sans text-label uppercase text-ink-tertiary">
               {active.label}
+              {active.status === "emerging" ? " · new" : ""}
             </p>
             <p className="mt-lab-2 max-w-prose font-sans text-body-ui text-ink">
               {active.summary}
@@ -227,7 +275,8 @@ export function PracticeDerivationGraph({
         ) : (
           <p className="font-sans text-meta text-ink-tertiary">
             Hover or focus a field. The origin has no name — only the plates in
-            practice do. Click a node to enter its summary.
+            practice do. Click a node to enter its summary. New domains join as
+            dashed nodes on the ring.
           </p>
         )}
       </div>
