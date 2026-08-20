@@ -87,32 +87,16 @@ The designed viewing surface is the **Structure Bench** at `/lab/`: experiments 
 
 Source tip is pinned in `html-design-lab-embed.ref`.
 
-#### Auto-sync (Method C)
+#### Manual refresh (type the lab ref)
 
-When HTML-Design-Lab pushes to the foundation or current guide branch, it can notify this repo via `repository_dispatch` (`html-design-lab-updated`), which rebuilds and redeploys `/html-design-lab/`.
+No PAT. On this repo: **Actions → Deploy to GitHub Pages → Run workflow**. Type the HTML-Design-Lab branch in **html_design_lab_ref** (example: `cursor/design-knowledge-guide-aab1`). Leave it blank to use the pin file.
 
-One-time setup (needs a PAT with access to Carry-website):
+Until this lands on `main`, run the workflow from branch `cursor/sync-design-guide-aab1` so the input field exists.
 
-```bash
-gh secret set WEBSITE_DISPATCH_TOKEN --repo CarryLewis/HTML-Design-Lab
-# or:
-export WEBSITE_DISPATCH_TOKEN=ghp_your_token_here
-bash scripts/install-html-design-lab-notify-workflow.sh
-```
-
-Template: `docs/templates/html-design-lab-notify-website.yml`. Full notes: `docs/HTML_DESIGN_LAB_AUTO_SYNC.md`.
-
-Do not notify from HTML-Design-Lab `main` until that branch holds the lab.
-
-Manual test after the secret exists:
+Do not type HTML-Design-Lab `main` until that branch holds the lab.
 
 ```bash
-gh workflow run "Notify website to rebuild HTML Design Lab embed" --repo CarryLewis/HTML-Design-Lab
-```
-
-#### Manual refresh
-
-```bash
+# local vendor copy (optional):
 bash scripts/sync-html-design-lab.sh
 ```
 

@@ -4,11 +4,14 @@ on:
   push:
     branches: [main]
   workflow_dispatch:
+    inputs:
+      html_design_lab_ref:
+        description: "HTML-Design-Lab branch, tag, or SHA to embed. Leave blank to use html-design-lab-embed.ref. Example: cursor/design-knowledge-guide-aab1"
+        required: false
+        type: string
   # Fired by CarryLewis/ECG-stimulator when its embed tip is updated
   # (see docs/templates/ecg-notify-website.yml).
   # research-brief-updated: CarryLewis/research_brief talk HTML changed.
-  # html-design-lab-updated: CarryLewis/HTML-Design-Lab shell changed
-  # (see docs/templates/html-design-lab-notify-website.yml).
   repository_dispatch:
     types: [ecg-updated, research-brief-updated, html-design-lab-updated]
 
@@ -79,11 +82,14 @@ jobs:
         env:
           PAYLOAD_REF: ${{ github.event.client_payload.ref }}
           PAYLOAD_SOURCE: ${{ github.event.client_payload.source }}
+          INPUT_REF: ${{ github.event.inputs.html_design_lab_ref }}
         run: |
           # shellcheck disable=SC1091
           source html-design-lab-embed.ref
           REF="$HTML_DESIGN_LAB_REF"
-          if [[ "${PAYLOAD_SOURCE:-}" == "html-design-lab" && -n "${PAYLOAD_REF:-}" ]]; then
+          if [[ -n "${INPUT_REF:-}" ]]; then
+            REF="$INPUT_REF"
+          elif [[ "${PAYLOAD_SOURCE:-}" == "html-design-lab" && -n "${PAYLOAD_REF:-}" ]]; then
             REF="$PAYLOAD_REF"
           fi
           echo "ref=${REF}" >> "$GITHUB_OUTPUT"

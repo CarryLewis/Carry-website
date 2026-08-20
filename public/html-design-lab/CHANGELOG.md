@@ -2,10 +2,10 @@
 
 Lab-level history. Experiment-level history lives in each experiment `README.md`.
 
-## 2026-08-20 — Website embed auto-sync
+## 2026-08-20 — Website embed is a manual Run workflow
 
-- Pushes to the foundation or current guide branch notify Carry-website (`html-design-lab-updated`) so `/html-design-lab/` rebuilds.
-- Requires repo secret `WEBSITE_DISPATCH_TOKEN`. Project import/export stays manual.
+- Carry-website **Actions → Deploy to GitHub Pages → Run workflow**, then type the lab branch in `html_design_lab_ref`.
+- No PAT. Project import/export stays manual.
 
 ## 2026-08-20 — Constitution as HTML
 

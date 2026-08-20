@@ -148,7 +148,7 @@ Isolated visual experiments from [`CarryLewis/HTML-Design-Lab`](https://github.c
 - Source lab shell: `/html-design-lab/` (`public/html-design-lab/`)
 - Project record: `/projects/active/html-design-lab/`
 - Pin / sync: `html-design-lab-embed.ref` + `scripts/sync-html-design-lab.sh`
-- Auto-sync: HTML-Design-Lab `notify-website.yml` → `html-design-lab-updated` ([`HTML_DESIGN_LAB_AUTO_SYNC.md`](./HTML_DESIGN_LAB_AUTO_SYNC.md))
+- Refresh live shell: Actions → Deploy to GitHub Pages → Run workflow → type `html_design_lab_ref`
 - Catalog overlay: `src/data/lab-catalog.ts`
 - Details: [`HTML_DESIGN_LAB_EMBED.md`](./HTML_DESIGN_LAB_EMBED.md)
 

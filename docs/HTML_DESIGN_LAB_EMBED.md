@@ -36,19 +36,21 @@ bash scripts/sync-html-design-lab.sh
 # HTML_DESIGN_LAB_SRC=/path/to/html-design-lab bash scripts/sync-html-design-lab.sh
 ```
 
-CI copies the lab shell on every GitHub Pages deploy (`push` to `main`,
-`workflow_dispatch`, or `repository_dispatch` type `html-design-lab-updated`).
+CI copies the lab shell on every GitHub Pages deploy (`push` to `main` or **Run workflow**).
 
 The current pin is in `html-design-lab-embed.ref`.
 
-## Auto-sync from HTML-Design-Lab
+## Manual refresh (type the lab ref)
 
-Same Method C pattern as ECG. Details: [`HTML_DESIGN_LAB_AUTO_SYNC.md`](./HTML_DESIGN_LAB_AUTO_SYNC.md).
+No PAT. Open [Deploy to GitHub Pages](https://github.com/CarryLewis/Carry-website/actions/workflows/deploy.yml):
 
-1. PAT that can `repository_dispatch` on Carry-website
-2. Secret `WEBSITE_DISPATCH_TOKEN` on HTML-Design-Lab
-3. Workflow `.github/workflows/notify-website.yml` on the embed branches
-   (do not enable on lab `main` until the lab lives there)
+1. **Run workflow**
+2. Use workflow from: `main` (or this PR branch until it is merged)
+3. **html_design_lab_ref:** type the HTML-Design-Lab branch, tag, or SHA  
+   Example: `cursor/design-knowledge-guide-aab1`  
+   Leave blank to embed whatever is in `html-design-lab-embed.ref`
+
+Do not type HTML-Design-Lab `main` until the lab lives there. That `main` is still the empty initial commit.
 
 After adding experiments in HTML-Design-Lab, also update
 `src/data/lab-catalog.ts` so the bench gains a structure → form row,
