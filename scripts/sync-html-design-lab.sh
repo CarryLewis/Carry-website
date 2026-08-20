@@ -2,7 +2,7 @@
 # Copy CarryLewis/HTML-Design-Lab into this site:
 #   repo root → public/html-design-lab/  (/html-design-lab/)
 #
-# The designed Structure Atlas is a Next.js surface at /lab/.
+# The designed Structure Bench is a Next.js surface at /lab/.
 # This script only vendors the isolated experiments + original lab shell.
 #
 # Optional env:
@@ -63,11 +63,11 @@ fi
 cat > "$REF_FILE" <<EOF
 # Git ref in CarryLewis/HTML-Design-Lab used for the public lab shell
 # at /html-design-lab/ (isolated experiments + original gallery).
-# The Structure Atlas UI lives in this repo at /lab/.
+# The Structure Bench UI lives in this repo at /lab/.
 # Update this file, then run: bash scripts/sync-html-design-lab.sh
 # CI reads the same ref on every GitHub Pages deploy.
 HTML_DESIGN_LAB_REF=$HTML_DESIGN_LAB_REF
 HTML_DESIGN_LAB_SHA=$SHA
 EOF
 
-echo "Done. Lab shell: /html-design-lab/  Atlas: /lab/  (ref=$HTML_DESIGN_LAB_REF sha=$SHA)"
+echo "Done. Lab shell: /html-design-lab/  Bench: /lab/  (ref=$HTML_DESIGN_LAB_REF sha=$SHA)"

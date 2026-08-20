@@ -1,32 +1,61 @@
-import { LAB_PROTOCOL } from "@/data/lab-catalog";
+import {
+  LAB_PROTOCOL,
+  LAB_THESIS,
+  getStructure,
+  type LabSpecimen,
+} from "@/data/lab-catalog";
+
+type LabProtocolProps = {
+  specimen: LabSpecimen;
+};
 
 /**
- * The visualization decision as a three-step process diagram.
- * Form follows the protocol: Structure → Form → Specimen.
+ * Living readout of the visualization decision.
+ * Structure → Form → Specimen updates with the selected experiment.
  */
-export function LabProtocol() {
+export function LabProtocol({ specimen }: LabProtocolProps) {
+  const structure = getStructure(specimen.structure);
+  const values = [
+    structure?.label ?? specimen.structure,
+    structure?.form ?? specimen.form,
+    specimen.name,
+  ];
+
   return (
-    <ol className="grid gap-0 border border-rule bg-surface-sunken md:grid-cols-3">
-      {LAB_PROTOCOL.map((step, index) => (
-        <li
-          key={step.step}
-          className="relative border-b border-rule p-lab-5 last:border-b-0 md:border-b-0 md:border-r md:last:border-r-0"
-        >
-          <p className="font-mono text-code text-accent">{step.step}</p>
-          <p className="mt-lab-3 font-sans text-section text-ink">
-            {step.label}
+    <header className="shrink-0 border-b border-rule bg-surface">
+      <div className="flex flex-col gap-lab-4 px-lab-4 py-lab-4 lg:flex-row lg:items-end lg:justify-between lg:gap-lab-6 lg:px-lab-5">
+        <div className="min-w-0">
+          <p className="font-sans text-label uppercase text-ink-tertiary">
+            HTML Design Lab · Structure bench
           </p>
-          <p className="mt-lab-3 font-sans text-meta text-ink-secondary">
-            {step.body}
+          <p className="mt-lab-2 max-w-prose font-serif text-meta text-ink-secondary">
+            {LAB_THESIS}
           </p>
-          {index < LAB_PROTOCOL.length - 1 ? (
-            <span
-              className="pointer-events-none absolute -bottom-px left-1/2 hidden h-px w-8 -translate-x-1/2 bg-accent md:left-auto md:right-0 md:top-1/2 md:block md:h-px md:w-3 md:translate-x-1/2 md:-translate-y-1/2"
-              aria-hidden
-            />
-          ) : null}
-        </li>
-      ))}
-    </ol>
+        </div>
+        <ol className="grid min-w-0 grid-cols-3 border border-rule bg-surface-sunken lg:w-[min(100%,36rem)]">
+          {LAB_PROTOCOL.map((item, index) => (
+            <li
+              key={item.step}
+              title={item.body}
+              className="relative border-r border-rule px-lab-3 py-lab-3 last:border-r-0"
+            >
+              <p className="font-mono text-code text-accent">
+                {item.step}{" "}
+                <span className="text-ink-faint">{item.label}</span>
+              </p>
+              <p className="mt-lab-2 truncate font-sans text-meta text-ink">
+                {values[index]}
+              </p>
+              {index < LAB_PROTOCOL.length - 1 ? (
+                <span
+                  className="pointer-events-none absolute -right-1.5 top-1/2 hidden h-px w-3 bg-accent md:block"
+                  aria-hidden
+                />
+              ) : null}
+            </li>
+          ))}
+        </ol>
+      </div>
+    </header>
   );
 }

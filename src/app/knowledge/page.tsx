@@ -56,7 +56,7 @@ export default function KnowledgeIndexPage() {
             HTML Design Lab
           </h2>
           <p className="mt-lab-3 max-w-prose font-sans text-body-ui text-ink-secondary">
-            Structure Atlas — experiments filed by information structure.
+            Structure Bench — experiments filed by information structure.
             Form follows the shape of the knowledge, not fashion.
           </p>
         </Link>

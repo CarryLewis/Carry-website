@@ -135,7 +135,7 @@ export const projects: Project[] = [
     problem:
       "How should the structure of information determine its visual form — so that interaction makes a mechanism visible, instead of decorating a page?",
     architecture:
-      "Versioned HTML/CSS/JS experiments by category; patterns extracted from references; a Structure Atlas on this site maps structure → form → live specimen. Source lab shell is copied from CarryLewis/HTML-Design-Lab.",
+      "Versioned HTML/CSS/JS experiments by category; patterns extracted from references; a Structure Bench on this site maps structure → form → live specimen. Source lab shell is copied from CarryLewis/HTML-Design-Lab.",
     status: "active",
     technology: [
       "HTML",
@@ -156,12 +156,12 @@ export const projects: Project[] = [
     designPhilosophy:
       "Form follows information structure. Visualization is a decision protocol — name the structure, choose the matching form, then test whether doing makes the mechanism visible. Display is not enough.",
     implementation:
-      "Structure Atlas at /lab/ (overview → event → detail). Isolated experiments vendored to /html-design-lab/ from the HTML-Design-Lab foundation tip pinned in html-design-lab-embed.ref.",
+      "Structure Bench at /lab/ (field → live specimen → dossier). Isolated experiments vendored to /html-design-lab/ from the HTML-Design-Lab foundation tip pinned in html-design-lab-embed.ref.",
     demoUrl: "/html-design-lab/",
     showcaseUrl: "/lab/",
     repoUrl: "https://github.com/CarryLewis/HTML-Design-Lab",
     createdAt: "2026-08-15",
-    updatedAt: "2026-08-16",
+    updatedAt: "2026-08-20",
   },
 ];
 

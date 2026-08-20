@@ -1,5 +1,5 @@
 /**
- * HTML Design Lab — visualization catalog for the Structure Atlas.
+ * HTML Design Lab — visualization catalog for the Structure Bench.
  *
  * Editorial overlay on the vendored experiments: each specimen is filed
  * by the *structure of its information*, not by visual style.
@@ -19,6 +19,19 @@ export type InformationStructure =
   | "structure-in-image"
   | "hierarchy-in-language";
 
+export type LabUseCaseId =
+  | "knowledge"
+  | "medical"
+  | "research"
+  | "exhibition"
+  | "systems";
+
+export type LabPattern = {
+  id: string;
+  name: string;
+  principle: string;
+};
+
 export type LabSpecimen = {
   id: string;
   name: string;
@@ -37,6 +50,10 @@ export type LabSpecimen = {
   short: string;
   tags: string[];
   recommendedFor: string[];
+  /** Coarse product-iteration filters, derived from recommendedFor. */
+  useCaseIds: LabUseCaseId[];
+  /** Extracted pattern from HTML Design Lab knowledge.json. */
+  pattern: LabPattern;
   /** Same-origin path to the isolated experiment (trailing slash). */
   embedUrl: string;
   featured?: boolean;
@@ -50,7 +67,22 @@ export type StructureNode = {
   /** Field layout in 0–1, used by the structure graph. */
   x: number;
   y: number;
+  /** Place the structure→form caption left of dense right-edge nodes. */
+  labelSide?: "left" | "right";
 };
+
+export type LabUseCase = {
+  id: LabUseCaseId;
+  label: string;
+};
+
+export const USE_CASES: LabUseCase[] = [
+  { id: "knowledge", label: "Knowledge systems" },
+  { id: "medical", label: "Medical education" },
+  { id: "research", label: "Research explanation" },
+  { id: "exhibition", label: "Exhibition" },
+  { id: "systems", label: "System maps" },
+];
 
 export const STRUCTURES: StructureNode[] = [
   {
@@ -60,6 +92,7 @@ export const STRUCTURES: StructureNode[] = [
     question: "What touches what, and what should stay quiet?",
     x: 0.16,
     y: 0.32,
+    labelSide: "right",
   },
   {
     id: "sequence",
@@ -68,6 +101,7 @@ export const STRUCTURES: StructureNode[] = [
     question: "In what order did this happen, and what is the next grain of detail?",
     x: 0.46,
     y: 0.2,
+    labelSide: "right",
   },
   {
     id: "process",
@@ -76,6 +110,7 @@ export const STRUCTURES: StructureNode[] = [
     question: "How does a signal travel, activate, and leave a result?",
     x: 0.3,
     y: 0.52,
+    labelSide: "right",
   },
   {
     id: "mechanism",
@@ -84,6 +119,7 @@ export const STRUCTURES: StructureNode[] = [
     question: "Which parts sense, compute, act, and return toward a setpoint?",
     x: 0.58,
     y: 0.78,
+    labelSide: "left",
   },
   {
     id: "comparison",
@@ -92,6 +128,7 @@ export const STRUCTURES: StructureNode[] = [
     question: "What is different when two systems share a frame?",
     x: 0.5,
     y: 0.58,
+    labelSide: "right",
   },
   {
     id: "spatial",
@@ -100,6 +137,7 @@ export const STRUCTURES: StructureNode[] = [
     question: "What does neighborhood mean when distance is relatedness?",
     x: 0.74,
     y: 0.48,
+    labelSide: "left",
   },
   {
     id: "overview-detail",
@@ -108,6 +146,7 @@ export const STRUCTURES: StructureNode[] = [
     question: "How do you read a field without forcing a single order?",
     x: 0.86,
     y: 0.28,
+    labelSide: "left",
   },
   {
     id: "emergence",
@@ -116,6 +155,7 @@ export const STRUCTURES: StructureNode[] = [
     question: "What should appear only when the argument needs it?",
     x: 0.66,
     y: 0.16,
+    labelSide: "left",
   },
   {
     id: "structure-in-image",
@@ -124,6 +164,7 @@ export const STRUCTURES: StructureNode[] = [
     question: "How do you point at structure that lives inside a picture?",
     x: 0.34,
     y: 0.82,
+    labelSide: "right",
   },
   {
     id: "hierarchy-in-language",
@@ -132,6 +173,7 @@ export const STRUCTURES: StructureNode[] = [
     question: "Can the order type appears encode the argument itself?",
     x: 0.14,
     y: 0.66,
+    labelSide: "right",
   },
 ];
 
@@ -198,6 +240,12 @@ export const specimens: LabSpecimen[] = [
       "research mapping",
       "Thinking Database",
     ],
+    useCaseIds: ["knowledge", "research"],
+    pattern: {
+      id: "neighborhood-focus",
+      name: "Neighborhood Focus",
+      principle: "Ask what is near this without deleting the map.",
+    },
     embedUrl:
       "/html-design-lab/experiments/visualization/knowledge-graph-v01/",
     featured: true,
@@ -226,6 +274,12 @@ export const specimens: LabSpecimen[] = [
       "disease progression",
       "research chronologies",
     ],
+    useCaseIds: ["research", "medical"],
+    pattern: {
+      id: "overview-event-detail",
+      name: "Overview → Event → Detail",
+      principle: "Time is an axis you sample.",
+    },
     embedUrl:
       "/html-design-lab/experiments/visualization/progressive-timeline-v01/",
     featured: true,
@@ -255,6 +309,12 @@ export const specimens: LabSpecimen[] = [
       "scientific mechanisms",
       "onboarding",
     ],
+    useCaseIds: ["systems", "medical", "research"],
+    pattern: {
+      id: "animation-as-explanation",
+      name: "Animation as Explanation",
+      principle: "The motion is the causal claim.",
+    },
     embedUrl: "/html-design-lab/experiments/visualization/process-diagram-v01/",
   },
   {
@@ -282,6 +342,12 @@ export const specimens: LabSpecimen[] = [
       "control systems",
       "medical education patterns",
     ],
+    useCaseIds: ["medical", "systems"],
+    pattern: {
+      id: "labeled-control-loop",
+      name: "Labeled Control Loop",
+      principle: "Name sensor, integrator, effector, and variable.",
+    },
     embedUrl: "/html-design-lab/experiments/scientific/mechanism-v01/",
     featured: true,
   },
@@ -309,6 +375,12 @@ export const specimens: LabSpecimen[] = [
       "competing architectures",
       "language comparison",
     ],
+    useCaseIds: ["systems", "research"],
+    pattern: {
+      id: "shared-axis-comparison",
+      name: "Shared-Axis Comparison",
+      principle: "Difference needs one frame and named properties.",
+    },
     embedUrl: "/html-design-lab/experiments/visualization/comparison-v01/",
   },
   {
@@ -336,6 +408,12 @@ export const specimens: LabSpecimen[] = [
       "system maps",
       "exhibition plans",
     ],
+    useCaseIds: ["knowledge", "exhibition", "systems"],
+    pattern: {
+      id: "distance-as-relatedness",
+      name: "Distance as Relatedness",
+      principle: "Proximity is meaning; zoom is reading.",
+    },
     embedUrl: "/html-design-lab/experiments/layout/spatial-map-v01/",
   },
   {
@@ -363,6 +441,12 @@ export const specimens: LabSpecimen[] = [
       "digital notebooks",
       "exhibition backrooms",
     ],
+    useCaseIds: ["knowledge", "research", "exhibition"],
+    pattern: {
+      id: "unbounded-cluster-canvas",
+      name: "Unbounded Cluster Canvas",
+      principle: "A board, not a chapter.",
+    },
     embedUrl: "/html-design-lab/experiments/layout/infinite-canvas-v01/",
   },
   {
@@ -389,6 +473,12 @@ export const specimens: LabSpecimen[] = [
       "research explanations",
       "system onboarding",
     ],
+    useCaseIds: ["research", "systems"],
+    pattern: {
+      id: "causal-scroll-construction",
+      name: "Causal Scroll Construction",
+      principle: "Reading order is construction order.",
+    },
     embedUrl: "/html-design-lab/experiments/storytelling/scroll-narrative-v01/",
     featured: true,
   },
@@ -417,6 +507,12 @@ export const specimens: LabSpecimen[] = [
       "screenshot evidence",
       "museum labels",
     ],
+    useCaseIds: ["medical", "exhibition"],
+    pattern: {
+      id: "in-situ-annotation",
+      name: "In-situ Annotation",
+      principle: "Point into the plate, not under it.",
+    },
     embedUrl: "/html-design-lab/experiments/images/layered-annotation-v01/",
   },
   {
@@ -444,6 +540,12 @@ export const specimens: LabSpecimen[] = [
       "exhibition titles",
       "conceptual framing",
     ],
+    useCaseIds: ["research", "exhibition"],
+    pattern: {
+      id: "syntactic-entrance",
+      name: "Syntactic Entrance",
+      principle: "Entrance order is the argument.",
+    },
     embedUrl: "/html-design-lab/experiments/typography/kinetic-type-v01/",
   },
 ];
@@ -460,6 +562,24 @@ export function getStructure(id: InformationStructure) {
 
 export function specimensForStructure(id: InformationStructure) {
   return specimens.filter((item) => item.structure === id);
+}
+
+export function neighboringStructures(id: InformationStructure) {
+  const next = new Set<InformationStructure>([id]);
+  for (const [from, to] of STRUCTURE_EDGES) {
+    if (from === id) next.add(to);
+    if (to === id) next.add(from);
+  }
+  return next;
+}
+
+export function specimensForUseCase(id: LabUseCaseId) {
+  return specimens.filter((item) => item.useCaseIds.includes(id));
+}
+
+export function filterSpecimens(useCase: LabUseCaseId | null) {
+  if (!useCase) return specimens;
+  return specimensForUseCase(useCase);
 }
 
 export function getLabStaticParams() {

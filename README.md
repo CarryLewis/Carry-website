@@ -83,7 +83,7 @@ See `docs/RESEARCH_BRIEF_EMBED.md`.
 
 Isolated visual experiments from [`CarryLewis/HTML-Design-Lab`](https://github.com/CarryLewis/HTML-Design-Lab) are copied into `public/html-design-lab/` (`/html-design-lab/`).
 
-The designed viewing surface is the **Structure Atlas** at `/lab/`: experiments are filed by information structure (relationship, sequence, process, …), not by visual style.
+The designed viewing surface is the **Structure Bench** at `/lab/`: experiments are filed by information structure (relationship, sequence, process, …), not by visual style, with a live specimen stage for iteration.
 
 Source tip is pinned in `html-design-lab-embed.ref`.
 
@@ -100,7 +100,7 @@ See `docs/HTML_DESIGN_LAB_EMBED.md`.
 - `docs/DESIGN_SYSTEM.md` — visual identity
 - Knowledge → **Research Brief** — MUJI Observatory homepage at `/research-brief/`
 - Knowledge → **medical basement** — Notion Sites embed (`/ebd/…` iframe)
-- Lab → **HTML Design Lab** — Structure Atlas at `/lab/`, source shell at `/html-design-lab/`
+- Lab → **HTML Design Lab** — Structure Bench at `/lab/`, source shell at `/html-design-lab/`
 
 Meaningful content lives in `src/data/*`. UI components only render data.
 medical basement is edited in Notion (Share → Publish); the site iframes the embed URL at `/knowledge/medical-basement`.
