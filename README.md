@@ -87,6 +87,31 @@ The designed viewing surface is the **Structure Bench** at `/lab/`: experiments 
 
 Source tip is pinned in `html-design-lab-embed.ref`.
 
+#### Auto-sync (Method C)
+
+When HTML-Design-Lab pushes to the foundation or current guide branch, it can notify this repo via `repository_dispatch` (`html-design-lab-updated`), which rebuilds and redeploys `/html-design-lab/`.
+
+One-time setup (needs a PAT with access to Carry-website):
+
+```bash
+gh secret set WEBSITE_DISPATCH_TOKEN --repo CarryLewis/HTML-Design-Lab
+# or:
+export WEBSITE_DISPATCH_TOKEN=ghp_your_token_here
+bash scripts/install-html-design-lab-notify-workflow.sh
+```
+
+Template: `docs/templates/html-design-lab-notify-website.yml`. Full notes: `docs/HTML_DESIGN_LAB_AUTO_SYNC.md`.
+
+Do not notify from HTML-Design-Lab `main` until that branch holds the lab.
+
+Manual test after the secret exists:
+
+```bash
+gh workflow run "Notify website to rebuild HTML Design Lab embed" --repo CarryLewis/HTML-Design-Lab
+```
+
+#### Manual refresh
+
 ```bash
 bash scripts/sync-html-design-lab.sh
 ```

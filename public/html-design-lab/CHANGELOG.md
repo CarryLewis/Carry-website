@@ -2,6 +2,11 @@
 
 Lab-level history. Experiment-level history lives in each experiment `README.md`.
 
+## 2026-08-20 — Website embed auto-sync
+
+- Pushes to the foundation or current guide branch notify Carry-website (`html-design-lab-updated`) so `/html-design-lab/` rebuilds.
+- Requires repo secret `WEBSITE_DISPATCH_TOKEN`. Project import/export stays manual.
+
 ## 2026-08-20 — Constitution as HTML
 
 - `guide.html` is the readable surface for what the lab is: pipeline, architecture, visualization thesis, validity, languages, maturity, modes.

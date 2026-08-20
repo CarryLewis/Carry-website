@@ -53,10 +53,11 @@ if command -v rsync >/dev/null 2>&1; then
     --exclude '.git/' \
     --exclude '.cursor/' \
     --exclude '.gitignore' \
+    --exclude '.github/' \
     "$SRC_DIR/" "$OUT/"
 else
   cp -R "$SRC_DIR/." "$OUT/"
-  rm -rf "$OUT/.git" "$OUT/.cursor"
+  rm -rf "$OUT/.git" "$OUT/.cursor" "$OUT/.github"
   rm -f "$OUT/.gitignore"
 fi
 

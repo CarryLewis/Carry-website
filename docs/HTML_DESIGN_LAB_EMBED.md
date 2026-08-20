@@ -39,8 +39,16 @@ bash scripts/sync-html-design-lab.sh
 CI copies the lab shell on every GitHub Pages deploy (`push` to `main`,
 `workflow_dispatch`, or `repository_dispatch` type `html-design-lab-updated`).
 
-The current pin is in `html-design-lab-embed.ref` (foundation branch
-`cursor/html-design-lab-foundation-ee45` until that work lands on `main`).
+The current pin is in `html-design-lab-embed.ref`.
+
+## Auto-sync from HTML-Design-Lab
+
+Same Method C pattern as ECG. Details: [`HTML_DESIGN_LAB_AUTO_SYNC.md`](./HTML_DESIGN_LAB_AUTO_SYNC.md).
+
+1. PAT that can `repository_dispatch` on Carry-website
+2. Secret `WEBSITE_DISPATCH_TOKEN` on HTML-Design-Lab
+3. Workflow `.github/workflows/notify-website.yml` on the embed branches
+   (do not enable on lab `main` until the lab lives there)
 
 After adding experiments in HTML-Design-Lab, also update
 `src/data/lab-catalog.ts` so the bench gains a structure → form row,

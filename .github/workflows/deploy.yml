@@ -7,6 +7,8 @@ on:
   # Fired by CarryLewis/ECG-stimulator when its embed tip is updated
   # (see docs/templates/ecg-notify-website.yml).
   # research-brief-updated: CarryLewis/research_brief talk HTML changed.
+  # html-design-lab-updated: CarryLewis/HTML-Design-Lab shell changed
+  # (see docs/templates/html-design-lab-notify-website.yml).
   repository_dispatch:
     types: [ecg-updated, research-brief-updated, html-design-lab-updated]
 
@@ -137,7 +139,7 @@ jobs:
           if [[ -d "$LAB_SRC/experiments" ]]; then
             rm -rf public/html-design-lab
             mkdir -p public/html-design-lab
-            tar -C "$LAB_SRC" --exclude='.git' --exclude='.cursor' --exclude='.gitignore' -cf - . \
+            tar -C "$LAB_SRC" --exclude='.git' --exclude='.cursor' --exclude='.gitignore' --exclude='.github' -cf - . \
               | tar -C public/html-design-lab -xf -
           elif [[ -d public/html-design-lab/experiments ]]; then
             echo "experiments/ missing in HTML-Design-Lab checkout; keeping vendored copy"

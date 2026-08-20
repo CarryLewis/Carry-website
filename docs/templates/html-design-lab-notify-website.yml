@@ -1,0 +1,53 @@
+# Install into: CarryLewis/HTML-Design-Lab/.github/workflows/notify-website.yml
+#
+# When this file is on a branch and that branch is pushed, GitHub runs it and
+# asks Carry-website to rebuild /html-design-lab/ via repository_dispatch.
+#
+# Required secret on HTML-Design-Lab:
+#   WEBSITE_DISPATCH_TOKEN — fine-grained PAT (or classic) with access to
+#   CarryLewis/Carry-website and permission to trigger workflows /
+#   repository_dispatch (classic: `repo` scope).
+#
+# Do not add `main` until the lab lives there. main is still the empty
+# initial commit and must not overwrite the public shell.
+
+name: Notify website to rebuild HTML Design Lab embed
+
+on:
+  push:
+    branches:
+      - cursor/html-design-lab-foundation-ee45
+      - cursor/design-knowledge-guide-aab1
+  workflow_dispatch:
+
+concurrency:
+  group: notify-website
+  cancel-in-progress: true
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check dispatch token
+        env:
+          TOKEN: ${{ secrets.WEBSITE_DISPATCH_TOKEN }}
+        run: |
+          if [[ -z "$TOKEN" ]]; then
+            echo "::error::Missing secret WEBSITE_DISPATCH_TOKEN on HTML-Design-Lab."
+            echo "Create a PAT with access to CarryLewis/Carry-website, then:"
+            echo "  gh secret set WEBSITE_DISPATCH_TOKEN --repo CarryLewis/HTML-Design-Lab"
+            echo "Or in the UI:"
+            echo "  https://github.com/CarryLewis/HTML-Design-Lab/settings/secrets/actions"
+            exit 1
+          fi
+
+      - name: Trigger Carry-website deploy (repository_dispatch)
+        env:
+          GH_TOKEN: ${{ secrets.WEBSITE_DISPATCH_TOKEN }}
+        run: |
+          gh api repos/CarryLewis/Carry-website/dispatches \
+            -f event_type='html-design-lab-updated' \
+            -f "client_payload[ref]=${{ github.ref_name }}" \
+            -f "client_payload[sha]=${{ github.sha }}" \
+            -f "client_payload[source]=html-design-lab"
+          echo "Dispatched html-design-lab-updated → CarryLewis/Carry-website (ref=${{ github.ref_name }})"

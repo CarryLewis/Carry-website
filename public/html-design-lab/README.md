@@ -18,6 +18,19 @@ Then visit `http://localhost:8080`.
 
 No build step. No framework. Each experiment is a self-contained folder of HTML, CSS, and JavaScript.
 
+## Website embed auto-sync
+
+Pushes to `cursor/html-design-lab-foundation-ee45` or `cursor/design-knowledge-guide-aab1` run `.github/workflows/notify-website.yml`, which asks Carry-website to rebuild [carrylewis.com/html-design-lab/](https://carrylewis.com/html-design-lab/) via `repository_dispatch` (`html-design-lab-updated`).
+
+This is not project import/export. Those stay manual. The notify only rebuilds the public lab shell.
+
+Requires repo secret `WEBSITE_DISPATCH_TOKEN` (PAT with access to Carry-website). Set it at [HTML-Design-Lab → Settings → Secrets](https://github.com/CarryLewis/HTML-Design-Lab/settings/secrets/actions).
+
+```bash
+gh secret set WEBSITE_DISPATCH_TOKEN --repo CarryLewis/HTML-Design-Lab
+gh workflow run "Notify website to rebuild HTML Design Lab embed"
+```
+
 ## Layout
 
 ```

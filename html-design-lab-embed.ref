@@ -4,4 +4,4 @@
 # Update this file, then run: bash scripts/sync-html-design-lab.sh
 # CI reads the same ref on every GitHub Pages deploy.
 HTML_DESIGN_LAB_REF=cursor/design-knowledge-guide-aab1
-HTML_DESIGN_LAB_SHA=d2f2321
+HTML_DESIGN_LAB_SHA=90d5e3d
