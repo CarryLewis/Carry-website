@@ -144,14 +144,14 @@ This is a public projection of the Research Brief frontend, not a Notion iframe.
 
 Isolated visual experiments from [`CarryLewis/HTML-Design-Lab`](https://github.com/CarryLewis/HTML-Design-Lab):
 
-- Structure Atlas: `/lab/` (designed viewing surface — structure → form → specimen)
+- Structure Bench: `/lab/` (designed viewing surface — structure → form → live specimen)
 - Source lab shell: `/html-design-lab/` (`public/html-design-lab/`)
 - Project record: `/projects/active/html-design-lab/`
 - Pin / sync: `html-design-lab-embed.ref` + `scripts/sync-html-design-lab.sh`
 - Catalog overlay: `src/data/lab-catalog.ts`
 - Details: [`HTML_DESIGN_LAB_EMBED.md`](./HTML_DESIGN_LAB_EMBED.md)
 
-The atlas is a visualization of the visualization language. Do not treat it as a generic project gallery.
+The bench is a visualization of the visualization language. Do not treat it as a generic project gallery.
 
 ---
 

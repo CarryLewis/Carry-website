@@ -5,7 +5,7 @@ CarryLewis/HTML-Design-Lab  (pinned ref)
   experiments/ + lab/ + tokens/  →  public/html-design-lab/  →  /html-design-lab/
 
 Designed viewing surface (this repo):
-  /lab/                  Structure Atlas (structure → form → specimen)
+  /lab/                  Structure Bench (structure → form → live specimen)
   /lab/<experiment-id>/  permalink for one specimen
 ```
 
@@ -15,9 +15,10 @@ Listed on:
 - `/projects/active/html-design-lab/`
 - Primary nav: **Lab**
 
-The atlas is not a copy of the lab gallery. It files each experiment by
-**information structure** (relationship, sequence, process, …) so the
-viewing UI itself argues: form follows structure.
+The bench is not a copy of the lab gallery. It files each experiment by
+**information structure** (relationship, sequence, process, …) and uses
+that mapping as the interface: a neighborhood map of structures, a live
+specimen stage, and a dossier that records why this form.
 
 ## Refresh from HTML-Design-Lab
 
@@ -36,4 +37,5 @@ The current pin is in `html-design-lab-embed.ref` (foundation branch
 `cursor/html-design-lab-foundation-ee45` until that work lands on `main`).
 
 After adding experiments in HTML-Design-Lab, also update
-`src/data/lab-catalog.ts` so the atlas gains a structure → form row.
+`src/data/lab-catalog.ts` so the bench gains a structure → form row,
+pattern, and use-case tags.
