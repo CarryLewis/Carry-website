@@ -17,8 +17,9 @@ Listed on:
 
 The bench is not a copy of the lab gallery. It files each experiment by
 **information structure** (relationship, sequence, process, …) and uses
-that mapping as the interface: a neighborhood map of structures, a live
-specimen stage, and a dossier that records why this form.
+the site’s own page grammar: labeled sections, ruled index rows, and a
+framed demo — so form-follows-structure is an Observatory page, not a
+separate instrument.
 
 ## Refresh from HTML-Design-Lab
 

@@ -55,7 +55,7 @@ export default async function ProjectsIndexPage() {
                   href={project.showcaseUrl}
                   className="font-sans text-meta text-accent hover:text-accent-muted focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
                 >
-                  Open atlas →
+                  Open showcase →
                 </Link>
               ) : project.demoUrl ? (
                 <a
