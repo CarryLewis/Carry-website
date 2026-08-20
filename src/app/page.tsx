@@ -10,7 +10,7 @@ export default async function HomePage() {
       copy={data.copy}
       intellectualFocus={data.intellectualFocus}
       activeQuestions={data.activeQuestions}
-      knowledgeGraph={data.knowledgeGraph}
+      practiceGraph={data.practiceGraph}
       signals={data.signals}
       systemLinks={data.systemLinks}
     />

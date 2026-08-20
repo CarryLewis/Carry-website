@@ -233,3 +233,49 @@ export type KnowledgeGraphPreview = {
   nodes: GraphNodeView[];
   edges: GraphEdgeView[];
 };
+
+/** A live practice plate on the site — maps 1:1 to a field summary page */
+export type PracticeVaultLink = {
+  label: string;
+  href: string;
+  description: string;
+};
+
+export type PracticeField = {
+  id: EntityId;
+  slug: string;
+  label: string;
+  summary: string;
+  thesis: string;
+  relatedProjectIds: EntityId[];
+  relatedQuestionIds: EntityId[];
+  relatedSignalIds: EntityId[];
+  relatedConceptIds: EntityId[];
+  relatedFocusIds: EntityId[];
+  vaults: PracticeVaultLink[];
+  layout: { x: number; y: number };
+};
+
+export type PracticeGraphNode = {
+  id: EntityId;
+  kind: "origin" | "field";
+  /** Origin is unnamed. Field nodes carry the practice-plate label. */
+  label: string | null;
+  slug?: string;
+  href?: string;
+  summary?: string;
+  x: number;
+  y: number;
+};
+
+export type PracticeGraphEdge = {
+  id: EntityId;
+  from: EntityId;
+  to: EntityId;
+};
+
+export type PracticeGraph = {
+  originId: EntityId;
+  nodes: PracticeGraphNode[];
+  edges: PracticeGraphEdge[];
+};

@@ -2,12 +2,16 @@ import { activeQuestions } from "@/data/active-questions";
 import { concepts, getConceptById } from "@/data/concepts";
 import { intellectualFocus } from "@/data/intellectual-focus";
 import {
+  getPracticeFieldBySlug,
+  practiceFields,
+} from "@/data/practice-fields";
+import {
   observatoryCopy,
   profile,
   siteChrome,
   systemLinks,
 } from "@/data/profile";
-import { getProjectBySlug, projects } from "@/data/projects";
+import { getProjectById, getProjectBySlug, projects } from "@/data/projects";
 import { relations } from "@/data/relations";
 import { signals } from "@/data/signals";
 import type {
@@ -18,12 +22,23 @@ import type {
   KnowledgeGraphPreview,
   ObservatoryCopy,
   PersonProfile,
+  PracticeField,
+  PracticeGraph,
   Project,
   Relation,
   Signal,
   SiteChrome,
   SystemLink,
 } from "@/domain/entities";
+
+export type PracticeFieldRecord = {
+  field: PracticeField;
+  projects: Project[];
+  questions: ActiveQuestion[];
+  signals: Signal[];
+  focus: IntellectualFocus[];
+  concepts: Concept[];
+};
 
 /**
  * ContentRepository — single access seam for all Content OS modules.
@@ -49,6 +64,10 @@ export interface ContentRepository {
     centerId: EntityId,
     options?: { depth?: number },
   ): Promise<KnowledgeGraphPreview>;
+
+  listPracticeFields(): Promise<PracticeField[]>;
+  getPracticeField(slug: string): Promise<PracticeFieldRecord | null>;
+  getPracticeGraph(): Promise<PracticeGraph>;
 }
 
 class LocalMockRepository implements ContentRepository {
@@ -143,20 +162,84 @@ class LocalMockRepository implements ContentRepository {
       })),
     };
   }
+
+  async listPracticeFields() {
+    return practiceFields;
+  }
+
+  async getPracticeField(slug: string): Promise<PracticeFieldRecord | null> {
+    const field = getPracticeFieldBySlug(slug);
+    if (!field) return null;
+
+    const relatedProjects = field.relatedProjectIds
+      .map((id) => getProjectById(id))
+      .filter((p): p is Project => Boolean(p));
+    const relatedQuestions = field.relatedQuestionIds
+      .map((id) => activeQuestions.find((q) => q.id === id))
+      .filter((q): q is ActiveQuestion => Boolean(q));
+    const relatedSignals = field.relatedSignalIds
+      .map((id) => signals.find((s) => s.id === id))
+      .filter((s): s is Signal => Boolean(s));
+    const relatedFocus = field.relatedFocusIds
+      .map((id) => intellectualFocus.find((f) => f.id === id))
+      .filter((f): f is IntellectualFocus => Boolean(f));
+    const relatedConcepts = field.relatedConceptIds
+      .map((id) => getConceptById(id))
+      .filter((c): c is Concept => Boolean(c));
+
+    return {
+      field,
+      projects: relatedProjects,
+      questions: relatedQuestions,
+      signals: relatedSignals,
+      focus: relatedFocus,
+      concepts: relatedConcepts,
+    };
+  }
+
+  async getPracticeGraph(): Promise<PracticeGraph> {
+    const originId = "origin-practice";
+    const origin: PracticeGraph["nodes"][number] = {
+      id: originId,
+      kind: "origin",
+      label: null,
+      x: 0.5,
+      y: 0.5,
+    };
+
+    const fieldNodes = practiceFields.map((field) => ({
+      id: field.id,
+      kind: "field" as const,
+      label: field.label,
+      slug: field.slug,
+      href: `/knowledge/${field.slug}/`,
+      summary: field.summary,
+      x: field.layout.x,
+      y: field.layout.y,
+    }));
+
+    return {
+      originId,
+      nodes: [origin, ...fieldNodes],
+      edges: fieldNodes.map((node) => ({
+        id: `edge-${originId}-${node.id}`,
+        from: originId,
+        to: node.id,
+      })),
+    };
+  }
 }
 
 export const contentRepository: ContentRepository = new LocalMockRepository();
 
 export async function getObservatoryData() {
-  const centerId = "concept-human-systems";
-
   const [
     person,
     chrome,
     copy,
     focus,
     questions,
-    graph,
+    practiceGraph,
     latestSignals,
     links,
   ] = await Promise.all([
@@ -165,7 +248,7 @@ export async function getObservatoryData() {
     contentRepository.getObservatoryCopy(),
     contentRepository.listIntellectualFocus(),
     contentRepository.listActiveQuestions(),
-    contentRepository.getNeighborhood(centerId),
+    contentRepository.getPracticeGraph(),
     contentRepository.listSignals({ limit: 3 }),
     contentRepository.listSystemLinks(),
   ]);
@@ -176,10 +259,15 @@ export async function getObservatoryData() {
     copy,
     intellectualFocus: focus,
     activeQuestions: questions,
-    knowledgeGraph: graph,
+    practiceGraph,
     signals: latestSignals,
     systemLinks: links,
   };
+}
+
+export async function getPracticeFieldsForStaticParams() {
+  const fields = await contentRepository.listPracticeFields();
+  return fields.map((field) => ({ slug: field.slug }));
 }
 
 export async function getProjectsForStaticParams() {

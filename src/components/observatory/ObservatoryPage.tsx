@@ -7,9 +7,9 @@ import { ResearchThreadsSection } from "@/components/observatory/ResearchThreads
 import type {
   ActiveQuestion,
   IntellectualFocus,
-  KnowledgeGraphPreview,
   ObservatoryCopy,
   PersonProfile,
+  PracticeGraph,
   Signal,
   SystemLink,
 } from "@/domain/entities";
@@ -19,7 +19,7 @@ export type ObservatoryPageProps = {
   copy: ObservatoryCopy;
   intellectualFocus: IntellectualFocus[];
   activeQuestions: ActiveQuestion[];
-  knowledgeGraph: KnowledgeGraphPreview;
+  practiceGraph: PracticeGraph;
   signals: Signal[];
   systemLinks: SystemLink[];
 };
@@ -33,7 +33,7 @@ export function ObservatoryPage({
   copy,
   intellectualFocus,
   activeQuestions,
-  knowledgeGraph,
+  practiceGraph,
   signals,
   systemLinks,
 }: ObservatoryPageProps) {
@@ -46,7 +46,7 @@ export function ObservatoryPage({
         copy={copy.questions}
       />
       <KnowledgeObservatorySection
-        graph={knowledgeGraph}
+        graph={practiceGraph}
         copy={copy.knowledge}
       />
       <LatestSignalsSection signals={signals} copy={copy.signals} />
