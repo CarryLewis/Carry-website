@@ -139,6 +139,12 @@ export function LabWorkbench({ initialSlug }: LabWorkbenchProps) {
               Open source gallery
             </ButtonLink>
             <ButtonLink
+              href="/html-design-lab/guide.html"
+              variant="secondary"
+            >
+              Lab guide
+            </ButtonLink>
+            <ButtonLink
               href="/projects/active/html-design-lab/"
               variant="secondary"
             >

@@ -4,7 +4,7 @@ A laboratory for interactive visual systems.
 
 This is not a website, a portfolio, or a template. It is a long-term HTML visual design laboratory: references are deconstructed, patterns are extracted, experiments test them, and production projects adapt them.
 
-Read [DESIGN_CONSTITUTION.md](DESIGN_CONSTITUTION.md) before adding work. Browse experiments in [DESIGN_INDEX.md](DESIGN_INDEX.md) or the [gallery](lab/gallery.html). Own HTML under iteration lives in [projects/](projects/) and the [own HTML index](lab/projects.html). Design knowledge lives in [DESIGN_KNOWLEDGE.md](DESIGN_KNOWLEDGE.md).
+Read [DESIGN_CONSTITUTION.md](DESIGN_CONSTITUTION.md) before adding work. Browse the constitution as HTML in [guide.html](guide.html). Browse experiments in [DESIGN_INDEX.md](DESIGN_INDEX.md) or the [gallery](lab/gallery.html). Own HTML under iteration lives in [projects/](projects/) and the [own HTML index](lab/projects.html). Design knowledge lives in [DESIGN_KNOWLEDGE.md](DESIGN_KNOWLEDGE.md).
 
 ## Serve locally
 
@@ -18,6 +18,12 @@ Then visit `http://localhost:8080`.
 
 No build step. No framework. Each experiment is a self-contained folder of HTML, CSS, and JavaScript.
 
+## Website embed
+
+The public shell is [carrylewis.com/html-design-lab/](https://carrylewis.com/html-design-lab/). Refresh is manual — no PAT.
+
+On Carry-website: **Actions → Deploy to GitHub Pages → Run workflow**. In **html_design_lab_ref**, type this branch name (for example `cursor/design-knowledge-guide-aab1`). Leave it blank to use the pin in `html-design-lab-embed.ref`.
+
 ## Layout
 
 ```
@@ -26,6 +32,7 @@ DESIGN_INDEX.md          experiment catalog
 DESIGN_KNOWLEDGE.md      reference / pattern / language hub
 CHANGELOG.md             lab-level changelog
 index.html               lab homepage
+guide.html               constitution as a lab page (read this, not the .md)
 tokens/                  controllable design tokens + visual languages
 lab/                     gallery, knowledge graph, playground, JSON indexes
 experiments/             isolated experiments by category

@@ -1,5 +1,7 @@
 # Design Constitution
 
+Readable HTML surface: [`guide.html`](guide.html).
+
 HTML Design Lab is a visual language laboratory for the web.
 
 It is not a website, a portfolio, a landing page, or a template. It is a long-term R&D environment for accumulating ways to explain things through HTML.

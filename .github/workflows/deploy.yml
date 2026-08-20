@@ -4,6 +4,11 @@ on:
   push:
     branches: [main]
   workflow_dispatch:
+    inputs:
+      html_design_lab_ref:
+        description: "HTML-Design-Lab branch, tag, or SHA to embed. Leave blank to use html-design-lab-embed.ref. Example: cursor/design-knowledge-guide-aab1"
+        required: false
+        type: string
   # Fired by CarryLewis/ECG-stimulator when its embed tip is updated
   # (see docs/templates/ecg-notify-website.yml).
   # research-brief-updated: CarryLewis/research_brief talk HTML changed.
@@ -77,11 +82,14 @@ jobs:
         env:
           PAYLOAD_REF: ${{ github.event.client_payload.ref }}
           PAYLOAD_SOURCE: ${{ github.event.client_payload.source }}
+          INPUT_REF: ${{ github.event.inputs.html_design_lab_ref }}
         run: |
           # shellcheck disable=SC1091
           source html-design-lab-embed.ref
           REF="$HTML_DESIGN_LAB_REF"
-          if [[ "${PAYLOAD_SOURCE:-}" == "html-design-lab" && -n "${PAYLOAD_REF:-}" ]]; then
+          if [[ -n "${INPUT_REF:-}" ]]; then
+            REF="$INPUT_REF"
+          elif [[ "${PAYLOAD_SOURCE:-}" == "html-design-lab" && -n "${PAYLOAD_REF:-}" ]]; then
             REF="$PAYLOAD_REF"
           fi
           echo "ref=${REF}" >> "$GITHUB_OUTPUT"
@@ -137,7 +145,7 @@ jobs:
           if [[ -d "$LAB_SRC/experiments" ]]; then
             rm -rf public/html-design-lab
             mkdir -p public/html-design-lab
-            tar -C "$LAB_SRC" --exclude='.git' --exclude='.cursor' --exclude='.gitignore' -cf - . \
+            tar -C "$LAB_SRC" --exclude='.git' --exclude='.cursor' --exclude='.gitignore' --exclude='.github' -cf - . \
               | tar -C public/html-design-lab -xf -
           elif [[ -d public/html-design-lab/experiments ]]; then
             echo "experiments/ missing in HTML-Design-Lab checkout; keeping vendored copy"

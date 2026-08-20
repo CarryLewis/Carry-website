@@ -87,7 +87,16 @@ The designed viewing surface is the **Structure Bench** at `/lab/`: experiments 
 
 Source tip is pinned in `html-design-lab-embed.ref`.
 
+#### Manual refresh (type the lab ref)
+
+No PAT. On this repo: **Actions → Deploy to GitHub Pages → Run workflow**. Type the HTML-Design-Lab branch in **html_design_lab_ref** (example: `cursor/design-knowledge-guide-aab1`). Leave it blank to use the pin file.
+
+Until this lands on `main`, run the workflow from branch `cursor/sync-design-guide-aab1` so the input field exists.
+
+Do not type HTML-Design-Lab `main` until that branch holds the lab.
+
 ```bash
+# local vendor copy (optional):
 bash scripts/sync-html-design-lab.sh
 ```
 

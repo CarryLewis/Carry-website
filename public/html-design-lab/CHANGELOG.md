@@ -2,6 +2,16 @@
 
 Lab-level history. Experiment-level history lives in each experiment `README.md`.
 
+## 2026-08-20 — Website embed is a manual Run workflow
+
+- Carry-website **Actions → Deploy to GitHub Pages → Run workflow**, then type the lab branch in `html_design_lab_ref`.
+- No PAT. Project import/export stays manual.
+
+## 2026-08-20 — Constitution as HTML
+
+- `guide.html` is the readable surface for what the lab is: pipeline, architecture, visualization thesis, validity, languages, maturity, modes.
+- Guide nav no longer opens raw `DESIGN_KNOWLEDGE.md` on GitHub Pages.
+
 ## 2026-08-20 — Knowledge graph viewing surface
 
 - Knowledge browser Graph tab is a neighborhood-focus SVG (reference → pattern → experiment), not only edge text.

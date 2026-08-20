@@ -191,4 +191,4 @@ Not experiments. Snapshots of first-party pages still under iteration. Machine i
 
 ## Design knowledge
 
-Pattern records extracted from these experiments live in [`DESIGN_KNOWLEDGE.md`](DESIGN_KNOWLEDGE.md) and [`patterns/INDEX.md`](patterns/INDEX.md). Browse the graph in [`lab/knowledge.html`](lab/knowledge.html).
+Pattern records extracted from these experiments live in [`DESIGN_KNOWLEDGE.md`](DESIGN_KNOWLEDGE.md) and [`patterns/INDEX.md`](patterns/INDEX.md). Read the constitution as HTML in [`guide.html`](guide.html). Browse the graph in [`lab/knowledge.html`](lab/knowledge.html).

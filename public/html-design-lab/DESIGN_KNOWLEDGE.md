@@ -1,5 +1,7 @@
 # Design knowledge
 
+> **Read this as HTML:** [`guide.html`](guide.html) — constitution, architecture, visualization thesis, and how to enter the lab. This file is the git-friendly index of the same records.
+
 The Lab is three collections that point at each other:
 
 ```

@@ -156,7 +156,7 @@ export const projects: Project[] = [
     designPhilosophy:
       "Form follows information structure. Visualization is a decision protocol — name the structure, choose the matching form, then test whether doing makes the mechanism visible. Display is not enough.",
     implementation:
-      "Structure Bench at /lab/ (field → live specimen → dossier). Isolated experiments vendored to /html-design-lab/ from the HTML-Design-Lab foundation tip pinned in html-design-lab-embed.ref.",
+      "Structure Bench at /lab/ (field → live specimen → dossier). Isolated experiments vendored to /html-design-lab/ from the HTML-Design-Lab tip pinned in html-design-lab-embed.ref. Constitution as HTML: /html-design-lab/guide.html.",
     demoUrl: "/html-design-lab/",
     showcaseUrl: "/lab/",
     repoUrl: "https://github.com/CarryLewis/HTML-Design-Lab",
