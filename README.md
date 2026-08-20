@@ -104,6 +104,7 @@ See `docs/HTML_DESIGN_LAB_EMBED.md`.
 
 ## Structure
 
+- `docs/FEEDBACK.md` — correspondence forms and Cloudflare inbox
 - `docs/CONTENT_OS.md` — content modules, sync rules, update workflow
 - `docs/ARCHITECTURE.md` — technical architecture
 - `docs/DESIGN_SYSTEM.md` — visual identity

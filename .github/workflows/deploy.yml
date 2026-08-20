@@ -155,6 +155,8 @@ jobs:
           fi
 
       - name: Build website
+        env:
+          NEXT_PUBLIC_FEEDBACK_ENDPOINT: ${{ vars.NEXT_PUBLIC_FEEDBACK_ENDPOINT }}
         run: npm run build
 
       - uses: actions/upload-pages-artifact@v3
