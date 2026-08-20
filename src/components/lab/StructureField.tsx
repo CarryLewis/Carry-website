@@ -14,13 +14,12 @@ type StructureFieldProps = {
   available?: Set<InformationStructure>;
 };
 
-const W = 320;
-const H = 260;
+const W = 640;
+const H = 320;
 
 /**
  * Neighborhood map of information structures.
- * Distance is relatedness; selecting a node lights its neighborhood
- * and dims the rest — the atlas overview, not decoration.
+ * Same sunken-figure language as the Observatory knowledge graph.
  */
 export function StructureField({
   active,
@@ -31,21 +30,29 @@ export function StructureField({
   const neighborhood = neighboringStructures(active);
 
   return (
-    <div className="relative overflow-hidden bg-surface-sunken">
-      <div
-        className="pointer-events-none absolute inset-0 opacity-40"
-        style={{
-          backgroundImage:
-            "linear-gradient(var(--color-grid) 1px, transparent 1px), linear-gradient(90deg, var(--color-grid) 1px, transparent 1px)",
-          backgroundSize: "24px 24px",
-        }}
-      />
+    <div className="overflow-hidden border border-rule bg-surface-sunken">
       <svg
         viewBox={`0 0 ${W} ${H}`}
-        className="relative h-[200px] w-full lg:h-[220px]"
+        className="h-auto w-full"
         role="img"
-        aria-label="Map of information structures. Selecting a node focuses its specimen."
+        aria-label="Map of information structures. Selecting a node opens its specimen."
       >
+        <defs>
+          <pattern
+            id="lab-structure-grid"
+            width="24"
+            height="24"
+            patternUnits="userSpaceOnUse"
+          >
+            <path
+              d="M 24 0 L 0 0 0 24"
+              fill="none"
+              stroke="var(--color-grid)"
+              strokeWidth="1"
+            />
+          </pattern>
+        </defs>
+        <rect width={W} height={H} fill="url(#lab-structure-grid)" />
         {STRUCTURE_EDGES.map(([fromId, toId]) => {
           const from = nodeById[fromId];
           const to = nodeById[toId];
@@ -58,10 +65,10 @@ export function StructureField({
               x2={to.x * W}
               y2={to.y * H}
               stroke={
-                lit ? "var(--color-accent-muted)" : "var(--color-rule)"
+                lit ? "var(--color-accent-muted)" : "var(--color-rule-strong)"
               }
-              strokeWidth={lit ? 1.25 : 1}
-              opacity={lit ? 1 : 0.35}
+              strokeWidth={lit ? 1.5 : 1}
+              opacity={lit ? 1 : 0.45}
             />
           );
         })}
@@ -72,23 +79,8 @@ export function StructureField({
           const near = neighborhood.has(node.id);
           const inFilter = !available || available.has(node.id);
           const side = node.labelSide ?? "right";
-          const labelX = side === "left" ? cx - 10 : cx + 10;
+          const labelX = side === "left" ? cx - 12 : cx + 12;
           const textAnchor = side === "left" ? "end" : "start";
-          const fill = selected
-            ? "var(--color-accent)"
-            : near
-              ? "var(--color-panel)"
-              : "var(--color-surface)";
-          const stroke = selected
-            ? "var(--color-accent)"
-            : near
-              ? "var(--color-rule-strong)"
-              : "var(--color-rule)";
-          const labelFill = selected
-            ? "var(--color-ink)"
-            : near
-              ? "var(--color-ink-secondary)"
-              : "var(--color-ink-faint)";
 
           return (
             <g
@@ -99,39 +91,55 @@ export function StructureField({
                 if (inFilter) onSelect(node.id);
               }}
             >
-              <circle cx={cx} cy={cy} r={16} fill="transparent">
+              <circle cx={cx} cy={cy} r={18} fill="transparent">
                 <title>{`${node.label} → ${node.form}`}</title>
               </circle>
               <circle
                 cx={cx}
                 cy={cy}
-                r={selected ? 6 : 4}
-                fill={fill}
-                stroke={stroke}
-                strokeWidth="1"
+                r={selected ? 8 : 5}
+                fill={
+                  selected
+                    ? "var(--color-accent-soft)"
+                    : near
+                      ? "var(--color-panel)"
+                      : "var(--color-surface)"
+                }
+                stroke={
+                  selected
+                    ? "var(--color-accent)"
+                    : near
+                      ? "var(--color-rule-strong)"
+                      : "var(--color-rule)"
+                }
+                strokeWidth="1.5"
                 className="pointer-events-none"
               />
               <text
                 x={labelX}
-                y={cy - 8}
-                fill={labelFill}
-                fontSize="9"
+                y={cy - 6}
+                fill={
+                  selected
+                    ? "var(--color-ink)"
+                    : near
+                      ? "var(--color-ink-secondary)"
+                      : "var(--color-ink-faint)"
+                }
+                fontSize="11"
                 fontFamily="var(--font-sans)"
-                letterSpacing="0.06em"
+                letterSpacing="0.04em"
                 textAnchor={textAnchor}
-                className="pointer-events-none uppercase"
+                className="pointer-events-none"
               >
                 {node.label}
               </text>
               <text
                 x={labelX}
-                y={cy + 5}
+                y={cy + 9}
                 fill={
-                  selected
-                    ? "var(--color-accent)"
-                    : "var(--color-ink-faint)"
+                  selected ? "var(--color-accent)" : "var(--color-ink-faint)"
                 }
-                fontSize="8"
+                fontSize="10"
                 fontFamily="var(--font-mono)"
                 textAnchor={textAnchor}
                 className="pointer-events-none"
@@ -143,7 +151,7 @@ export function StructureField({
         })}
       </svg>
       <div
-        className="flex flex-wrap gap-lab-2 border-t border-rule px-lab-3 py-lab-2"
+        className="flex flex-wrap gap-lab-4 border-t border-rule px-lab-4 py-lab-3"
         role="toolbar"
         aria-label="Information structures"
       >
@@ -157,8 +165,8 @@ export function StructureField({
               disabled={!inFilter}
               onClick={() => onSelect(node.id)}
               className={cn(
-                "font-sans text-label uppercase transition-colors duration-fast ease-lab focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent disabled:cursor-not-allowed disabled:opacity-40",
-                selected ? "text-accent" : "text-ink-tertiary hover:text-ink",
+                "font-sans text-meta transition-colors duration-fast ease-lab focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent disabled:cursor-not-allowed disabled:opacity-40",
+                selected ? "text-ink" : "text-ink-secondary hover:text-ink",
               )}
             >
               {node.label}
