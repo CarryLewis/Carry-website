@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { FeedbackPanel } from "@/components/feedback/FeedbackPanel";
+import { MEDICAL_BASEMENT_TARGET_ID } from "@/data/feedback-targets";
 
 /**
  * Public Notion Site for medical-basement (Share → Publish).
@@ -22,36 +24,39 @@ export const metadata: Metadata = {
 
 export default function MedicalBasementPage() {
   return (
-    <section className="flex min-h-[calc(100vh-4rem)] flex-col bg-void">
-      <div className="flex flex-wrap items-center justify-between gap-lab-3 border-b border-rule bg-surface-raised px-margin py-lab-3">
-        <p className="font-sans text-label uppercase text-ink-tertiary">
-          <Link
-            href="/knowledge/"
-            className="hover:text-accent focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+    <>
+      <section className="flex min-h-[calc(100vh-4rem)] flex-col border-b border-rule bg-void">
+        <div className="flex flex-wrap items-center justify-between gap-lab-3 border-b border-rule bg-surface-raised px-margin py-lab-3">
+          <p className="font-sans text-label uppercase text-ink-tertiary">
+            <Link
+              href="/knowledge/"
+              className="hover:text-accent focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+            >
+              Knowledge
+            </Link>
+            {" / medical basement"}
+          </p>
+          <a
+            href={MEDICAL_BASEMENT_NOTION_URL}
+            target="_blank"
+            rel="noreferrer"
+            className="font-sans text-meta text-accent hover:text-accent-muted focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
           >
-            Knowledge
-          </Link>
-          {" / medical basement"}
-        </p>
-        <a
-          href={MEDICAL_BASEMENT_NOTION_URL}
-          target="_blank"
-          rel="noreferrer"
-          className="font-sans text-meta text-accent hover:text-accent-muted focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
-        >
-          Open in Notion ↗
-        </a>
-      </div>
+            Open in Notion ↗
+          </a>
+        </div>
 
-      <iframe
-        title="medical basement"
-        src={MEDICAL_BASEMENT_EMBED_URL}
-        className="w-full flex-1 border-0 bg-surface"
-        style={{ minHeight: "calc(100vh - 7rem)" }}
-        loading="lazy"
-        referrerPolicy="no-referrer-when-downgrade"
-        allowFullScreen
-      />
-    </section>
+        <iframe
+          title="medical basement"
+          src={MEDICAL_BASEMENT_EMBED_URL}
+          className="w-full flex-1 border-0 bg-surface"
+          style={{ minHeight: "calc(100vh - 7rem)" }}
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+          allowFullScreen
+        />
+      </section>
+      <FeedbackPanel defaultTargetId={MEDICAL_BASEMENT_TARGET_ID} />
+    </>
   );
 }

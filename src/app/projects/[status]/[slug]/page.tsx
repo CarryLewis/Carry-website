@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { FeedbackPanel } from "@/components/feedback/FeedbackPanel";
 import { StatusIndicator } from "@/components/ui/StatusIndicator";
 import { contentRepository, getProjectsForStaticParams } from "@/data";
 
@@ -161,6 +162,10 @@ export default async function ProjectPage({ params }: Props) {
           />
         </section>
       ) : null}
+
+      <div className="mt-lab-9 border-t border-rule pt-lab-9">
+        <FeedbackPanel layout="inset" defaultTargetId={project.id} />
+      </div>
     </article>
   );
 }

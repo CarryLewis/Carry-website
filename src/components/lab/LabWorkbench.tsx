@@ -3,12 +3,14 @@
 import { useCallback, useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
+import { FeedbackPanel } from "@/components/feedback/FeedbackPanel";
 import { LabProtocol } from "@/components/lab/LabProtocol";
 import { SpecimenBench } from "@/components/lab/SpecimenBench";
 import { SpecimenDossier } from "@/components/lab/SpecimenDossier";
 import { StructureField } from "@/components/lab/StructureField";
 import { TraceList } from "@/components/lab/TraceList";
 import { ButtonLink } from "@/components/ui/ButtonLink";
+import { LAB_TARGET_ID } from "@/data/feedback-targets";
 import {
   DEFAULT_SPECIMEN_ID,
   LAB_THESIS,
@@ -211,12 +213,18 @@ export function LabWorkbench({ initialSlug }: LabWorkbenchProps) {
         </div>
       </section>
 
-      <section className="bg-surface">
+      <section className="border-b border-rule bg-surface">
         <div className="mx-auto grid max-w-shell gap-lab-8 px-margin py-lab-8 lg:grid-cols-[minmax(0,1.35fr)_minmax(0,0.85fr)] lg:items-start">
           <SpecimenBench specimen={active} />
           <SpecimenDossier specimen={active} />
         </div>
       </section>
+
+      <FeedbackPanel
+        defaultTargetId={LAB_TARGET_ID}
+        specimenId={active.id}
+        specimenName={active.name}
+      />
     </article>
   );
 }
