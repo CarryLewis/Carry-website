@@ -90,6 +90,11 @@
   .derive-label {
     opacity: 0;
     animation: note-appear var(--duration-medium) var(--ease-lab) both;
+    pointer-events: none;
+  }
+
+  .derive-label a {
+    pointer-events: auto;
   }
 }
 

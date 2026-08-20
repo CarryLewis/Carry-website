@@ -75,7 +75,7 @@ export function PracticeDerivationGraph({
         <div className="relative aspect-[8/5] w-full">
           <svg
             viewBox={`0 0 ${WIDTH} ${HEIGHT}`}
-            className="absolute inset-0 h-full w-full"
+            className="pointer-events-none absolute inset-0 h-full w-full"
             aria-hidden
           >
             <defs>
@@ -195,7 +195,7 @@ export function PracticeDerivationGraph({
             </g>
           </svg>
 
-          <ul className="absolute inset-0 m-0 list-none p-0">
+          <ul className="pointer-events-none absolute inset-0 z-10 m-0 list-none p-0">
             {fields.map((node, i) => {
               const pos = percent(node);
               const lit = activeId === node.id;
@@ -221,19 +221,19 @@ export function PracticeDerivationGraph({
                     aria-describedby={lit ? "practice-field-probe" : undefined}
                     onMouseEnter={() => setActiveId(node.id)}
                     onFocus={() => setActiveId(node.id)}
-                    className="absolute left-0 top-0 -translate-x-1/2 -translate-y-1/2 rounded-full focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent"
+                    className="pointer-events-auto absolute left-0 top-0 flex -translate-x-1/2 -translate-y-6 cursor-pointer flex-col items-center px-lab-2 pb-lab-3 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent"
                   >
-                    <span className="block size-11" aria-hidden />
+                    <span className="block size-12 shrink-0" aria-hidden />
                     <span
                       className={cn(
-                        "pointer-events-none absolute left-1/2 top-[calc(100%+2px)] -translate-x-1/2 whitespace-nowrap font-sans text-meta tracking-[0.06em] transition-colors duration-fast ease-lab",
+                        "whitespace-nowrap font-sans text-meta tracking-[0.06em] transition-colors duration-fast ease-lab",
                         lit ? "text-ink" : "text-ink-secondary",
                       )}
                     >
                       {node.label}
                     </span>
                     {emerging ? (
-                      <span className="pointer-events-none absolute left-1/2 top-[calc(100%+1.35rem)] -translate-x-1/2 font-sans text-label uppercase tracking-[0.08em] text-accent">
+                      <span className="mt-lab-1 font-sans text-label uppercase tracking-[0.08em] text-accent">
                         new
                       </span>
                     ) : null}
