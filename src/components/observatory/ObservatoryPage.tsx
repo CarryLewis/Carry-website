@@ -1,9 +1,11 @@
+import { FeedbackPanel } from "@/components/feedback/FeedbackPanel";
 import { ClosingSection } from "@/components/observatory/ClosingSection";
 import { ExplorationSection } from "@/components/observatory/ExplorationSection";
 import { HeroSection } from "@/components/observatory/HeroSection";
 import { KnowledgeObservatorySection } from "@/components/observatory/KnowledgeObservatorySection";
 import { LatestSignalsSection } from "@/components/observatory/LatestSignalsSection";
 import { ResearchThreadsSection } from "@/components/observatory/ResearchThreadsSection";
+import { DEFAULT_OBSERVATORY_TARGET_ID } from "@/data/feedback-targets";
 import type {
   ActiveQuestion,
   IntellectualFocus,
@@ -50,6 +52,10 @@ export function ObservatoryPage({
         copy={copy.knowledge}
       />
       <LatestSignalsSection signals={signals} copy={copy.signals} />
+      <FeedbackPanel
+        defaultTargetId={DEFAULT_OBSERVATORY_TARGET_ID}
+        allowSelect
+      />
       <ClosingSection links={systemLinks} copy={copy.closing} />
     </>
   );

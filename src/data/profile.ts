@@ -39,6 +39,7 @@ export const siteChrome: SiteChrome = {
   ],
   footerLinks: [
     { href: "/lab", label: "Lab" },
+    { href: "/contact", label: "Correspondence" },
     { href: "/about", label: "About" },
     { href: "/signals", label: "Signals" },
   ],

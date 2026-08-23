@@ -1,0 +1,8 @@
+name = "laboratory-feedback"
+main = "src/index.ts"
+compatibility_date = "2026-08-20"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "laboratory-feedback"
+database_id = "0a59e66a-cd6e-425a-b2a7-935db528c60f"
