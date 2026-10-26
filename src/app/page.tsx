@@ -1,18 +1,5 @@
-import { ObservatoryPage } from "@/components/observatory/ObservatoryPage";
-import { getObservatoryData } from "@/data";
+import { PortraitHome } from "@/components/portrait/PortraitHome";
 
-export default async function HomePage() {
-  const data = await getObservatoryData();
-
-  return (
-    <ObservatoryPage
-      profile={data.profile}
-      copy={data.copy}
-      intellectualFocus={data.intellectualFocus}
-      activeQuestions={data.activeQuestions}
-      practiceGraph={data.practiceGraph}
-      signals={data.signals}
-      systemLinks={data.systemLinks}
-    />
-  );
+export default function HomePage() {
+  return <PortraitHome />;
 }

@@ -4,25 +4,24 @@ import { StatusIndicator } from "@/components/ui/StatusIndicator";
 import { contentRepository } from "@/data";
 
 export const metadata: Metadata = {
-  title: "Projects",
-  description:
-    "Active builds, prototypes, experiments, and archived systems.",
+  title: "作品",
+  description: "从问题出发的工具与实验：心电模拟、AI 辅助评阅与知识系统。",
 };
 
 export default async function ProjectsIndexPage() {
   const projects = await contentRepository.listProjects();
 
   return (
-    <section className="mx-auto max-w-shell px-margin py-lab-9">
+    <section lang="zh-CN" className="mx-auto max-w-shell px-margin py-lab-9">
       <p className="font-sans text-label uppercase text-ink-tertiary">
-        Projects
+        WORK / 作品
       </p>
       <h1 className="mt-lab-3 font-serif text-page text-ink">
-        Build laboratory
+        把理解，付诸实践。
       </h1>
       <p className="mt-lab-4 max-w-prose font-sans text-body-ui text-ink-secondary">
-        Things under construction — each record links problem, architecture,
-        and (when available) a runnable demo.
+        每个作品从一个具体问题出发。项目记录保留实现方式与取舍；开发中和原型代表当前阶段，
+        不等于已经完成的产品。可运行的项目提供演示，其余入口通向项目说明或源码。
       </p>
 
       <ul className="mt-lab-8 grid gap-lab-5">
@@ -48,14 +47,14 @@ export default async function ProjectsIndexPage() {
                 href={`/projects/${project.status}/${project.slug}/`}
                 className="font-sans text-meta text-accent hover:text-accent-muted focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
               >
-                Project record →
+                项目记录 →
               </Link>
               {project.downloadUrl ? (
                 <a
                   href={project.downloadUrl}
                   className="font-sans text-meta text-accent hover:text-accent-muted focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
                 >
-                  Download source ZIP ↓
+                  下载源码 ZIP ↓
                 </a>
               ) : null}
               {project.showcaseUrl ? (
@@ -63,14 +62,14 @@ export default async function ProjectsIndexPage() {
                   href={project.showcaseUrl}
                   className="font-sans text-meta text-accent hover:text-accent-muted focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
                 >
-                  Open showcase →
+                  打开作品展示 →
                 </Link>
               ) : project.demoUrl ? (
                 <a
                   href={project.demoUrl}
                   className="font-sans text-meta text-ink-secondary hover:text-ink focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
                 >
-                  Open demo
+                  打开演示
                 </a>
               ) : null}
             </div>
