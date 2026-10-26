@@ -1,10 +1,12 @@
 import type { IntellectualFocus } from "@/domain/entities";
+import labwiseFocus from "../../content/focus/lab-report-assistant.json";
 
 /**
  * Intellectual Focus — current major areas of exploration.
  * Displayed on Homepage, About, Research overview.
  */
 export const intellectualFocus: IntellectualFocus[] = [
+  labwiseFocus as IntellectualFocus,
   {
     id: "focus-cardiac-simulation",
     slug: "cardiac-simulation-engine",

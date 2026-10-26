@@ -77,10 +77,11 @@ export const practiceFields: PracticeField[] = [
     status: "active",
     connectedFieldIds: [],
     summary:
-      "Agent architectures for diagnostic traces — reasoning made visible, not only answered.",
+      "Evidence-led AI for scientific feedback, clinical tutoring and knowledge work — reasoning made visible.",
     thesis:
-      "AI here is not a product surface. It is a research instrument for clinical tutoring, intermediate hypotheses, and the knowledge OS that holds those traces.",
+      "AI is a research instrument for inspectable reasoning: Labwise connects report feedback to source evidence, clinical tutors expose hypotheses, and the knowledge OS retains those traces.",
     relatedProjectIds: [
+      "proj-lab-report-assistant",
       "proj-clinical-reasoning-ai",
       "proj-knowledge-os",
       "proj-research-brief",
@@ -92,13 +93,19 @@ export const practiceFields: PracticeField[] = [
       "concept-philosophy",
       "concept-human-systems",
     ],
-    relatedFocusIds: ["focus-clinical-reasoning-ai", "focus-knowledge-os"],
+    relatedFocusIds: ["focus-lab-report-review", "focus-clinical-reasoning-ai", "focus-knowledge-os"],
     vaults: [
       {
         label: "Clinical Reasoning AI",
         href: "/projects/prototype/clinical-reasoning-ai/",
         description:
           "Prototype: multi-agent tutor loop that scores intermediate hypotheses.",
+      },
+      {
+        label: "Labwise · 实验报告辅助评阅",
+        href: "/projects/prototype/lab-report-assistant/",
+        description:
+          "Local teacher pilot: evidence-linked feedback, rubric review and instructor-confirmed exports.",
       },
     ],
     layout: { x: 0.84, y: 0.46 },

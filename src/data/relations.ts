@@ -1,10 +1,15 @@
 import type { Relation } from "@/domain/entities";
+import contentRelations from "../../content/relations/edges.json";
+import labwiseProject from "../../content/projects/lab-report-assistant.json";
 
 /**
  * Cross-module relation edges.
  * Graph visualization and related panels should prefer this store.
  */
 export const relations: Relation[] = [
+  ...contentRelations.edges.filter(
+    (edge) => edge.from === labwiseProject.id || edge.to === labwiseProject.id,
+  ) as Relation[],
   // Human Systems neighborhood
   {
     id: "rel-hs-medicine",

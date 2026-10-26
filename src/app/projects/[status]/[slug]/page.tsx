@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { StatusIndicator } from "@/components/ui/StatusIndicator";
@@ -53,8 +54,11 @@ export default async function ProjectPage({ params }: Props) {
       <p className="mt-lab-4 max-w-prose font-sans text-body-ui text-ink-secondary">
         {project.summary}
       </p>
+      <p className="mt-lab-3 font-mono text-meta text-ink-tertiary">
+        Updated {project.updatedAt}
+      </p>
 
-      {(project.demoUrl || project.repoUrl || project.showcaseUrl) && (
+      {(project.demoUrl || project.repoUrl || project.showcaseUrl || project.downloadUrl) && (
         <div className="mt-lab-6 flex flex-wrap gap-lab-3">
           {project.showcaseUrl ? (
             <a
@@ -89,15 +93,41 @@ export default async function ProjectPage({ params }: Props) {
               View source ↗
             </a>
           ) : null}
+          {project.downloadUrl ? (
+            <a
+              href={project.downloadUrl}
+              className="inline-flex h-10 items-center justify-center border border-rule px-lab-4 font-sans text-meta text-ink transition-colors duration-fast ease-lab hover:border-rule-strong focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+            >
+              Download source ZIP ↓
+            </a>
+          ) : null}
         </div>
       )}
+      {project.downloadNotes ? (
+        <p className="mt-lab-3 max-w-prose font-sans text-meta text-ink-secondary">
+          {project.downloadNotes}
+        </p>
+      ) : null}
+      {project.resourceLinks?.length ? (
+        <nav aria-label="Project resources" className="mt-lab-4 flex flex-wrap gap-lab-4">
+          {project.resourceLinks.map((resource) => (
+            <a
+              key={resource.href}
+              href={resource.href}
+              className="font-sans text-meta text-accent hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+            >
+              {resource.label} ↗
+            </a>
+          ))}
+        </nav>
+      ) : null}
 
       <dl className="mt-lab-8 grid gap-lab-7 border-t border-rule pt-lab-7">
         <div>
           <dt className="font-sans text-label uppercase text-ink-tertiary">
             Problem
           </dt>
-          <dd className="mt-lab-2 max-w-prose font-sans text-body-ui text-ink">
+          <dd className="mt-lab-2 max-w-prose whitespace-pre-line font-sans text-body-ui text-ink">
             {project.problem}
           </dd>
         </div>
@@ -105,7 +135,7 @@ export default async function ProjectPage({ params }: Props) {
           <dt className="font-sans text-label uppercase text-ink-tertiary">
             Architecture
           </dt>
-          <dd className="mt-lab-2 max-w-prose font-sans text-body-ui text-ink">
+          <dd className="mt-lab-2 max-w-prose whitespace-pre-line font-sans text-body-ui text-ink">
             {project.architecture}
           </dd>
         </div>
@@ -114,8 +144,40 @@ export default async function ProjectPage({ params }: Props) {
             <dt className="font-sans text-label uppercase text-ink-tertiary">
               Design philosophy
             </dt>
-            <dd className="mt-lab-2 max-w-prose font-sans text-body-ui text-ink">
+            <dd className="mt-lab-2 max-w-prose whitespace-pre-line font-sans text-body-ui text-ink">
               {project.designPhilosophy}
+            </dd>
+          </div>
+        ) : null}
+        {project.workflow?.length ? (
+          <div>
+            <dt className="font-sans text-label uppercase text-ink-tertiary">
+              Workflow
+            </dt>
+            <dd className="mt-lab-4 max-w-prose">
+              <ol className="list-decimal space-y-lab-3 pl-lab-5 font-sans text-body-ui text-ink">
+                {project.workflow.map((step) => <li key={step}>{step}</li>)}
+              </ol>
+            </dd>
+          </div>
+        ) : null}
+        {project.implementation ? (
+          <div>
+            <dt className="font-sans text-label uppercase text-ink-tertiary">
+              Implementation
+            </dt>
+            <dd className="mt-lab-2 max-w-prose whitespace-pre-line font-sans text-body-ui text-ink">
+              {project.implementation}
+            </dd>
+          </div>
+        ) : null}
+        {project.reflection ? (
+          <div>
+            <dt className="font-sans text-label uppercase text-ink-tertiary">
+              Reflection & next steps
+            </dt>
+            <dd className="mt-lab-2 max-w-prose whitespace-pre-line font-sans text-body-ui text-ink">
+              {project.reflection}
             </dd>
           </div>
         ) : null}
@@ -135,6 +197,32 @@ export default async function ProjectPage({ params }: Props) {
           </dd>
         </div>
       </dl>
+
+      {project.screenshots?.length ? (
+        <section className="mt-lab-9 border-t border-rule pt-lab-7" aria-labelledby="project-specimens">
+          <h2 id="project-specimens" className="font-sans text-label uppercase text-ink-tertiary">
+            Interface specimens
+          </h2>
+          <div className="mt-lab-5 grid gap-lab-7">
+            {project.screenshots.map((specimen) => (
+              <figure key={specimen.src}>
+                <a href={specimen.src} target="_blank" rel="noreferrer" className="block border border-rule focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent">
+                  <Image
+                    src={specimen.src}
+                    alt={specimen.alt}
+                    width={specimen.width}
+                    height={specimen.height}
+                    className="block h-auto w-full"
+                  />
+                </a>
+                <figcaption className="mt-lab-3 max-w-prose font-sans text-meta text-ink-secondary">
+                  {specimen.caption}
+                </figcaption>
+              </figure>
+            ))}
+          </div>
+        </section>
+      ) : null}
 
       {project.demoUrl && project.demoUrl !== project.showcaseUrl ? (
         <section className="mt-lab-9 border border-rule bg-surface-sunken">

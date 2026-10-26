@@ -1,10 +1,12 @@
 import type { Project } from "@/domain/entities";
+import labwiseProject from "../../content/projects/lab-report-assistant.json";
 
 /**
  * Projects — things being built.
  * Source of truth for project routes and related Focus / Questions / Concepts.
  */
 export const projects: Project[] = [
+  labwiseProject as Project,
   {
     id: "proj-ecg-simulator",
     slug: "ecg-simulator",

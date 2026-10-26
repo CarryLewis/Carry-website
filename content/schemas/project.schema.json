@@ -20,36 +20,70 @@
     "updatedAt"
   ],
   "properties": {
-    "id": { "$ref": "common.schema.json#/$defs/entityId" },
-    "slug": { "$ref": "common.schema.json#/$defs/entityId" },
-    "title": { "type": "string", "minLength": 1 },
-    "summary": { "type": "string", "minLength": 1 },
-    "problem": { "type": "string", "minLength": 1 },
-    "architecture": { "type": "string", "minLength": 1 },
-    "status": { "$ref": "common.schema.json#/$defs/projectStatus" },
+    "id": {
+      "$ref": "common.schema.json#/$defs/entityId"
+    },
+    "slug": {
+      "$ref": "common.schema.json#/$defs/entityId"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "summary": {
+      "type": "string",
+      "minLength": 1
+    },
+    "problem": {
+      "type": "string",
+      "minLength": 1
+    },
+    "architecture": {
+      "type": "string",
+      "minLength": 1
+    },
+    "status": {
+      "$ref": "common.schema.json#/$defs/projectStatus"
+    },
     "technology": {
       "type": "array",
-      "items": { "type": "string" }
+      "items": {
+        "type": "string"
+      }
     },
     "relatedResearchIds": {
       "type": "array",
-      "items": { "$ref": "common.schema.json#/$defs/entityId" }
+      "items": {
+        "$ref": "common.schema.json#/$defs/entityId"
+      }
     },
     "relatedConceptIds": {
       "type": "array",
-      "items": { "$ref": "common.schema.json#/$defs/entityId" }
+      "items": {
+        "$ref": "common.schema.json#/$defs/entityId"
+      }
     },
     "relatedSignalIds": {
       "type": "array",
-      "items": { "$ref": "common.schema.json#/$defs/entityId" }
+      "items": {
+        "$ref": "common.schema.json#/$defs/entityId"
+      }
     },
     "relatedFocusIds": {
       "type": "array",
-      "items": { "$ref": "common.schema.json#/$defs/entityId" }
+      "items": {
+        "$ref": "common.schema.json#/$defs/entityId"
+      }
     },
-    "designPhilosophy": { "type": "string" },
-    "implementation": { "type": "string" },
-    "reflection": { "type": "string" },
+    "designPhilosophy": {
+      "type": "string"
+    },
+    "implementation": {
+      "type": "string"
+    },
+    "reflection": {
+      "type": "string"
+    },
     "demoUrl": {
       "type": "string",
       "description": "Same-origin or absolute URL of the interactive demo."
@@ -62,7 +96,83 @@
       "type": "string",
       "description": "Source repository URL."
     },
-    "createdAt": { "$ref": "common.schema.json#/$defs/isoDate" },
-    "updatedAt": { "$ref": "common.schema.json#/$defs/isoDate" }
+    "createdAt": {
+      "$ref": "common.schema.json#/$defs/isoDate"
+    },
+    "updatedAt": {
+      "$ref": "common.schema.json#/$defs/isoDate"
+    },
+    "downloadUrl": {
+      "type": "string",
+      "description": "URL for downloading the complete project source or release."
+    },
+    "downloadNotes": {
+      "type": "string",
+      "description": "Setup requirements and scope of the download."
+    },
+    "workflow": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "resourceLinks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "label",
+          "href"
+        ],
+        "properties": {
+          "label": {
+            "type": "string",
+            "minLength": 1
+          },
+          "href": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    "screenshots": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "src",
+          "alt",
+          "caption",
+          "width",
+          "height"
+        ],
+        "properties": {
+          "src": {
+            "type": "string",
+            "minLength": 1
+          },
+          "alt": {
+            "type": "string",
+            "minLength": 1
+          },
+          "caption": {
+            "type": "string",
+            "minLength": 1
+          },
+          "width": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "height": {
+            "type": "integer",
+            "minimum": 1
+          }
+        }
+      }
+    }
   }
 }

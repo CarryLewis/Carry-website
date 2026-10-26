@@ -104,6 +104,16 @@ See `docs/HTML_DESIGN_LAB_EMBED.md`.
 
 ## Structure
 
+### Labwise project
+
+Labwise (English lab-report review assistance) is listed at
+`/projects/prototype/lab-report-assistant/`, linked from the homepage exploration
+and AI practice field. It includes bilingual project notes, fictional interface
+specimens and a complete-source ZIP link. The Python application runs locally;
+no online grading backend is deployed on this static website.
+
+See `docs/LABWISE_PROJECT.md` for content records, screenshot provenance and updates.
+
 - `docs/CONTENT_OS.md` — content modules, sync rules, update workflow
 - `docs/ARCHITECTURE.md` — technical architecture
 - `docs/DESIGN_SYSTEM.md` — visual identity

@@ -188,6 +188,31 @@
       "from": "sig-local-knowledge-graphs",
       "to": "proj-html-design-lab",
       "type": "related-to"
+    },
+    {
+      "id": "rel-labwise-focus",
+      "from": "focus-lab-report-review",
+      "to": "proj-lab-report-assistant",
+      "type": "related-to"
+    },
+    {
+      "id": "rel-labwise-ai",
+      "from": "proj-lab-report-assistant",
+      "to": "concept-ai",
+      "type": "builds-on"
+    },
+    {
+      "id": "rel-labwise-technology",
+      "from": "proj-lab-report-assistant",
+      "to": "concept-technology",
+      "type": "builds-on"
+    },
+    {
+      "id": "rel-labwise-human-systems",
+      "from": "proj-lab-report-assistant",
+      "to": "concept-human-systems",
+      "type": "exemplifies",
+      "note": "Instructor judgment remains explicit in evidence review, scoring and feedback confirmation."
     }
   ]
 }

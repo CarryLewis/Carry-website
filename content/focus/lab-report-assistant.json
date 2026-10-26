@@ -1,0 +1,26 @@
+{
+  "$schema": "../schemas/focus.schema.json",
+  "id": "focus-lab-report-review",
+  "slug": "lab-report-assistant",
+  "title": "Labwise · Evidence-led Review",
+  "description": "A teacher workspace for English lab reports: source evidence, rubric-aligned AI suggestions and instructor-confirmed feedback. 面向高校教师的实验报告辅助评阅。",
+  "domain": "Scientific Education + AI",
+  "status": "prototype",
+  "priority": "p1",
+  "relatedProjectIds": [
+    "proj-lab-report-assistant"
+  ],
+  "relatedQuestionIds": [],
+  "relatedConceptIds": [
+    "concept-ai",
+    "concept-technology",
+    "concept-human-systems"
+  ],
+  "fields": [
+    "Lab reports",
+    "Evidence traceability",
+    "Teacher judgment"
+  ],
+  "createdAt": "2026-10-23",
+  "updatedAt": "2026-10-26"
+}

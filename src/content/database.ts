@@ -24,6 +24,7 @@ import focusEcg from "../../content/focus/ecg-simulator.json";
 import focusReasoning from "../../content/focus/clinical-reasoning-ai.json";
 import focusKos from "../../content/focus/personal-knowledge-os.json";
 import focusLab from "../../content/focus/html-design-lab.json";
+import focusLabwise from "../../content/focus/lab-report-assistant.json";
 
 import questionEcg from "../../content/questions/ecg-conduction.json";
 import questionReasoning from "../../content/questions/clinical-reasoning-ai.json";
@@ -34,6 +35,7 @@ import projectReasoning from "../../content/projects/clinical-reasoning-ai.json"
 import projectKos from "../../content/projects/personal-knowledge-os.json";
 import projectBrief from "../../content/projects/research-brief.json";
 import projectLab from "../../content/projects/html-design-lab.json";
+import projectLabwise from "../../content/projects/lab-report-assistant.json";
 
 import conceptHumanSystems from "../../content/concepts/human-systems.json";
 import conceptMedicine from "../../content/concepts/medicine.json";
@@ -58,6 +60,7 @@ import timelineReasoning from "../../content/timeline/clinical-reasoning-ai-star
 import timelineObservatory from "../../content/timeline/observatory-launched.json";
 import timelineBrief from "../../content/timeline/research-brief-listed.json";
 import timelineLab from "../../content/timeline/html-design-lab-listed.json";
+import timelineLabwise from "../../content/timeline/labwise-listed.json";
 
 import relationsCollection from "../../content/relations/edges.json";
 
@@ -67,6 +70,7 @@ function stripSchema<T extends Record<string, unknown>>(record: T): Omit<T, "$sc
 }
 
 const focus = [
+  stripSchema(focusLabwise),
   stripSchema(focusEcg),
   stripSchema(focusReasoning),
   stripSchema(focusKos),
@@ -80,6 +84,7 @@ const questions = [
 ] as ActiveQuestionRecord[];
 
 const projects = [
+  stripSchema(projectLabwise),
   stripSchema(projectEcg),
   stripSchema(projectReasoning),
   stripSchema(projectKos),
@@ -108,6 +113,7 @@ const signals = [
 ] as SignalRecord[];
 
 const timeline = [
+  stripSchema(timelineLabwise),
   stripSchema(timelineKos),
   stripSchema(timelineBio),
   stripSchema(timelineEcg),

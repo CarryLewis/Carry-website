@@ -159,6 +159,18 @@ export type Project = {
   showcaseUrl?: string;
   /** Source repository. */
   repoUrl?: string;
+  /** Complete source or release download; independent of a live demo. */
+  downloadUrl?: string;
+  downloadNotes?: string;
+  workflow?: string[];
+  resourceLinks?: { label: string; href: string }[];
+  screenshots?: {
+    src: string;
+    alt: string;
+    caption: string;
+    width: number;
+    height: number;
+  }[];
   createdAt: ISODate;
   updatedAt: ISODate;
 };

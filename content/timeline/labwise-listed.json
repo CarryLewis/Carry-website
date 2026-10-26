@@ -1,0 +1,15 @@
+{
+  "$schema": "../schemas/timeline.schema.json",
+  "id": "tl-labwise-listed",
+  "slug": "labwise-listed",
+  "title": "Labwise joins the Digital Laboratory",
+  "summary": "Published the local lab-report review pilot as a bilingual project record with fictional interface specimens, source download and connections to AI practice.",
+  "kind": "publication",
+  "occurredAt": "2026-10-26",
+  "relatedEntityIds": [
+    "proj-lab-report-assistant",
+    "focus-lab-report-review",
+    "concept-ai",
+    "concept-technology"
+  ]
+}

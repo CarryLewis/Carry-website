@@ -50,6 +50,14 @@ export default async function ProjectsIndexPage() {
               >
                 Project record →
               </Link>
+              {project.downloadUrl ? (
+                <a
+                  href={project.downloadUrl}
+                  className="font-sans text-meta text-accent hover:text-accent-muted focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+                >
+                  Download source ZIP ↓
+                </a>
+              ) : null}
               {project.showcaseUrl ? (
                 <Link
                   href={project.showcaseUrl}

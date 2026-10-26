@@ -1,0 +1,73 @@
+{
+  "$schema": "../schemas/project.schema.json",
+  "id": "proj-lab-report-assistant",
+  "slug": "lab-report-assistant",
+  "title": "Labwise · 实验报告辅助评阅",
+  "summary": "Evidence-led AI assistance for university lab reports: understand the source, review rubric-linked suggestions, and keep final scores and feedback in the instructor's hands. 帮助教师理解英文实验报告、核对原文证据并形成可审核的反馈。",
+  "problem": "Reviewing an English lab report means understanding scientific reasoning, checking assignment requirements, locating evidence and writing useful feedback across several tools. Labwise brings those steps into one teacher workspace.\n\n项目从中国高校非英语母语教师的需求出发，关注英国大学体系下的实验报告写作与 Rubric 对照：降低英文阅读和证据查找成本，同时保留教师的专业判断。",
+  "architecture": "Assignment + rubric snapshot → DOCX parsing and source anchors → background AI candidates → linked source, outline and teacher review → instructor confirmation → Word feedback package.\n\nHTML/CSS/JavaScript provide the reading and review interface; Python serves the local API, SQLite stores drafts and revisions, and the backend calls the configured DeepSeek service. Local LibreOffice and bundled PDF.js support relevant document rendering paths.",
+  "status": "prototype",
+  "technology": [
+    "Python",
+    "JavaScript",
+    "SQLite",
+    "DOCX / Word comments",
+    "DeepSeek",
+    "PDF.js"
+  ],
+  "relatedResearchIds": [],
+  "relatedConceptIds": [
+    "concept-ai",
+    "concept-technology",
+    "concept-human-systems"
+  ],
+  "relatedFocusIds": [
+    "focus-lab-report-review"
+  ],
+  "designPhilosophy": "Understand before assessing. Every candidate should point back to a real paragraph, quotation or figure object and the current rubric. AI completion and teacher completion are separate states.\n\n先理解，再评阅；原文证据与评分标准共同约束建议。教师逐条采纳、编辑或拒绝，确认最终分数与反馈。无法定位或覆盖不足的内容保留为待核实，不能靠猜测补全。",
+  "implementation": "The local pilot includes assignment/rubric maintenance, DOCX import, automatic analysis queues, evidence-linked suggestions, draft/revision persistence, continuous review and instructor-confirmed Word review packages. New student submissions are DOCX-only; historical PDF records remain readable.\n\n目前为持续开发的教师试点。网站展示项目记录与历史验证截图，完整工作流需在本机运行 Python 服务。截图均来自虚构软件测试；早期手动图表入口不代表当前 Word 优先流程。",
+  "reflection": "The quality goal is faster understanding and better-grounded feedback, not automated final grading. Evaluate evidence accuracy, rubric alignment, unsupported suggestions and reasons for teacher edits before expanding the pilot.\n\n后续重点是复杂文档覆盖、引用内容证据链和稳定回归。学校身份、课程权限、LMS/Turnitin 对接及多人校准属于后续规划。当前快照仍有已知回归失败，尚未宣称生产就绪；没有经过验证的效率提升百分比。",
+  "workflow": [
+    "Create an assignment and verify the rubric / 创建作业并核对评分细则",
+    "Import DOCX reports and queue analysis / 导入 Word 报告并自动分析",
+    "Read the source alongside evidence-linked candidates / 对照原文审核建议",
+    "Accept, edit or reject; enter scores / 采纳、编辑或拒绝并录入分数",
+    "Confirm feedback and continue reviewing / 确认反馈后继续评阅",
+    "Export the instructor-approved review package / 导出教师确认的批改包"
+  ],
+  "repoUrl": "https://github.com/CarryLewis/lab-report-assistant",
+  "downloadUrl": "https://github.com/CarryLewis/lab-report-assistant/archive/refs/heads/main.zip",
+  "downloadNotes": "Complete source ZIP from main; not a standalone installer. Follow the repository setup instructions for Python dependencies, AI configuration and optional Word conversion. macOS has a start.command entry; Windows setup still needs separate validation. 完整源码下载不含学生资料、数据库或密钥。",
+  "resourceLinks": [
+    {
+      "label": "中文项目介绍与运行说明",
+      "href": "https://github.com/CarryLewis/lab-report-assistant#readme"
+    },
+    {
+      "label": "English overview & setup",
+      "href": "https://github.com/CarryLewis/lab-report-assistant/blob/main/README.en.md"
+    },
+    {
+      "label": "Word-first workflow / 评阅流程",
+      "href": "https://github.com/CarryLewis/lab-report-assistant/blob/main/docs/19_WORD_FIRST_REVIEW_WORKFLOW.md"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/images/projects/labwise/review-workspace.jpg",
+      "alt": "Labwise review workspace showing a fictional English growth report, evidence-linked AI feedback and document navigation.",
+      "caption": "Fictional DOCX analysis verification, 24 October 2026. Source, candidate feedback and report navigation share one workspace. 虚构生长曲线报告的历史验证界面。",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "src": "/images/projects/labwise/visual-review.jpg",
+      "alt": "Historical Labwise visual-review interface displaying a fictional chart and source-page inventory.",
+      "caption": "Historical visual-review experiment, 25 October 2026. Fictional software-test material only; the current Word-first flow supersedes these manual analysis controls. 图表发现历史验证，非当前全部功能的验收证明。",
+      "width": 1280,
+      "height": 720
+    }
+  ],
+  "createdAt": "2026-10-23",
+  "updatedAt": "2026-10-26"
+}
