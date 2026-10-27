@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Link from "@/components/ui/LocalizedLink";
 import { StatusIndicator } from "@/components/ui/StatusIndicator";
 import { Tag } from "@/components/ui/Tag";
 import { getProjectById } from "@/data/projects";

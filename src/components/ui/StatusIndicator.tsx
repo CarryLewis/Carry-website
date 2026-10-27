@@ -25,12 +25,27 @@ const statusLabel: Record<string, string> = {
   archive: "Archive",
 };
 
+import type { Locale } from "@/i18n";
+const chinese: Record<string, string> = {
+  active: "开发中",
+  emerging: "新方向",
+  prototype: "原型",
+  experiment: "实验",
+  dormant: "暂停",
+  archived: "归档",
+  archive: "归档",
+};
 type StatusIndicatorProps = {
+  locale?: Locale;
   status: EntityStatus | ProjectStatus | PracticeFieldStatus;
   className?: string;
 };
 
-export function StatusIndicator({ status, className }: StatusIndicatorProps) {
+export function StatusIndicator({
+  status,
+  className,
+  locale = "en",
+}: StatusIndicatorProps) {
   return (
     <span
       className={cn(
@@ -45,7 +60,9 @@ export function StatusIndicator({ status, className }: StatusIndicatorProps) {
         )}
         aria-hidden
       />
-      {statusLabel[status] ?? status}
+      {locale === "zh"
+        ? (chinese[status] ?? status)
+        : (statusLabel[status] ?? status)}
     </span>
   );
 }

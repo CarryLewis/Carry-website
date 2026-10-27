@@ -22,27 +22,22 @@ export const profile: PersonProfile = {
 
 export const siteChrome: SiteChrome = {
   brandName: "Carry Lewis",
-  productName: "Digital Laboratory",
-  tagline:
-    "Scientific journal · Knowledge observatory · Personal research system",
+  productName: "Personal Observatory",
+  tagline: "学习医学，构建工具，持续追问如何理解人。",
   metaDescription:
-    "Personal digital laboratory: scientific research, computational medicine, knowledge systems, and intellectual exploration.",
+    "Carry Lewis 的个人观测站：医学、软件创造、长跑、阅读与信仰。记录作品、问题与逐渐形成的判断。",
   nav: [
-    { href: "/", label: "Observatory" },
-    { href: "/research", label: "Research" },
-    { href: "/projects", label: "Projects" },
-    { href: "/lab", label: "Lab" },
-    { href: "/knowledge", label: "Knowledge" },
-    { href: "/signals", label: "Signals" },
-    { href: "/archive", label: "Archive" },
-    { href: "/about", label: "About" },
+    { href: "/", label: "观测站" },
+    { href: "/thinking/", label: "思考" },
+    { href: "/projects/", label: "作品" },
+    { href: "/about/", label: "关于" },
   ],
   footerLinks: [
-    { href: "/lab", label: "Lab" },
-    { href: "/about", label: "About" },
-    { href: "/signals", label: "Signals" },
+    { href: "/thinking/", label: "思考" },
+    { href: "/about/#contact", label: "交流" },
+    { href: "/observatory/", label: "第一版" },
   ],
-  versionLabel: "v0.1 · Observatory",
+  versionLabel: "v1.0 · Personal Observatory",
 };
 
 export const systemLinks: SystemLink[] = [

@@ -5,49 +5,52 @@
 
 :root {
   /* Color — surfaces */
-  --color-void: #07090c;
-  --color-surface: #0d1117;
-  --color-surface-raised: #151b24;
-  --color-surface-sunken: #05070a;
-  --color-panel: #1a222e;
-  --color-panel-muted: #121821;
-  --color-overlay: #07090ccc;
-  --color-grid: #1c2430;
+  --color-void: #f7f5ef;
+  --color-surface: #f1eee6;
+  --color-surface-raised: #fcfbf8;
+  --color-surface-sunken: #eeece4;
+  --color-panel: #e8e5db;
+  --color-panel-muted: #f0ede5;
+  --color-overlay: #f7f5efcc;
+  --color-grid: #dedfd6;
 
   /* Color — ink */
-  --color-ink: #e8eef6;
-  --color-ink-secondary: #a7b3c5;
-  --color-ink-tertiary: #6b7a90;
-  --color-ink-faint: #3d4a5c;
-  --color-ink-inverse: #0d1117;
+  --color-ink: #242e2b;
+  --color-ink-secondary: #535e57;
+  --color-ink-tertiary: #687068;
+  --color-ink-faint: #8a9188;
+  --color-ink-inverse: #fcfbf8;
 
   /* Color — accent */
-  --color-accent: #3d8f8c;
-  --color-accent-soft: #3d8f8c33;
-  --color-accent-muted: #2a6563;
-  --color-accent-glow: #3d8f8c1a;
+  --color-accent: #286456;
+  --color-accent-soft: #28645633;
+  --color-accent-muted: #1e4e42;
+  --color-accent-glow: #2864561a;
 
   /* Color — status */
-  --color-status-active: #3d8f8c;
-  --color-status-prototype: #8b7e5a;
-  --color-status-experiment: #5a7a9a;
-  --color-status-dormant: #6b7a90;
-  --color-status-archived: #4a5565;
-  --color-status-signal: #4f9a8f;
-  --color-status-warning: #a67c52;
-  --color-status-critical: #9a5b5b;
+  --color-status-active: #286456;
+  --color-status-prototype: #76633d;
+  --color-status-experiment: #48677a;
+  --color-status-dormant: #687068;
+  --color-status-archived: #71776e;
+  --color-status-signal: #286456;
+  --color-status-warning: #85613a;
+  --color-status-critical: #8c4646;
 
   /* Color — chrome */
-  --color-rule: #243041;
-  --color-rule-strong: #354457;
-  --color-focus-ring: #3d8f8c;
+  --color-rule: #d8dcd2;
+  --color-rule-strong: #b8c3b8;
+  --color-focus-ring: #286456;
 
   /* Typography families (next/font sets --font-* variables) */
-  --font-serif: var(--font-source-serif), "Source Serif 4", Georgia, serif;
-  --font-sans: var(--font-ibm-plex-sans), "IBM Plex Sans", "Helvetica Neue",
-    Arial, sans-serif;
-  --font-mono: var(--font-ibm-plex-mono), "IBM Plex Mono", Menlo, Consolas,
-    monospace;
+  --font-serif:
+    var(--font-source-serif), "Source Serif 4", Georgia, "Songti SC",
+    "Noto Serif CJK SC", serif;
+  --font-sans:
+    var(--font-ibm-plex-sans), "IBM Plex Sans", "Helvetica Neue", Arial,
+    "PingFang SC", "Microsoft YaHei", sans-serif;
+  --font-mono:
+    var(--font-ibm-plex-mono), "IBM Plex Mono", Menlo, Consolas, monospace;
 
   /* Type sizes (desktop defaults) */
   --type-hero-size: 48px;

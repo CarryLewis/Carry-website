@@ -9,11 +9,18 @@ on:
         description: "HTML-Design-Lab branch, tag, or SHA to embed. Leave blank to use html-design-lab-embed.ref. Example: cursor/design-knowledge-guide-aab1"
         required: false
         type: string
+      notion_full_refresh:
+        description: "Refetch every published Notion page and image (ignore content cache)"
+        required: false
+        default: false
+        type: boolean
+  schedule:
+    - cron: '17 * * * *'
   # Fired by CarryLewis/ECG-stimulator when its embed tip is updated
   # (see docs/templates/ecg-notify-website.yml).
   # research-brief-updated: CarryLewis/research_brief talk HTML changed.
   repository_dispatch:
-    types: [ecg-updated, research-brief-updated, html-design-lab-updated]
+    types: [ecg-updated, research-brief-updated, html-design-lab-updated, notion-updated]
 
 permissions:
   contents: read
@@ -26,6 +33,7 @@ concurrency:
 
 jobs:
   build:
+    if: github.event_name != 'schedule' || vars.NOTION_SYNC_ENABLED == 'true'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout website
@@ -110,6 +118,28 @@ jobs:
       - name: Install website dependencies
         run: npm ci
 
+      - name: Test Notion publishing rules
+        run: npm run test:notion
+
+      - name: Restore public Notion content cache
+        if: vars.NOTION_SYNC_ENABLED == 'true'
+        uses: actions/cache/restore@v4
+        with:
+          path: |
+            content/notion
+            public/notion
+          key: notion-public-v1-${{ github.ref_name }}-${{ github.run_id }}-${{ github.run_attempt }}
+          restore-keys: notion-public-v1-${{ github.ref_name }}-
+
+      - name: Sync published Notion content
+        env:
+          NOTION_SYNC_ENABLED: ${{ vars.NOTION_SYNC_ENABLED || 'false' }}
+          NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
+          NOTION_DATA_SOURCE_ID: ${{ vars.NOTION_DATA_SOURCE_ID }}
+          NOTION_IMAGE_HOSTS: ${{ vars.NOTION_IMAGE_HOSTS }}
+          NOTION_FULL_REFRESH: ${{ inputs.notion_full_refresh && 'true' || 'false' }}
+        run: node scripts/sync-notion.mjs
+
       - name: Build ECG stimulator
         working-directory: .ecg-stimulator
         run: |
@@ -155,7 +185,21 @@ jobs:
           fi
 
       - name: Build website
-        run: npm run build
+        env:
+          NOTION_SYNC_ENABLED: ${{ vars.NOTION_SYNC_ENABLED || 'false' }}
+        run: npm run build:site
+
+      - name: Verify Notion static export
+        run: node scripts/verify-notion-export.mjs
+
+      - name: Cache verified public Notion content
+        if: vars.NOTION_SYNC_ENABLED == 'true'
+        uses: actions/cache/save@v4
+        with:
+          path: |
+            content/notion
+            public/notion
+          key: notion-public-v1-${{ github.ref_name }}-${{ github.run_id }}-${{ github.run_attempt }}
 
       - uses: actions/upload-pages-artifact@v3
         with:

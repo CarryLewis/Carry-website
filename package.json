@@ -1,10 +1,13 @@
 {
   "name": "carry-digital-laboratory",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "npm run sync:notion && next build",
+    "build:site": "next build",
+    "sync:notion": "node --env-file-if-exists=.env.local scripts/sync-notion.mjs",
+    "test:notion": "node --test scripts/notion/*.test.mjs",
     "start": "next start",
     "lint": "next lint"
   },

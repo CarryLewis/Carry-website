@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Link from "@/components/ui/LocalizedLink";
 import { getStructure, type LabSpecimen } from "@/data/lab-catalog";
 
 type SpecimenBenchProps = {

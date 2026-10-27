@@ -1,13 +1,21 @@
-# Carry Lewis — Digital Laboratory
+# Carry Lewis — Personal Observatory · v1.0
 
 Personal digital laboratory at [carrylewis.com](https://carrylewis.com):
 
-**Digital Laboratory + Scientific Journal + Personal Knowledge Observatory**
+**个人观测站：认识一个人，发现共同问题，探索真实作品。**
+
+第二版首页、思考与关于页面的结构和内容边界见 [网站蓝图](docs/WEBSITE_V1_BLUEPRINT.md)。第一版首页保留于 `/observatory/`；原有研究、项目、Lab 和知识路径继续可用。
+
+首页编辑文案集中于 `src/data/portrait.ts`。已公开的 GitHub 主页是本轮唯一联系入口。
+
+## 中英双语
+
+中文入口为 `/`，英文入口为 `/en/`。页头可切换到当前页面的另一种语言，保留查询参数与锚点。首页、思考、开篇、关于及项目说明共用组件；Notion 个人文章与第一版参考档案明确保留原文。详见 [双语维护说明](docs/BILINGUAL.md)。
 
 ## Stack
 
 - Next.js (App Router) + TypeScript + Tailwind CSS
-- Dark-first Laboratory Editorial design system (`docs/DESIGN_SYSTEM.md`)
+- 纸白与青绿色的 Personal Observatory 排版；沿用第一版衬线字体与关系图语言。旧版设计文档 `docs/DESIGN_SYSTEM.md` 保留为历史背景，以 `docs/WEBSITE_V1_BLUEPRINT.md` 和当前 tokens 为准。
 - Content via local mock repository (Notion/CMS adapters later)
 
 ## Develop
@@ -24,6 +32,16 @@ npm run build
 ```
 
 Static export output: `out/` (GitHub Pages).
+
+### Notion headless CMS
+
+Native books, essays and rankings live at `/journal/`, with recent essays linked
+from `/thinking/`. The CMS is disabled until explicitly configured.
+`npm run build` first synchronizes published Notion content into an ignored JSON
+snapshot and local image files. No Notion request or secret is sent to visitors.
+
+See [the setup, publication and withdrawal guide](docs/NOTION_CMS.md).
+Use `npm run test:notion` for publishing-rule tests.
 
 ### Embedded ECG Stimulator
 

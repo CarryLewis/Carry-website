@@ -1,103 +1,195 @@
 "use client";
 
-import Link from "next/link";
+import Link from "@/components/ui/LocalizedLink";
 import { usePathname } from "next/navigation";
-import { useState } from "react";
-import { cn } from "@/lib/cn";
+import { useEffect, useRef, useState } from "react";
 import type { NavItem } from "@/domain/entities";
+import { useLocale } from "@/i18n/LocaleProvider";
+import { translate, htmlLanguage, localizedHref, withoutLocale } from "@/i18n";
+import styles from "./header.module.css";
 
-type SiteHeaderProps = {
+const exploration = [
+  { href: "/journal/", label: "阅读与记录", en: "Books & notes" },
+  { href: "/research/", label: "研究线索", en: "Research" },
+  { href: "/knowledge/", label: "知识网络", en: "Knowledge" },
+  { href: "/lab/", label: "视觉实验", en: "Design lab" },
+  { href: "/signals/", label: "研究观察", en: "Signals" },
+  { href: "/archive/", label: "时间档案", en: "Archive" },
+  { href: "/observatory/", label: "第一版观测站", en: "Original" },
+];
+
+export function SiteHeader({
+  brandName,
+  nav,
+}: {
   brandName: string;
   nav: NavItem[];
-};
-
-export function SiteHeader({ brandName, nav }: SiteHeaderProps) {
+}) {
   const pathname = usePathname();
-  const [open, setOpen] = useState(false);
+  const locale = useLocale();
+  const t = (value: string) => translate(locale, value);
+  const currentPath = withoutLocale(pathname);
+  const otherLocale = locale === "en" ? "zh" : "en";
+  const [open, setOpen] = useState<"mobile" | "explore" | null>(null);
+  const header = useRef<HTMLElement>(null);
+  const mobileButton = useRef<HTMLButtonElement>(null);
+  const exploreButton = useRef<HTMLButtonElement>(null);
+  const active = (href: string) =>
+    href === "/"
+      ? currentPath === "/"
+      : currentPath.startsWith(href.replace(/\/$/, ""));
+
+  useEffect(() => {
+    if (!open) return;
+    const outside = (event: PointerEvent) => {
+      if (
+        event.target instanceof Node &&
+        !header.current?.contains(event.target)
+      )
+        setOpen(null);
+    };
+    const escape = (event: KeyboardEvent) => {
+      if (event.key === "Escape") {
+        setOpen(null);
+        (open === "mobile" ? mobileButton : exploreButton).current?.focus();
+      }
+    };
+    document.addEventListener("pointerdown", outside);
+    document.addEventListener("keydown", escape);
+    return () => {
+      document.removeEventListener("pointerdown", outside);
+      document.removeEventListener("keydown", escape);
+    };
+  }, [open]);
 
   return (
-    <header className="sticky top-0 z-40 border-b border-rule bg-surface-raised/95 backdrop-blur-sm">
-      <div className="mx-auto flex h-header max-w-shell items-center justify-between px-margin">
-        <Link
-          href="/"
-          className="font-serif text-[18px] font-semibold tracking-[-0.015em] text-ink focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
-        >
+    <header
+      className={styles.header}
+      ref={header}
+      lang={htmlLanguage(locale)}
+      onBlur={(event) => {
+        if (
+          event.relatedTarget instanceof Node &&
+          !event.currentTarget.contains(event.relatedTarget)
+        )
+          setOpen(null);
+      }}
+    >
+      <div className={styles.bar}>
+        <Link href="/" className={styles.brand} onClick={() => setOpen(null)}>
+          <span className={styles.mark} aria-hidden />
           {brandName}
+          <small>PERSONAL OBSERVATORY</small>
         </Link>
-
-        <nav className="hidden items-center gap-lab-5 lg:flex" aria-label="Primary">
-          {nav.map((item) => {
-            const active =
-              item.href === "/"
-                ? pathname === "/"
-                : pathname.startsWith(item.href);
-            return (
+        <div className={styles.controls}>
+          <nav
+            className={styles.nav}
+            aria-label={locale === "en" ? "Primary navigation" : "主导航"}
+          >
+            {nav.map((item) => (
               <Link
-                key={item.href}
                 href={item.href}
-                className={cn(
-                  "relative py-lab-2 font-sans text-meta transition-colors duration-fast ease-lab focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent",
-                  active ? "text-ink" : "text-ink-secondary hover:text-ink",
-                )}
+                key={item.href}
+                aria-current={active(item.href) ? "page" : undefined}
+                onClick={() => setOpen(null)}
               >
-                {item.label}
-                {active ? (
-                  <span
-                    className="absolute inset-x-0 -bottom-px h-0.5 bg-accent"
-                    aria-hidden
-                  />
-                ) : null}
+                {t(item.label)}
               </Link>
-            );
-          })}
-        </nav>
-
-        <button
-          type="button"
-          className="inline-flex h-9 items-center border border-rule px-lab-3 font-sans text-meta text-ink-secondary lg:hidden"
-          aria-expanded={open}
-          aria-controls="mobile-nav"
-          onClick={() => setOpen((v) => !v)}
-        >
-          {open ? "Close" : "Menu"}
-        </button>
+            ))}
+            <div className={styles.more}>
+              <button
+                ref={exploreButton}
+                type="button"
+                aria-expanded={open === "explore"}
+                aria-controls="explore-nav"
+                onClick={() => setOpen(open === "explore" ? null : "explore")}
+              >
+                {locale === "en" ? "Explore" : "探索"}{" "}
+                <span aria-hidden>{open === "explore" ? "−" : "+"}</span>
+              </button>
+              {open === "explore" && (
+                <div className={styles.dropdown} id="explore-nav">
+                  {exploration.map((item) => (
+                    <Link
+                      href={item.href}
+                      key={item.href}
+                      aria-current={active(item.href) ? "page" : undefined}
+                      onClick={() => setOpen(null)}
+                    >
+                      {locale === "en" ? item.en : item.label}
+                      {locale === "zh" && <small>{item.en}</small>}
+                    </Link>
+                  ))}
+                </div>
+              )}
+            </div>
+          </nav>
+          <button
+            className={styles.mobileButton}
+            ref={mobileButton}
+            type="button"
+            aria-expanded={open === "mobile"}
+            aria-controls="mobile-nav"
+            onClick={() => setOpen(open === "mobile" ? null : "mobile")}
+          >
+            {locale === "en"
+              ? open === "mobile"
+                ? "Close"
+                : "Menu"
+              : open === "mobile"
+                ? "关闭"
+                : "菜单"}
+            <span aria-hidden>{open === "mobile" ? "−" : "+"}</span>
+          </button>
+          <a
+            className={styles.language}
+            href={localizedHref(currentPath, otherLocale)}
+            hrefLang={htmlLanguage(otherLocale)}
+            lang={htmlLanguage(otherLocale)}
+            aria-label={locale === "en" ? "切换为中文" : "Switch to English"}
+            onClick={(event) => {
+              event.currentTarget.href =
+                localizedHref(currentPath, otherLocale) +
+                window.location.search +
+                window.location.hash;
+              setOpen(null);
+            }}
+          >
+            {locale === "en" ? "中文" : "EN"}
+          </a>
+        </div>
       </div>
-
-      {open ? (
+      {open === "mobile" && (
         <nav
           id="mobile-nav"
-          className="border-t border-rule bg-surface-raised lg:hidden"
-          aria-label="Mobile"
+          className={styles.mobile}
+          aria-label={locale === "en" ? "Mobile navigation" : "移动导航"}
         >
-          <ul className="mx-auto max-w-shell px-margin py-lab-3">
-            {nav.map((item) => {
-              const active =
-                item.href === "/"
-                  ? pathname === "/"
-                  : pathname.startsWith(item.href);
-              return (
-                <li key={item.href}>
-                  <Link
-                    href={item.href}
-                    onClick={() => setOpen(false)}
-                    className={cn(
-                      "flex items-center gap-lab-3 border-b border-rule py-lab-4 font-sans text-body-ui last:border-b-0",
-                      active ? "text-ink" : "text-ink-secondary",
-                    )}
-                  >
-                    {active ? (
-                      <span className="h-4 w-0.5 bg-accent" aria-hidden />
-                    ) : (
-                      <span className="w-0.5" aria-hidden />
-                    )}
-                    {item.label}
-                  </Link>
-                </li>
-              );
-            })}
-          </ul>
+          {nav.map((item) => (
+            <Link
+              href={item.href}
+              key={item.href}
+              aria-current={active(item.href) ? "page" : undefined}
+              onClick={() => setOpen(null)}
+            >
+              {t(item.label)}
+              <span aria-hidden>↗</span>
+            </Link>
+          ))}
+          <p>FURTHER EXPLORATION</p>
+          {exploration.map((item) => (
+            <Link
+              href={item.href}
+              key={item.href}
+              aria-current={active(item.href) ? "page" : undefined}
+              onClick={() => setOpen(null)}
+            >
+              {locale === "en" ? item.en : item.label}
+              {locale === "zh" && <small>{item.en}</small>}
+            </Link>
+          ))}
         </nav>
-      ) : null}
+      )}
     </header>
   );
 }

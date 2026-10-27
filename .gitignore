@@ -39,3 +39,11 @@ next-env.d.ts
 
 # vercel
 .vercel
+
+# Generated public CMS snapshot and reusable media. Never commit Notion exports.
+/content/notion/
+/public/notion/
+/.cache/
+
+# local visual verification
+/artifacts/
