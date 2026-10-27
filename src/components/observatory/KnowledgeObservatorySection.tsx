@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Link from "@/components/ui/LocalizedLink";
 import { SectionHeader } from "@/components/content/SectionHeader";
 import { PracticeDerivationGraph } from "@/components/observatory/PracticeDerivationGraph";
 import type { ObservatoryCopy, PracticeGraph } from "@/domain/entities";

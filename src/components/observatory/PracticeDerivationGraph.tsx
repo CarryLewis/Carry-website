@@ -1,6 +1,6 @@
 "use client";
 
-import Link from "next/link";
+import Link from "@/components/ui/LocalizedLink";
 import { useCallback, useState, type FocusEvent, type MouseEvent } from "react";
 import { cn } from "@/lib/cn";
 import type { PracticeGraph, PracticeGraphNode } from "@/domain/entities";

@@ -1,7 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useMemo, useState } from "react";
-import Link from "next/link";
+import Link from "@/components/ui/LocalizedLink";
 import { useRouter } from "next/navigation";
 import { LabProtocol } from "@/components/lab/LabProtocol";
 import { SpecimenBench } from "@/components/lab/SpecimenBench";

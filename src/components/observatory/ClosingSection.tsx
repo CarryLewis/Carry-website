@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Link from "@/components/ui/LocalizedLink";
 import type { SectionCopy, SystemLink } from "@/domain/entities";
 
 type ClosingSectionProps = {

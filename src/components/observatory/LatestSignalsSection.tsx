@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Link from "@/components/ui/LocalizedLink";
 import { SectionHeader } from "@/components/content/SectionHeader";
 import { SignalCard } from "@/components/observatory/SignalCard";
 import type { ObservatoryCopy, Signal } from "@/domain/entities";

@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Link from "@/components/ui/LocalizedLink";
 import { SectionHeader } from "@/components/content/SectionHeader";
 import { ResearchThreadCard } from "@/components/observatory/ResearchThreadCard";
 import type { ActiveQuestion, SectionCopy } from "@/domain/entities";

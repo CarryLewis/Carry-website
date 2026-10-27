@@ -87,3 +87,13 @@ export const openingNote = {
   date: "2026-10-27",
   label: "开篇 · 个人思考",
 };
+
+import { translateValue, type Locale } from "@/i18n";
+export function getPortraitCopy(locale: Locale) {
+  return translateValue(locale, {
+    portrait,
+    inquiryThreads,
+    featuredWork,
+    openingNote,
+  });
+}

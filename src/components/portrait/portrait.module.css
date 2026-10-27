@@ -648,3 +648,8 @@
     gap: 16px;
   }
 }
+
+.page[lang="en"] .orbitNode {
+  width: 142px;
+  min-width: 0;
+}

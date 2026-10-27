@@ -8,6 +8,10 @@ Personal digital laboratory at [carrylewis.com](https://carrylewis.com):
 
 首页编辑文案集中于 `src/data/portrait.ts`。已公开的 GitHub 主页是本轮唯一联系入口。
 
+## 中英双语
+
+中文入口为 `/`，英文入口为 `/en/`。页头可切换到当前页面的另一种语言，保留查询参数与锚点。首页、思考、开篇、关于及项目说明共用组件；Notion 个人文章与第一版参考档案明确保留原文。详见 [双语维护说明](docs/BILINGUAL.md)。
+
 ## Stack
 
 - Next.js (App Router) + TypeScript + Tailwind CSS
@@ -28,6 +32,16 @@ npm run build
 ```
 
 Static export output: `out/` (GitHub Pages).
+
+### Notion headless CMS
+
+Native books, essays and rankings live at `/journal/`, with recent essays linked
+from `/thinking/`. The CMS is disabled until explicitly configured.
+`npm run build` first synchronizes published Notion content into an ignored JSON
+snapshot and local image files. No Notion request or secret is sent to visitors.
+
+See [the setup, publication and withdrawal guide](docs/NOTION_CMS.md).
+Use `npm run test:notion` for publishing-rule tests.
 
 ### Embedded ECG Stimulator
 

@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Link from "@/components/ui/LocalizedLink";
 import { cn } from "@/lib/cn";
 import type { Signal, SignalImportance } from "@/domain/entities";
 
