@@ -62,9 +62,9 @@ export const featuredWork = [
     title: "让心脏的电活动，变得可以理解。",
     description:
       "把心脏电传导、三维解剖与十二导联 ECG 联系起来。通过操作模型，探索机制如何形成我们看到的信号。",
-    availability: "在线交互模拟 · 持续开发",
+    availability: "2.0 已上线 · 十二导联交互模拟",
     note: "用于学习与机制探索。",
-    primaryLabel: "体验模拟器",
+    primaryLabel: "体验 2.0 模拟器",
   },
   {
     slug: "lab-report-assistant",

@@ -2,9 +2,9 @@ import type { Project } from "@/domain/entities";
 import type { Locale } from "@/i18n";
 const chinese: Record<string, Partial<Project>> = {
   "ecg-simulator": {
-    title: "心电模拟器",
+    title: "心电模拟器 2.0",
     summary:
-      "用于学习的交互式生理与心电模拟：联系三维心脏解剖、共同心电向量与十二导联信号，并探索传导阻滞、房颤、房扑、室性心律及心肌梗死等情景。",
+      "心电模拟器 2.0 将三维心脏解剖、十二导联心电图与病理情景联系起来。保留 1.0 的设置和布局，改进同步暂停、导联选择及状态反馈。",
     problem:
       "怎样把组织层面的电传导模型与可解释的临床心电波形联系起来，包括疾病状态，而不是为各导联预设电压？",
     architecture:
@@ -12,7 +12,11 @@ const chinese: Record<string, Partial<Project>> = {
     designPhilosophy:
       "重视机制的清晰性。疾病通过改变生理模型影响结果，心脏激动和心电信号随同一模型变化。",
     implementation:
-      "网站嵌入 ECG-stimulator 中固定版本的病理模型分支；具体来源见仓库的 ecg-embed.ref。",
+      "2.0 已在本站上线，保留 1.0 的全部设置、默认值和布局。点击实时状态标记可同步暂停或继续心脏与心电图；选择导联或心脏结构可联动定位，并修正不同心律下的状态反馈。1.0 原版源码独立保留，可从下方入口查看。",
+    resourceLinks: [
+      { label: "2.0 版本源码", href: "https://github.com/CarryLewis/ECG-stimulator/tree/release/2.0" },
+      { label: "1.0 原版源码", href: "https://github.com/CarryLewis/ECG-stimulator/tree/release/1.0" },
+    ],
   },
   "clinical-reasoning-ai": {
     title: "临床推理 AI",

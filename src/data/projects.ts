@@ -10,9 +10,9 @@ export const projects: Project[] = [
   {
     id: "proj-ecg-simulator",
     slug: "ecg-simulator",
-    title: "ECG Simulator",
+    title: "ECG Simulator 2.0",
     summary:
-      "Interactive physiology & ECG learning simulator — 3D cardiac anatomy, bilingual UI, shared dipole → 12-lead projection, and pathology scenarios (block, AF/flutter, VF/flutter, MI).",
+      "ECG Simulator 2.0 connects 3D cardiac anatomy with live 12-lead ECG and pathology scenarios. It preserves the 1.0 settings and layout, with synchronized pause/resume, lead selection and clearer feedback.",
     problem:
       "How can we connect tissue-level conduction models to interpretable clinical ECG waveforms — including disease states — without hardcoding lead millivolts?",
     architecture:
@@ -40,11 +40,15 @@ export const projects: Project[] = [
     designPhilosophy:
       "Prefer mechanistic clarity over black-box accuracy; diseases never hardcode waveforms — they alter physiology once, and glow + ECG update together.",
     implementation:
-      "Embedded build from CarryLewis/ECG-stimulator @ cursor/pathology-ecg-models-fab9 (fd2a781). ECG main was reverted to anatomy-only (#23); site tracks the pathology tip until a new consolidation lands.",
+      "Version 2.0 is live on this website. All 1.0 settings, defaults and layout are preserved. Click the live status badge to pause or resume the heart and ECG together; select a lead or structure to locate it in the linked view. Rhythm-specific feedback has been corrected. The original 1.0 source remains available separately.",
     demoUrl: "/ecg-simulator/",
     repoUrl: "https://github.com/CarryLewis/ECG-stimulator",
+    resourceLinks: [
+      { label: "2.0 source", href: "https://github.com/CarryLewis/ECG-stimulator/tree/release/2.0" },
+      { label: "1.0 original source", href: "https://github.com/CarryLewis/ECG-stimulator/tree/release/1.0" },
+    ],
     createdAt: "2025-09-01",
-    updatedAt: "2026-08-04",
+    updatedAt: "2026-11-12",
   },
   {
     id: "proj-clinical-reasoning-ai",
