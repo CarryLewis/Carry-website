@@ -25,6 +25,14 @@ const chinese: Record<string, Partial<Project>> = {
     architecture:
       "病例输入 → 鉴别诊断 → 证据评议 → 教学推理记录。目前为原型探索。",
   },
+  "personal-knowledge-bridge": {
+    title: "个人知识桥 · Personal Knowledge Bridge",
+    summary: "Notion 记自己的思考，印象笔记保留阅读摘抄，Obsidian 帮助沿着明确的联系回看，让新的阅读回应过去的问题。",
+    problem: "工作里留下的疑问，怎样在后来的阅读中再次被遇见，并有机会补上新的理解？",
+    architecture: "只读连接读取 Notion 中已保存的记录，生成本地 Obsidian Markdown。共同主题和已确认的笔记关联转为链接；摘抄挑选、回看和补写由自己完成。",
+    designPhilosophy: "保留自己的原话，也保留材料的出处。图谱帮助找到记录，把笔记放在一起重读，才知道联系是否有意义。新的理解继续补回原来的记录。",
+    implementation: "已实现 Notion → Obsidian 单向同步。网站提供公开示例的交互演示，不读取私人笔记，也不在网页中运行同步器。批量导入、持续同步与 Obsidian → Notion 写回仍在规划中。",
+  },
   "personal-knowledge-os": {
     title: "个人知识系统",
     summary: "用于长期积累、关联与检索研究及思考的个人知识系统。",

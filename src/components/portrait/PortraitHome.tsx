@@ -137,7 +137,20 @@ export function PortraitHome({ locale = "zh" }: { locale?: Locale } = {}) {
           return (
             <article className={styles.work} key={work.slug}>
               <div className={styles.workVisual}>
-                {screenshot ? (
+                {project.slug === "personal-knowledge-bridge" ? (
+                  <div className={styles.ecgPlate}>
+                    <span className={styles.eyebrow}>PERSONAL KNOWLEDGE BRIDGE</span>
+                    <svg viewBox="0 0 520 180" role="img" aria-label={t("从记录到回看的工作流示意")}>
+                      <path className={styles.ecgGrid} d="M90 90H260L430 90M260 90V155"/>
+                      {[90,260,430].map((x) => <circle key={x} cx={x} cy="90" r="29" stroke="var(--color-accent)" fill="var(--color-void)" />)}
+                      <text x="90" y="95" textAnchor="middle" fill="var(--color-ink)" fontSize="12">Notion</text>
+                      <text x="260" y="95" textAnchor="middle" fill="var(--color-ink)" fontSize="12">{t("问题")}</text>
+                      <text x="430" y="95" textAnchor="middle" fill="var(--color-ink)" fontSize="12">Obsidian</text>
+                    </svg>
+                    <div className={styles.ecgLegend}><span>{t("记录")}</span><span>→</span><span>{t("确认联系")}</span><span>→</span><span>{t("重新理解")}</span></div>
+                    <small>{t("工作流示意 · 公开示例")}</small>
+                  </div>
+                ) : screenshot ? (
                   <Image
                     src={screenshot.src}
                     alt={screenshot.alt}
@@ -182,13 +195,15 @@ export function PortraitHome({ locale = "zh" }: { locale?: Locale } = {}) {
                 <p className={styles.workName}>
                   {project.slug === "ecg-simulator"
                     ? "ECG Simulator"
-                    : "Labwise"}
+                    : project.slug === "personal-knowledge-bridge" ? "Personal Knowledge Bridge" : "Labwise"}
                 </p>
                 <h3>{work.title}</h3>
                 <p>{work.description}</p>
                 <p className={styles.availability}>{work.availability}</p>
                 <div className={styles.actions}>
-                  {project.demoUrl ? (
+                  {project.showcaseUrl ? (
+                    <Link className={styles.primary} href={project.showcaseUrl}>{work.primaryLabel} <span aria-hidden>↗</span></Link>
+                  ) : project.demoUrl ? (
                     <a className={styles.primary} href={project.demoUrl}>
                       {work.primaryLabel} <span aria-hidden>↗</span>
                     </a>

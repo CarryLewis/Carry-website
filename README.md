@@ -142,3 +142,7 @@ See `docs/LABWISE_PROJECT.md` for content records, screenshot provenance and upd
 Meaningful content lives in `src/data/*`. UI components only render data.
 medical basement is edited in Notion (Share → Publish); the site iframes the embed URL at `/knowledge/medical-basement`.
 Research Brief HTML is synced from CarryLewis/research_brief (`docs/RESEARCH_BRIEF_EMBED.md`).
+
+### Personal Knowledge Bridge
+
+`/knowledge-bridge/` and `/en/knowledge-bridge/` introduce the project's working philosophy and offer a five-stage interactive walkthrough with illustrative graph nodes. Linked from selected work, Thinking and the project list. See [content provenance and maintenance](docs/KNOWLEDGE_BRIDGE_SHOWCASE.md).

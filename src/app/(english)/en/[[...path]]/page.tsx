@@ -1,3 +1,5 @@
+import BridgePage from "@/components/bridge/BridgePage";
+import { bridgeCopy } from "@/data/knowledge-bridge";
 import { notFound } from "next/navigation";
 import { PortraitHome } from "@/components/portrait/PortraitHome";
 import About from "@/components/pages/AboutContent";
@@ -38,6 +40,7 @@ export async function generateStaticParams() {
     "thinking",
     "thinking/how-i-explore",
     "projects",
+    "knowledge-bridge",
     "signals",
     "journal",
     "observatory",
@@ -78,6 +81,7 @@ export async function generateMetadata({ params }: Props) {
       "Carry Lewis — Personal Observatory",
       "Medicine, software, running, reading and faith. Work, questions and evolving perspectives.",
     ],
+    "knowledge-bridge": ["Personal Knowledge Bridge · Workflow & Principles", bridgeCopy.en.summary],
     about: [
       "About",
       "Meet Carry Lewis: a medical student, builder of tools and explorer of the human condition.",
@@ -124,6 +128,7 @@ export default async function EnglishPage({ params }: Props) {
   const { path = [] } = await params;
   const key = path.join("/");
   if (!key) return <PortraitHome locale="en" />;
+  if (key === "knowledge-bridge") return <BridgePage locale="en" />;
   if (key === "about") return <About locale="en" />;
   if (key === "thinking") return <Thinking locale="en" />;
   if (key === "thinking/how-i-explore") return <Opening locale="en" />;

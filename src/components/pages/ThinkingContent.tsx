@@ -91,6 +91,10 @@ export default function ThinkingContent({
           ))}
         </div>
       </section>
+      <section className={styles.reading} aria-labelledby="bridge-title">
+        <div><p className={styles.eyebrow}>A PRACTICE OF THINKING</p><h2 id="bridge-title">{t("我怎样记录，再怎样回看。")}</h2><p>{t("从自己的问题出发，让阅读、思考与新的理解保持联系。")}</p></div>
+        <Link href="/knowledge-bridge/" className={styles.noteLink}><span className={styles.eyebrow}>PERSONAL KNOWLEDGE BRIDGE</span><h3>{t("让新的阅读，回应过去的问题。")}</h3><p>{t("跟随一条想法，看看 Notion、印象笔记与 Obsidian 在工作流中各自的位置。")}</p><span className={styles.textLink}>{t("探索记录与回看流程")} ↗</span></Link>
+      </section>
       <section className={styles.section} aria-labelledby="journal-title">
         <p className={styles.eyebrow}>READING & NOTES</p>
         <h2 id="journal-title">{t("书单、随笔与排行榜。")}</h2>

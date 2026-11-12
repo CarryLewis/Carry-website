@@ -166,5 +166,19 @@
   "CONTENT / 内容": "CONTENT",
   "书单 / 阅读记录": "BOOKS",
   "阅读与记录": "Reading & notes",
-  "学习医学，构建工具，持续追问如何理解人。": "Learning medicine. Building tools. Exploring what makes us human."
+  "学习医学，构建工具，持续追问如何理解人。": "Learning medicine. Building tools. Exploring what makes us human.",
+  "让新的阅读，回应过去的问题。": "Let new reading respond to an earlier question.",
+  "Notion 留下自己的想法，印象笔记保留阅读材料，Obsidian 帮助沿着联系回看。跟随一条想法，了解记录、关联与再理解的过程。": "Keep my thinking in Notion and reading material in Yinxiang Biji. Revisit connections in Obsidian. Follow an idea through capture, connection and reconsideration.",
+  "工作流交互展示 · 单向同步已实现": "Interactive workflow · One-way sync implemented",
+  "公开示例演示，不连接私人笔记。": "Illustrative walkthrough; no private notes are connected.",
+  "探索记录与回看流程": "Explore the workflow",
+  "从记录到回看的工作流示意": "An illustration of the capture and revisit workflow",
+  "问题": "Question",
+  "记录": "Capture",
+  "确认联系": "Connect",
+  "重新理解": "Reconsider",
+  "工作流示意 · 公开示例": "Workflow illustration · Public example",
+  "我怎样记录，再怎样回看。": "How I capture notes and return to them.",
+  "从自己的问题出发，让阅读、思考与新的理解保持联系。": "Begin with my own questions and keep reading, thinking and new understanding connected.",
+  "跟随一条想法，看看 Notion、印象笔记与 Obsidian 在工作流中各自的位置。": "Follow an idea to see the roles of Notion, Yinxiang Biji and Obsidian in the workflow."
 }

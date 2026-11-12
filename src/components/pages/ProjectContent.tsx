@@ -1,4 +1,4 @@
-import { htmlLanguage, pageMetadata, type Locale } from "@/i18n";
+import { localizedHref, htmlLanguage, pageMetadata, type Locale } from "@/i18n";
 import { localizedProject } from "@/i18n/projects";
 import type { Metadata } from "next";
 import Image from "next/image";
@@ -79,13 +79,7 @@ export default async function ProjectContent({
         <div className="mt-lab-6 flex flex-wrap gap-lab-3">
           {project.showcaseUrl ? (
             <a
-              href={
-                project.showcaseUrl === "/lab/"
-                  ? locale === "en"
-                    ? "/en/lab/"
-                    : "/lab/"
-                  : project.showcaseUrl
-              }
+              href={localizedHref(project.showcaseUrl, locale)}
               className="inline-flex h-10 items-center justify-center bg-accent px-lab-4 font-sans text-meta text-ink-inverse transition-colors duration-fast ease-lab hover:bg-accent-muted focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
             >
               {t("打开作品展示", "Open showcase")}

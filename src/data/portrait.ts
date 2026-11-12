@@ -77,6 +77,16 @@ export const featuredWork = [
     note: "截图来自虚构测试报告；不代表生产就绪。",
     primaryLabel: "了解 Labwise",
   },
+  {
+    slug: "personal-knowledge-bridge",
+    number: "03",
+    label: "NOTES & CONNECTIONS",
+    title: "让新的阅读，回应过去的问题。",
+    description: "Notion 留下自己的想法，印象笔记保留阅读材料，Obsidian 帮助沿着联系回看。跟随一条想法，了解记录、关联与再理解的过程。",
+    availability: "工作流交互展示 · 单向同步已实现",
+    note: "公开示例演示，不连接私人笔记。",
+    primaryLabel: "探索记录与回看流程",
+  },
 ] as const;
 
 export const openingNote = {
