@@ -149,4 +149,4 @@ Research Brief HTML is synced from CarryLewis/research_brief (`docs/RESEARCH_BRI
 
 ### Clinical Case Workspace project dossier
 
-`/clinical-case-workspace/` provides a public project introduction, synthetic prototype screenshots, an interactive evidence workflow, dated aggregate knowledge metadata and the implementation roadmap. It does not run OCR, a model, a Notion integration or accept documents. Project entries are bilingual; the standalone HTML explanation is in Chinese. See [scope, data provenance and verification](docs/CLINICAL_CASE_WORKSPACE.md).
+`/clinical-case-workspace/` provides a public project introduction, synthetic prototype screenshots, an interactive evidence workflow, knowledge architecture and the implementation roadmap. It does not run OCR, a model, a Notion integration or accept documents. Project entries are bilingual; the standalone HTML explanation is in Chinese. See [scope, data provenance and verification](docs/CLINICAL_CASE_WORKSPACE.md).
