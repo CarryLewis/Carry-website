@@ -1,3 +1,4 @@
+import ClinicalCaseProject from "@/components/clinical/ClinicalCaseProject";
 import { localizedHref, htmlLanguage, pageMetadata, type Locale } from "@/i18n";
 import { localizedProject } from "@/i18n/projects";
 import type { Metadata } from "next";
@@ -41,6 +42,10 @@ export default async function ProjectContent({
 
   if (!project || project.status !== status) {
     notFound();
+  }
+
+  if (project.slug === "clinical-case-workspace") {
+    return <ClinicalCaseProject />;
   }
 
   return (
