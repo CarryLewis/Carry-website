@@ -79,6 +79,8 @@ jobs:
           echo "Using research_brief ref: ${REF}"
 
       - name: Checkout research_brief
+        # The embed step below retains the tracked public HTML if the source is unavailable.
+        continue-on-error: true
         uses: actions/checkout@v4
         with:
           repository: CarryLewis/research_brief
