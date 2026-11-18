@@ -1,5 +1,6 @@
 import type { Project } from "@/domain/entities";
 import labwiseProject from "../../content/projects/lab-report-assistant.json";
+import clinicalCaseWorkspace from "../../content/projects/clinical-case-workspace.json";
 
 /**
  * Projects — things being built.
@@ -7,6 +8,7 @@ import labwiseProject from "../../content/projects/lab-report-assistant.json";
  */
 export const projects: Project[] = [
   labwiseProject as Project,
+  clinicalCaseWorkspace as Project,
   {
     id: "proj-ecg-simulator",
     slug: "ecg-simulator",

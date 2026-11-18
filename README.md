@@ -146,3 +146,7 @@ Research Brief HTML is synced from CarryLewis/research_brief (`docs/RESEARCH_BRI
 ### Personal Knowledge Bridge
 
 `/knowledge-bridge/` and `/en/knowledge-bridge/` introduce the project's working philosophy and offer a five-stage interactive walkthrough with illustrative graph nodes. Linked from selected work, Thinking and the project list. See [content provenance and maintenance](docs/KNOWLEDGE_BRIDGE_SHOWCASE.md).
+
+### Clinical Case Workspace project dossier
+
+`/clinical-case-workspace/` provides a public project introduction, synthetic prototype screenshots, an interactive evidence workflow, knowledge architecture and the implementation roadmap. It does not run OCR, a model, a Notion integration or accept documents. Project entries are bilingual; the standalone HTML explanation is in Chinese. See [scope, data provenance and verification](docs/CLINICAL_CASE_WORKSPACE.md).
