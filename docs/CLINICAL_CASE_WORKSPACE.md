@@ -1,6 +1,6 @@
 # Clinical Case Workspace · 公开项目简介
 
-入口：`/clinical-case-workspace/`。个人网站上的项目介绍与合成样例，展示理念、功能、证据工作流、知识关联架构及路线图。
+项目正文：`/projects/prototype/clinical-case-workspace/`（英文入口为 `/en/projects/prototype/clinical-case-workspace/`）。独立展示入口：`/clinical-case-workspace/`。个人网站上的项目介绍与合成样例，展示理念、功能、证据工作流、知识关联架构及路线图。
 
 ## 内容范围
 
@@ -11,7 +11,7 @@
 ## 网站入口
 
 - 中英文作品列表和项目详情页。
-- 项目详情的「打开演示」进入 HTML 简介；页面明确说明这是项目展示。
+- 项目详情直接展示 HTML 设计的完整正文，替代通用项目模板；无需再次点击演示按钮。
 - `/knowledge/medical-basement/` 顶部的项目与架构链接。
 
 项目条目提供中英文文案；独立 HTML 主体为中文。
@@ -31,3 +31,7 @@ node scripts/check-bilingual.mjs
 `build:site` 只构建，不运行 Notion 同步。检查脚本防止知识库统计及旧下载入口重新出现，并检查脚本语法、资源与项目入口。浏览器验证栏目、来源交互、截图弹窗及响应式布局。
 
 本次按用户要求移除可能过时的知识库统计，通过 GitHub PR 合并并沿现有 GitHub Pages 流程发布。不修改域名、Pages/Sites 托管配置或 Notion 发布策略。
+
+## 正文挂载
+
+`ClinicalCaseProject` 在静态构建时复用仓库内 HTML 的正文与样式，以页面原生内容输出；去除独立页导航/页脚并将资源改为站内绝对地址。样式限定于文章容器，交互由 React 组件初始化和清理，不执行 HTML 中的内联脚本，不嵌入 iframe。保留网站导航、项目元信息和中英文路由；本文主体仍为中文。
