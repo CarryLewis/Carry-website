@@ -32,6 +32,7 @@ import questionBio from "../../content/questions/mechanism-to-model.json";
 
 import projectEcg from "../../content/projects/ecg-simulator.json";
 import projectReasoning from "../../content/projects/clinical-reasoning-ai.json";
+import projectClinicalCaseWorkspace from "../../content/projects/clinical-case-workspace.json";
 import projectKos from "../../content/projects/personal-knowledge-os.json";
 import projectBrief from "../../content/projects/research-brief.json";
 import projectLab from "../../content/projects/html-design-lab.json";
@@ -87,6 +88,7 @@ const projects = [
   stripSchema(projectLabwise),
   stripSchema(projectEcg),
   stripSchema(projectReasoning),
+  stripSchema(projectClinicalCaseWorkspace),
   stripSchema(projectKos),
   stripSchema(projectBrief),
   stripSchema(projectLab),

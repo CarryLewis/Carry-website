@@ -1,0 +1,40 @@
+{
+  "$schema": "../schemas/project.schema.json",
+  "id": "proj-clinical-case-workspace",
+  "slug": "clinical-case-workspace",
+  "title": "Clinical Case Workspace",
+  "summary": "A local-first clinical learning prototype that connects source documents, annotations, reviewed facts and learning questions. This public dossier shows synthetic examples and dated aggregate snapshots.",
+  "problem": "How can a highlighted passage become a clinical learning record while preserving its source, review history and uncertainty?",
+  "architecture": "Source document → annotation → separate human fact review → teaching explanation → confirmed knowledge link → learning archive. The prototype uses synthetic fixtures and fixed Demo services.",
+  "status": "prototype",
+  "technology": [
+    "Next.js",
+    "React",
+    "TypeScript",
+    "PDF.js",
+    "Normalized evidence coordinates",
+    "Local-first storage"
+  ],
+  "relatedResearchIds": [
+    "q-clinical-reasoning"
+  ],
+  "relatedConceptIds": [
+    "concept-medicine",
+    "concept-ai",
+    "concept-human-systems",
+    "concept-technology"
+  ],
+  "designPhilosophy": "Keep the source visible. Review facts separately from annotations. Distinguish observations, interpretations and hypotheses; invalidate dependent work when the source changes.",
+  "implementation": "The local prototype has four main screens, three synthetic cases, four document pages, fourteen hand-defined annotations and seven reviewable facts. Thirteen automated checks passed on 2026-11-17. The public HTML includes a project overview, workflow, synthetic source interaction, aggregate knowledge snapshot and roadmap; it does not run the application, upload documents or connect to Notion, OCR or a model.",
+  "demoUrl": "/clinical-case-workspace/",
+  "workflow": [
+    "Read the original document",
+    "Review annotation text and source coordinates",
+    "Confirm clinical facts separately",
+    "Inspect a clearly marked teaching Demo",
+    "Confirm local knowledge relationships",
+    "Archive a reviewed learning draft"
+  ],
+  "createdAt": "2026-11-17",
+  "updatedAt": "2026-11-18"
+}

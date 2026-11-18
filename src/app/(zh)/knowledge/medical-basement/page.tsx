@@ -43,6 +43,14 @@ export default function MedicalBasementPage() {
         </a>
       </div>
 
+      <aside className="flex flex-wrap items-center justify-between gap-lab-3 border-b border-rule bg-surface px-margin py-lab-4">
+        <div>
+          <p className="font-sans text-body-ui text-ink">Clinical Case Workspace · 临床病例工作台</p>
+          <p className="mt-lab-1 font-sans text-meta text-ink-secondary">项目简介、合成原型与知识库结构快照；本页不接收病例或连接模型。</p>
+        </div>
+        <a href="/clinical-case-workspace/" className="font-sans text-meta text-accent hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent">查看项目与架构 ↗</a>
+      </aside>
+
       <iframe
         title="medical basement"
         src={MEDICAL_BASEMENT_EMBED_URL}
