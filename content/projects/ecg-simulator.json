@@ -2,8 +2,8 @@
   "$schema": "../schemas/project.schema.json",
   "id": "proj-ecg-simulator",
   "slug": "ecg-simulator",
-  "title": "ECG Simulator",
-  "summary": "Interactive physiology & ECG learning simulator — 3D cardiac anatomy, bilingual UI, shared dipole → 12-lead projection, and pathology scenarios (block, AF/flutter, VF/flutter, MI).",
+  "title": "ECG Simulator 2.0",
+  "summary": "ECG Simulator 2.0 connects 3D cardiac anatomy with live twelve-lead ECG. Source 2.0 adds continuous ventricular geometry, leader labels and an IVS cutaway; Source 1.0 remains available for comparison.",
   "problem": "How can we connect tissue-level conduction models to interpretable clinical ECG waveforms — including disease states — without hardcoding lead millivolts?",
   "architecture": "Physiology packs emit effects → PhysiologicalModel → CyclePlan → shared dipole sampler that drives both 3D heart glow and live 12-lead ECG. Bilingual 中文/English chrome. Scenarios: sinus, conduction block, AF/flutter, VF/flutter, MI.",
   "status": "active",
@@ -16,7 +16,10 @@
     "Disease simulation packs",
     "i18n (中文 / English)"
   ],
-  "relatedResearchIds": ["q-ecg-conduction", "q-bio-to-compute"],
+  "relatedResearchIds": [
+    "q-ecg-conduction",
+    "q-bio-to-compute"
+  ],
   "relatedConceptIds": [
     "concept-action-potential",
     "concept-sa-node",
@@ -25,12 +28,16 @@
     "concept-medicine",
     "concept-biology"
   ],
-  "relatedSignalIds": ["sig-cardiac-digital-twins"],
-  "relatedFocusIds": ["focus-ecg-simulator"],
+  "relatedSignalIds": [
+    "sig-cardiac-digital-twins"
+  ],
+  "relatedFocusIds": [
+    "focus-ecg-simulator"
+  ],
   "designPhilosophy": "Prefer mechanistic clarity over black-box accuracy; diseases never hardcode waveforms — they alter physiology once, and glow + ECG update together.",
-  "implementation": "Embedded build from CarryLewis/ECG-stimulator @ cursor/pathology-ecg-models-fab9 (fd2a781). ECG main was reverted to anatomy-only (#23); site tracks the pathology tip until a new consolidation lands.",
-  "demoUrl": "/ecg-simulator/",
+  "implementation": "The app remains 2.0 and now includes Source 2.0 and the preserved Source 1.0 model. Source 2.0 provides a continuous ventricular silhouette, readable leader labels, an IVS cutaway and separate selection and electrical feedback. Both models share the existing physiology and twelve-lead monitor; selecting structures or adjusting opacity in Source 1.0 stays within that model. The simulator 1.0 source archive is also retained.",
+  "demoUrl": "/ecg-simulator/?view=source-2",
   "repoUrl": "https://github.com/CarryLewis/ECG-stimulator",
   "createdAt": "2025-09-01",
-  "updatedAt": "2026-08-04"
+  "updatedAt": "2026-11-21"
 }

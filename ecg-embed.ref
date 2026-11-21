@@ -1,6 +1,5 @@
 # Git ref in CarryLewis/ECG-stimulator used for the embedded demo at /ecg-simulator/
-# Pin the verified 2.0 source commit so later branch changes cannot alter production.
-# 1.0 remains available on ECG-stimulator's release/1.0 branch.
-# CI reads ECG_REF on every GitHub Pages deploy.
-ECG_REF=feaa7e53ad5d1b617ce28ac6f97d4d7e726236d7
-ECG_SHA=feaa7e53ad5d1b617ce28ac6f97d4d7e726236d7
+# App 2.0 includes Source 2.0 and the preserved Source 1.0 model.
+# Pin the tested source; the simulator 1.0 archive remains on release/1.0.
+ECG_REF=c4ef3d4557f98c05b40b6fd3fd2db14b7a8d27fa
+ECG_SHA=c4ef3d4557f98c05b40b6fd3fd2db14b7a8d27fa

@@ -14,7 +14,7 @@ export const projects: Project[] = [
     slug: "ecg-simulator",
     title: "ECG Simulator 2.0",
     summary:
-      "ECG Simulator 2.0 connects 3D cardiac anatomy with live 12-lead ECG and pathology scenarios. It preserves the 1.0 settings and layout, with synchronized pause/resume, lead selection and clearer feedback.",
+      "ECG Simulator 2.0 connects 3D cardiac anatomy with live twelve-lead ECG. Source 2.0 adds continuous ventricular geometry, leader labels and an IVS cutaway; Source 1.0 remains available for comparison.",
     problem:
       "How can we connect tissue-level conduction models to interpretable clinical ECG waveforms — including disease states — without hardcoding lead millivolts?",
     architecture:
@@ -42,15 +42,17 @@ export const projects: Project[] = [
     designPhilosophy:
       "Prefer mechanistic clarity over black-box accuracy; diseases never hardcode waveforms — they alter physiology once, and glow + ECG update together.",
     implementation:
-      "Version 2.0 is live on this website. All 1.0 settings, defaults and layout are preserved. Click the live status badge to pause or resume the heart and ECG together; select a lead or structure to locate it in the linked view. Rhythm-specific feedback has been corrected. The original 1.0 source remains available separately.",
-    demoUrl: "/ecg-simulator/",
+      "The app remains 2.0 and now includes Source 2.0 and the preserved Source 1.0 model. Source 2.0 provides a continuous ventricular silhouette, readable leader labels, an IVS cutaway and separate selection and electrical feedback. Both models share the existing physiology and twelve-lead monitor; selecting structures or adjusting opacity in Source 1.0 stays within that model. The simulator 1.0 source archive is also retained.",
+    demoUrl: "/ecg-simulator/?view=source-2",
     repoUrl: "https://github.com/CarryLewis/ECG-stimulator",
     resourceLinks: [
-      { label: "2.0 source", href: "https://github.com/CarryLewis/ECG-stimulator/tree/release/2.0" },
-      { label: "1.0 original source", href: "https://github.com/CarryLewis/ECG-stimulator/tree/release/1.0" },
+      { label: "Source 2.0 model", href: "/ecg-simulator/?view=source-2" },
+      { label: "Source 1.0 model", href: "/ecg-simulator/?view=source-1" },
+      { label: "Simulator 2.0 source", href: "https://github.com/CarryLewis/ECG-stimulator/tree/release/2.0" },
+      { label: "Simulator 1.0 archive", href: "https://github.com/CarryLewis/ECG-stimulator/tree/release/1.0" },
     ],
     createdAt: "2025-09-01",
-    updatedAt: "2026-11-12",
+    updatedAt: "2026-11-21",
   },
   {
     id: "proj-clinical-reasoning-ai",

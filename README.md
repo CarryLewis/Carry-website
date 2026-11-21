@@ -47,7 +47,7 @@ Use `npm run test:notion` for publishing-rule tests.
 
 The interactive ECG app from [`CarryLewis/ECG-stimulator`](https://github.com/CarryLewis/ECG-stimulator) is built and copied into `public/ecg-simulator/`, served at `/ecg-simulator/`.
 
-Production is pinned in `ecg-embed.ref` to the verified **2.0** commit `feaa7e53ad5d1b617ce28ac6f97d4d7e726236d7`. The simulator keeps the 1.0 settings and layout and improves interactions. The original source is preserved on [`release/1.0`](https://github.com/CarryLewis/ECG-stimulator/tree/release/1.0); ongoing 2.0 source is on [`release/2.0`](https://github.com/CarryLewis/ECG-stimulator/tree/release/2.0).
+Production is pinned in `ecg-embed.ref` to the verified **2.0** commit `c4ef3d4557f98c05b40b6fd3fd2db14b7a8d27fa`. The app remains 2.0, with the new **Source 2.0 / 源 2.0** model and the preserved **Source 1.0 / 源 1.0** model. [Open Source 2.0](https://carrylewis.com/ecg-simulator/?view=source-2) or [compare Source 1.0](https://carrylewis.com/ecg-simulator/?view=source-1). Sidebar settings and the complete twelve-lead monitor remain available. The original source is preserved on [`release/1.0`](https://github.com/CarryLewis/ECG-stimulator/tree/release/1.0); ongoing 2.0 source is on [`release/2.0`](https://github.com/CarryLewis/ECG-stimulator/tree/release/2.0).
 
 #### Auto-sync (Method C)
 

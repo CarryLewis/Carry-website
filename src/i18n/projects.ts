@@ -14,7 +14,7 @@ const chinese: Record<string, Partial<Project>> = {
   "ecg-simulator": {
     title: "心电模拟器 2.0",
     summary:
-      "心电模拟器 2.0 将三维心脏解剖、十二导联心电图与病理情景联系起来。保留 1.0 的设置和布局，改进同步暂停、导联选择及状态反馈。",
+      "心电模拟器 2.0 将三维心脏与十二导联心电图联系起来。新模型标注为“源 2.0”，提供连续心室轮廓、引线标注和室间隔剖面；原模型标注为“源 1.0”，可随时切换对照。",
     problem:
       "怎样把组织层面的电传导模型与可解释的临床心电波形联系起来，包括疾病状态，而不是为各导联预设电压？",
     architecture:
@@ -22,10 +22,12 @@ const chinese: Record<string, Partial<Project>> = {
     designPhilosophy:
       "重视机制的清晰性。疾病通过改变生理模型影响结果，心脏激动和心电信号随同一模型变化。",
     implementation:
-      "2.0 已在本站上线，保留 1.0 的全部设置、默认值和布局。点击实时状态标记可同步暂停或继续心脏与心电图；选择导联或心脏结构可联动定位，并修正不同心律下的状态反馈。1.0 原版源码独立保留，可从下方入口查看。",
+      "模拟器版本仍为 2.0，新心脏模型命名为“源 2.0”，之前的模型命名为“源 1.0”。源 2.0 提供连续心室轮廓、清晰引线标注、室间隔剖面，并区分结构选中与电激动反馈。两个模型共用现有生理模型和完整十二导联；在源 1.0 中选择结构或调整透明度时，会保留在旧模型中。模拟器 1.0 的源码归档也继续保留。",
     resourceLinks: [
-      { label: "2.0 版本源码", href: "https://github.com/CarryLewis/ECG-stimulator/tree/release/2.0" },
-      { label: "1.0 原版源码", href: "https://github.com/CarryLewis/ECG-stimulator/tree/release/1.0" },
+      { label: "源 2.0 模型", href: "/ecg-simulator/?view=source-2" },
+      { label: "源 1.0 模型", href: "/ecg-simulator/?view=source-1" },
+      { label: "模拟器 2.0 源码", href: "https://github.com/CarryLewis/ECG-stimulator/tree/release/2.0" },
+      { label: "模拟器 1.0 源码归档", href: "https://github.com/CarryLewis/ECG-stimulator/tree/release/1.0" },
     ],
   },
   "clinical-reasoning-ai": {
