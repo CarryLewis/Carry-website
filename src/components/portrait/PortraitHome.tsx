@@ -301,6 +301,9 @@ export function PortraitHome({ locale = "zh" }: { locale?: Locale } = {}) {
         <h2 id="connect-title">{t("也许，我们正在追问相似的问题。")}</h2>
         <p>{portrait.invitation}</p>
         <div className={styles.actions}>
+          <a className={styles.primary} href="mailto:lkran0607@gmail.com" title="lkran0607@gmail.com">
+            {t("给我发邮件")}
+          </a>
           <a className={styles.primary} href={portrait.github}>
             {t("在 GitHub 找到我")}
             <span aria-hidden>↗</span>
